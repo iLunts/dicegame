@@ -1,0 +1,30 @@
+// out: ../../../content/css/components/footer.css, compress: true
+@import '../variables.less';
+
+// ------------------------------------------------
+// Block '.footer'
+// ------------------------------------------------
+.footer{
+    position: relative;
+    padding: 10px 0;
+
+    // -----------------------------------
+    // All elements
+    // -----------------------------------
+    
+    // Element '.panel.panel__teaser'
+    & &__link{
+        color: #777;
+        font-size: .8rem;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover{
+            color: @color-red;
+        }
+
+         & + .footer__link{
+             margin-left: 20px;
+         }
+    }
+}

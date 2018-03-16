@@ -1,0 +1,130 @@
+// out: ../../../content/css/components/block.css, compress: true
+@import '../variables.less';
+// Name:            Block
+//
+// ----------------------------------------------------------------------------
+// Block '.block'
+// ----------------------------------------------------------------------------
+.block {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: @block-padding-vertical;
+    padding-bottom: @block-padding-vertical;
+
+    // ------------------------------------------------------------------------
+    // All modificators
+    // ------------------------------------------------------------------------
+    
+    // Modificator '.block.block--lg'
+    &&--lg {
+        padding-top: @block-lg-padding-vertical;
+        padding-bottom: @block-lg-padding-vertical;
+    }
+    
+    // Modificator '.block.block--md'
+    &&--md {
+        padding-top: @block-md-padding-vertical;
+        padding-bottom: @block-md-padding-vertical;
+    }
+    
+    // Modificator '.block.block--md'
+    &&--check {
+        padding-top: @block-md-padding-vertical;
+        padding-bottom: @block-md-padding-vertical;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fec180+0,f66055+100 */
+        background: #fec180; /* Old browsers */
+        background: -moz-linear-gradient(left, #fec180 0%, #f66055 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #fec180 0%,#f66055 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #fec180 0%,#f66055 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fec180', endColorstr='#f66055',GradientType=1 ); /* IE6-9 */
+
+        color: #fff;
+
+        .device{
+            margin-top: -17rem;
+            top: 20em;
+        }
+    }
+
+    // Modificator '.block.block--gray-light'
+    &&--gray-light {
+        background-color: #FAFAFA;
+    }
+
+    // Modificator '.block.block--white'
+    &&--img {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        & > *{
+            position: relative;
+            z-index: 2;;
+        }
+
+        .t--white{
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    // Modificator '.block.block--brown-light'
+    &&--gray-light {
+        background-color: #f3f1ed;
+    }
+
+    // Modificator '.block.block--brown-light'
+    &&--brown-light {
+        background-color: #f3f1ed;
+    }
+
+    // Modificator '.block.block--gray-dark'
+    &&--gray-dark {
+        background-color: #242424;
+        color: #fff;
+    }
+    
+    // ------------------------------------------------------------------------
+    // All elements
+    // ------------------------------------------------------------------------
+
+    & &__plus{
+        padding: 50px;
+        border: 2px solid @color-yellow;
+    }
+
+    & &__title{
+        font-weight: 300;
+        font-size: 2.3rem;
+        line-height: 2.6rem;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+// ---------------------------------------------------------------------------
+// size: xSmall
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: @breakpoint-xs-max) and (min-width: @breakpoint-xs-min) {
+
+    .block{
+
+        
+    }
+
+}

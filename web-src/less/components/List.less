@@ -1,0 +1,218 @@
+// out: ../../../content/css/components/list.css, compress: true
+@import '../variables.less';
+// Name:            List
+// Description:     Defines styles for avatar
+//
+// Component:       'list'
+//
+//
+// Element:       'list__*'
+//                'list__*'
+//
+// Modifiers:     'list--v'
+//                'list--horizontal'
+//                'list--line'
+//                'list--dotted'
+//                'list--history'
+//
+// ------------------------------------------------
+// Block '.list'
+// ------------------------------------------------
+.list{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    // --------------------------------------------
+    // All modificators
+    // --------------------------------------------
+    // Modificator '.list.list--v'
+    &&--v{
+        
+        // Element '.list.list--v .list__title'
+        .list__title{
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        // Element '.list.list--v .list__item'
+        .list__item{
+            font-size: 1rem;
+            line-height: 1.3;
+            display: block;
+            margin-bottom: 6px;
+            clear: both;
+        }
+    }
+    
+    // Modificator 'list.list--h'
+    &&--h{
+        
+        // Element '.list.list--h .list__item'
+        & .list__item{
+            display: inline-block;
+            
+            // Element '.list.list--h .list__item + list__item'
+            & + .list__item{
+                margin-left: 10px;
+            }
+        }
+        
+        // Element '.list.list--h.list__line'
+        &.list--line{
+
+            // Element '.list.list--h.list__line > .list__item'
+            & > .list__item{
+                border-bottom: 0;
+                padding: 0;
+                vertical-align: middle;
+                
+                // Element '.list.list--h.list__line > .list__item + .list__item'
+                & + .list__item{
+                    border-left: 1px solid #ddd;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    // Modificator '.list.list--line'
+    &&--line{
+
+        // Modificator '.list.list--line .list__item'
+        & .list__item{
+            padding: 10px 0;
+            margin: 0;
+            border-bottom: 1px solid #eee;
+            
+            // Modificator '.list.list--line .list__item:last-child'
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+
+    // Modificator 'list.list--dotted'
+    &&--dotted{
+
+        // Element 'list.list--dotted .list__item'
+        & .list__item{
+            padding: 10px 0;
+            margin: 0;
+            border-bottom: 1px dotted #ddd;
+        }
+    }
+
+    // Modificator '.list.list--lg'
+    &&--lg{
+        
+        // Element '.list.list--lg .list__item'
+        .list__item{
+            // margin-bottom: 25px;
+            
+            + .list__item{
+                margin-top: 25px;
+            }
+        }
+    }
+
+    // Modificator '.list.list--icon'
+    &&--icon{
+        margin: 20px 0;
+        position: relative;
+        border-bottom: 1px solid #eee;
+        border-right: 1px solid #eee;
+
+        &:after{
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        
+        // Element '.list.list--icon .list__item'
+        .list__item{
+            width: 33.333%;
+            height: 280px;
+            float: left;
+            padding: 50px 50px 0;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+
+            &:hover{
+                .list__icon{
+                    display: none;
+                }
+
+                .list__text{
+                    visibility: visible;
+                }
+            }
+        }
+
+        .list__icon{
+            display: block;
+            height: 100px;
+            background: transparent center no-repeat;
+            margin-bottom: 35px;
+        }
+
+        .list__title{
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+        
+        .list__text{
+            visibility: hidden;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+    }
+
+    // --------------------------------------------
+    // All elements
+    // --------------------------------------------
+    // Element 'list .list__item'
+    & &__item{
+        position: relative;
+
+        // Modificator 'list__item--selected-full'
+        &--selected-full{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -15px;
+            right: -15px;
+            background: rgba(24, 162, 75, 0.8);
+            z-index: 100;
+            transition: all 200ms;
+
+            &:after{
+                content: "\e5ca";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                font-family: 'icomoon';
+                color: #fff;
+                font-size: 40px;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+
+// *****************************************************
+//                RESET margin grid
+// *****************************************************
+
+.grid.list--horizontal li+li{
+    margin: 0 !important;
+}
