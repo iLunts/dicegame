@@ -186,7 +186,7 @@ button{
         margin-bottom: 5px;
         transition: all 250ms;
 
-        &:hover{
+        &:active{
             box-shadow: none !important;
             transform: translateY(5px);
         }
@@ -209,6 +209,10 @@ button{
     
         &.btn--push{
             box-shadow: 0 5px 0.2px #000;
+
+            &:hover{
+                background: lighten(#242424, 10%);
+            }
         }
     }
 
