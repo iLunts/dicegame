@@ -27,6 +27,16 @@
         padding-bottom: @block-md-padding-vertical;
     }
     
+    // Modificator '.block.block--particles'
+    &&--particles {
+        p,
+        h2,
+        .btn{
+            position: relative;
+            z-index: 1;
+        }
+    }
+    
     // Modificator '.block.block--md'
     &&--check {
         padding-top: @block-md-padding-vertical;
@@ -101,6 +111,16 @@
     // ------------------------------------------------------------------------
     // All elements
     // ------------------------------------------------------------------------
+
+    & &__particles{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // width: 100%;
+        // height: 100%;
+    }
 
     & &__plus{
         padding: 50px;
