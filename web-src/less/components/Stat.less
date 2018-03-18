@@ -1,0 +1,37 @@
+// out: ../../../content/css/components/stat.css, compress: true
+@import '../variables.less';
+
+// ------------------------------------------------
+// Block '.stat'
+// ------------------------------------------------
+.stat{
+    position: relative;
+
+    // -----------------------------------
+    // All modificators
+    // -----------------------------------
+
+    &&--1{
+        
+    }
+
+    // -----------------------------------
+    // All elements
+    // -----------------------------------
+    
+    // Element '.panel.panel__teaser'
+    & &__link{
+        color: #777;
+        font-size: .8rem;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover{
+            color: @color-red;
+        }
+
+         & + .footer__link{
+             margin-left: 20px;
+         }
+    }
+}

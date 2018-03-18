@@ -96,3 +96,40 @@ particlesJS("js-particles", {
     },
     "retina_detect": true
 });
+
+
+// window.onload = function () {
+//     var tl = new TimelineLite({
+//             onUpdate: updateSlider
+//         }),
+//         circle = document.getElementById("wave1");
+
+//     tl.to(circle, 1, {
+//             morphSVG: "#wave2"
+//         }, "+=1")
+//         .to(circle, 1, {
+//             morphSVG: "#wave3"
+//         }, "+=1")
+//         .to(circle, 1, {
+//             morphSVG: circle
+//         }, "+=1");
+
+//     /* controls */
+
+//     $("#slider").slider({
+//         range: false,
+//         min: 0,
+//         max: 1,
+//         step: .001,
+//         slide: function (event, ui) {
+//             tl.progress(ui.value).pause();
+//         },
+//         stop: function () {
+//             tl.play();
+//         }
+//     });
+
+//     function updateSlider() {
+//         $("#slider").slider("value", tl.progress());
+//     }
+// }
