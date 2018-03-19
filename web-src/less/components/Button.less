@@ -222,10 +222,16 @@ button{
     &&--blue{
         background: @color-blue;
         color: #fff;
-        text-shadow: 0 1px 1px @color-blue-dark;
+        // text-shadow: 0 1px 1px @color-blue-dark;
 
         &.btn--push{
             box-shadow: 0 5px 0.2px #0776B1;
+        }
+
+        &.btn--border{
+            border-color: @color-blue;
+            background: transparent;
+            color: @color-blue;
         }
     }
 
@@ -418,6 +424,11 @@ button{
     &&--underline{
         text-decoration: underline;
         border-bottom: none;
+    }
+
+    // Modificator '.link.link--blue'
+    &&--blue{
+        color: @color-blue;
     }
 
     // Modificator '.link.link--green'

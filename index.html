@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LP for DICIGAME</title>
 
+    <link rel="stylesheet" href="content/css/main.css">
     
     <link rel="stylesheet" href="content/css/components/reset.css">
     <link rel="stylesheet" href="content/css/components/grid.css">
@@ -20,11 +21,70 @@
     <link rel="stylesheet" href="content/css/components/utilits.css">
     <link rel="stylesheet" href="content/css/components/device.css">
     <link rel="stylesheet" href="content/css/components/stat.css">
+    <link rel="stylesheet" href="content/css/components/tab.css">
+    <link rel="stylesheet" href="content/css/components/table.css">
+    <link rel="stylesheet" href="content/css/components/top-menu.css">
     <!-- <link rel="stylesheet" href="content/css/components/footer.css"> -->
 
     <!-- <link rel="stylesheet" href="content/css/site.min.css"> -->
 </head>
 <body>
+
+    <header class="top-menu">
+        <div class="container">
+            <a href="/" class="top-menu__logo logo">
+                <img src="content/svg/logo.svg" alt="">
+                <img src="img/logo-mob.svg" alt="" class="logo-mob">
+            </a>
+            <nav class="nav">
+                <a class="nav__link" href="#product">Product</a>
+                <a class="nav__link" href="#features">Features</a>
+                <a class="nav__link" href="#how-work">How it Works</a>
+                <a class="nav__link" href="#economy">Economy</a>
+                <a class="nav__link active" href="#road-map">Roadmap</a>
+                <a class="nav__link" href="#faq">FAQ</a>
+                <span class="nav__line--mob"></span>
+                <span href="#" class="nav__lang">
+                    <span class="nav__lang__short">
+                        ENG
+                    </span>
+                    <span class="nav__lang__wrap">
+                        <a href="">English</a>
+                        <a href="">Русский</a>
+                        <a href="">Polska</a>
+                        <a href="">Hindi</a>
+                        <a href="">Italiano</a>
+                        <a href="">Deutsch</a>
+                    </span>
+                </span>
+                <a href="javascript:void(0);" class="counter__docs__whitepaper">
+                    <img src="img/download-menu.svg" alt="">Whitepaper</a>
+            </nav>
+            
+            <!-- <div class="nav__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+
+            <div class="social__media">
+                <span class="social__media__btn btn btn--blue btn--push">Media</span>
+                <div class="social__media__link__wrap">
+                    <h5>We in Media</h5>
+                    <a target="_blank" href="#" class="social__media__link fb">
+                        <img src="img/media/facebook.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link tw">
+                        <img src="img/media/twitter.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link gh">
+                        <img src="img/media/github.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link slack">
+                        <img src="img/media/slack.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link tg">
+                        <img src="img/media/telegram.svg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </header>
     
     <!-- <header class="nav">
         <div class="nav__container container">
@@ -129,11 +189,24 @@
                 </div>
             </div>
 
-            <div class="tab">
-                <a class="tab__link" href="">Tokens</a>
-                <a class="tab__link" href="">Coin Offer</a>
-                <a class="tab__link" href="">Hot Sale</a>
-            </div>
+            <!-- <div class="tab m--b-lg">
+                <div class="tab__menu">
+                    <span class="tab__link" data-tab="0">Tokens</span>
+                    <span class="tab__link" data-tab="1">Coin Offer</span>
+                    <span class="tab__link" data-tab="2">Hot Sale</span>
+                </div>
+                <div class="tab__wrap">
+                    <div class="tab__content" data-tab="0">
+                        123
+                    </div>
+                    <div class="tab__content" data-tab="0">
+                        123
+                    </div>
+                    <div class="tab__content" data-tab="0">
+                        123
+                    </div>
+                </div>
+            </div> -->
 
             <div>
                 <div class="stat stat--1">
@@ -265,6 +338,157 @@
             <p class="m--t-md">
                 <button class="btn btn--push btn--blue">More in the Wallpaper</button>
             </p>
+        </div>
+    </div>
+
+    <div id="economy" class="block block--lg">
+        <div class="container">
+            <h2 class="block__title t--c">Economy</h2>
+            <div class="tab m--b-lg">
+                <div class="tab__menu">
+                    <span class="tab__link" data-tab="0">Tokens</span>
+                    <span class="tab__link" data-tab="1">Coin Offer</span>
+                    <span class="tab__link" data-tab="2">Hot Sale</span>
+                </div>
+                <div class="tab__wrap">
+                    <div class="tab__content">
+                        <div class="grid">
+                            <div class="col--4-10">
+                                <h3 class="t--h3 m--b-md">The issued tokens will be distributed in the following way:</h3>
+                                <p class="block__text">Moreover, the tokens devoted to the project team will be frozen for 365 days, and the tokens put into the reserve fund - for 180 days.</p>
+                                <p class="block__text">In early stages the ICO participants will be provided with <a href="" class="link link--reset link--blue">discounts</a>. Time limitations and agreed sum of tokens will define the completion of each following stage. </p>
+                                <p class="block__text">Have said this we are planning to conduct HOT sale with the discount of 40%</p>
+                            </div>
+                            <div class="col--5-10 push--1-10">
+                                <img src="content/svg/graph-tokens.svg" alt="">
+                            </div>
+                            
+                            <div class="col--1-1 t--c">
+                                <a href="" class="btn btn--blue btn--border m--t">More in the whitepaper</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab__content">
+                        <div class="grid">
+                            <div class="col--4-10">
+                                <h4 class="block__subtitle">Currently, we are the new discovery in the world of gambling</h4>
+                                <p class="block__text">Our primary target is to have the clients using our DICEGAME platform and playing our games in every corner of the earth. With minimum investment we are able to cover rather small local market, but our aim is to break into the world of whales.</p>
+                                <p class="block__text"> In the ICO there will be 400 000 000 (Hard Cap) of the Dice tokens issued. The ICO participants will be able to buy 70% of the tokens.</p>
+                            </div>
+                            <div class="col--5-10 push--1-10">
+                                <table class="table table--gray">
+                                    <tbody>
+                                        <tr>
+                                            <td>Token Type</td>
+                                            <td colspan="3">ERC020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rate of excange <br> for ETH/USD</td>
+                                            <td colspan="3">1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Token Name</td>
+                                            <td>DICE</td>
+                                            <td>ETH</td>
+                                            <td>USD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Token Value</td>
+                                            <td>1</td>
+                                            <td>0,0001</td>
+                                            <td>0,1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hard Cap</td>
+                                            <td>400 000 000</td>
+                                            <td>40 000</td>
+                                            <td>40 000 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Soft Cap</td>
+                                            <td>43 70 000</td>
+                                            <td>4 375</td>
+                                            <td>4 375 000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab__content">
+                        <div class="grid">
+                            <div class="col--4-10">
+                                <h3 class="t--h3 m--b-md">Have said this we are planning to conduct HOT sale with the discount</h3>
+                                <p class="t--c m--v-lg">
+                                    <img src="content/svg/graph-hot-sale.svg" width="150" alt="">
+                                </p>
+                                <p class="t--h3">
+
+                                </p>
+                                <ul class="list list--v list--check">
+                                    <li class="list__item">
+                                        Buying more than 120 000 tokens there is the additional bonus in the amount of 5%
+                                    </li>
+                                    <li class="list__item">
+                                        When using the Token desk platform for the tokens purchase, we offer extra bonus in the amount of 6%
+                                    </li>
+                                </ul>
+                                <p class="block__text">
+                                    The campaign will end 01.03.18
+                                </p>
+                            </div>
+                            <div class="col--5-10 push--1-10">
+                                <table class="table table--gray">
+                                    <tbody>
+                                        <tr>
+                                            <td>Stage</td>
+                                            <td>Discount</td>
+                                            <td>Hard Cap</td>
+                                            <td>Time</td>
+                                        </tr>
+                                        <tr class="t--red">
+                                            <td>HOT SALE</td>
+                                            <td>40%</td>
+                                            <td>80 000 000</td>
+                                            <td>12:00 ATM (0+)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sale A</td>
+                                            <td>30%</td>
+                                            <td>80 000 000</td>
+                                            <td>12:00 ATM (0+)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sale B</td>
+                                            <td>40%</td>
+                                            <td>80 000 000</td>
+                                            <td>12:00 ATM (0+)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sale C</td>
+                                            <td>40%</td>
+                                            <td>80 000 000</td>
+                                            <td>12:00 ATM (0+)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sale D</td>
+                                            <td>40%</td>
+                                            <td>80 000 000</td>
+                                            <td>12:00 ATM (0+)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sale E</td>
+                                            <td>40%</td>
+                                            <td>80 000 000</td>
+                                            <td>12:00 ATM (0+)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -424,15 +648,16 @@
         </div>
     </footer> -->
 
-    <script src="content/js/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="content/js/libs.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     
-    <script src="content/js/TweenMax.min.js"></script>
+    <!-- <script src="content/js/TweenMax.min.js"></script> -->
     <!-- <script src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182"></script> -->
     <!-- <script src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js"></script> -->
-    <script src="content/js/TimelineLite.min.js"></script>
+    <!-- <script src="content/js/TimelineLite.min.js"></script> -->
     
     <!-- <script src=""></script> -->
     <!-- <script src=""></script> -->

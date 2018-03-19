@@ -1,0 +1,111 @@
+// out: ../../../content/css/components/tab.css, compress: true
+@import '../variables.less';
+
+.tab{
+    position: relative;
+    
+    // ------------------------------------------
+    // All elements
+    // ------------------------------------------
+
+    // Elements '.tab .tab__menu'
+    & &__menu{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    // Elements '.tab .tab__link'
+    & &__link{
+        // display: inline-block;
+        font-size: 17px;
+        font-weight: 400;
+        position: relative;
+        padding: 10px 25px;
+        cursor: pointer;
+        transition: all .3s;
+        
+        &:after{
+            content: '';
+            opacity: 0;
+            transition: all .3s;
+            transform: translateY(100%);
+        }
+        
+        &.active{
+            &:after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0px;
+                width: 6px;
+                height: 6px;
+                border-radius: 10px;
+                background: #F66055;
+                margin-left: -3px;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    & &__wrap{
+        
+    }
+
+    & &__content{
+        transition: all .3s;
+
+        &:not(.active){
+            display: none;
+            // width: 0;
+            // height: 0;
+            // visibility: hidden;
+            // opacity: 0;
+            // transform: translateX(-100%);
+            
+            // animation: moveLeft 1s infinite ease-in-out;
+            // animation-iteration-count: 1;
+            // animation-direction: alternate;
+        }
+        
+        &.active{
+            // width: 100%;
+            // transform: translateX(0);
+            // visibility: visible;
+            // opacity: 1;
+            
+            // animation: moveRight 1s infinite ease-in-out;
+            // animation-iteration-count: 1;
+            // animation-direction: alternate;
+
+        }
+    }
+}
+
+
+@keyframes moveRight {
+	0% {
+		visibility: hidden;
+        opacity: 0;
+        transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+	}
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+	100% {
+		visibility: hidden;
+        opacity: 0;
+        transform: translateX(-100%);
+        display: none;
+    }
+}
