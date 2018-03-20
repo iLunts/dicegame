@@ -11,7 +11,16 @@
     padding-bottom: $block-padding-vertical; // ------------------------------------------------------------------------
     // All modificators
     // ------------------------------------------------------------------------
-    // Modificator '.block.block--particles'
+    // Modificator '.block.block--xxlg'
+    &.block--xxlg {
+        padding: ($block-padding-vertical * 7) 0;
+    } // Modificator '.block.block--xlg'
+    &.block--xlg {
+        padding: ($block-padding-vertical * 5) 0;
+    } // Modificator '.block.block--lg'
+    &.block--lg {
+        padding: ($block-padding-vertical * 3) 0;
+    } // Modificator '.block.block--particles'
     &.block--particles {
         p,
         h2,
@@ -39,6 +48,9 @@
         .block__text {
             width: 90%;
         }
+    }
+    &.block--gray {
+        background-color:#F5F5F5;
     } // ------------------------------------------------------------------------
     // All elements
     // ------------------------------------------------------------------------
@@ -55,6 +67,7 @@
     }
     & &__title {
         font-size: 40px;
+        line-height: 48px;
         font-weight: 900;
         margin-bottom: 45px;
         font-family: 'FuturaPTHeavy';

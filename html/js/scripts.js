@@ -255,6 +255,12 @@ $(document).ready(function(){
         })
     }
 
+    $(document).on("click", function (event) {
+        $(event.target).closest(".player").addClass("play");
+        // $('#video-hiw').play();
+        // $(event.target).play();
+    });
+
     particlesJS("js-particles", {
         "particles": {
             "number": {
