@@ -56,9 +56,18 @@ gulp.task('css.site', function () {
 // });
 
 gulp.task('sass', function () {
-    return gulp.src('html/sass/style/main.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('html/css/min/'));
+  gulp.src('html/sass/**/*.scss')
+    .pipe(sass({
+      paths: [path.join(__dirname, 'sass', 'includes')]
+    }))
+    .pipe(concat('main.css'))
+    .pipe(clean({
+      force: true
+    }))
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
+    .pipe(gulp.dest('html/sass/'));
 });
 
 
