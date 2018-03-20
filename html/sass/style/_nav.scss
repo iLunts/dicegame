@@ -10,7 +10,7 @@ header {
     &.active {
         box-shadow: 0px 0px 6px 1.5px rgba(74, 68, 151, 0.2);
     }
-    > .container {
+    >.container {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -145,12 +145,12 @@ header {
             display: inline-block;
             position: relative;
             &__btn {
-                font-size: 17px;
-                color: #0070C9;
+                font-size: 17px; // color: #0070C9;
+                color: #fff;
                 font-family: 'ProximaNova-Reg';
-                padding: 5px 9px;
-                background-color: transparent;
+                padding: 5px 9px; // background-color: transparent;
                 border: 2px solid #0070C9;
+                background-color: #0070C9;
                 border-radius: 4px;
                 padding: 3px 20px;
                 display: inline-block;
@@ -228,7 +228,7 @@ header {
     flex-direction: column;
     height: 15px;
     justify-content: space-between;
-    > span {
+    >span {
         display: inline-block;
         height: 2px;
         width: 100%;
@@ -237,6 +237,6 @@ header {
     }
 }
 
-header > .container nav span.nav__line--mob {
+header>.container nav span.nav__line--mob {
     display: none;
 }

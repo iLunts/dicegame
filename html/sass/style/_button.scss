@@ -1,0 +1,25 @@
+@import '../base/variables';
+.btn {
+    // Modificator '.btn.btn--push'
+    &.btn--push {
+        margin-bottom: 5px;
+        transition: all 250ms;
+        &:active {
+            box-shadow: none !important;
+            transform: translateY(4px);
+        }
+    } // Modificator '.btn.btn--blue'
+    &.btn--blue {
+        background: $color-blue;
+        color: #fff;
+        &.btn--push {
+            box-shadow: 0 4px 0 #075C9F;
+        }
+
+        &.btn--border {
+            border-color: $color-blue;
+            background: transparent;
+            color: $color-blue;
+        }
+    }
+}
