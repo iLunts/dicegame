@@ -23,10 +23,10 @@
                 height: 23px;
                 transform: scale(1, -1);
                 transition: .2s;
-                background-image: url("../../html/img/plus.svg");
+                background: url("../../html/img/plus.svg") no-repeat;
                 &.active {
                     transform: scale(1);
-                    background-image: url("../../html/img/minus.svg");
+                    background: url("../../html/img/minus.svg") no-repeat;
                 }
             }
             &:hover {
@@ -43,6 +43,22 @@
         &__wrap {
             max-width: 696px;
             margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-xs-max) {
+    .questions {
+        &__item {
+            &__title {
+                padding: 0 10px;
+                i {
+                    height: 16px;
+                }
+            }
+            &__desc {
+                padding: 0 30px 32px 10px;
+            }
         }
     }
 }
