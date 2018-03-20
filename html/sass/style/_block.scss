@@ -50,7 +50,27 @@
         }
     }
     &.block--gray {
-        background-color:#F5F5F5;
+        background-color: #F5F5F5;
+    }
+    &.block--distribution {
+        background-color: #202933;
+        padding: 74px 0;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        &:after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+            background-image: url(../img/distribution-line.svg);
+            background-position: 0px 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 104px;
+            width: calc(100% + 40px);
+        }
     } // ------------------------------------------------------------------------
     // All elements
     // ------------------------------------------------------------------------

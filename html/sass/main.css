@@ -761,54 +761,6 @@ header > .container nav span.nav__line--mob {
   line-height: 20px;
 }
 
-.how-work__scheme,
-.dice-tokens__scheme {
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -50px;
-}
-
-.how-work__scheme figure,
-.dice-tokens__scheme figure {
-  max-width: 100%;
-  max-width: 100%;
-  margin: 0;
-}
-
-.how-work__scheme figure video,
-.dice-tokens__scheme figure video {
-  max-width: 100%;
-}
-
-.how-work__scheme--mob,
-.dice-tokens__scheme--mob {
-  width: 100%;
-  max-width: 400px;
-  align-items: center;
-  justify-content: center;
-  display: none;
-  margin-left: -50px;
-}
-
-.how-work__scheme--mob figure,
-.dice-tokens__scheme--mob figure {
-  max-width: 100%;
-  max-width: 100%;
-  margin: 0;
-}
-
-.how-work__scheme--mob figure video,
-.dice-tokens__scheme--mob figure video {
-  max-width: 100%;
-}
-
-.dice-tokens {
-  padding-bottom: 150px;
-}
-
 .economy {
   padding-bottom: 220px;
 }
@@ -1041,126 +993,6 @@ header > .container nav span.nav__line--mob {
   background-size: cover;
   height: 104px;
   width: calc(100% + 40px);
-}
-
-.distribution__content {
-  max-width: 465px;
-}
-
-.distribution__content__title {
-  font-size: 36px;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 20px;
-  font-family: 'FuturaPTMedium';
-  padding-right: 15px;
-}
-
-.distribution__content__desc {
-  font-size: 17px;
-  color: #fff;
-  font-weight: 400;
-  padding-right: 15px;
-}
-
-.distribution > .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.distribution__img {
-  background-image: url(../img/distribution.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 570px;
-  height: 350px;
-}
-
-.tournament {
-  padding: 65px 0;
-  padding-bottom: 160px;
-}
-
-.tournament__title {
-  text-align: center;
-  font-family: 'FuturaPTHeavy';
-  font-weight: 900;
-  font-size: 40px;
-  margin-bottom: 58px;
-}
-
-.tournament > .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.tournament__img {
-  max-width: 500px;
-  width: 100%;
-}
-
-.tournament__content {
-  max-width: 420px;
-}
-
-.tournament__content__title {
-  font-family: 'FuturaPTBold';
-  font-weight: 700;
-  font-size: 26px;
-  margin-bottom: 10px;
-}
-
-.tournament__content__desc {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 10px;
-}
-
-.tournament__content__list__item {
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 30px;
-}
-
-.tournament__content__list__item:before {
-  content: '';
-  display: inline-block;
-  left: 0;
-  top: 2px;
-  width: 17px;
-  height: 17px;
-  background-image: url(../img/radial.svg);
-  background-position: 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-
-.tournament__content__list__item__title {
-  font-size: 17px;
-  font-weight: 600;
-  font-family: 'ProximaNova-Semibold';
-}
-
-.tournament__content__list__item__desc {
-  line-height: 21px;
-  font-size: 17px;
-}
-
-.tournament__content .counter__docs__whitepaper {
-  height: 36px;
-  background-color: #0088D0;
-  border-radius: 3px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 27px;
-  padding: 8px 12px;
-  border-bottom: 3px solid #0776B1;
 }
 
 #road-map {
@@ -2633,6 +2465,28 @@ svg {
 
 .block.block--gray {
   background-color: #F5F5F5;
+}
+
+.block.block--distribution {
+  background-color: #202933;
+  padding: 74px 0;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.block.block--distribution:after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  background-image: url(../img/distribution-line.svg);
+  background-position: 0px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 104px;
+  width: calc(100% + 40px);
 }
 
 .block .block__particles {
@@ -4375,6 +4229,274 @@ h6 {
 
 .list .list__item + .list__item {
   margin-top: 20px;
+}
+
+.list .list__item-title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 600;
+  font-family: 'ProximaNova-Semibold';
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex.flex--top {
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.flex.flex--middle {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.flex.flex--bottom {
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.flex.flex--left {
+  justify-content: flex-start;
+}
+
+.flex.flex--center {
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex.flex--right {
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.flex.flex--space-between {
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex.flex--space-around {
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex.flex--inline {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+.flex.flex--row-reverse {
+  -ms-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.flex.flex--column {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex.flex--column-reverse {
+  -ms-flex-direction: column-reverse;
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+/*
+ * Fixes initial flex-shrink value in IE10
+ */
+.flex > *,
+.flex--inline > * {
+  -ms-flex-negative: 1;
+}
+
+/* Wrap
+ ========================================================================== */
+.flex--nowrap {
+  -ms-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.flex--wrap {
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex--wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+  -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+/*
+ * Horizontal alignment
+ * Default value is `stretch`
+ */
+.flex--wrap-top {
+  -ms-flex-line-pack: start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+
+.flex--wrap-middle {
+  -ms-flex-line-pack: center;
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+.flex--wrap-bottom {
+  -ms-flex-line-pack: end;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+
+.flex--wrap-space-between {
+  -ms-flex-line-pack: justify;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+}
+
+.flex--wrap-space-around {
+  -ms-flex-line-pack: distribute;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+
+/* Item ordering
+ ========================================================================== */
+/*
+ * Default is 0
+ */
+.flex--order-first {
+  -ms-flex-order: -1;
+  -webkit-order: -1;
+  order: -1;
+}
+
+.flex--order-last {
+  -ms-flex-order: 99;
+  -webkit-order: 99;
+  order: 99;
+}
+
+.align-self--start {
+  align-self: start;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: 768px) {
+  .flex--order-first-small {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .flex--order-last-small {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+
+/* Tablet and bigger */
+@media (min-width: 1024px) {
+  .flex--order-first-medium {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .flex--order-last-medium {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+
+/* Desktop and bigger */
+@media (min-width: 1220px) {
+  .flex--order-first-large {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .flex--order-last-large {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+
+/* Large screen and bigger */
+@media (min-width: 1600px) {
+  .flex--order-first-xlarge {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .flex--order-last-xlarge {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .flex.flex--wrap-xs {
+    flex-wrap: wrap;
+  }
+}
+
+/* Item dimensions
+ ========================================================================== */
+/*
+ * Initial: 0 1 auto
+ * Content dimensions, but shrinks
+ */
+/*
+ * No Flex: 0 0 auto
+ * Content dimensions
+ */
+.flex--item-none {
+  -ms-flex: none;
+  -webkit-flex: none;
+  flex: none;
+}
+
+/*
+ * Relative Flex: 1 1 auto
+ * Space is allocated considering content
+ * 1. Fixes flex-shrink value in IE10
+ */
+.flex--item-auto {
+  -ms-flex: auto;
+  -webkit-flex: auto;
+  flex: auto;
+  /* 1 */
+  -ms-flex-negative: 1;
+}
+
+/*
+ * Absolute Flex: 1 1 0%
+ * Space is allocated solely based on flex
+ */
+.flex--item-1 {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
 }
 
 /**********************

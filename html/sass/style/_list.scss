@@ -17,7 +17,7 @@
                 border-radius: 20px;
                 background: #F79F55;
             }
-            &:after{
+            &:after {
                 content: '';
                 position: absolute;
                 top: 6px;
@@ -36,6 +36,14 @@
         font-size: 17px;
         &+.list__item {
             margin-top: 20px;
+        }
+        
+        &-title {
+            margin: 0;
+            font-size: 17px;
+            line-height: 19px;
+            font-weight: 600;
+            font-family: 'ProximaNova-Semibold';
         }
     }
 }
