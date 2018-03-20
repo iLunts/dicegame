@@ -1,0 +1,152 @@
+.counter {
+    padding: 45px 0;
+    &__docs {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        a {
+            color: #0070C9;
+            text-decoration: none;
+            padding: 0 46px;
+            display: inline-block;
+            font-family: 'ProximaNova-Reg';
+            img {
+                width: 27px;
+                margin-right: 14px;
+                vertical-align: -8px;
+            }
+        }
+        margin-bottom: 200px;
+    }
+    &__title {
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'FuturaPTHeavy';
+    }
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        &__num {
+            &__wrap {
+                display: flex;
+                flex-direction: column;
+                padding: 0 28px;
+                align-items: center;
+            }
+            font-size: 38px;
+            font-weight: 600;
+            font-family: 'ProximaNova-Semibold';
+        }
+        &__time {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.7);
+            text-transform: uppercase;
+            font-family: 'ProximaNova-Reg';
+        }
+    }
+    &__desc {
+        max-width: 550px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 80px;
+        font-family: 'ProximaNova-Reg';
+        line-height: 26px;
+    }
+    &__road {
+        width: 352px;
+        height: 2px;
+        background-color: #C7C7CC;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 135px;
+        &__passed {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 2px;
+            background-color: #0070C9;
+        }
+        &__soft {
+            position: absolute;
+            top: 2px;
+            left: 20px;
+            width: 1px;
+            height: 40px;
+            background-color: rgba(0, 112, 201, 0.5);
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #0070C9;
+                position: absolute;
+                bottom: 0;
+                left: -1px;
+            }
+            span {
+                white-space: nowrap;
+                position: absolute;
+                bottom: -5px;
+                left: 10px;
+                font-size: 14px;
+            }
+        }
+        &__hard {
+            position: absolute;
+            bottom: 2px;
+            right: 20px;
+            width: 1px;
+            height: 40px;
+            background-color: rgba(0, 112, 201, 0.5);
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #0070C9;
+                position: absolute;
+                top: 0;
+                left: -1px;
+            }
+            span {
+                white-space: nowrap;
+                position: absolute;
+                top: -5px;
+                left: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+    &__buy {
+        color: #0070C9;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: 'ProximaNova-Semibold';
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 180px;
+    }
+}
+
+.gradient {
+    height: 210px;
+    font-size: 38px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #1173B5, #00C0B6);
+    font-family: 'FuturaPTBold';
+}

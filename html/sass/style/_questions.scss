@@ -1,0 +1,44 @@
+.questions {
+    padding: 130px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 66px;
+        font-family: 'FuturaPTHeavy';
+    }
+    &__item {
+        margin-bottom: 2px;
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'ProximaNova-Semibold';
+            height: 47px;
+            background-color: #F4F4F4;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 14px;
+                transform: scale(1, -1);
+                transition: .2s;
+                &.active {
+                    transform: scale(1);
+                }
+            }
+        }
+        &__desc {
+            padding: 10px 20px;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 22px;
+            display: none
+        }
+        &__wrap {
+            max-width: 623px;
+            margin: 0 auto;
+        }
+    }
+}
