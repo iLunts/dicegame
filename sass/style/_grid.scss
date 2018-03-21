@@ -906,6 +906,10 @@ $utility-container-large-padding-horizontal: 35px;
     /* Whole */
     .col--xs-1-1 {
         width: 100%;
+
+        & + .col--xs-1-1{
+            margin-top: 20px;
+        }
     }
     /* Halves */
     .col--xs-1-2,

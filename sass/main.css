@@ -1585,7 +1585,7 @@ header > .container nav span.nav__line--mob {
 
 @media only screen and (max-width: 767px) {
   .questions__item__title {
-    padding: 0 10px;
+    padding: 0 5px 0 10px;
   }
   .questions__item__title i {
     height: 16px;
@@ -2567,6 +2567,10 @@ svg {
   margin-top: 20px;
 }
 
+.block .block__tournament__image {
+  width: 90%;
+}
+
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   .block.block--check .device {
     margin: 30px 0;
@@ -3469,6 +3473,9 @@ svg {
   /* Whole */
   .col--xs-1-1 {
     width: 100%;
+  }
+  .col--xs-1-1 + .col--xs-1-1 {
+    margin-top: 20px;
   }
   /* Halves */
   .col--xs-1-2,
