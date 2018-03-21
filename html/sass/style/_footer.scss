@@ -1,13 +1,13 @@
 .footer {
     background-color: #F5F5F5;
     padding: 60px 0;
-    > .container {
-        display: flex;
-        justify-content: space-between;
-    }
-    .logo {
-        width: 170px;
-        height: 36px;
+    // > .container {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+    &__logo {
+        width: 230px;
+        opacity: .45;
     }
     &__social {
         position: absolute;

@@ -1,5 +1,4 @@
 @import '../base/variables';
-
 $grid-gutter-horizontal: 25px;
 $grid-gutter-vertical: 25px;
 $grid-gutter-large-horizontal: 35px;
@@ -226,25 +225,20 @@ $utility-container-large-padding-horizontal: 35px;
 
 /* Horizontal */
 
-.grid--medium,
+.grid--lg {
+    margin-left: -($grid-gutter-horizontal * 4);
+}
+
+.grid--lg>* {
+    padding-left: ($grid-gutter-horizontal * 4);
+}
+
 .grid--md {
     margin-left: -$grid-gutter-horizontal;
 }
 
-.grid--medium>*,
 .grid--md>* {
     padding-left: $grid-gutter-horizontal;
-}
-
-
-/* Vertical */
-
-.grid--medium+.grid--medium,
-.grid--md+.grid--md,
-.grid--medium>.grid--margin,
-.grid--md>.grid--margin,
-.grid--medium>*>.panel+.panel {
-    margin-top: $grid-gutter-medium-vertical;
 }
 
 
