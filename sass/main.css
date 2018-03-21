@@ -1394,6 +1394,20 @@ header > .container nav span.nav__line--mob {
   font-weight: 400;
 }
 
+.team__item__more--btn {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0088D0;
+  cursor: pointer;
+  font-family: 'ProximaNova-Semibold';
+  transition: all .25s;
+}
+
+.team__item__more--btn:hover {
+  color: #1BA2E9;
+}
+
 .team__item__wrap {
   display: flex;
   flex-wrap: wrap;
