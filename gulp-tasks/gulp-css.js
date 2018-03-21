@@ -56,7 +56,7 @@ gulp.task('css.site', function () {
 // });
 
 gulp.task('sass', function () {
-  gulp.src('html/sass/**/*.scss')
+  gulp.src('./sass/**/*.scss')
     .pipe(sass({
       paths: [path.join(__dirname, 'sass', 'includes')]
     }))
@@ -67,7 +67,7 @@ gulp.task('sass', function () {
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
-    .pipe(gulp.dest('html/sass/'));
+    .pipe(gulp.dest('./sass/'));
 });
 
 
