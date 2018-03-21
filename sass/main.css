@@ -3897,6 +3897,73 @@ svg {
   }
 }
 
+/* Tablet and bigger */
+@media (min-width: 1600px) {
+  [class*='push--'] {
+    position: relative;
+  }
+  /* Halves */
+  .push--xlg-1-2,
+  .push--xlg-2-4,
+  .push--xlg-3-6,
+  .push--xlg-5-10 {
+    left: 50%;
+  }
+  /* Thirds */
+  .push--xlg-1-3,
+  .push--xlg-2-6 {
+    left: 33.333%;
+  }
+  .push--xlg-2-3,
+  .push--xlg-4-6 {
+    left: 66.666%;
+  }
+  /* Quarters */
+  .push--xlg-1-4 {
+    left: 25%;
+  }
+  .push--xlg-3-4 {
+    left: 75%;
+  }
+  /* Fifths */
+  .push--xlg-1-5,
+  .push--xlg-2-10 {
+    left: 20%;
+  }
+  .push--xlg-2-5,
+  .push--xlg-4-10 {
+    left: 40%;
+  }
+  .push--xlg-3-5,
+  .push--xlg-6-10 {
+    left: 60%;
+  }
+  .push--xlg-4-5,
+  .push--xlg-8-10 {
+    left: 80%;
+  }
+  /* Sixths */
+  .push--xlg-1-6 {
+    left: 16.666%;
+  }
+  .push--xlg-5-6 {
+    left: 83.333%;
+  }
+  /* Tenths */
+  .push--xlg-1-10 {
+    left: 10%;
+  }
+  .push--xlg-3-10 {
+    left: 30%;
+  }
+  .push--xlg-7-10 {
+    left: 70%;
+  }
+  .push--xlg-9-10 {
+    left: 90%;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 980px;
