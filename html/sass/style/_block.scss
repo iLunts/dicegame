@@ -11,7 +11,16 @@
     padding-bottom: $block-padding-vertical; // ------------------------------------------------------------------------
     // All modificators
     // ------------------------------------------------------------------------
-    // Modificator '.block.block--particles'
+    // Modificator '.block.block--xxlg'
+    &.block--xxlg {
+        padding: ($block-padding-vertical * 7) 0;
+    } // Modificator '.block.block--xlg'
+    &.block--xlg {
+        padding: ($block-padding-vertical * 5) 0;
+    } // Modificator '.block.block--lg'
+    &.block--lg {
+        padding: ($block-padding-vertical * 3) 0;
+    } // Modificator '.block.block--particles'
     &.block--particles {
         p,
         h2,
@@ -39,6 +48,29 @@
         .block__text {
             width: 90%;
         }
+    }
+    &.block--gray {
+        background-color: #F5F5F5;
+    }
+    &.block--distribution {
+        background-color: #202933;
+        padding: 74px 0;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        &:after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+            background-image: url(../img/distribution-line.svg);
+            background-position: 0px 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 104px;
+            width: calc(100% + 40px);
+        }
     } // ------------------------------------------------------------------------
     // All elements
     // ------------------------------------------------------------------------
@@ -55,10 +87,19 @@
     }
     & &__title {
         font-size: 40px;
+        line-height: 48px;
         font-weight: 900;
         margin-bottom: 45px;
         font-family: 'FuturaPTHeavy';
     }
+    & &__subtitle {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-family: 'ProximaNova-Semibold';
+    }
+
     & &__text {
         font-size: 17px;
         font-weight: 400;
