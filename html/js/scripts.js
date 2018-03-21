@@ -76,9 +76,9 @@ $(document).ready(function(){
     
     $('.questions__item__title').on('click', function(){
         $('.questions__item__desc:visible').slideUp(250);
-        $('.questions__item__title').not(this).find('img').removeClass('active');
+        $('.questions__item__title').not(this).find('i').removeClass('active');
         $(this).next().stop().slideToggle(250);
-        $(this).find('img').toggleClass('active');
+        $(this).find('i').toggleClass('active');
     });
     
     
