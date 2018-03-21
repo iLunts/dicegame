@@ -35,11 +35,17 @@ header {
                 padding: 0 17px;
                 font-size: 16px;
                 text-decoration: none;
-                color: #000;
-                font-family: 'ProximaNova-Reg';
+                color: #000; // font-family: 'ProximaNova-Reg';
+                font-family: 'ProximaNova-Semibold';
                 position: relative;
             }
             a {
+                line-height: 30px;
+                border-radius: 3px;
+                transition: all .2s;
+                &:hover {
+                    background-color: #EFEFEF;
+                }
                 &:after {
                     content: '';
                     display: inline-block;

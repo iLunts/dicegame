@@ -170,8 +170,18 @@ header > .container nav span {
   font-size: 16px;
   text-decoration: none;
   color: #000;
-  font-family: 'ProximaNova-Reg';
+  font-family: 'ProximaNova-Semibold';
   position: relative;
+}
+
+header > .container nav a {
+  line-height: 30px;
+  border-radius: 3px;
+  transition: all .2s;
+}
+
+header > .container nav a:hover {
+  background-color: #EFEFEF;
 }
 
 header > .container nav a:after {
