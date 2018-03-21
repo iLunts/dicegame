@@ -3,7 +3,7 @@
 //                      Base
 // -----------------------------------------------
 // Block '.line'
-.line{
+.line {
     position: relative;
     outline: none;
     border: none;
@@ -11,15 +11,22 @@
     width: 262px;
     margin: 20px auto;
 
-    &__square{
-        //content: '';
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 60px;
-        height: 20px;
-        margin-top: -10px;
-        margin-left: -30px;
-        background: #fff url(../img/dice.svg) no-repeat center;
+    &.line--square {
+        &:after{
+            content: '';
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjEwMzAuMDcyIDQ5NjIuMDcyIDIxLjg1NiAyMS44NTYiPiAgPGRlZnM+ICAgIDxzdHlsZT4gICAgICAuY2xzLTEgeyAgICAgICAgZmlsbDogI2ZmZjsgICAgICAgIHN0cm9rZTogI2RiZGJkYjsgICAgICB9ICAgICAgLmNscy0yIHsgICAgICAgIGZpbGw6ICNkYmRiZGI7ICAgICAgfSAgICAgIC5jbHMtMyB7ICAgICAgICBzdHJva2U6IG5vbmU7ICAgICAgfSAgICAgIC5jbHMtNCB7ICAgICAgICBmaWxsOiBub25lOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDxnIGlkPSJHcm91cF85MDIiIGRhdGEtbmFtZT0iR3JvdXAgOTAyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDggNDUyKSI+ICAgIDxnIGlkPSJSZWN0YW5nbGVfMjkzIiBkYXRhLW5hbWU9IlJlY3RhbmdsZSAyOTMiIGNsYXNzPSJjbHMtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTkwLjA3MiA0NTEwLjA3Mikgcm90YXRlKDMwKSI+ICAgICAgPHJlY3QgY2xhc3M9ImNscy0zIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHJ4PSIyIi8+ICAgICAgPHJlY3QgY2xhc3M9ImNscy00IiB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiByeD0iMS41Ii8+ICAgIDwvZz4gICAgPGNpcmNsZSBpZD0iRWxsaXBzZV8zMTQiIGRhdGEtbmFtZT0iRWxsaXBzZSAzMTQiIGNsYXNzPSJjbHMtMiIgY3g9IjEuNSIgY3k9IjEuNSIgcj0iMS41IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1OTAgNDUxNCkiLz4gICAgPGNpcmNsZSBpZD0iRWxsaXBzZV8zMTUiIGRhdGEtbmFtZT0iRWxsaXBzZSAzMTUiIGNsYXNzPSJjbHMtMiIgY3g9IjEuNSIgY3k9IjEuNSIgcj0iMS41IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1OTMgNDUyNSkiLz4gIDwvZz48L3N2Zz4=');
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-size: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            margin-top: -20px;
+            margin-left: -20px;
+            padding: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }
