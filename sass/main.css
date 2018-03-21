@@ -2250,6 +2250,15 @@ svg {
   .visible--xlg {
     display: none !important;
   }
+  .t-xs--c {
+    text-align: center !important;
+  }
+  .t-xs--l {
+    text-align: left !important;
+  }
+  .t-xs--r {
+    text-align: right !important;
+  }
   .m-xs {
     margin: 20px 0 !important;
   }
@@ -2556,6 +2565,13 @@ svg {
 
 .block .block__text + .block__text {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .block.block--check .device {
+    margin: 30px 0;
+    top: 0;
+  }
 }
 
 .device {
