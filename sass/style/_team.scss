@@ -80,18 +80,19 @@
             text-transform: uppercase;
             font-weight: 400;
         }
-        &__more--btn {
-            margin-top: 20px;
-            font-size: 15px;
-            line-height: 18px;
-            color: #0088D0;
-            cursor: pointer;
-            font-family: 'ProximaNova-Semibold';
-            transition: all .25s;
-            &:hover {
-                color: #1BA2E9;
-            }
-        }
+        // &__more--btn {
+        //     margin-top: 20px;
+        //     font-size: 15px;
+        //     line-height: 18px;
+        //     color: #0088D0;
+        //     cursor: pointer;
+        //     font-family: 'ProximaNova-Semibold';
+        //     transition: all .25s;
+        //     &:hover {
+        //         color: #1BA2E9;
+                
+        //     }
+        // }
         &__wrap {
             display: flex;
             flex-wrap: wrap;

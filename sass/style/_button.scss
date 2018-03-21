@@ -26,6 +26,8 @@
     align-items: center;
     transition: all 300ms ease-in-out;
     border-radius: 3px;
+    font-family: 'ProximaNova-Semibold';
+    
     &:hover {
         background: #fff;
         color: #333;
@@ -55,7 +57,13 @@
     } // Elements '.btn + .btn'
     &+.btn {
         margin-left: 10px;
-    } // Modificator '.btn.btn--push'
+    } 
+    // Modificator '.btn.btn--sm'
+    &.btn--sm {
+        line-height: 22px;
+        padding: 0 10px;
+    } 
+    // Modificator '.btn.btn--push'
     &.btn--push {
         margin-bottom: 5px;
         transition: all 250ms;
@@ -67,7 +75,6 @@
     &.btn--blue {
         background: $color-blue;
         color: #fff;
-        
         &.btn--push {
             box-shadow: 0 4px 0 #0776B1;
             &:hover {

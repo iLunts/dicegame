@@ -1384,20 +1384,6 @@ header > .container nav span.nav__line--mob {
   font-weight: 400;
 }
 
-.team__item__more--btn {
-  margin-top: 20px;
-  font-size: 15px;
-  line-height: 18px;
-  color: #0088D0;
-  cursor: pointer;
-  font-family: 'ProximaNova-Semibold';
-  transition: all .25s;
-}
-
-.team__item__more--btn:hover {
-  color: #1BA2E9;
-}
-
 .team__item__wrap {
   display: flex;
   flex-wrap: wrap;
@@ -1862,6 +1848,7 @@ footer.blur {
   align-items: center;
   transition: all 300ms ease-in-out;
   border-radius: 3px;
+  font-family: 'ProximaNova-Semibold';
 }
 
 .btn:hover {
@@ -1890,6 +1877,11 @@ footer.blur {
 
 .btn + .btn {
   margin-left: 10px;
+}
+
+.btn.btn--sm {
+  line-height: 22px;
+  padding: 0 10px;
 }
 
 .btn.btn--push {
