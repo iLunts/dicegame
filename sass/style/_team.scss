@@ -14,8 +14,7 @@
         height: 272px;
         width: 100%;
         display: flex;
-        flex-direction: column;
-        // padding: 25px;
+        flex-direction: column; // padding: 25px;
         align-items: center;
         margin: 30px 3%;
         transition: .2s;
@@ -46,15 +45,14 @@
                 font-size: 16px;
             }
         }
-        &__social{
+        &__social {
             position: relative;
             width: 100%;
             height: 27px;
             padding: 0 20px;
             margin-top: -13px;
             margin-bottom: 10px;
-
-            &__link{
+            &__link {
                 max-width: 27px;
                 background: #fff;
                 padding: 2px;
@@ -85,8 +83,10 @@
         &__more--btn {
             margin-top: 20px;
             font-size: 15px;
+            line-height: 18px;
             color: #0088D0;
             cursor: pointer;
+            font-family: 'ProximaNova-Semibold';
         }
         &__wrap {
             display: flex;

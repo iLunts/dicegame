@@ -1389,8 +1389,10 @@ header > .container nav span.nav__line--mob {
 .team__item__more--btn {
   margin-top: 20px;
   font-size: 15px;
+  line-height: 18px;
   color: #0088D0;
   cursor: pointer;
+  font-family: 'ProximaNova-Semibold';
 }
 
 .team__item__wrap {
@@ -2476,7 +2478,7 @@ svg {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 15rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fec180+0,f66055+100 */
   background: #fec180;
   background: -moz-linear-gradient(left, #fec180 0%, #f66055 100%);
