@@ -1,5 +1,5 @@
-@import url(/Users/roma/github/dicegame/html/sass/base/_normalize.css);
-@import url(/Users/roma/github/dicegame/html/sass/base/_swiper.css);
+@import url(/Users/roma/github/dicegame/sass/base/_normalize.css);
+@import url(/Users/roma/github/dicegame/sass/base/_swiper.css);
 /**********************
 * Base style
 **********************/
@@ -1542,12 +1542,12 @@ header > .container nav span.nav__line--mob {
   height: 23px;
   transform: scale(1, -1);
   transition: .2s;
-  background: url("../../html/img/plus.svg") no-repeat;
+  background: url("../img/plus.svg") no-repeat;
 }
 
 .questions__item__title i.active {
   transform: scale(1);
-  background: url("../../html/img/minus.svg") no-repeat;
+  background: url("../img/minus.svg") no-repeat;
 }
 
 .questions__item__title:hover {

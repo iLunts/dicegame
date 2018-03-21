@@ -1,0 +1,27 @@
+@import '../base/variables';
+// -----------------------------------------------
+//                      Base
+// -----------------------------------------------
+// Block '.line'
+.line{
+    position: relative;
+    outline: none;
+    border: none;
+    border-top: 1px solid #ddd;
+    width: 262px;
+    margin: 20px auto;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        margin-top: -30px;
+        margin-left: -30px;
+        background: #fff;
+        padding: 20px;
+    }
+}

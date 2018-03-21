@@ -1,0 +1,106 @@
+.team {
+    padding-top: 67px;
+    padding-bottom: 120px;
+    &__title {
+        font-size: 40px;
+        font-weight: 900;
+        font-family: 'FuturaPTHeavy';
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__item {
+        position: relative;
+        max-width: 216px;
+        height: 272px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // padding: 25px;
+        align-items: center;
+        margin: 30px 3%;
+        transition: .2s;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+        &__desc {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px;
+            height: 100%;
+            width: 100%;
+            background-color: #202933;
+            color: #fff;
+            flex-direction: column;
+            border-radius: 3px;
+            transform: translateX(100%);
+            transition: .5s;
+            display: flex;
+            &__name {
+                font-size: 16px;
+                font-weight: 700;
+                font-family: 'FuturaPTBold';
+                margin-bottom: 5px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+        &__social{
+            position: relative;
+            width: 100%;
+            height: 27px;
+            padding: 0 20px;
+            margin-top: -13px;
+            margin-bottom: 10px;
+
+            &__link{
+                max-width: 27px;
+                background: #fff;
+                padding: 2px;
+                border-radius: 4px;
+                box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+            }
+        }
+        &__img {
+            position: relative;
+            width: 100%;
+            height: 152px;
+            background-position: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__name {
+            font-family: 'ProximaNova-Semibold';
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+        &__position {
+            font-size: 17px;
+            color: #808080;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        &__more--btn {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #0088D0;
+            cursor: pointer;
+        }
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        &:nth-child(5n) {
+            margin-left: 0;
+        }
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+}
