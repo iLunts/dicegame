@@ -6,7 +6,7 @@
     text-transform: none;
     display: inline-block;
     box-sizing: border-box;
-    padding: 0 ($btn-padding * 2);
+    padding: 0 ($btn-padding * 1.5);
     vertical-align: middle;
     font-size: 18px;
     line-height: $btn-line-height;
@@ -38,8 +38,7 @@
     &:focus {
         outline: none;
         box-shadow: none;
-    }
-    // &:focus {
+    } // &:focus {
     //     box-shadow: 0 0 0 3px lighten($color-green, 30%);
     // } 
     // Action '.btn:disabled'
@@ -49,17 +48,14 @@
         pointer-events: none;
         cursor: default;
         opacity: .35;
-    } 
-    // State '.btn.active'
+    } // State '.btn.active'
     &.active {
         background: $color-yellow;
         color: $color-brown;
-    } 
-    // Elements '.btn + .btn'
+    } // Elements '.btn + .btn'
     &+.btn {
         margin-left: 10px;
-    } 
-    // Modificator '.btn.btn--push'
+    } // Modificator '.btn.btn--push'
     &.btn--push {
         margin-bottom: 5px;
         transition: all 250ms;
@@ -67,21 +63,24 @@
             box-shadow: none !important;
             transform: translateY(4px);
         }
-    } 
-    // Modificator '.btn.btn--blue'
+    } // Modificator '.btn.btn--blue'
     &.btn--blue {
         background: $color-blue;
         color: #fff;
+        
         &.btn--push {
-            box-shadow: 0 4px 0 #075C9F;
+            box-shadow: 0 4px 0 #0776B1;
+            &:hover {
+                background: #1EA5EC;
+                box-shadow: 0 4px 0 #158ECE;
+            }
         }
         &.btn--border {
             border-color: $color-blue;
             background: transparent;
             color: $color-blue;
         }
-    } 
-    // Modificator '.btn.btn--app'
+    } // Modificator '.btn.btn--app'
     &.btn--app {
         display: inline-flex;
         line-height: 1.2;
@@ -117,8 +116,7 @@
                 box-shadow: 0 4px 0.2px lighten(#000, 10%);
             }
         }
-    } 
-    // Modificator '.btn.btn--gray'
+    } // Modificator '.btn.btn--gray'
     &.btn--white {
         background: #fff;
         color: #444;

@@ -87,6 +87,10 @@
             color: #0088D0;
             cursor: pointer;
             font-family: 'ProximaNova-Semibold';
+            transition: all .25s;
+            &:hover {
+                color: #1BA2E9;
+            }
         }
         &__wrap {
             display: flex;

@@ -288,8 +288,6 @@ header > .container .social__media__btn {
   color: #fff;
   font-family: 'ProximaNova-Reg';
   padding: 5px 9px;
-  border: 2px solid #0070C9;
-  background-color: #0070C9;
   border-radius: 4px;
   padding: 3px 20px;
   display: inline-block;
@@ -1393,6 +1391,11 @@ header > .container nav span.nav__line--mob {
   color: #0088D0;
   cursor: pointer;
   font-family: 'ProximaNova-Semibold';
+  transition: all .25s;
+}
+
+.team__item__more--btn:hover {
+  color: #1BA2E9;
 }
 
 .team__item__wrap {
@@ -1839,7 +1842,7 @@ footer.blur {
   text-transform: none;
   display: inline-block;
   box-sizing: border-box;
-  padding: 0 40px;
+  padding: 0 30px;
   vertical-align: middle;
   font-size: 18px;
   line-height: 36px;
@@ -1900,18 +1903,23 @@ footer.blur {
 }
 
 .btn.btn--blue {
-  background: #0070C9;
+  background: #0088D0;
   color: #fff;
 }
 
 .btn.btn--blue.btn--push {
-  box-shadow: 0 4px 0 #075C9F;
+  box-shadow: 0 4px 0 #0776B1;
+}
+
+.btn.btn--blue.btn--push:hover {
+  background: #1EA5EC;
+  box-shadow: 0 4px 0 #158ECE;
 }
 
 .btn.btn--blue.btn--border {
-  border-color: #0070C9;
+  border-color: #0088D0;
   background: transparent;
-  color: #0070C9;
+  color: #0088D0;
 }
 
 .btn.btn--app {
