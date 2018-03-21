@@ -77,23 +77,23 @@
                 .features__item {
                     &:nth-child(3) {
                         transform: scale(1.1);
-                        background-color: #F48244;
-                        color: #fff;
+                        background-color: $features-item-child-3-background;
+                        color:$color-white;
                     }
                     &:nth-child(5) {
                         transform: scale(1.05);
-                        background-color: #BB4458;
-                        color: #fff;
+                        background-color: $features-item-child-5-background;
+                        color: $color-white;
                     }
                     &:nth-child(8) {
                         transform: scale(1.1);
-                        background-color: #00ACC1;
-                        color: #fff;
+                        background-color: $features-item-child-8-background;
+                        color: $color-white;
                     }
                     &:nth-child(9) {
                         transform: scale(1.05);
-                        background-color: #4F92EA;
-                        color: #fff;
+                        background-color: $features-item-child-9-background;
+                        color: $color-white;
                     }
                 }
             }
