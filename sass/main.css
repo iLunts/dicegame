@@ -1035,13 +1035,6 @@ header > .container nav span.nav__line--mob {
   width: 150%;
 }
 
-.road-map__title {
-  padding-top: 30px;
-  text-align: center;
-  font-family: 'FuturaPTHeavy';
-  background-color: #F5F5F5;
-}
-
 .road-map__h-line {
   height: 1px;
   width: 100%;
@@ -2500,6 +2493,10 @@ svg {
 
 .block.block--check .block__text {
   width: 90%;
+}
+
+.block.block--reset {
+  padding: 0;
 }
 
 .block.block--gray {

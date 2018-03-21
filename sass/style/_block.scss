@@ -49,6 +49,9 @@
             width: 90%;
         }
     }
+    &.block--reset {
+        padding: 0;
+    }
     &.block--gray {
         background-color: #F5F5F5;
     }
