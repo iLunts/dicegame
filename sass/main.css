@@ -170,8 +170,18 @@ header > .container nav span {
   font-size: 16px;
   text-decoration: none;
   color: #000;
-  font-family: 'ProximaNova-Reg';
+  font-family: 'ProximaNova-Semibold';
   position: relative;
+}
+
+header > .container nav a {
+  line-height: 30px;
+  border-radius: 3px;
+  transition: all .2s;
+}
+
+header > .container nav a:hover {
+  background-color: #EFEFEF;
 }
 
 header > .container nav a:after {
@@ -1382,6 +1392,20 @@ header > .container nav span.nav__line--mob {
   color: #808080;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.team__item__more--btn {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0088D0;
+  cursor: pointer;
+  font-family: 'ProximaNova-Semibold';
+  transition: all .25s;
+}
+
+.team__item__more--btn:hover {
+  color: #1BA2E9;
 }
 
 .team__item__wrap {
