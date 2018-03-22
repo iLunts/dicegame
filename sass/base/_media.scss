@@ -69,19 +69,19 @@
                 transform: scale(1.2);
                 z-index: 5;
                 &:nth-child(3) {
-                    background-color: #F48244;
+                    background-color: $features-item-child-3-background;
                     transition: none;
                 }
                 &:nth-child(5) {
-                    background-color: #BB4458;
+                    background-color: $features-item-child-5-background;
                     transition: none;
                 }
                 &:nth-child(8) {
-                    background-color: #00ACC1;
+                    background-color: $features-item-child-8-background;
                     transition: none;
                 }
                 &:nth-child(9) {
-                    background-color: #4F92EA;
+                    background-color: $features-item-child-9-background;
                     transition: none;
                 }
             }
