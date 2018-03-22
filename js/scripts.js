@@ -255,12 +255,6 @@ $(document).ready(function(){
         })
     }
 
-    $(document).on("click", function (event) {
-        $(event.target).closest(".player").addClass("play");
-        // $('#video-hiw').play();
-        // $(event.target).play();
-    });
-
     particlesJS("js-particles", {
         "particles": {
             "number": {
@@ -356,5 +350,21 @@ $(document).ready(function(){
             }
         },
         "retina_detect": true
+    });
+
+
+    // ---------------
+    // Modal window
+    // ---------------
+
+    $('.button').click(function () {
+        var buttonId = $(this).attr('id');
+        $('#modal-container').removeAttr('class').addClass(buttonId);
+        $('body').addClass('modal-active');
+    })
+
+    $('#modal-container').click(function () {
+        $(this).addClass('out');
+        $('body').removeClass('modal-active');
     });
 });
