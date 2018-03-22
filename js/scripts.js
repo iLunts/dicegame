@@ -425,4 +425,30 @@ $(document).ready(function(){
         $(this).addClass('out');
         $('body').removeClass('modal-active');
     });
+
+    // ---------------
+    // Team rotate
+    // ---------------
+    $('.card__item-btn').on('click', function () {
+        // var elem = $(this).parent().parent().siblings('.card__container');
+        var elem = $(this).closest('.card__container');
+        elem.addClass('active');
+    });
+    
+    $('.card__item-back').on('mouseleave', function (e) {
+        var elem = $(this).closest('.card__container');
+        elem.removeClass('active');
+    });
+
+    // $('.card__item-back').on('mouseenter', function (e) {
+    //     console.log('Mouse Enter');
+    //     var elem = $(this).closest('.card__container');
+    //     elem.removeClass('active');
+    //     $(this).removeClass('active');
+    //     $(this).removeClass('active');
+    // });
+
+    $('.social__media__btn').on('click', function () {
+        $('.social__media').toggleClass('active');
+    });
 });
