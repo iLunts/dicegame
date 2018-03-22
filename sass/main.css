@@ -71,7 +71,7 @@ body {
   background: #fff;
   font-family: 'PT sans', sans-serif;
   font-size: 10px;
-  color: #000;
+  color: #2A2E3D;
   font-weight: 400;
   min-width: 320px;
 }
@@ -1305,19 +1305,6 @@ header > .container nav span.nav__line--mob {
   border-radius: 10px;
 }
 
-.team {
-  padding-top: 67px;
-  padding-bottom: 120px;
-}
-
-.team__title {
-  font-size: 40px;
-  font-weight: 900;
-  font-family: 'FuturaPTHeavy';
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .team__item {
   position: relative;
   height: 272px;
@@ -1713,12 +1700,12 @@ header > .container nav span.nav__line--mob {
   font-weight: 600;
   font-family: 'ProximaNova-Semibold';
   text-transform: uppercase;
-  color: #000;
+  color: #2A2E3D;
   margin-bottom: 3px;
 }
 
 .footer__nav a {
-  color: #000;
+  color: #2A2E3D;
   font-size: 14px;
   text-decoration: none;
   margin-bottom: 3px;
@@ -2870,12 +2857,20 @@ svg {
  * Medium gutter
  */
 /* Horizontal */
-.grid--lg {
+.grid--xlg {
   margin-left: -100px;
 }
 
-.grid--lg > * {
+.grid--xlg > * {
   padding-left: 100px;
+}
+
+.grid--lg {
+  margin-left: -50px;
+}
+
+.grid--lg > * {
+  padding-left: 50px;
 }
 
 .grid--md {

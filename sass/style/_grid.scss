@@ -225,12 +225,20 @@ $utility-container-large-padding-horizontal: 35px;
 
 /* Horizontal */
 
-.grid--lg {
+.grid--xlg {
     margin-left: -($grid-gutter-horizontal * 4);
 }
 
-.grid--lg>* {
+.grid--xlg>* {
     padding-left: ($grid-gutter-horizontal * 4);
+}
+
+.grid--lg {
+    margin-left: -($grid-gutter-horizontal * 2);
+}
+
+.grid--lg>* {
+    padding-left: ($grid-gutter-horizontal * 2);
 }
 
 .grid--md {
