@@ -25,7 +25,7 @@ body {
 
 @font-face {
   font-family: 'ProximaNova-Semibold';
-  src: url("../fonts/proximanova/ProximaNova-Semibold.otf");
+  src: url("../fonts/proximanova/ProximaNova-Semibold.ttf");
   font-weight: 600;
   font-style: normal;
 }
@@ -2518,7 +2518,15 @@ svg {
 }
 
 .block.block--gray {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
+}
+
+.block.block--light--gray {
+  background-color: #fdfdfd;
+}
+
+.block.block--average--gray {
+  background-color: #eef0f3;
 }
 
 .block.block--distribution {
@@ -5397,19 +5405,19 @@ body.modal-active {
     z-index: 5;
   }
   .features__item.swiper-slide-active:nth-child(3) {
-    background-color: #F48244;
+    background-color: #6f5163;
     transition: none;
   }
   .features__item.swiper-slide-active:nth-child(5) {
-    background-color: #BB4458;
+    background-color: #3AB88C;
     transition: none;
   }
   .features__item.swiper-slide-active:nth-child(8) {
-    background-color: #00ACC1;
+    background-color: #FEAE47;
     transition: none;
   }
   .features__item.swiper-slide-active:nth-child(9) {
-    background-color: #4F92EA;
+    background-color: #6BC9E6;
     transition: none;
   }
   .features__item.swiper-slide {
