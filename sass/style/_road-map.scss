@@ -37,7 +37,7 @@
             background-color: #0088D0;
             border-radius: 50%;
             position: absolute;
-            left: -3.5px;
+            left: -4.5px;
         }
         &:before {
             top: -3.5px;
@@ -74,6 +74,17 @@
             position: relative;
             margin: 0 auto;
             width: 1750px;
+        }
+        &--active {
+            &:after {
+                width: 8px;
+                height: 8px;
+                bottom: -5px;
+                background-color: $color-active-roadmap-circle;
+                box-shadow: 0 0 0 2px rgba(246, 96, 85, 0.17);
+                opacity: 0.3;
+                animation: activeCircle 3s linear infinite;
+            }
         }
     }
     &__cut {
@@ -130,6 +141,18 @@
     .slide_btn:hover {
         color: #428CC6;
         cursor: pointer;
+    }
+}
+
+@keyframes activeCircle {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
     }
 }
 
