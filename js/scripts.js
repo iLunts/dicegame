@@ -451,4 +451,7 @@ $(document).ready(function(){
     $('.social__media__btn').on('click', function () {
         $('.social__media').toggleClass('active');
     });
+
+    // Autoplay video for Safari
+    document.getElementById('video-token').play();
 });
