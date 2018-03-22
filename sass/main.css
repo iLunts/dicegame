@@ -1036,7 +1036,6 @@ header > .container nav span.nav__line--mob {
 
 .road-map {
   overflow: hidden;
-  background-color: #F5F5F5;
 }
 
 .road-map__wrap {
@@ -1314,13 +1313,11 @@ header > .container nav span.nav__line--mob {
 
 .team__item {
   position: relative;
-  max-width: 216px;
   height: 272px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 3%;
   transition: .2s;
   border-radius: 3px;
   overflow: hidden;
@@ -1329,7 +1326,7 @@ header > .container nav span.nav__line--mob {
 
 .team__item__desc {
   position: absolute;
-  left: 0;
+  left: 1px;
   top: 0;
   padding: 10px;
   height: 100%;
@@ -1385,6 +1382,7 @@ header > .container nav span.nav__line--mob {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .team__item__position {
@@ -1392,10 +1390,12 @@ header > .container nav span.nav__line--mob {
   color: #808080;
   text-transform: uppercase;
   font-weight: 400;
+  text-align: center;
 }
 
 .team__item__more--btn {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
   font-size: 15px;
   line-height: 18px;
   color: #0088D0;
@@ -1406,12 +1406,6 @@ header > .container nav span.nav__line--mob {
 
 .team__item__more--btn:hover {
   color: #1BA2E9;
-}
-
-.team__item__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .team__item:nth-child(4n) {
@@ -2526,7 +2520,7 @@ svg {
 }
 
 .block.block--gray {
-  background-color: #F5F5F5;
+  background-color: #FAFAFA;
 }
 
 .block.block--distribution {
@@ -4324,6 +4318,7 @@ h6 {
 
 .line {
   position: relative;
+  display: block;
   outline: none;
   border: none;
   border-top: 1px solid #ddd;
@@ -4777,14 +4772,8 @@ h6 {
   .distribution:after {
     background-position: 0px 40px;
   }
-  .team__item:nth-child(4n) {
-    margin-right: 25px;
-  }
-  .team__item:nth-child(5n) {
-    margin-left: 25px;
-  }
-  .team__item:nth-child(1) {
-    margin-left: 25px;
+  .team__item {
+    margin: 30px 0;
   }
 }
 
