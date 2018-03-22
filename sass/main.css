@@ -5376,7 +5376,7 @@ body.modal-active {
   height: 27px;
   padding: 0 20px;
   margin-top: -13px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   text-align: left;
 }
 
@@ -5405,7 +5405,7 @@ body.modal-active {
 
 .card .card__item-btn {
   display: block;
-  margin-top: 6px;
+  margin-top: 10px;
   color: #0088D0;
   font-size: 15px;
   line-height: 18px;
