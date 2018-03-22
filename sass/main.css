@@ -2465,14 +2465,27 @@ svg {
 
 .block.block--gray {
   background-color: #fafafa;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.block.block--gray.footer {
+  border-bottom: none;
 }
 
 .block.block--light--gray {
   background-color: #fdfdfd;
 }
 
+.block.block--light--gray--border {
+  border-top: 1px solid #e7e8eb;
+  border-bottom: 1px solid #e7e8eb;
+}
+
 .block.block--average--gray {
   background-color: #eef0f3;
+  border-top: 1px solid #d6dadf;
+  border-bottom: 1px solid #d6dadf;
 }
 
 .block.block--distribution {
@@ -2514,7 +2527,7 @@ svg {
   font-size: 40px;
   line-height: 48px;
   font-weight: 900;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   font-family: 'FuturaPTHeavy';
 }
 
@@ -2529,7 +2542,7 @@ svg {
 .block .block__text {
   font-size: 17px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .block .block__text + .block__text {
@@ -4221,7 +4234,7 @@ h6 {
 }
 
 .player {
-  min-height: 345px;
+  max-height: 345px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -5321,6 +5334,7 @@ body.modal-active {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
   position: absolute;
   width: 100%;
   top: 0;
@@ -5345,6 +5359,7 @@ body.modal-active {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 5px 5px 0 0;
 }
 
 .card .card__item-name {
@@ -5363,7 +5378,7 @@ body.modal-active {
   height: 27px;
   padding: 0 20px;
   margin-top: -13px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   text-align: left;
 }
 
@@ -5392,13 +5407,17 @@ body.modal-active {
 
 .card .card__item-btn {
   display: block;
-  margin-top: 6px;
+  margin-top: 10px;
   color: #0088D0;
   font-size: 15px;
   line-height: 18px;
   cursor: pointer;
   font-family: 'ProximaNova-Semibold';
   transition: all .25s;
+}
+
+.card .card__item-btn:hover {
+  color: #1BA2E9;
 }
 
 .card .card__item-header {
@@ -5409,6 +5428,7 @@ body.modal-active {
   font-family: 'FuturaPTBold', sans-serif;
   margin-bottom: 5px;
   padding: 4px 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .card .card__item-desc {
