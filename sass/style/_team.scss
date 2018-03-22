@@ -69,14 +69,17 @@
             background-repeat: no-repeat;
         }
         &__name {
-            font-family: 'ProximaNova-Semibold';
+            font-family: 'ProximaNova-Bold';
             font-size: 16px;
             line-height: 20px;
+            font-weight: 700;
             text-transform: uppercase;
             text-align: center;
         }
         &__position {
-            font-size: 17px;
+            font-family: 'ProximaNova-Regular';
+            font-size: 16px;
+            line-height: 18px;
             color: #808080;
             text-transform: uppercase;
             font-weight: 400;
