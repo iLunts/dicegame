@@ -7,6 +7,9 @@
     overflow: hidden;
     &__wrap {
         width: 150%;
+        &--mobile {
+            display: none;
+        }
     }
     // &__title {
     //     padding-top: 30px;
@@ -86,6 +89,47 @@
             margin: 0 auto;
             width: 1750px;
         }
+    }
+    .slide_group {
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+    .slide {
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    .slide:first-child {
+        display: block;
+    }
+    .slide_buttons {
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a.slide_btn {
+        width: 5px;
+        height: 14px;
+        border-radius: 2px;
+        margin: 0 0.175em;
+        background: #CBCBCB;
+        transition: all 0.4s ease-in-out;
+    }
+    .slide_btn.active {
+        cursor: pointer;
+        height: 21px;
+        background: #5E5E5E;
+    }
+    .slide_btn:hover {
+        color: #428CC6;
+        cursor: pointer;
     }
 }
 
@@ -173,28 +217,36 @@
     }
 }
 
-.scroll-element.scroll-x {
-    .scroll-element_outer {
-        height: 10px;
-        background-color: #e0e0e0;
-        border-radius: 8px;
-        &:active, &:focus  {
-            .scroll-bar {
-                background-color: #919191;
-                opacity: 1;
-            }
-        }
-        &:hover {
-            .scroll-bar {
-                background-color: #919191;
-            }
-        }
+@media only screen and (max-width: 1100px) {
+    .road-map__wrap {
+        display: none;
     }
-    .scroll-bar {
-        height: 100%;
-        background-color: #c2c2c2;
-        position: relative;
-        opacity: .6;
-        border-radius: 10px;
+    .road-map__wrap--mobile {
+        display: block;
+    }
+    .scroll-element.scroll-x {
+        .scroll-element_outer {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            &:active, &:focus  {
+                .scroll-bar {
+                    background-color: #919191;
+                    opacity: 1;
+                }
+            }
+            &:hover {
+                .scroll-bar {
+                    background-color: #919191;
+                }
+            }
+        }
+        .scroll-bar {
+            height: 100%;
+            background-color: #c2c2c2;
+            position: relative;
+            opacity: .6;
+            border-radius: 10px;
+        }
     }
 }
