@@ -1372,7 +1372,7 @@ header > .container nav span.nav__line--mob {
   position: relative;
   width: 100%;
   height: 152px;
-  background-position: 50%;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
