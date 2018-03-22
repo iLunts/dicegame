@@ -53,7 +53,13 @@
         padding: 0;
     }
     &.block--gray {
-        background-color: #FAFAFA;
+        background-color: $block-gray-background;
+    }
+    &.block--light--gray {
+        background-color: $block-light-gray-background;
+    }
+    &.block--average--gray {
+        background-color: $block-average-gray-background;
     }
     &.block--distribution {
         background-color: #202933;
