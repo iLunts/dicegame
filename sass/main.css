@@ -1360,6 +1360,10 @@ header > .container nav span.nav__line--mob {
   background: #fff;
   padding: 2px;
   border-radius: 4px;
+  transition: all .2s;
+}
+
+.team__item__social__link:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
 }
 
