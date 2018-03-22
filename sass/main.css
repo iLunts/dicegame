@@ -1315,6 +1315,7 @@ header > .container nav span.nav__line--mob {
   transition: .2s;
   border-radius: 3px;
   overflow: hidden;
+  background-color: #fafafa;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
 }
 
