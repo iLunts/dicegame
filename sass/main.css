@@ -1321,7 +1321,7 @@ header > .container nav span.nav__line--mob {
   transition: .2s;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
 }
 
 .team__item__desc {
@@ -1372,7 +1372,7 @@ header > .container nav span.nav__line--mob {
   position: relative;
   width: 100%;
   height: 152px;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
