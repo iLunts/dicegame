@@ -453,5 +453,6 @@ $(document).ready(function(){
     });
 
     // Autoplay video for Safari
-    document.getElementById('video-token').play();
+    // document.getElementById('video-token').play();
+    // $("#video-token").get(0).play();
 });
