@@ -67,6 +67,36 @@
                 justify-content: space-between;
                 align-items: center;
             }
+
+            &.footer__social__icon--facebook{
+                &:hover{
+                    background: #34579A;
+                }
+            }
+
+            &.footer__social__icon--twitter{
+                &:hover{
+                    background: #1ca0f3;
+                }
+            }
+
+            &.footer__social__icon--github{
+                &:hover{
+                    background: #24292e;
+                }
+            }
+
+            &.footer__social__icon--slack{
+                &:hover{
+                    background: #573752;
+                }
+            }
+
+            &.footer__social__icon--telegram{
+                &:hover{
+                    background: #0088cc;
+                }
+            }
         }
     }
     &__nav {

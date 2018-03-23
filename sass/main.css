@@ -1646,6 +1646,26 @@ header > .container nav span.nav__line--mob {
   align-items: center;
 }
 
+.footer__social__icon.footer__social__icon--facebook:hover {
+  background: #34579A;
+}
+
+.footer__social__icon.footer__social__icon--twitter:hover {
+  background: #1ca0f3;
+}
+
+.footer__social__icon.footer__social__icon--github:hover {
+  background: #24292e;
+}
+
+.footer__social__icon.footer__social__icon--slack:hover {
+  background: #573752;
+}
+
+.footer__social__icon.footer__social__icon--telegram:hover {
+  background: #0088cc;
+}
+
 .footer__nav {
   display: flex;
   flex-direction: column;
