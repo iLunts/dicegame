@@ -93,7 +93,7 @@ header {
                         bottom: 5px;
                         content: '';
                         display: inline-block;
-                        background-image: url(../img/drop.svg);
+                        background-image: url('../img/drop.svg');
                         background-position: 50%;
                         background-size: contain;
                         background-repeat: no-repeat;
@@ -153,13 +153,10 @@ header {
             display: inline-block;
             position: relative;
             &__btn {
-                font-size: 17px; // color: #0070C9;
+                font-size: 17px; 
                 line-height: 19px;
-                color: #fff;
                 font-family: 'ProximaNova-Regular';
-                padding: 5px 9px; // background-color: transparent;
-                // border: 2px solid #0070C9;
-                // background-color: #0070C9;
+                padding: 5px 9px; 
                 border-radius: 4px;
                 padding: 3px 20px;
                 display: inline-block;
@@ -168,14 +165,14 @@ header {
                 &:hover,
                 &:focus,
                 &:active {
-                    background-color: #0070C9;
-                    color: #fff;
+                    background-color: #D6E9F3;
+                    color: #0088D0;
                 }
             }
             &.active {
                 .social__media__btn {
-                    background-color: #0070C9;
-                    color: #fff;
+                    background-color: #D6E9F3;
+                    color: #0088D0;
                 }
                 .social__media__link {
                     opacity: 1;

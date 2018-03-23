@@ -73,8 +73,18 @@
         }
     } // Modificator '.btn.btn--blue'
     &.btn--blue {
-        background: $color-blue;
-        color: #fff;
+        // background: $color-blue;
+        // color: #fff;
+        background-color: #F4F7FA;
+        color: #50ADFF;
+        border: 1px solid #7DC1FE;
+        box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, 0.06);
+
+        &:hover{
+            color: #0088D0;
+            background-color: #D6E9F3;
+        }
+
         &.btn--push {
             box-shadow: 0 4px 0 #0776B1;
             &:hover {

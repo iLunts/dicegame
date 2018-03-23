@@ -32,3 +32,11 @@
         }
     }
 }
+
+.block.block--gray{
+    .line.line--square{
+        &:after {
+            background-color: #fafafa;
+        }
+    }
+}
