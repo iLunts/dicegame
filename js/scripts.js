@@ -42,6 +42,21 @@ $(document).ready(function(){
         }
     }
 
+    function shake(element){
+        $(element).closest('.counter__body__num__wrap').effect("shake", {
+            times: 1,
+            direction: 'down',
+            distance: 10
+        }, 1100);
+    }
+
+    // $(document).click(function() {
+    //     $('#timer_seconds').effect("shake", {
+    //         times: 1,
+    //         direction: 'down'
+    //     }, 1100);
+    // });
+
     function initializeClock(objId, endtime) {
         var days = document.getElementById(objId.days);
         var hours = document.getElementById(objId.hours);
@@ -55,9 +70,25 @@ $(document).ready(function(){
             hours.innerHTML = ('0' + t.hours).slice(-2);
             minutes.innerHTML = ('0' + t.minutes).slice(-2);
             seconds.innerHTML = ('0' + t.seconds).slice(-2);
+            
+            // --------------------
+            // Shake effect
+            // --------------------
+            shake(seconds);
+
+            if (t.seconds == 0){
+                shake(minutes);
+            }
+            if (t.seconds == 0 && t.minutes == 0){
+                shake(hours);
+            }
+            if (t.seconds == 0 && t.minutes == 0 && t.hours == 0){
+                shake(days);
+            }
             if ( t.total <= 0 ) {
                 clearInterval(timeinterval);
             }
+
         }, 1000);
     }
 
