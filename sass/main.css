@@ -139,13 +139,13 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   z-index: 100;
   transform: translateZ(0);
 }
 
 header.active {
-  box-shadow: 0px 0px 6px 1.5px rgba(74, 68, 151, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
 }
 
 header > .container {
@@ -186,6 +186,7 @@ header > .container nav span {
 header > .container nav a {
   line-height: 30px;
   border-radius: 3px;
+  color: #2A2E3D;
   transition: all .2s;
 }
 
@@ -695,6 +696,7 @@ header > .container nav span.nav__line--mob {
   max-width: 250px;
   z-index: 1;
   color: #3B3B3B;
+  overflow: hidden;
 }
 
 .features__item:nth-child(1) {
@@ -1077,7 +1079,7 @@ header > .container nav span.nav__line--mob {
   background-color: #0088D0;
   border-radius: 50%;
   position: absolute;
-  left: -3.5px;
+  left: -4.5px;
 }
 
 .road-map__item:before {
@@ -1122,6 +1124,16 @@ header > .container nav span.nav__line--mob {
   position: relative;
   margin: 0 auto;
   width: 1750px;
+}
+
+.road-map__item--active:after {
+  width: 8px;
+  height: 8px;
+  bottom: -5px;
+  background-color: #F66055;
+  box-shadow: 0 0 0 2px rgba(246, 96, 85, 0.17);
+  opacity: 0.3;
+  animation: activeCircle 3s linear infinite;
 }
 
 .road-map__cut {
@@ -1186,6 +1198,18 @@ header > .container nav span.nav__line--mob {
 .road-map .slide_btn:hover {
   color: #428CC6;
   cursor: pointer;
+}
+
+@keyframes activeCircle {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
 
 .road-map__cut:nth-child(0) {
@@ -2465,8 +2489,8 @@ svg {
 
 .block.block--gray {
   background-color: #fafafa;
-  border-top: 1px solid #cbcbcb;
-  border-bottom: 1px solid #cbcbcb;
+  border-top: 1px solid #E7E8EB;
+  border-bottom: 1px solid #E7E8EB;
 }
 
 .block.block--gray.footer {
@@ -2571,7 +2595,7 @@ svg {
 }
 
 .device.device--sm {
-  font-size: 5.5px;
+  font-size: 5px;
 }
 
 .device-iphone-x {
@@ -2600,13 +2624,8 @@ svg {
 }
 
 .device-iphone-x .device-content.device-content--fm .device-content__img {
-  margin: 25em 5em 20em;
+  margin: 32em 5em 20em;
   width: auto;
-}
-
-.device-iphone-x .device-content.device-content--fm .device-content__btn {
-  color: #6F5163;
-  font-weight: 600;
 }
 
 .device-iphone-x .device-header {

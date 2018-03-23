@@ -17,6 +17,8 @@
         max-width: 250px;
         z-index: 1;
         color: #3B3B3B;
+        overflow: hidden;
+        
         &:nth-child(1) {
             margin-left: 250px;
             margin-right: 500px;

@@ -4,11 +4,12 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    // background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgb(255, 255, 255);
     z-index: 100;
     transform: translateZ(0);
     &.active {
-        box-shadow: 0px 0px 6px 1.5px rgba(74, 68, 151, 0.2);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
     }
     >.container {
         display: flex;
@@ -42,6 +43,7 @@ header {
             a {
                 line-height: 30px;
                 border-radius: 3px;
+                color: #2A2E3D;
                 transition: all .2s;
                 &:hover {
                     background-color: #EFEFEF;
