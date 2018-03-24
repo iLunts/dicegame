@@ -412,7 +412,7 @@ header > .container nav span.nav__line--mob {
   margin-bottom: 48px;
   font-family: 'FuturaPTHeavy';
   padding-top: 150px;
-  letter-spacing: 2px;
+  letter-spacing: 0;
 }
 
 .main-window h1.main-window__title--mobile {
@@ -1890,7 +1890,7 @@ footer.blur {
 
 .btn.btn--push {
   margin-bottom: 5px;
-  transition: all 250ms;
+  transition: all 140ms;
 }
 
 .btn.btn--push:active {
