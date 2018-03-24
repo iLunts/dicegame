@@ -175,7 +175,7 @@ $(document).ready(function(){
         $(menu_selector + " a.nav__link").each(function(){
             var hash = $(this).attr("href");
             var target = $(hash);
-            if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+            if (target.position().top - 200 <= scroll_top && target.position().top + target.outerHeight() + 200 > scroll_top) {
                 // $(menu_selector + " a.active").removeClass("active");
                 // $(this).addClass("active");
                 if ($(target).is('#features') && $(window).width() > 1083) {

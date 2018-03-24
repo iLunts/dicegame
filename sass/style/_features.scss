@@ -10,13 +10,13 @@
         width: 250px;
         height: 250px;
         background-color: #fff;
-        padding: 24px;
+        padding: 22px;
         border: 1px solid #E2E2E2;
         border-radius: 2px;
         max-height: 250px;
         max-width: 250px;
         z-index: 1;
-        color: #3B3B3B;
+        color: #2A2E3D;
         overflow: hidden;
         
         &:nth-child(1) {
@@ -104,7 +104,7 @@
             font-size: 19px;
             color: inherit;
             font-weight: 700;
-            margin-bottom: 26px;
+            margin-bottom: 10px;
             font-family: 'FuturaPTBold';
         }
         &__desc {
