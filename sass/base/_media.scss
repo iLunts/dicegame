@@ -163,6 +163,14 @@
     .follow__item {
         margin: 15px;
     }
+    .footer__social__input {
+        animation: none;
+        &:focus {
+            width: 100%;
+            margin-left: 0;
+            animation: none;
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
