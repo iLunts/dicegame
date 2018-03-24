@@ -1,5 +1,5 @@
 header {
-    padding: 24px 0;
+    padding: 17px 0;
     position: fixed;
     left: 0;
     top: 0;
@@ -106,7 +106,7 @@ header {
                     display: none;
                     flex-direction: column;
                     padding: 7px 0;
-                    box-shadow: 0px 0px 30px 1.5px rgba(74, 68, 151, 0.2);
+                    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
                     border-radius: 3px;
                     width: 160px;
                     right: 0;
@@ -118,7 +118,7 @@ header {
                         padding: 5px 20px;
                         width: 100%;
                         transform: .2s;
-                        color: rgba(0, 0, 0, 0.7);
+                        color: #2A2E3D;
                         margin: 3px 0;
                         &:hover {
                             background-color: #EEEEEE;
@@ -152,16 +152,17 @@ header {
         .social__media {
             display: inline-block;
             position: relative;
+            left: 15%;
+            opacity: 0;
             &__btn {
                 font-size: 17px; 
                 line-height: 19px;
-                font-family: 'ProximaNova-Regular';
-                padding: 5px 9px; 
+                font-family: 'ProximaNova-Semibold';
                 border-radius: 4px;
-                padding: 3px 20px;
                 display: inline-block;
                 cursor: pointer;
                 transition: .2s;
+                padding: 6px 16px;
                 &:hover,
                 &:focus,
                 &:active {
@@ -222,6 +223,16 @@ header {
                     height: 48px;
                 }
             }
+            &.visible {
+                left: 0;
+                opacity: 1;
+                animation: mediaActive 0.3s;
+            }
+            &.invisible {
+                left: 15%;
+                opacity: 0;
+                animation: mediaInActive 0.3s;
+            }
         }
     }
 }
@@ -245,4 +256,26 @@ header {
 
 header>.container nav span.nav__line--mob {
     display: none;
+}
+
+@keyframes mediaActive {
+    0% {
+        left: 15%;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes mediaInActive {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: 15%;
+        opacity: 0;
+    }
 }

@@ -163,6 +163,14 @@
     .follow__item {
         margin: 15px;
     }
+    .footer__social__input {
+        animation: none;
+        &:focus {
+            width: 100%;
+            margin-left: 0;
+            animation: none;
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -170,9 +178,14 @@
         display: none;
         &.logo-mob {
             width: auto;
-            display: inline-block;
-            height: 40px;
-            max-height: 40px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -25px;
+            margin-left: -25px;
+            height: 50px;
+            max-height: 50px;
         }
     }
     header>.container nav a {
@@ -188,6 +201,19 @@
     }
     h1 {
         display: none;
+    }
+    header>.container .social__media {
+        left: 25%;
+        &.visible {
+            left: 15%;
+            opacity: 1;
+            animation: mediaActiveSmall 0.3s;
+        }
+        &.invisible {
+            left: 25%;
+            opacity: 0;
+            animation: mediaInActiveSmall 0.3s;
+        }
     }
     header>.container .social__media {
         .social__media__link__wrap {
@@ -516,6 +542,28 @@
         }
         .follow__item button img {
             margin: 0 auto;
+        }
+    }
+
+    @keyframes mediaActiveSmall {
+        0% {
+            left: 25%;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            left: 15%;
+        }
+    }
+
+    @keyframes mediaInActiveSmall {
+        0% {
+            left: 15%;
+            opacity: 1;
+        }
+        100% {
+            left: 25%;
+            opacity: 0;
         }
     }
 }

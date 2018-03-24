@@ -10,10 +10,17 @@
             padding: 0 46px;
             display: inline-block;
             font-family: 'ProximaNova-Regular';
-            img {
+            svg {
+                fill: #0070c9;
                 width: 27px;
                 margin-right: 14px;
                 vertical-align: -8px;
+            }
+            &:hover {
+                color: #37ADEB;
+                svg {
+                    fill: #37ADEB;
+                }
             }
         }
         margin-bottom: 200px;
