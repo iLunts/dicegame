@@ -139,6 +139,9 @@ $(document).ready(function(){
 
     $('.social__media__btn').on('click', function () {
         $('.social__media').toggleClass('active');
+        if ($('.nav__lang')[0].className.match('active')) {
+            $('.nav__lang').removeClass('active');
+        }
 
         $('#popup__whitepaper').fadeOut(200);
         $('main, footer').removeClass('blur');
@@ -176,7 +179,6 @@ $(document).ready(function(){
                 // $(menu_selector + " a.active").removeClass("active");
                 // $(this).addClass("active");
                 if ($(target).is('#features') && $(window).width() > 1083) {
-
                     $('.features__item__wrap').delay(500).addClass('active');
                 }
             }
@@ -186,7 +188,7 @@ $(document).ready(function(){
             $('.social__media').removeClass('invisible').addClass('visible');
         }else {
             if ($('header')[0].className) {
-              $('.social__media').removeClass('visible').addClass('invisible');
+                $('.social__media').removeClass('visible').addClass('invisible');
             }
             $('header').removeClass('active');
         }
@@ -200,6 +202,12 @@ $(document).ready(function(){
 	$("a[href^=\\#]").click(function(e){
 		e.preventDefault();
 		$(document).off("scroll");
+    if ($('.nav__lang')[0].className.match('active')) {
+        $('.nav__lang').removeClass('active');
+    }
+    if ($('.social__media')[0].className.match('active')) {
+        $('.social__media').removeClass('active');
+    }
 		// $(menu_selector + " a.active").removeClass("active");
 		// $(this).addClass("active");
 		var hash = $(this).attr("href");
@@ -215,13 +223,24 @@ $(document).ready(function(){
 		});
 	});
 
+    $('main').click(function() {
+        if ($('.nav__lang')[0].className.match('active')) {
+            $('.nav__lang').removeClass('active');
+        }
+        if ($('.social__media')[0].className.match('active')) {
+            $('.social__media').removeClass('active');
+        }
+    });
+
     $('.nav__lang').on('click', function(e){
         if ($(e.target).is('.nav__lang__short')) {
             $('.nav__lang').toggleClass('active');
-
-            $('header > .container .social__media').css({
-                'z-index': '-1'
-            })
+            if ($('.social__media')[0].className.match('active')) {
+                $('.social__media').removeClass('active');
+            }
+            // $('header > .container .social__media').css({
+            //     'z-index': '-1'
+            // })
         }
     });
 
