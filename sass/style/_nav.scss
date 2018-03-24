@@ -157,12 +157,12 @@ header {
             &__btn {
                 font-size: 17px; 
                 line-height: 19px;
-                font-family: 'ProximaNova-Regular';
+                font-family: 'ProximaNova-Semibold';
                 border-radius: 4px;
-                //padding: 3px 20px;
                 display: inline-block;
                 cursor: pointer;
                 transition: .2s;
+                padding: 6px 16px;
                 &:hover,
                 &:focus,
                 &:active {
