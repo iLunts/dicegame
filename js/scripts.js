@@ -137,7 +137,7 @@ $(document).ready(function(){
         $(this).removeClass('active');
     });
 
-    $('.social__media__btn').on('click', function(){
+    $('.social__media__btn').on('click', function () {
         $('.social__media').toggleClass('active');
 
         $('#popup__whitepaper').fadeOut(200);
@@ -479,11 +479,4 @@ $(document).ready(function(){
     //     $(this).removeClass('active');
     // });
 
-    $('.social__media__btn').on('click', function () {
-        $('.social__media').toggleClass('active');
-    });
-
-    // Autoplay video for Safari
-    // document.getElementById('video-token').play();
-    // $("#video-token").get(0).play();
 });
