@@ -122,6 +122,17 @@ $(document).ready(function(){
         }
     });
 
+    var subscribeForm = $('#mc-embedded-subscribe-form'),
+        textInput = subscribeForm.find('#mce-EMAIL'),
+        clearBtn = subscribeForm.find('.footer__social__clear');
+    textInput.keyup(function() {
+      clearBtn[0].style.visibility = (this.value.length) ? "visible" : "hidden";
+    });
+    clearBtn.on('click', function(){
+      this.style.visibility = "hidden";
+      textInput[0].value = "";
+    });
+
     var timer;
 
     $('.team__item__more--btn').on('click', function(){

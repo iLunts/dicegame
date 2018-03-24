@@ -23,6 +23,9 @@
                 height: 30px;
             }
         }
+        &__group {
+            position: relative;
+        }
         &__input {
             border: 1px solid #AEAEAE;
             background-color: #fff;
@@ -32,6 +35,25 @@
             font-size: 16px;
             outline: none;
             z-index: 2;
+            animation: unfocusInputAnimation 0.1s linear;
+            &:focus {
+                margin-left: -10%;
+                width: 110%;
+                border-color: #929292;
+                animation: focusInputAnimation 0.1s linear;
+            }
+        }
+        &__clear {
+            cursor:pointer;
+            visibility:hidden;
+            max-width: 12px;
+            width: 100%;
+            height: 12px;
+            position: absolute;
+            z-index: 12;
+            top: 50%;
+            margin-top: -6px;
+            right: 10px;
         }
         &__submit {
             background-color: #EFEFEF;
@@ -42,6 +64,7 @@
             margin-left: 6px;
             cursor: pointer;
             outline: none;
+            font-family: 'ProximaNova-Semibold';
             &:hover {
                 background-color: #DEDEDE;
             }
@@ -156,5 +179,31 @@
     &.active {
         transform: translateY(-20px);
         font-size: 14px;
+    }
+}
+
+@keyframes focusInputAnimation {
+    0% {
+        margin-left: 0;
+        width: 100%;
+        border-color: #AEAEAE;
+    }
+    100% {
+        margin-left: -10%;
+        width: 110%;
+        border-color: #929292;
+    }
+}
+
+@keyframes unfocusInputAnimation {
+    0% {
+        margin-left: -10%;
+        width: 110%;
+        border-color: #929292;
+    }
+    100% {
+        margin-left: 0;
+        width: 100%;
+        border-color: #AEAEAE;
     }
 }
