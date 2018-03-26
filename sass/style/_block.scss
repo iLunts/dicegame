@@ -132,6 +132,10 @@
     & &__tournament__image {
         width: 90%;
     }
+
+    & &__view--mobile {
+        display: none;
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -142,6 +146,11 @@
 
         &.block--check{
             margin-bottom: 0;
+            margin-top: 0;
+
+            .block__text {
+                width: 100%;
+            }
             
             .device{
                 margin: 30px 0;

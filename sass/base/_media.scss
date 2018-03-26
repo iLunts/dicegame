@@ -543,6 +543,27 @@
         .follow__item button img {
             margin: 0 auto;
         }
+        .block {
+            .block__hidden--mobile {
+                display: none;
+            }
+            .block__view--mobile {
+                display: block;
+            }
+            // Modificator '.block.block--xxlg'
+            &.block--xxlg {
+                padding: ($block-padding-vertical * 3.5) 0;
+            } // Modificator '.block.block--xlg'
+            &.block--xlg {
+                padding: ($block-padding-vertical * 2.5) 0;
+            } // Modificator '.block.block--lg'
+            &.block--lg {
+                padding: ($block-padding-vertical * 1.5) 0;
+            }
+            .block--center {
+                text-align: center;
+            }
+        }
     }
 
     @keyframes mediaActiveSmall {
