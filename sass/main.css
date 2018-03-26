@@ -528,7 +528,7 @@ header > .container nav span.nav__line--mob {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .counter__docs a {
@@ -1554,6 +1554,7 @@ header > .container nav span.nav__line--mob {
 }
 
 .questions__item__title {
+  position: relative;
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -1562,10 +1563,13 @@ header > .container nav span.nav__line--mob {
   font-weight: 600;
   height: 58px;
   justify-content: space-between;
-  padding: 0 24px 0 10px;
+  padding: 0 44px 0 10px;
 }
 
 .questions__item__title i {
+  position: absolute;
+  top: 20px;
+  right: 10px;
   display: block;
   width: 23px;
   height: 23px;
@@ -1598,10 +1602,12 @@ header > .container nav span.nav__line--mob {
 
 @media only screen and (max-width: 767px) {
   .questions__item__title {
-    padding: 0 5px 0 10px;
+    padding: 0 30px 0 10px;
   }
   .questions__item__title i {
     height: 16px;
+    width: 16px;
+    right: 6px;
   }
   .questions__item__desc {
     padding: 0 30px 32px 10px;
@@ -1760,6 +1766,8 @@ header > .container nav span.nav__line--mob {
   display: block;
   padding: 4px 10px;
   font-size: 14px;
+  font-weight: 600;
+  font-family: 'ProximaNova-Semibold';
   text-transform: uppercase;
   color: #2A2E3D;
   margin-bottom: 3px;
@@ -1833,7 +1841,7 @@ header > .container nav span.nav__line--mob {
   height: 100%;
   position: fixed;
   z-index: 1000;
-  top: 79px;
+  top: 70px;
   left: 0;
   background-color: rgba(255, 255, 255, 0.75);
 }
@@ -2685,7 +2693,7 @@ svg {
   line-height: 34px;
   font-weight: 600;
   margin-bottom: 25px;
-  font-family: 'ProximaNova-Semibold';
+  font-family: 'ProximaNova-Bold';
 }
 
 .block .block__text {
@@ -4434,6 +4442,14 @@ h6 {
   height: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .player.player--xs-fill {
+    margin-left: -20px;
+    margin-right: -20px;
+    box-shadow: none;
+  }
+}
+
 .line {
   position: relative;
   display: block;
@@ -4796,6 +4812,15 @@ h6 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .order-xs--1 {
+    order: 1;
+  }
+  .order-xs--2 {
+    order: 2;
+  }
 }
 
 body.modal-active {

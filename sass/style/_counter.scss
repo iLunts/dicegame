@@ -1,9 +1,12 @@
 .counter {
     padding: 45px 0;
+    
     &__docs {
         text-align: center;
         font-size: 18px;
         font-weight: 400;
+        margin-bottom: 150px;
+    
         a {
             color: #0070C9;
             text-decoration: none;
@@ -23,7 +26,6 @@
                 }
             }
         }
-        margin-bottom: 200px;
     }
     &__title {
         font-size: 40px;
