@@ -294,3 +294,19 @@
     flex-direction: row;
     justify-content: center;
 }
+
+// ---------------------------------------------------------------------------
+// size: xSmall
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: $breakpoint-xs-max) {
+
+    .order-xs {
+        &--1 {
+            order: 1;
+        }
+        &--2 {
+            order: 2;
+        }
+    }
+    
+}
