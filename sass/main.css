@@ -1930,12 +1930,19 @@ header > .container nav span.nav__line--mob {
 }
 
 .popup__whitepaper > h5 img {
-  width: 15px;
-  margin-right: 10px;
+  width: 36px;
 }
 
 main.blur,
 footer.blur {
+  overflow-y: hidden;
+  height: 100vh;
+  filter: blur(15px);
+}
+
+.blur {
+  overflow-y: hidden;
+  height: 100vh;
   filter: blur(15px);
 }
 
@@ -5868,7 +5875,7 @@ body.modal-active {
   }
   header > .container .social__media__link__wrap {
     position: fixed;
-    top: 79px;
+    top: 67px;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
@@ -5912,10 +5919,10 @@ body.modal-active {
     position: fixed;
     flex-direction: column;
     width: 100%;
-    top: 79px;
+    top: 67px;
     left: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    height: calc(100vh - 129px);
+    height: calc(100vh - 117px);
   }
   header > .container nav a.active:after {
     display: none;
@@ -5980,6 +5987,7 @@ body.modal-active {
   }
   header > .container nav .counter__docs__whitepaper > img {
     height: 25px;
+    width: 25px;
     margin-right: 25px;
   }
   .about__wrap > .container {

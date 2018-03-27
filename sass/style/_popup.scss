@@ -79,8 +79,8 @@
             justify-content: center;
             margin-top: 50px;
             img {
-                width: 15px;
-                margin-right: 10px;
+                width: 36px;
+                // margin-right: 10px;
             }
         }
     }
@@ -89,6 +89,14 @@
 main,
 footer {
     &.blur {
+        overflow-y: hidden;
+        height: 100vh;
         filter: blur(15px);
     }
+}
+
+.blur{
+    overflow-y: hidden;
+    height: 100vh;
+    filter: blur(15px);
 }

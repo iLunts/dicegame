@@ -50,13 +50,6 @@ $(document).ready(function(){
         }, 1100);
     }
 
-    // $(document).click(function() {
-    //     $('#timer_seconds').effect("shake", {
-    //         times: 1,
-    //         direction: 'down'
-    //     }, 1100);
-    // });
-
     function initializeClock(objId, endtime) {
         var days = document.getElementById(objId.days);
         var hours = document.getElementById(objId.hours);
@@ -156,6 +149,7 @@ $(document).ready(function(){
 
         $('#popup__whitepaper').fadeOut(200);
         $('main, footer').removeClass('blur');
+        $('.wrapper').removeClass('blur');
     });
 
     var swiperData = {
@@ -261,11 +255,13 @@ $(document).ready(function(){
         $('nav').removeClass('active');
 
         $('main, footer').addClass('blur');
+        $('.wrapper').addClass('blur');
         $('#popup__whitepaper').fadeIn(700);
     });
 
     $('.popup__whitepaper__close').on('click', function(){
         $('#popup__whitepaper').fadeOut(200);
+        $('.wrapper').removeClass('blur');
         $('main, footer').removeClass('blur');
     })
 
@@ -358,9 +354,10 @@ $(document).ready(function(){
             console.log(123);
 
             $('main, footer').removeClass('blur');
+            $('wrapper').removeClass('blur');
             $('#popup__whitepaper').hide();
         }
-        $('main, footer').toggleClass('blur');
+        $('main, footer, .wrapper').toggleClass('blur');
 
         $(this).toggleClass('active');
         $('nav').toggleClass('active');
@@ -495,7 +492,6 @@ $(document).ready(function(){
     // Team rotate
     // ---------------
     $('.card__item-btn').on('click', function () {
-        // var elem = $(this).parent().parent().siblings('.card__container');
         var elem = $(this).closest('.card__container');
         elem.addClass('active');
     });
@@ -504,13 +500,4 @@ $(document).ready(function(){
         var elem = $(this).closest('.card__container');
         elem.removeClass('active');
     });
-
-    // $('.card__item-back').on('mouseenter', function (e) {
-    //     console.log('Mouse Enter');
-    //     var elem = $(this).closest('.card__container');
-    //     elem.removeClass('active');
-    //     $(this).removeClass('active');
-    //     $(this).removeClass('active');
-    // });
-
 });

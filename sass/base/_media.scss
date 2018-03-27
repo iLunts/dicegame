@@ -257,7 +257,7 @@
     }
     header>.container .social__media__link__wrap {
         position: fixed;
-        top: 79px;
+        top: 67px;
         left: 0;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.95);
@@ -304,10 +304,10 @@
             position: fixed;
             flex-direction: column;
             width: 100%;
-            top: 79px;
+            top: 67px;
             left: 0;
             background-color: rgba(255, 255, 255, 0.75);
-            height: calc(100vh - 129px);
+            height: calc(100vh - 117px);
         }
     }
     header>.container nav a.active:after {
@@ -376,6 +376,7 @@
         color: #fff;
         >img {
             height: 25px;
+            width: 25px;
             margin-right: 25px;
         }
     }
