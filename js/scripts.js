@@ -361,7 +361,17 @@ $(document).ready(function(){
 
         $(this).toggleClass('active');
         $('nav').toggleClass('active');
-    })
+    });
+
+    $('.nav__btn__close').on('click', function(){
+        if ($('#popup__whitepaper').is(':visible')) {
+            $('main, footer').removeClass('blur');
+            $('#popup__whitepaper').hide();
+        }
+        $('main, footer').toggleClass('blur');
+        $('.nav__btn').toggleClass('active');
+        $('nav').toggleClass('active');
+    });
 
 
     if ($(window).width() < 800) {
@@ -372,7 +382,13 @@ $(document).ready(function(){
                     'z-index': '0'
                 })
             }
-        })
+        });
+        $('.nav__btn__close__lang').on('click', function() {
+          $('.nav__lang').removeClass('active');
+        });
+        $('.nav__btn__close__media').on('click', function() {
+            $('.social__media').removeClass('active');
+        });
     }
 
     particlesJS("js-particles", {

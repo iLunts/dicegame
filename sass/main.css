@@ -134,7 +134,7 @@ a {
 }
 
 header {
-  padding: 17px 0;
+  padding: 19px 0;
   position: fixed;
   left: 0;
   top: 0;
@@ -181,6 +181,10 @@ header > .container nav span {
   color: #000;
   font-family: 'ProximaNova-Semibold';
   position: relative;
+}
+
+header > .container nav .nav__btn__close {
+  display: none;
 }
 
 header > .container nav a {
@@ -297,6 +301,10 @@ header > .container nav .nav__lang__wrap:before {
   height: 20px;
 }
 
+header > .container nav .nav__lang__wrap .nav__btn__close__lang {
+  display: none;
+}
+
 header > .container .social__media {
   display: inline-block;
   position: relative;
@@ -377,6 +385,10 @@ header > .container .social__media__link__wrap h5 {
   display: none;
 }
 
+header > .container .social__media__link__wrap .nav__btn__close__media {
+  display: none;
+}
+
 header > .container .social__media__link img {
   width: 48px;
   height: 48px;
@@ -410,6 +422,10 @@ header > .container .social__media.invisible {
   width: 100%;
   background-color: #616161;
   transition: .2s;
+}
+
+nav .nav__btn__close {
+  display: none;
 }
 
 header > .container nav span.nav__line--mob {
@@ -5796,6 +5812,9 @@ body.modal-active {
 }
 
 @media only screen and (max-width: 1000px) {
+  header > .container {
+    flex-direction: row-reverse;
+  }
   header > .container .logo img {
     display: none;
   }
@@ -5814,6 +5833,7 @@ body.modal-active {
     font-family: 'ProximaNova-Semibold';
     font-size: 24px;
     font-weight: 600;
+    text-align: center;
   }
   header > .container nav span.nav__line--mob {
     display: inline-block;
@@ -5825,15 +5845,15 @@ body.modal-active {
     display: none;
   }
   header > .container .social__media {
-    left: 25%;
+    left: -25%;
   }
   header > .container .social__media.visible {
-    left: 15%;
+    left: -15%;
     opacity: 1;
     animation: mediaActiveSmall 0.3s;
   }
   header > .container .social__media.invisible {
-    left: 25%;
+    left: -25%;
     opacity: 0;
     animation: mediaInActiveSmall 0.3s;
   }
@@ -5841,27 +5861,30 @@ body.modal-active {
     height: 0;
     transition: height .5s;
     overflow: hidden;
+    top: 70px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #f6f7f6;
   }
   header > .container .social__media .social__media__link__wrap h5 {
     opacity: 0;
     top: 15px;
     transition: .5s;
     transition-delay: .1s;
+    font-size: 26px;
   }
   header > .container .social__media.active .social__media__link__wrap {
-    height: 145px;
+    height: calc(100vh - 70px);
   }
   header > .container .social__media.active .social__media__link__wrap h5 {
     transition-delay: .5s;
     opacity: 1;
-  }
-  header > .container .social__media__link__wrap h5 {
+    top: 100px;
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     display: inline-block;
-    font-size: 20px;
     text-align: center;
   }
   .main-window h1.main-window__title--mobile {
@@ -5883,9 +5906,30 @@ body.modal-active {
   }
   header > .container .social__media.active .social__media__link,
   header > .container .social__media__link {
-    transform: translate(0, 0) !important;
-    position: static;
-    box-shadow: 0px 0px 30px 1.5px rgba(74, 68, 151, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 50px;
+    top: 50%;
+  }
+  header > .container .social__media.active .social__media__link img,
+  header > .container .social__media__link img {
+    width: 50px;
+    height: 50px;
+  }
+  header > .container .social__media.active .social__media__link.fb {
+    transform: translate(-100px, -50px);
+  }
+  header > .container .social__media.active .social__media__link.tw {
+    transform: translate(-55px, -10px);
+  }
+  header > .container .social__media.active .social__media__link.gh {
+    transform: translateX(10px);
+  }
+  header > .container .social__media.active .social__media__link.slack {
+    transform: translate(75px, -10px);
+  }
+  header > .container .social__media.active .social__media__link.tg {
+    transform: translate(120px, -50px);
   }
   header > .container .social__media__link__wrap {
     display: flex;
@@ -5896,17 +5940,21 @@ body.modal-active {
     transform: translate(0, 0) !important;
     position: static;
   }
+  header > .container .social__media__link__wrap .nav__btn__close__media {
+    display: block;
+    position: absolute;
+    width: 36px;
+    bottom: 75px;
+  }
   .nav__btn {
     display: flex;
   }
-  .nav__btn.active span:nth-child(1) {
-    transform: rotate(45deg) translate(4px, 5px);
+  .nav__btn span {
+    background-color: #2A2E3D;
   }
-  .nav__btn.active span:nth-child(2) {
+  .nav__btn.active {
     opacity: 0;
-  }
-  .nav__btn.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(4px, -5px);
+    pointer-events: none;
   }
   nav {
     display: none;
@@ -5924,6 +5972,13 @@ body.modal-active {
     background-color: rgba(255, 255, 255, 0.75);
     height: calc(100vh - 117px);
   }
+  header > .container nav .nav__btn__close {
+    order: unset;
+    margin: 0 auto;
+    height: 36px;
+    width: 66px;
+    display: block;
+  }
   header > .container nav a.active:after {
     display: none;
   }
@@ -5931,36 +5986,57 @@ body.modal-active {
     padding: 0;
   }
   header > .container nav .nav__lang {
-    padding: 4px 9px;
-    padding-right: 22px;
-    border-radius: 5px;
-    width: 100px;
-    border: 1px solid #ABABAB;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    transition: all .2s;
+  }
+  header > .container nav .nav__lang .nav__lang__short {
+    font-family: ProximaNova-Semibold;
+    font-size: 24px;
+    color: #2a2e3d;
   }
   header > .container nav .nav__lang__short:after {
     opacity: .7;
+    width: 9px;
+    top: 50%;
+    margin-top: -3px;
   }
   header > .container nav .nav__lang.active .nav__lang__wrap {
     position: fixed;
     top: 50%;
-    left: calc(50% - 100px);
+    left: calc(50% - 40%);
     padding: 0;
     text-align: center;
-    width: 200px;
+    width: 80%;
     background-color: transparent;
   }
-  header > .container nav .nav__lang__wrap a {
+  header > .container nav .nav__lang.active .nav__lang__wrap a {
     color: #000;
     background-color: #fff;
     font-size: 24px;
     margin: 0;
     padding: 10px;
+    border-radius: 0;
   }
-  header > .container nav .nav__lang__wrap a:first-child {
+  header > .container nav .nav__lang.active .nav__lang__wrap a:first-child {
     border-radius: 10px 10px 0 0;
   }
-  header > .container nav .nav__lang__wrap a:last-child {
+  header > .container nav .nav__lang.active .nav__lang__wrap a:last-child {
     border-radius: 0 0 10px 10px;
+  }
+  header > .container nav .nav__lang.active .nav__lang__wrap .nav__btn__close__lang {
+    display: block;
+    height: 56px;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+  header > .container nav .nav__lang.active .nav__lang__wrap .nav__btn__close__lang img {
+    width: 36px;
   }
   header > .container nav .nav__lang__wrap:before {
     width: 100%;
@@ -5979,16 +6055,19 @@ body.modal-active {
     position: absolute;
     bottom: -50px;
     left: 0;
-    background-color: #0070C9;
+    background-color: #4F92EA;
     height: 50px;
     align-items: center;
     justify-content: center;
     color: #fff;
+    border-radius: 0;
+    font-size: 20px;
   }
   header > .container nav .counter__docs__whitepaper > img {
     height: 25px;
     width: 25px;
     margin-right: 25px;
+    width: auto;
   }
   .about__wrap > .container {
     flex-direction: column-reverse;
@@ -6164,21 +6243,21 @@ body.modal-active {
 @media only screen and (max-width: 1000px) {
   @keyframes mediaActiveSmall {
     0% {
-      left: 25%;
+      left: -25%;
       opacity: 0;
     }
     100% {
       opacity: 1;
-      left: 15%;
+      left: -15%;
     }
   }
   @keyframes mediaInActiveSmall {
     0% {
-      left: 15%;
+      left: -15%;
       opacity: 1;
     }
     100% {
-      left: 25%;
+      left: -25%;
       opacity: 0;
     }
   }
