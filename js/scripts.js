@@ -365,10 +365,10 @@ $(document).ready(function(){
 
     $('.nav__btn__close').on('click', function(){
         if ($('#popup__whitepaper').is(':visible')) {
-            $('main, footer').removeClass('blur');
+            $('main, footer, .wrapper').removeClass('blur');
             $('#popup__whitepaper').hide();
         }
-        $('main, footer').toggleClass('blur');
+        $('main, footer, .wrapper').toggleClass('blur');
         $('.nav__btn').toggleClass('active');
         $('nav').toggleClass('active');
     });
