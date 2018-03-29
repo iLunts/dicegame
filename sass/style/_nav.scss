@@ -286,3 +286,25 @@ header>.container nav span.nav__line--mob {
         opacity: 0;
     }
 }
+
+@media only screen and (max-width: 1120px) and (min-width: 1000px) {
+
+    header{
+
+        .container{
+            .logo{
+                width: 120px;
+            }
+
+            nav{
+                display: flex;
+                align-items: center;
+
+                a{
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+
+}
