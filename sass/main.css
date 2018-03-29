@@ -2037,6 +2037,7 @@ footer.blur {
 
 .btn.btn--blue.btn--buy {
   background: #0088D0;
+  border-color: #0088D0;
   color: #fff;
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
   margin-left: 10px;
