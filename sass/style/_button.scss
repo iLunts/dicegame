@@ -68,10 +68,9 @@
             box-shadow: none !important;
             transform: translateY(4px);
         }
-    } // Modificator '.btn.btn--blue'
+    } 
+    // Modificator '.btn.btn--blue'
     &.btn--blue {
-        // background: $color-blue;
-        // color: #fff;
         background-color: #EDF2F5;
         color: #0088D0;
         border: 1px solid #79BFE4;
@@ -91,6 +90,26 @@
             border-color: $color-blue;
             background: transparent;
             color: $color-blue;
+        }
+        // Modificator '.btn.btn--blue.btn--buy'
+        &.btn--buy {
+            background: #0088D0;
+            border-color: #0088D0;
+            color: #fff;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, .1);
+            margin-left: 10px;
+            left: 15%;
+            opacity: 0;
+            &.visible {
+                left: 0;
+                opacity: 1;
+                animation: mediaActive 0.3s;
+            }
+            &.invisible {
+                left: 15%;
+                opacity: 0;
+                animation: mediaInActive 0.3s;
+            }
         }
     } // Modificator '.btn.btn--app'
     &.btn--app {

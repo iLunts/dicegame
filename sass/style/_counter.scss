@@ -38,7 +38,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
         &__num {
             font-size: 38px;
             font-weight: 600;
@@ -75,16 +75,6 @@
             text-transform: uppercase;
             font-family: 'ProximaNova-Regular';
         }
-    }
-    &__desc {
-        max-width: 550px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 17px;
-        font-weight: 400;
-        margin-bottom: 80px;
-        font-family: 'ProximaNova-Regular';
-        line-height: 24px;
     }
     &__road {
         width: 352px;
