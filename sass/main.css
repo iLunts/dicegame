@@ -444,6 +444,19 @@ header > .container nav span.nav__line--mob {
   }
 }
 
+@media only screen and (max-width: 1120px) and (min-width: 1000px) {
+  header .container .logo {
+    width: 120px;
+  }
+  header .container nav {
+    display: flex;
+    align-items: center;
+  }
+  header .container nav a {
+    padding: 0 12px;
+  }
+}
+
 .main-window h1 {
   font-size: 40px;
   max-width: 962px;
@@ -2043,6 +2056,13 @@ footer.blur {
   margin-left: 10px;
   left: 15%;
   opacity: 0;
+  transition: all .2s;
+}
+
+.btn.btn--blue.btn--buy:hover {
+  background: #0099ea;
+  border-color: #0099ea;
+  box-shadow: none;
 }
 
 .btn.btn--blue.btn--buy.visible {
