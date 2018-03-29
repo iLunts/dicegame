@@ -15,6 +15,11 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        &:before,
+        &:after{
+            content: none;
+        }
         .logo {
             max-height: 36px;
             img {
@@ -158,8 +163,7 @@ header {
         .social__media {
             display: inline-block;
             position: relative;
-            left: 15%;
-            opacity: 0;
+            
             &__btn {
                 font-size: 17px; 
                 line-height: 19px;
@@ -231,16 +235,6 @@ header {
                     width: 48px;
                     height: 48px;
                 }
-            }
-            &.visible {
-                left: 0;
-                opacity: 1;
-                animation: mediaActive 0.3s;
-            }
-            &.invisible {
-                left: 15%;
-                opacity: 0;
-                animation: mediaInActive 0.3s;
             }
         }
     }
