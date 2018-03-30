@@ -21,35 +21,29 @@ $device-silver-panel: #222;
 
 .device-iphone-x {
     height: 86.8em;
-    // width: 42.8em;
-    width: 49.7em;
+    width: 42.8em;
+    // width: 49.7em;
     .device-frame {
         background: $device-silver-panel;
         border-radius: 6.8em;
-        height: 86.8em;
+        height: 74.5em;
         padding: 1.2em;
-        // width: 42.8em;
-        width: 49.8em;
+        width: 42.8em;
+        // height: 86.8em;
+        // width: 49.8em;
         box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.15);
     } 
     // 2436-by-1125-pixel resolution
     .device-content {
         border-radius: 6em;
-        height: 84.2em;
-        // width: 40.5em;
-        width: 47.5em;
+        height: 72em;
+        width: 40.5em;
+        // height: 84.2em;
+        // width: 47.5em;
         overflow: hidden;
         &.device-content--fm {
             background-color: #6F5163;
             text-align: center;
-            .device-content__img {
-                margin: 32em 5em 20em;
-                width: auto;
-            }
-            // .device-content__btn {
-            //     color: #6F5163;
-            //     font-weight: 600;
-            // }
         }
     } 
     

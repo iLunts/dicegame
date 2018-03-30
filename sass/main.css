@@ -2781,33 +2781,28 @@ svg {
 
 .device-iphone-x {
   height: 86.8em;
-  width: 49.7em;
+  width: 42.8em;
 }
 
 .device-iphone-x .device-frame {
   background: #222;
   border-radius: 6.8em;
-  height: 86.8em;
+  height: 74.5em;
   padding: 1.2em;
-  width: 49.8em;
+  width: 42.8em;
   box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 .device-iphone-x .device-content {
   border-radius: 6em;
-  height: 84.2em;
-  width: 47.5em;
+  height: 72em;
+  width: 40.5em;
   overflow: hidden;
 }
 
 .device-iphone-x .device-content.device-content--fm {
   background-color: #6F5163;
   text-align: center;
-}
-
-.device-iphone-x .device-content.device-content--fm .device-content__img {
-  margin: 32em 5em 20em;
-  width: auto;
 }
 
 .device-iphone-x .device-header {
