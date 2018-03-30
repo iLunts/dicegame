@@ -613,4 +613,22 @@ $(document).ready(function(){
         var elem = $(this).closest('.card__container');
         elem.removeClass('active');
     });
+
+    var videoPlayer = document.getElementById('device-video');
+    videoPlayer.addEventListener('click', function () {
+        if (videoPlayer.paused == false) {
+            $('#device-video').find('.btn').addClass('isPause');
+            $('#device-video').removeClass('isPlay');
+            $('.btn--play').show();
+            videoPlayer.pause();
+            videoPlayer.firstChild.nodeValue = 'Play';
+        } else {
+            videoPlayer.play();
+            $('#device-video').addClass('isPlay');
+            $('#device-video').removeClass('isPause');
+            $('.btn--play').hide();
+            videoPlayer.firstChild.nodeValue = 'Pause';
+        }
+    });
+
 });

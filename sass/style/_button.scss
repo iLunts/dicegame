@@ -118,7 +118,25 @@
                 animation: mediaInActive 0.3s;
             }
         }
-    } // Modificator '.btn.btn--app'
+    }
+
+    // Modificator '.btn.btn--play'
+    &.btn--play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: transparent;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjY0OS4zNzQgNDE2LjYzNCA2OC4yNDMgNjguMjQzIj4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICNmZmY7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPGcgaWQ9InBsYXktYnV0dG9uIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDkuMzc0IDQxNi42MzQpIj4gICAgPHBhdGggaWQ9IlBhdGhfMzMzIiBkYXRhLW5hbWU9IlBhdGggMzMzIiBjbGFzcz0iY2xzLTEiIGQ9Ik00OC44LDMxLjI1OSwyMy43NzgsMTQuMkExLjEzNywxLjEzNywwLDAsMCwyMiwxNS4xMzdWNDkuMjU5YTEuMTM3LDEuMTM3LDAsMCwwLDEuNzc4LjkzOUw0OC44LDMzLjEzOGExLjEzNiwxLjEzNiwwLDAsMCwwLTEuODc5Wk0yNC4yNzUsNDcuMTA2VjE3LjI5TDQ2LjE0MSwzMi4yWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy4wMjMgMS45MjMpIi8+ICAgIDxwYXRoIGlkPSJQYXRoXzMzNCIgZGF0YS1uYW1lPSJQYXRoIDMzNCIgY2xhc3M9ImNscy0xIiBkPSJNMzQuMTIyLDBBMzQuMTIyLDM0LjEyMiwwLDEsMCw2OC4yNDMsMzQuMTIyLDM0LjE2LDM0LjE2LDAsMCwwLDM0LjEyMiwwWm0wLDY1Ljk2OEEzMS44NDcsMzEuODQ3LDAsMSwxLDY1Ljk2OCwzNC4xMjIsMzEuODgzLDMxLjg4MywwLDAsMSwzNC4xMjIsNjUuOTY4WiIvPiAgPC9nPjwvc3ZnPg==');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 68px;
+        height: 68px;
+        margin-top: -34px;
+        margin-left: -34px;
+        z-index: 10;
+    }
+    // Modificator '.btn.btn--app'
     &.btn--app {
         display: inline-flex;
         line-height: 1.2;

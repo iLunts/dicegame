@@ -54,9 +54,13 @@ $device-silver-panel: #222;
         height: 86.8em;
         width: 42.8em;
         overflow: hidden;
+        cursor: pointer;
         &.device-content--fm {
             background-color: #6F5163;
             text-align: center;
+        }
+        .btn{
+            position: absolute;
         }
     } 
     
