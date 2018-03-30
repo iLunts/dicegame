@@ -223,6 +223,12 @@ $(document).ready(function(){
     if ($('.social__media')[0].className.match('active')) {
         $('.social__media').removeClass('active');
     }
+    if ($(window).width() < 1083) {
+      $('.wrapper').removeClass('blur');
+      $('main, footer').removeClass('blur');
+      $('.nav__btn').removeClass('active');
+      $('nav').removeClass('active');
+    }
 		// $(menu_selector + " a.active").removeClass("active");
 		// $(this).addClass("active");
 		var hash = $(this).attr("href");
