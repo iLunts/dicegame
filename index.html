@@ -63,7 +63,27 @@
         <div class="container">
             <a href="/" class="logo">
                 <img src="img/logo.svg" alt="">
-                <img src="img/logo-mob.svg" alt="" class="logo-mob"> </a>
+                <img src="img/logo-mob.svg" alt="" class="logo-mob">
+            </a>
+            <div class="social__media media--mobile">
+                <span class="btn btn--blue social__media__btn">Media</span>
+                <div class="social__media__link__wrap">
+                    <h5>We in Media</h5>
+                    <a target="_blank" href="#" class="social__media__link fb">
+                        <img src="img/media/facebook.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link tw">
+                        <img src="img/media/twitter.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link gh">
+                        <img src="img/media/github.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link slack">
+                        <img src="img/media/slack.svg" alt=""> </a>
+                    <a target="_blank" href="#" class="social__media__link tg">
+                        <img src="img/media/telegram.svg" alt=""> </a>
+                    <span class="nav__btn__close__media">
+                            <img src="img/close-mobile.svg" alt="">
+                        </span>
+                </div>
+            </div>
             <nav>
                 <a class="nav__link" href="#product" class="active">Product</a>
                 <a class="nav__link" href="#features">Features</a>
@@ -88,9 +108,6 @@
                             <img src="img/close-mobile.svg" alt="">
                         </span>
                     </span>
-                </span>
-                <span class="nav__btn__close">
-                    <img src="img/close-mobile.svg" alt="">
                 </span>
                 <a href="javascript:void(0);" class="counter__docs__whitepaper">
                     <img src="img/download-menu.svg" alt="">Whitepaper</a>
@@ -117,6 +134,9 @@
                 <a class="btn btn--blue btn--buy">
                     Buy Now
                 </a>
+                <span class="nav__btn__close">
+                    <img src="img/close-mobile.svg" alt="">
+                </span>
             </nav>
             <div class="nav__btn">
                 <span></span>
@@ -127,6 +147,45 @@
     </header>
     <div class="wrapper">
         <main>
+            <div class="block block--particles-second block--xlg">
+                <div class="container">
+                    <div class="grid">
+                        <div class="col--1-4">
+                            <div class="tps">
+                                <div class="tps__body">
+                                    <p class="tps__title">Tokens PRE-SALE</p>
+
+                                    <div class="tps__progress">
+                                        <div class="tps__progress-header">
+                                            <span class="tps__progress-text">Soft cup</span>
+                                            <span class="tps__progress-text">Hard cup</span>
+                                        </div>
+                                        <div class="tps__progress-bar">
+                                            <div class="tps__progress-line"></div>
+                                        </div>
+                                    </div>
+
+                                    <p class="m--v t--c">
+                                        <button class="btn btn--blue-dark brn--sm">Buy Tokens</button>
+                                    </p>
+
+                                    <div class="tps__link">
+                                        <a class="link" href="">Whitepaper</a>
+                                        <a class="link" href="">OnePage</a>
+                                        <a class="link" href="">Presentation</a>
+                                    </div>
+                                    
+                                    <div class="tps__social">
+                                        <a class="link" href="">1</a>
+                                        <a class="link" href="">2</a>
+                                        <a class="link" href="">3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- <div class="block block--particles-second block--xlg">
                 <div class="block__particles" id="js-particles-second"></div>
                 <div class="container">
@@ -251,13 +310,13 @@
                             <div class="device device--sm device-iphone-x">
                                 <div class="device-frame">
                                     <div class="device-content device-content--fm">
-                                        <!-- <img class="device-content__img" src="img/logo-fm.svg" alt=""> -->
-                                        <!-- <button class="btn btn--white btn--push device-content__btn">CHECK MVP</button> -->
 
-                                        <video autoplay>
+                                        <video id="device-video">
                                             <source src="video/video-dicegame.mp4" type="video/mp4">
                                             <!-- <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"> Your browser does not support HTML5 video. -->
                                         </video>
+
+                                        <button class="btn btn--play"></button>
                                     </div>
                                 </div>
                                 <div class="device-stripe"></div>
@@ -409,7 +468,7 @@
             <div>
                 <section id="how-work" class="block block--white block--xxlg how-work">
                     <div class="container">
-                        <h3 class="block__title m--b-lg">How it Work</h3>
+                        <h3 class="block__title m--b-lg">How it Works</h3>
                         <div class="grid flex flex--middle">
                             <div class="col--xlg-4-10 col--lg-4-10 col--md-4-10 col--sm-4-10 col--xs-1-1 order-xs--2">
                                 <p class="block__text">
