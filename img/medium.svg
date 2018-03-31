@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="1255 10161.449 40 33.943">
   <defs>
     <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
       .cls-1 {
-        fill: #9dd5c0;
+        opacity: 0.79;
       }
 
       .cls-2 {
-        fill: #c5ecdc;
+        opacity: 0.89;
       }
 
       .cls-3 {
-        fill: #ddf4ea;
-      }
-
-      .cls-4 {
-        fill: #fff;
+        opacity: 0.92;
       }
     </style>
   </defs>
