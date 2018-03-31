@@ -163,6 +163,10 @@ header {
         .social__media {
             display: inline-block;
             position: relative;
+
+            &.media--mobile {
+                display: none;
+            }
             
             &__btn {
                 font-size: 17px; 
@@ -194,7 +198,7 @@ header {
                     &.tw {
                         transform: translate(-65px, -10px);
                     }
-                    &.slack {
+                    &.medium {
                         transform: translate(65px, -10px);
                     }
                     &.tg {

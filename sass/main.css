@@ -314,6 +314,10 @@ header > .container .social__media {
   position: relative;
 }
 
+header > .container .social__media.media--mobile {
+  display: none;
+}
+
 header > .container .social__media__btn {
   font-size: 17px;
   line-height: 19px;
@@ -348,7 +352,7 @@ header > .container .social__media.active .social__media__link.tw {
   transform: translate(-65px, -10px);
 }
 
-header > .container .social__media.active .social__media__link.slack {
+header > .container .social__media.active .social__media__link.medium {
   transform: translate(65px, -10px);
 }
 
@@ -1096,6 +1100,10 @@ header > .container nav span.nav__line--mob {
   padding-top: 250px;
 }
 
+#roadmap {
+  padding-top: 40px;
+}
+
 .road-map {
   overflow: hidden;
 }
@@ -1485,18 +1493,18 @@ header > .container nav span.nav__line--mob {
   box-shadow: 0px 5px 17.676px 0.324px rgba(52, 87, 154, 0.3);
 }
 
-.follow__item.gh {
-  background-color: #27323E;
+.follow__item.rd {
+  background-color: #FF7D3A;
   box-shadow: 0px 5px 17.676px 0.324px rgba(52, 87, 154, 0.3);
   padding-top: 35px;
 }
 
-.follow__item.gh > img {
+.follow__item.rd > img {
   height: 40px;
 }
 
-.follow__item.slack {
-  background-color: #583753;
+.follow__item.medium {
+  background-color: #18B475;
   box-shadow: 0px 5px 17.676px 0.324px rgba(52, 87, 154, 0.3);
 }
 
@@ -1748,12 +1756,12 @@ header > .container nav span.nav__line--mob {
   background: #1ca0f3;
 }
 
-.footer__social__icon.footer__social__icon--github:hover {
-  background: #24292e;
+.footer__social__icon.footer__social__icon--reddit:hover {
+  background: #FF7D3A;
 }
 
-.footer__social__icon.footer__social__icon--slack:hover {
-  background: #573752;
+.footer__social__icon.footer__social__icon--medium:hover {
+  background: #18B475;
 }
 
 .footer__social__icon.footer__social__icon--telegram:hover {
@@ -1944,13 +1952,11 @@ header > .container nav span.nav__line--mob {
 main.blur,
 footer.blur {
   overflow-y: hidden;
-  height: 100vh;
   filter: blur(15px);
 }
 
 .blur {
   overflow-y: hidden;
-  height: 100vh;
   filter: blur(15px);
 }
 
@@ -5870,10 +5876,10 @@ body.modal-active {
   header > .container .social__media.active .social__media__link.tw {
     transform: translateY(30px);
   }
-  header > .container .social__media.active .social__media__link.gh {
+  header > .container .social__media.active .social__media__link.rd {
     transform: translateY(90px);
   }
-  header > .container .social__media.active .social__media__link.slack {
+  header > .container .social__media.active .social__media__link.medium {
     transform: translateY(150px);
   }
   header > .container .social__media.active .social__media__link.tg {
@@ -6044,9 +6050,14 @@ body.modal-active {
   }
   header > .container .social__media {
     left: -25%;
+    opacity: 0;
+    transition: all .2s;
+  }
+  header > .container .social__media.media--mobile {
+    display: block;
   }
   header > .container .social__media.visible {
-    left: -15%;
+    left: 5%;
     opacity: 1;
     animation: mediaActiveSmall 0.3s;
   }
@@ -6054,6 +6065,20 @@ body.modal-active {
     left: -25%;
     opacity: 0;
     animation: mediaInActiveSmall 0.3s;
+  }
+  header > .container nav .social__media {
+    display: none;
+  }
+  header > .container .btn.btn--blue.btn--buy {
+    left: 0;
+    opacity: 1;
+    line-height: 30px;
+    color: #2a2e3d;
+    transition: all .2s;
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
   }
   header > .container .social__media .social__media__link__wrap {
     height: 0;
@@ -6120,10 +6145,10 @@ body.modal-active {
   header > .container .social__media.active .social__media__link.tw {
     transform: translate(-55px, -10px);
   }
-  header > .container .social__media.active .social__media__link.gh {
+  header > .container .social__media.active .social__media__link.rd {
     transform: translateX(10px);
   }
-  header > .container .social__media.active .social__media__link.slack {
+  header > .container .social__media.active .social__media__link.medium {
     transform: translate(75px, -10px);
   }
   header > .container .social__media.active .social__media__link.tg {
@@ -6204,7 +6229,7 @@ body.modal-active {
   }
   header > .container nav .nav__lang.active .nav__lang__wrap {
     position: fixed;
-    top: 50%;
+    top: 25vh;
     left: calc(50% - 40%);
     padding: 0;
     text-align: center;
@@ -6377,6 +6402,9 @@ body.modal-active {
     margin-bottom: 10px;
     font-size: 17px;
   }
+  #roadmap {
+    padding-top: 70px;
+  }
   /* Extra Small Devices, Phones */
 }
 
@@ -6428,10 +6456,10 @@ body.modal-active {
     padding: 70px 0;
   }
   .block.block--xlg {
-    padding: 50px 0;
+    padding: 70px 0 50px;
   }
   .block.block--lg {
-    padding: 30px 0;
+    padding: 70px 0 30px;
   }
   .block .block--center {
     text-align: center;
@@ -6446,12 +6474,12 @@ body.modal-active {
     }
     100% {
       opacity: 1;
-      left: -15%;
+      left: 5%;
     }
   }
   @keyframes mediaInActiveSmall {
     0% {
-      left: -15%;
+      left: 5%;
       opacity: 1;
     }
     100% {

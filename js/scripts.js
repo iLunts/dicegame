@@ -148,8 +148,8 @@ $(document).ready(function(){
         }
 
         $('#popup__whitepaper').fadeOut(200);
-        $('main, footer').removeClass('blur');
-        $('.wrapper').removeClass('blur');
+        // $('main, footer').removeClass('blur');
+        // $('.wrapper').removeClass('blur');
     });
 
     var swiperData = {
@@ -190,10 +190,20 @@ $(document).ready(function(){
         });
         if ($(window).scrollTop() > 75) {
             $('header').addClass('active');
-            $('.btn.btn--buy').removeClass('invisible').addClass('visible');
+            if ($(window).width() > 800) {
+                $('.btn.btn--buy').removeClass('invisible').addClass('visible');
+            }
+            if ($(window).width() < 800) {
+                $('.social__media').removeClass('invisible').addClass('visible');
+            }
         }else {
             if ($('header')[0].className) {
-                $('.btn.btn--buy').removeClass('visible').addClass('invisible');
+                if ($(window).width() > 800) {
+                    $('.btn.btn--buy').removeClass('visible').addClass('invisible');
+                }
+                if ($(window).width() < 800) {
+                    $('.social__media').removeClass('visible').addClass('invisible');
+                }
             }
             $('header').removeClass('active');
         }
@@ -212,6 +222,12 @@ $(document).ready(function(){
     }
     if ($('.social__media')[0].className.match('active')) {
         $('.social__media').removeClass('active');
+    }
+    if ($(window).width() < 1083) {
+      $('.wrapper').removeClass('blur');
+      $('main, footer').removeClass('blur');
+      $('.nav__btn').removeClass('active');
+      $('nav').removeClass('active');
     }
 		// $(menu_selector + " a.active").removeClass("active");
 		// $(this).addClass("active");
@@ -368,7 +384,7 @@ $(document).ready(function(){
             $('main, footer, .wrapper').removeClass('blur');
             $('#popup__whitepaper').hide();
         }
-        $('main, footer, .wrapper').toggleClass('blur');
+        $('main, footer, .wrapper').removeClass('blur');
         $('.nav__btn').toggleClass('active');
         $('nav').toggleClass('active');
     });
@@ -414,7 +430,7 @@ $(document).ready(function(){
                     "nb_sides": 5
                 },
                 "image": {
-                    "src": "img/github.svg",
+                    "src": "img/reddit.svg",
                     "width": 100,
                     "height": 100
                 }

@@ -85,18 +85,18 @@
         }
     }
 }
-
+//TODO: TO check, did not say what else
 main,
 footer {
     &.blur {
         overflow-y: hidden;
-        height: 100vh;
+        //height: 100vh;
         filter: blur(15px);
     }
 }
 
 .blur{
     overflow-y: hidden;
-    height: 100vh;
+    //height: 100vh;
     filter: blur(15px);
 }
