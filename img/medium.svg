@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1255 10161.449 40 33.943">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9dd5c0;
+      }
+
+      .cls-2 {
+        fill: #c5ecdc;
+      }
+
+      .cls-3 {
+        fill: #ddf4ea;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Medium_logo" data-name="Medium logo" transform="translate(592.342 173)">
+    <path id="Path_1270" data-name="Path 1270" class="cls-1" d="M274.339,65.909,262.02,59.987l-.093-26.847a.849.849,0,0,1,1.217-.768l11.679,5.616a.849.849,0,0,1,.481.765V65.3A.673.673,0,0,1,274.339,65.909Z" transform="translate(427.354 9956.416)"/>
+    <path id="Path_1271" data-name="Path 1271" class="cls-2" d="M144.993,57.752,131.66,51.342,144.5,30.209a.849.849,0,0,1,1.094-.324l11.843,5.695a.849.849,0,0,1,.357,1.207Z" transform="translate(544.381 9958.649)"/>
+    <path id="Path_1272" data-name="Path 1272" class="cls-3" d="M36.093,63.445,22.759,57.035l-12.221-19.9a.652.652,0,0,1,.838-.929l11.383,5.474Z" transform="translate(653.281 9952.957)"/>
+    <path id="Path_1273" data-name="Path 1273" class="cls-4" d="M12.417,64.864.382,59.077A.673.673,0,0,1,0,58.47V31.777a.652.652,0,0,1,.935-.588l12.447,5.985V64.257A.673.673,0,0,1,12.417,64.864Z" transform="translate(662.658 9957.46)"/>
+  </g>
+</svg>
