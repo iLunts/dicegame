@@ -69,6 +69,12 @@
             transform: translateY(4px);
         }
     } 
+    // Modificator '.btn.btn--blue-dark'
+    &.btn--blue-dark {
+        background-color: #20A6EC;
+        color: #fff;
+        border: 1px solid #20A6EC;
+    }
     // Modificator '.btn.btn--blue'
     &.btn--blue {
         background-color: #EDF2F5;
