@@ -77,10 +77,19 @@
             align-items: center;
             cursor: pointer;
             justify-content: center;
-            margin-top: 50px;
-            
+            //margin-top: 50px;
+            position: absolute;
+            bottom: 30%;
+            left: 50%;
+            margin-left: -18px;
+
             img {
                 width: 36px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: .7;
             }
         }
     }
