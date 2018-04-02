@@ -141,16 +141,18 @@ $(document).ready(function(){
         $(this).removeClass('active');
     });
 
-    $('.social__media__btn').on('click', function () {
-        $('.social__media').toggleClass('active');
-        if ($('.nav__lang')[0].className.match('active')) {
-            $('.nav__lang').removeClass('active');
+    $(".social__media__btn").on("click", function() {
+        $(".social__media").toggleClass("active");
+        if ($(".nav__lang")[0].className.match("active")) {
+          $(".nav__lang").removeClass("active");
         }
-
-        $('#popup__whitepaper').fadeOut(200);
+    
+        $("#popup__whitepaper").fadeOut(200);
+        $(".wrapper").removeClass("blur");
+        $("main, footer").removeClass("blur");
         // $('main, footer').removeClass('blur');
         // $('.wrapper').removeClass('blur');
-    });
+      });
 
     var swiperData = {
         direction: 'vertical',
