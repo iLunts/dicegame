@@ -71,7 +71,7 @@
         filter: url(#Path_1144);
       }
     </style>
-    <filter id="Path_1144" x="1428.767" y="5880.593" width="327.5" height="194.84" filterUnits="userSpaceOnUse">
+    <filter id="Path_1144" x="1428.767" y="5880.593" width="500" height="500" filterUnits="userSpaceOnUse">
       <feOffset dy="-4" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="15" result="blur"/>
       <feFlood flood-opacity="0.102"/>
