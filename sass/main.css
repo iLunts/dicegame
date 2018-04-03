@@ -1337,7 +1337,7 @@ header > .container nav span.nav__line--mob {
   background-color: rgba(255, 255, 255, 0.75); }
   .popup__whitepaper h2 {
     font-size: 40px;
-    font-family: 'FuturaPTHeavy';
+    font-family: "FuturaPTHeavy";
     margin-top: 90px;
     text-align: center;
     margin-bottom: 30px; }
@@ -1369,7 +1369,7 @@ header > .container nav span.nav__line--mob {
         transition: 0.5s; }
     .popup__whitepaper__lang h4 {
       font-size: 17px;
-      font-family: 'FuturaPTBold';
+      font-family: "FuturaPTBold";
       text-transform: uppercase;
       transition: 0.2s; }
     .popup__whitepaper__lang__icon {
@@ -1388,14 +1388,17 @@ header > .container nav span.nav__line--mob {
     font-size: 17px;
     color: #0070c9;
     text-transform: uppercase;
-    font-family: 'ProximaNova-Semibold';
+    font-family: "ProximaNova-Semibold";
     display: flex;
     align-items: center;
     cursor: pointer;
     justify-content: center;
     margin-top: 50px; }
     .popup__whitepaper > h5 img {
-      width: 36px; }
+      width: 36px;
+      transition: all 0.1s; }
+      .popup__whitepaper > h5 img:hover {
+        opacity: 0.5; }
 
 main.blur,
 footer.blur {
