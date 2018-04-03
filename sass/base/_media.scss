@@ -29,7 +29,6 @@
     }
 }
 
-
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {
@@ -165,7 +164,6 @@
         }
     }
 }
-
 
 /* Small Devices, Tablets */
 
@@ -342,7 +340,7 @@
     header>.container .social__media__link {
         //transform: translate(0, 0) !important;
         //position: static;
-        box-shadow: 0 0 15px rgba(0, 0, 0,.2);
+        box-shadow: 0 0 15px rgba(0, 0, 0, .2);
         width: 50px;
         height: 50px;
         top: 50%;
@@ -352,19 +350,19 @@
         }
     }
     header>.container .social__media.active .social__media__link.fb {
-        transform: translate(-100px,-50px);
+        transform: translate(-100px, -50px);
     }
     header>.container .social__media.active .social__media__link.tw {
-        transform: translate(-55px,-10px);
+        transform: translate(-55px, -10px);
     }
     header>.container .social__media.active .social__media__link.rd {
         transform: translateX(10px);
     }
     header>.container .social__media.active .social__media__link.medium {
-        transform: translate(75px,-10px);
+        transform: translate(75px, -10px);
     }
     header>.container .social__media.active .social__media__link.tg {
-        transform: translate(120px,-50px);
+        transform: translate(120px, -50px);
     }
     header>.container .social__media__link__wrap {
         display: flex;
@@ -627,11 +625,9 @@
             }
         }
     }
-
     #roadmap {
         padding-top: ($block-padding-vertical * 3.5);
     }
-
     /* Extra Small Devices, Phones */
     @media only screen and (max-width: 550px) {
         .popup__whitepaper__lang__wrap {
@@ -649,7 +645,6 @@
             padding: 0 15px;
             text-align: center;
         }
-        
         .gradient {
             text-align: center;
         }
@@ -682,8 +677,7 @@
             }
             .block__view--mobile {
                 display: block;
-            }
-            // Modificator '.block.block--xxlg'
+            } // Modificator '.block.block--xxlg'
             &.block--xxlg {
                 padding: ($block-padding-vertical * 3.5) 0;
             } // Modificator '.block.block--xlg'
@@ -698,7 +692,6 @@
             }
         }
     }
-
     @keyframes mediaActiveSmall {
         0% {
             left: -25%;
@@ -709,7 +702,6 @@
             left: 5%;
         }
     }
-
     @keyframes mediaInActiveSmall {
         0% {
             left: 5%;

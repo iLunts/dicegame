@@ -3,9 +3,11 @@
     padding-bottom: 50px;
     padding-top: 20px;
 }
+
 #roadmap {
     padding-top: 40px;
 }
+
 .road-map {
     overflow: hidden;
     &__wrap {
@@ -13,8 +15,7 @@
         &--mobile {
             display: none;
         }
-    }
-    // &__title {
+    } // &__title {
     //     padding-top: 30px;
     //     text-align: center;
     //     font-family: 'FuturaPTHeavy';
@@ -74,8 +75,7 @@
         }
         &__wrap {
             position: relative;
-            margin: 0 auto;
-            //width: 1750px;
+            margin: 0 auto; //width: 1750px;
             display: flex;
             flex-direction: column;
         }
@@ -89,7 +89,6 @@
                 display: flex;
             }
         }
-
         &--active {
             &:after {
                 width: 8px;
@@ -188,7 +187,6 @@
 //        }
 //    }
 //}
-
 //.road-map__cut {
 //    &:nth-child(7) {
 //        left: 680px;
@@ -224,7 +222,6 @@
 //        left: 1430px;
 //    }
 //}
-
 //.road-map__item {
 //    &:nth-child(7) {
 //        left: 730px;
@@ -245,7 +242,6 @@
 //        left: 1480px;
 //    }
 //}
-
 //@for $i from 18 to 25 {
 //    $step: 50px;
 //    .road-map__cut {
@@ -254,15 +250,13 @@
 //        }
 //    }
 //}
-
 @media only screen and (max-width: 1100px) {
     .road-map__wrap {
         display: none;
     }
     .road-map__wrap--mobile {
         display: block;
-    }
-    //.scroll-element.scroll-x {
+    } //.scroll-element.scroll-x {
     //    .scroll-element_outer {
     //        height: 10px;
     //        background-color: #e0e0e0;
