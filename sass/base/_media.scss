@@ -190,7 +190,7 @@
     }
   }
   header > .container nav a {
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
     font-size: 24px;
     font-weight: 600;
     text-align: center;
@@ -275,7 +275,7 @@
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 700;
-    font-family: "FuturaPTBold";
+    font-family: 'FuturaPTBold';
     text-align: center;
     padding-top: 100px;
   }
@@ -637,12 +637,10 @@
         padding: ($block-padding-vertical * 3.5) 0;
       } // Modificator '.block.block--xlg'
       &.block--xlg {
-        padding: ($block-padding-vertical * 3.5) 0
-          ($block-padding-vertical * 2.5);
+        padding: ($block-padding-vertical * 3.5) 0 ($block-padding-vertical * 2.5);
       } // Modificator '.block.block--lg'
       &.block--lg {
-        padding: ($block-padding-vertical * 3.5) 0
-          ($block-padding-vertical * 1.5);
+        padding: ($block-padding-vertical * 3.5) 0 ($block-padding-vertical * 1.5);
       }
       .block--center {
         text-align: center;
@@ -738,9 +736,6 @@
 
 @media only screen and (max-width: 767px) {
   .token-timeline {
-    display: none;
-  }
-  .m-token-timeline {
     display: none;
   }
 }

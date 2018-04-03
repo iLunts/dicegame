@@ -3,7 +3,7 @@
   &__title {
     text-align: center;
     margin-bottom: 40px;
-    font-family: "FuturaPTHeavy";
+    font-family: 'FuturaPTHeavy';
   }
   &__tab {
     font-size: 17px;
@@ -19,7 +19,7 @@
     }
     &.active {
       &:after {
-        content: "";
+        content: '';
         display: inline-block;
         background-color: #ee373e;
         width: 6px;
@@ -54,12 +54,12 @@
         font-size: 34px;
         font-weight: 500;
         margin-bottom: 12px;
-        font-family: "FuturaPTMedium";
+        font-family: 'FuturaPTMedium';
         &--fz-26 {
           font-size: 26px;
           font-weight: 600;
           margin-bottom: 25px;
-          font-family: "ProximaNova-Semibold";
+          font-family: 'ProximaNova-Semibold';
         }
       }
       &__desc {
@@ -81,7 +81,7 @@
         color: #383459;
         font-size: 17px;
         font-weight: 600;
-        font-family: "ProximaNova-Semibold";
+        font-family: 'ProximaNova-Semibold';
       }
       &__line {
         width: 247px;
@@ -137,7 +137,7 @@
           border-right: 1px solid #d2d2d2;
           padding: 15px 20px;
           font-weight: 600;
-          font-family: "ProximaNova-Semibold";
+          font-family: 'ProximaNova-Semibold';
         }
         &:nth-child(2) {
           border-right: 1px solid #d2d2d2;
@@ -172,7 +172,7 @@
       &:first-child {
         span {
           font-weight: 600;
-          font-family: "ProximaNova-Semibold";
+          font-family: 'ProximaNova-Semibold';
         }
       }
       span {
@@ -214,7 +214,7 @@
     font-size: 17px;
     color: rgba(42, 46, 61, 0.43);
     text-transform: uppercase;
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
     display: inline-block;
     width: 180px;
     text-align: center;
@@ -229,7 +229,7 @@
     margin: 0 auto;
     position: relative;
     &:after {
-      content: " ";
+      content: ' ';
       bottom: 0;
       width: 92%;
       height: 1px;
@@ -253,7 +253,7 @@
   &__body-item-title {
     color: rgba(42, 46, 61, 1);
     font-size: 17px;
-    font-family: "ProximaNova-Regular";
+    font-family: 'ProximaNova-Regular';
     display: inline-block;
     width: 180px;
     text-align: center;
@@ -266,11 +266,11 @@
     position: relative;
     span {
       color: #fff;
-      font-family: "ProximaNova-Semibold";
+      font-family: 'ProximaNova-Semibold';
     }
 
     &:after {
-      content: " ";
+      content: ' ';
       position: absolute;
       background-color: #e73d5d;
       width: 102%;
@@ -305,7 +305,7 @@
   }
 
   &__footer-item-inner--bold {
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
   }
 
   &__footer-item-dash {
@@ -365,7 +365,7 @@
     position: relative;
     &:before {
       position: absolute;
-      content: " ";
+      content: ' ';
       width: 1px;
       height: 36px;
       background-color: #eaeaea;
@@ -391,7 +391,7 @@
     .token-timeline__timer-hours-descr,
     .token-timeline__timer-min-descr,
     .token-timeline__timer-sec-descr {
-      font-family: "ProximaNova-Regular";
+      font-family: 'ProximaNova-Regular';
       font-size: 13px;
       color: rgba(255, 255, 255, 0.45);
     }
@@ -408,10 +408,11 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
     span {
       color: rgba(42, 46, 61, 0.6);
       font-size: 17px;
-      font-family: "ProximaNova-Semibold";
+      font-family: 'ProximaNova-Semibold';
     }
   }
 
@@ -420,14 +421,56 @@
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     color: #fff;
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
     font-size: 17px;
     padding: 8px 15px;
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    span {
+      position: relative;
+      z-index: 20;
+      font-family: 'ProximaNova-Semibold';
+    }
   }
 
   &__item--blue {
-    background-color: rgba(84, 133, 243, 1);
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+      background-color: #5485f3;
+    }
+    &:after {
+      position: absolute;
+      content: url(../img/token-timeline-check.svg);
+      height: 13px;
+      width: 13px;
+      top: 20;
+      left: -20px;
+    }
+  }
+
+  &__item--red {
+    position: relative;
+    color: #2a2e3d;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: 70%;
+      height: 100%;
+      background-color: #e73d5d;
+    }
   }
 }
