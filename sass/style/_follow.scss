@@ -74,6 +74,13 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            box-shadow: none;
+            outline: none;
+            
+            &:hover{
+                box-shadow: none;
+            }
+
             img {
                 width: 19px;
                 height: 20px;

@@ -1370,6 +1370,12 @@ header > .container nav span.nav__line--mob {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-shadow: none;
+  outline: none;
+}
+
+.follow__item button:hover {
+  box-shadow: none;
 }
 
 .follow__item button img {
@@ -2705,6 +2711,7 @@ svg {
   width: 96%;
   height: 96%;
   object-fit: fill;
+  border-radius: 4.8em;
 }
 
 .device-iphone-x .device-content {
