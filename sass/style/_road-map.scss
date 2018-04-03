@@ -1,7 +1,7 @@
 #road-map {
-    
-    padding-bottom: 250px;
-    padding-top: 250px;
+    min-height: 450px;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 #roadmap {
     padding-top: 40px;
@@ -9,7 +9,7 @@
 .road-map {
     overflow: hidden;
     &__wrap {
-        width: 150%;
+        //width: 150%;
         &--mobile {
             display: none;
         }
@@ -24,13 +24,12 @@
         height: 1px;
         width: 100%;
         background-color: rgba(0, 136, 208, 0.2);
-        position: relative;
     }
     &__item {
         max-width: 210px;
         padding: 0 15px;
         border-left: 1px solid rgba(0, 136, 208, 0.2);
-        position: absolute;
+        position: relative;
         &:before,
         &:after {
             content: '';
@@ -76,8 +75,21 @@
         &__wrap {
             position: relative;
             margin: 0 auto;
-            width: 1750px;
+            //width: 1750px;
+            display: flex;
+            flex-direction: column;
         }
+        &__block {
+            display: flex;
+            justify-content: center;
+            min-height: 160px;
+            z-index: 1;
+            &__cut {
+                justify-content: space-around;
+                display: flex;
+            }
+        }
+
         &--active {
             &:after {
                 width: 8px;
@@ -96,7 +108,7 @@
         height: 5px;
         border-radius: 50%;
         display: inline-block;
-        position: absolute;
+        position: relative;
         top: -2.5px;
         &__wrap {
             position: relative;
@@ -159,89 +171,89 @@
     }
 }
 
-@for $i from 0 to 7 {
-    $step: 100px;
-    .road-map__cut {
-        &:nth-child(#{$i}) {
-            left: ($step * $i) + 30;
-        }
-    }
-}
+//@for $i from 0 to 7 {
+//    $step: 100px;
+//    .road-map__cut {
+//        &:nth-child(#{$i}) {
+//            left: ($step * $i) + 30;
+//        }
+//    }
+//}
+//
+//@for $i from 0 to 6 {
+//    $step: 100px;
+//    .road-map__item {
+//        &:nth-child(#{$i + 1}) {
+//            left: ($step * $i) + 80;
+//        }
+//    }
+//}
 
-@for $i from 0 to 6 {
-    $step: 100px;
-    .road-map__item {
-        &:nth-child(#{$i + 1}) {
-            left: ($step * $i) + 80;
-        }
-    }
-}
+//.road-map__cut {
+//    &:nth-child(7) {
+//        left: 680px;
+//    }
+//    &:nth-child(8) {
+//        left: 780px;
+//    }
+//    &:nth-child(9) {
+//        left: 880px;
+//    }
+//    &:nth-child(10) {
+//        left: 930px;
+//    }
+//    &:nth-child(11) {
+//        left: 980px;
+//    }
+//    &:nth-child(12) {
+//        left: 1080px;
+//    }
+//    &:nth-child(13) {
+//        left: 1130px;
+//    }
+//    &:nth-child(14) {
+//        left: 1180px;
+//    }
+//    &:nth-child(15) {
+//        left: 1230px;
+//    }
+//    &:nth-child(16) {
+//        left: 1330px;
+//    }
+//    &:nth-child(17) {
+//        left: 1430px;
+//    }
+//}
 
-.road-map__cut {
-    &:nth-child(7) {
-        left: 680px;
-    }
-    &:nth-child(8) {
-        left: 780px;
-    }
-    &:nth-child(9) {
-        left: 880px;
-    }
-    &:nth-child(10) {
-        left: 930px;
-    }
-    &:nth-child(11) {
-        left: 980px;
-    }
-    &:nth-child(12) {
-        left: 1080px;
-    }
-    &:nth-child(13) {
-        left: 1130px;
-    }
-    &:nth-child(14) {
-        left: 1180px;
-    }
-    &:nth-child(15) {
-        left: 1230px;
-    }
-    &:nth-child(16) {
-        left: 1330px;
-    }
-    &:nth-child(17) {
-        left: 1430px;
-    }
-}
+//.road-map__item {
+//    &:nth-child(7) {
+//        left: 730px;
+//    }
+//    &:nth-child(8) {
+//        left: 830px;
+//    }
+//    &:nth-child(9) {
+//        left: 1030px;
+//    }
+//    &:nth-child(10) {
+//        left: 1280px;
+//    }
+//    &:nth-child(11) {
+//        left: 1380px;
+//    }
+//    &:nth-child(12) {
+//        left: 1480px;
+//    }
+//}
 
-.road-map__item {
-    &:nth-child(7) {
-        left: 730px;
-    }
-    &:nth-child(8) {
-        left: 830px;
-    }
-    &:nth-child(9) {
-        left: 1030px;
-    }
-    &:nth-child(10) {
-        left: 1280px;
-    }
-    &:nth-child(11) {
-        left: 1380px;
-    }
-    &:nth-child(12) {
-        left: 1480px;
-    }
-}
-
-@for $i from 18 to 25 {
-    $step: 50px;
-    .road-map__cut {
-        &:nth-child(#{$i}) {
-            left: ($step * $i) + 630;
-        }
-    }
-}
+//@for $i from 18 to 25 {
+//    $step: 50px;
+//    .road-map__cut {
+//        &:nth-child(#{$i}) {
+//            left: ($step * $i) + 630;
+//        }
+//    }
+//}
 
 @media only screen and (max-width: 1100px) {
     .road-map__wrap {
@@ -250,29 +262,29 @@
     .road-map__wrap--mobile {
         display: block;
     }
-    .scroll-element.scroll-x {
-        .scroll-element_outer {
-            height: 10px;
-            background-color: #e0e0e0;
-            border-radius: 8px;
-            &:active, &:focus  {
-                .scroll-bar {
-                    background-color: #919191;
-                    opacity: 1;
-                }
-            }
-            &:hover {
-                .scroll-bar {
-                    background-color: #919191;
-                }
-            }
-        }
-        .scroll-bar {
-            height: 100%;
-            background-color: #c2c2c2;
-            position: relative;
-            opacity: .6;
-            border-radius: 10px;
-        }
-    }
+    //.scroll-element.scroll-x {
+    //    .scroll-element_outer {
+    //        height: 10px;
+    //        background-color: #e0e0e0;
+    //        border-radius: 8px;
+    //        &:active, &:focus  {
+    //            .scroll-bar {
+    //                background-color: #919191;
+    //                opacity: 1;
+    //            }
+    //        }
+    //        &:hover {
+    //            .scroll-bar {
+    //                background-color: #919191;
+    //            }
+    //        }
+    //    }
+    //    .scroll-bar {
+    //        height: 100%;
+    //        background-color: #c2c2c2;
+    //        position: relative;
+    //        opacity: .6;
+    //        border-radius: 10px;
+    //    }
+    //}
 }

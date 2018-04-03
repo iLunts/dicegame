@@ -4,7 +4,7 @@
 
 @media only screen and (min-width: 1700px) {
     .road-map__h-line {
-        height: 2px;
+        //height: 2px;
     }
 }
 
@@ -33,9 +33,9 @@
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {
-    .road-map__wrap {
-        width: 1800px;
-    }
+    //.road-map__wrap {
+    //    width: 1800px;
+    //}
     #road-map {
         overflow-x: scroll;
     }
@@ -114,6 +114,55 @@
     }
     .team__item {
         margin: 30px 0;
+    }
+    .road-map {
+        &__item {
+            max-width: 100%;
+            flex: 1;
+            padding-right: 0;
+            padding-bottom: 50px;
+            margin-left: 10px;
+            &__title {
+                font-size: 16px;
+            }
+            &__wrap {
+                align-items: center;
+            }
+            &__block {
+                min-height: 100px;
+                padding: 0 10px;
+                width: 100%;
+            }
+            &__date {
+                flex: .3;
+                font-size: 14px;
+                text-align: right;
+            }
+            &:after {
+                top: 0;
+                left: -3.5px;
+                box-shadow: 0 0 0 2px rgba(0, 136, 208, .22);
+            }
+            &:before {
+                content: none;
+            }
+            &--bottom {
+                padding-top: 0;
+                padding-bottom: 0;
+                &:before {
+                    content: '';
+                    top: 100%;
+                    left: -3.5px;
+                    background-color: #E0EEF5;
+                }
+            }
+            &--active {
+                &:after {
+                    box-shadow: 0 0 0 2px rgba(246, 96, 85, .22);
+                    left: -4px;
+                }
+            }
+        }
     }
 }
 
