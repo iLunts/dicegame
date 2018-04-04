@@ -567,7 +567,7 @@ $(document).ready(function() {
               }
           },
           "opacity": {
-              "value": 0.6,
+              "value": 1,
               "random": false,
               "anim": {
                   "enable": false,
@@ -780,3 +780,19 @@ $(document).ready(function() {
     }
   }, 1000);
 });
+
+
+function showWhitepaper() {
+  $(".nav__btn").removeClass("active");
+  $("nav").removeClass("active");
+
+  $("main, footer").addClass("blur");
+  $(".wrapper").addClass("blur");
+  $("#popup__whitepaper").fadeIn(700);
+}
+
+function closeWhitepaper() {
+  $("#popup__whitepaper").fadeOut(200);
+  $(".wrapper").removeClass("blur");
+  $("main, footer").removeClass("blur");
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1451 10599 29 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="bitcoin" transform="translate(1392.333 10599)">
+    <path id="Path_1291" data-name="Path 1291" class="cls-1" d="M77.667,52V46a4,4,0,1,0,0-8h-19V32h19a10,10,0,0,1,0,20Z" transform="translate(0 -29)"/>
+    <path id="Path_1292" data-name="Path 1292" class="cls-1" d="M77.667,201.333h-19v-6h19a4,4,0,0,0,0-8h-14v-6h14a10,10,0,0,1,0,20Z" transform="translate(0 -164.333)"/>
+    <rect id="Rectangle_433" data-name="Rectangle 433" class="cls-1" width="6" height="28" transform="translate(60.667 6)"/>
+    <rect id="Rectangle_434" data-name="Rectangle 434" class="cls-1" width="6" height="6" transform="translate(63.333)"/>
+    <rect id="Rectangle_435" data-name="Rectangle 435" class="cls-1" width="6" height="6" transform="translate(71.999)"/>
+    <rect id="Rectangle_436" data-name="Rectangle 436" class="cls-1" width="6" height="6" transform="translate(63.333 34)"/>
+    <rect id="Rectangle_437" data-name="Rectangle 437" class="cls-1" width="6" height="6" transform="translate(71.999 34)"/>
+  </g>
+</svg>
