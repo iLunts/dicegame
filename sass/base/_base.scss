@@ -58,6 +58,11 @@ body {
     font-style: normal;
 }
 
+.particles-js-canvas-el{
+    position: relative;
+    z-index: 0;
+}
+
 html{
     font-size: 17px;
 }

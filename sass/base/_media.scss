@@ -278,7 +278,8 @@
         left: 0;
         opacity: 1;
         line-height: 30px;
-        color: #2a2e3d;
+        // color: #2a2e3d;
+        color: rgba(255, 255, 255, 0.8);
         transition: all .2s;
         background: none;
         border: none;
@@ -382,7 +383,8 @@
     .nav__btn {
         display: flex;
         span {
-            background-color: #2A2E3D;
+            // background-color: #2A2E3D;
+            background-color: #fff;
         }
         &.active {
             opacity: 0;
@@ -401,7 +403,8 @@
             width: 100%;
             top: 67px;
             left: 0;
-            background-color: rgba(255, 255, 255, 0.75);
+            // background-color: rgba(255, 255, 255, 0.75);
+            background-color: rgba(0, 0, 0, 0.75);
             height: calc(100vh - 117px);
         }
     }
@@ -428,7 +431,8 @@
         .nav__lang__short {
             font-family: ProximaNova-Semibold;
             font-size: 24px;
-            color: #2a2e3d;
+            // color: #2a2e3d;
+            color: rgba(255, 255, 255, 0.8);
         }
     }
     header > .container nav .nav__lang__short:after {

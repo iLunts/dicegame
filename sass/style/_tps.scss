@@ -7,11 +7,17 @@
     position: relative;
 
     & &__body{
+        position: relative;
+        max-width: 300px;
+        display: inline-block;
         border-radius: 5px;
         background: #2A2E3D;
         padding: 20px;
         color: #fff;
         font-size: 14px;
+        z-index: 1;
+
+        box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .5);
     }
 
     & &__title{
@@ -106,12 +112,23 @@
     
     & &__social{
         text-align: center;
-        margin-top: 10px;
+        margin: 10px 0 15px;
 
-        .link{
+        &-link{
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 30px;
+            height: 30px;
+            line-height: 30px;
             text-decoration: none;
             color: inherit;
             padding: 10px 5px;
+            opacity: .5;
+            transition: all .3s;
+
+            &:hover{
+                opacity: 1;
+            }
         }
     }
 }

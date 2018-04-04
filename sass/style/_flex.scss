@@ -235,6 +235,10 @@
         &.flex--wrap-xs {
             flex-wrap: wrap;
         }
+
+        &.flex-xs--space-center{
+            justify-content: center;
+        }
     }
 }
 

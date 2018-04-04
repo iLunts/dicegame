@@ -9,7 +9,7 @@
 
     <!-- <link href="css/main.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css"> -->
     <link href="sass/main.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -68,8 +68,8 @@
 <header>
     <div class="container">
         <a href="/" class="logo">
-            <img src="img/logo.svg" alt="">
-            <img src="img/logo-mob.svg" alt="" class="logo-mob">
+            <img src="img/logo-white.svg" alt="">
+            <img src="img/logo-white-xs.svg" alt="" class="logo-mob">
         </a>
         <div class="social__media media--mobile visible--xs">
             <span class="btn btn--blue social__media__btn">Media</span>
@@ -86,8 +86,8 @@
                 <a target="_blank" href="https://t.me/dicegame_platform" class="social__media__link tg">
                     <img src="img/media/telegram.svg" alt="telegram-link"> </a>
                 <span class="nav__btn__close__media">
-                        <img src="img/close-mobile.svg" alt="">
-                    </span>
+                    <img src="img/close-mobile.svg" alt="">
+                </span>
             </div>
         </div>
         <nav>
@@ -151,75 +151,303 @@
         </div>
     </div>
 </header>
-<div class="wrapper">
-    <main>
-        <!-- <div class="block block--particles-second block--xlg">
-        <div class="container">
-            <div class="grid">
-                <div class="col--1-4">
-                    <div class="tps">
-                        <div class="tps__body">
-                            <p class="tps__title">Tokens PRE-SALE</p>
+<div>
+    <main class="wrapper">
+        <div id="product" class="block block--particles-second block--xlg">
+            <div class="block__particles" id="js-particles-second"></div>      
+            <div class="container">
+                <div class="grid">
+                    <div class="col--xlg-3-5 col--lg-3-5 col--md-8-10 col--sm-1-2 col--xs-1-1">
+                        <h3 class="block__title">JOIN THE MOST OPEN AND TRANSPERENT P2P iGAMING PLATFORM EVER!</h3>
+                    </div>
+                </div>
+                <div class="grid grid--sm flex flex--middle">
+                    <div class="col--xlg-6-10 col--lg-6-10 col--md-3-5">
+                        <div class="player player--md button" id="five">
+                            <p class="player__title">We Revolutionize iGaming</p>
+                            <video id="video-hiw" class="player__video" width="400" controls="">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"> Your browser does not support HTML5 video.
+                            </video>
+                            <p class="player__subtitle">Let's Play Together</p>
+                        </div>
+                    </div>
+                    <div class="col--xlg-3-10 col--lg-3-10 col--md-2-5 col--sm-1-2 col--xs-1-1 t--r t-xs--c m-xs--t-xlg">
+                        <div class="tps">
+                            <div class="tps__body">
+                                <p class="tps__title">Tokens PRE-SALE</p>
 
-                            <div class="tps__progress">
-                                <div class="tps__progress-header">
-                                    <span class="tps__progress-text">Soft cup</span>
-                                    <span class="tps__progress-text">Hard cup</span>
+                                <!-- FlipClock -->
+                                <div class="clock flip-clock-wrapper">
+                                    <span class="flip-clock-divider days">
+                                        <span class="flip-clock-label">Days</span>
+                                    </span>
+                                    <ul class="flip">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">9</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">9</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="flip">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">2</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">2</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="flip-clock-divider hours">
+                                        <span class="flip-clock-label">Hours</span>
+                                    </span>
+                                    <ul class="flip">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">1</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">1</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="flip">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">3</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">3</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="flip-clock-divider minutes">
+                                        <span class="flip-clock-label">Minutes</span>
+                                    </span>
+                                    <ul class="flip">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">2</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">2</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="flip">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">1</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">1</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="flip-clock-divider seconds">
+                                        <span class="flip-clock-label">Seconds</span>
+                                    </span>
+                                    <ul class="flip play">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">1</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">1</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">0</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="flip play">
+                                        <li class="flip-clock-before">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">9</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">9</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="flip-clock-active">
+                                            <a href="#">
+                                                <div class="up">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">8</div>
+                                                </div>
+                                                <div class="down">
+                                                    <div class="shadow"></div>
+                                                    <div class="inn">8</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="tps__progress-bar">
-                                    <div class="tps__progress-line"></div>
+                                <div class="message"></div>
+
+
+                                <div class="tps__progress">
+                                    <div class="tps__progress-header">
+                                        <span class="tps__progress-text">Soft cup</span>
+                                        <span class="tps__progress-text">Hard cup</span>
+                                    </div>
+                                    <div class="tps__progress-bar">
+                                        <div class="tps__progress-line"></div>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <p class="m--v t--c">
-                                <button class="btn btn--blue-dark brn--sm">Buy Tokens</button>
-                            </p>
+                                <p class="m--v t--c">
+                                    <button class="btn btn--blue-dark brn--sm">Buy Tokens</button>
+                                </p>
 
-                            <div class="tps__link">
-                                <a class="link" href="">Whitepaper</a>
-                                <a class="link" href="">OnePage</a>
-                                <a class="link" href="">Presentation</a>
-                            </div>
+                                <div class="tps__link">
+                                    <a class="link" href="">Whitepaper</a>
+                                    <a class="link" href="">OnePage</a>
+                                    <a class="link" href="">Presentation</a>
+                                </div>
 
-                            <div class="tps__social">
-                                <a class="link" href="">1</a>
-                                <a class="link" href="">2</a>
-                                <a class="link" href="">3</a>
+                                <div class="tps__social">
+                                    <!-- <a class="tps__social-link link" href="">
+                                        <img src="img/fb.svg" alt="">
+                                    </a> -->
+                                    <a class="tps__social-link link" href="">
+                                        <img src="img/twitter.svg" alt="">
+                                    </a>
+                                    <a class="tps__social-link link" href="">
+                                        <img src="img/reddit.svg" alt="">
+                                    </a>
+                                    <a class="tps__social-link link" href="">
+                                        <img src="img/medium.svg" alt="">
+                                    </a>
+                                    <a class="tps__social-link link" href="">
+                                        <img src="img/telegram.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
 
-        <!-- <div class="block block--particles-second block--xlg">
-        <div class="block__particles" id="js-particles-second"></div>
-        <div class="container">
-            <div class="grid">
-                <div class="col--xlg-8-10 col--lg-8-10 col--md-8-10 col--sm-6-10 col--xs-1-1">
-                    <h3 class="block__title">Face your counterpart in the next generation of iGaming</h3>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col--xlg-6-10 col--lg-6-10 col--md-6-10 col--sm-6-10 col--xs-1-1">
-                    <div class="player player--xs-fill button" id="five">
-                        <p class="player__title">We Revolutionize iGaming</p>
-                        <video id="video-hiw" class="player__video" width="400" controls="">
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"> Your browser does not support HTML5 video.
-                        </video>
-                        <p class="player__subtitle">Let's Play Together</p>
-                    </div>
-                </div>
-                <div class="col--xlg-3-10 col--lg-3-10 col--md-3-10 col--sm-3-10 col--xs-1-1 t--r push--xlg-1-10  push--lg-1-10  push--md-1-10  push--sm-1-10">
-                    <img src="img/token-presale.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-        <section id="product" class="main-window">
+        <!-- <section id="product" class="main-window">
             <div class="container">
                 <h1>Face your counterpart in
                     <br> the next generation of iGaming</h1>
@@ -236,8 +464,9 @@
                     <span class="main-window__video__content__desc">Let's Play Together</span>
                 </div>
             </div>
-        </section>
-        <section class="counter">
+        </section> -->
+
+        <!-- <section class="counter">
             <div class="container">
                 <div class="counter__docs">
                     <a href="javascript:void(0);" class="counter__docs__whitepaper">
@@ -297,9 +526,9 @@
                     <a href="#" class="btn btn--blue counter__buy">Buy Now</a>
                 </p>
             </div>
-        </section>
+        </section> -->
 
-        <div class="block block--particles block--lg block--check">
+        <div class="block block--gray block--lg">
             <div class="block__particles" id="js-particles"></div>
             <div class="container">
                 <div class="grid">
@@ -314,7 +543,7 @@
                             $1 and win up to $150 000
                         </p>
                     </div>
-                    <div class="col--xlg-3-10 col--lg-3-10 col--md-3-10 col--sm-3-10 col--xs-1-1 t--c">
+                    <div class="col--xlg-3-10 col--lg-3-10 col--md-3-10 col--sm-3-10 col--xs-1-1 t--c m-xs--t-xlg">
                         <div class="device device--sm device-iphone-x">
                             <div class="device-frame">
                                 <div class="device-content device-content--fm">
@@ -335,35 +564,37 @@
                             <div class="device-home"></div>
                         </div>
                     </div>
-                    <div class="col--xlg-2-10 col--lg-2-10 col--md-2-10 col--sm-2-10 col--xs-1-1 t-xs--c">
-                        <h3 class="t--h4 m--b">First MVP on the platform DICEGAME:</h3>
-                        <p class="m--b-sm">
-                            <a class="btn btn--black btn--push btn--app" href="">
-                                <img class="btn__icon" src="img/apple.svg" alt="">
-                                <span>
+                    <div class="flex flex--middle flex-xs--space-center col--xlg-2-10 col--lg-2-10 col--md-2-10 col--sm-2-10 col--xs-1-1 t-xs--c">
+                        <!-- <h3 class="t--h4 m--b">First MVP on the platform DICEGAME:</h3> -->
+                        <div>
+                            <p class="m--b-sm">
+                                <a class="btn btn--black btn--push btn--app" href="">
+                                    <img class="btn__icon" src="img/apple.svg" alt="">
+                                    <span>
                                         <span class="btn__get">Download on the</span>
                                         <span class="btn__service">App Store</span>
                                     </span>
-                            </a>
-                        </p>
-                        <p class="m--b-sm">
-                            <a class="btn btn--black btn--push btn--app" href="">
-                                <img class="btn__icon" src="img/google.svg" alt="">
-                                <span>
+                                </a>
+                            </p>
+                            <p class="m--b-sm">
+                                <a class="btn btn--black btn--push btn--app" href="">
+                                    <img class="btn__icon" src="img/google.svg" alt="">
+                                    <span>
                                         <span class="btn__get">GET IT ON</span>
                                         <span class="btn__service">Google Play</span>
                                     </span>
-                            </a>
-                        </p>
-                        <p class="m--reset">
-                            <a class="btn btn--black btn--push btn--app" href="">
-                                <img class="btn__icon" src="img/www.svg" alt="">
-                                <span>
+                                </a>
+                            </p>
+                            <p class="m--reset">
+                                <a class="btn btn--black btn--push btn--app" href="">
+                                    <img class="btn__icon" src="img/www.svg" alt="">
+                                    <span>
                                         <span class="btn__get">GET IN ON</span>
                                         <span class="btn__service">Web-Version</span>
                                     </span>
-                            </a>
-                        </p>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -911,6 +1142,80 @@
             </div>
         </section>
 
+        <!-- <div class="block block--gray block--reset block--light--gray--border">
+            <div class="timeline">
+                <div class="timeline__wrap">
+
+                    <div class="timeline__list timeline__list--top">
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">MARKETING ANALYSIS</p>
+                            <p class="timeline__item-desc">Market research and marketing analysis</p>
+                            <p class="timeline__item-year">Q1 2016</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">INTEGRATION BLOCKCHAIN</p>
+                            <p class="timeline__item-desc">Development of the DICEGAME platform concept</p>
+                            <p class="timeline__item-year">Q1 2017</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">TEAM BUILDING</p>
+                            <p class="timeline__item-desc">Team building & Advisors. Development of the smart-contract demo version</p>
+                            <p class="timeline__item-year">Q4 2017</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">BLOCKCHAIN</p>
+                            <p class="timeline__item-desc">DICEGAME integration with the blockchain. Development of the DICGAME Rock-Paper-Scissors</p>
+                            <p class="timeline__item-year">Q3 2018</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">DICEGAME 1000</p>
+                            <p class="timeline__item-desc">Alpha release of the DICEGAME platform. Development of the DICEGAME 1000</p>
+                            <p class="timeline__item-year">Q1 2019</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">DICEGAME POKER</p>
+                            <p class="timeline__item-desc">Development of the DICEGAME Poker</p>
+                            <p class="timeline__item-year">Q3 2019</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">INTEGRATION WITH OTHER VINDORS’</p>
+                            <p class="timeline__item-desc">Preparation of the DICEGAME platform to the integration with other vendors’ games</p>
+                            <p class="timeline__item-year">Q3 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__list timeline__list--bottom">
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">MARKETING ANALYSIS</p>
+                            <p class="timeline__item-desc">Market research and marketing analysis</p>
+                            <p class="timeline__item-year">Q1 2016</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">DEVELOPMENT</p>
+                            <p class="timeline__item-desc">First DICEGAME platform game: Factory of Millionaires (iOS, Android, Web)</p>
+                            <p class="timeline__item-year">Q3 2016</p>
+                        </div>
+                        <div class="timeline__item timeline__item--red">
+                            <p class="timeline__item-title">DICE TOKENS</p>
+                            <p class="timeline__item-desc">ICO</p>
+                            <p class="timeline__item-year">Q1 2018</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">DEVELOPMENT WALLET</p>
+                            <p class="timeline__item-desc">Development of the Dice blockchain wallet. Integration of the RSP game with the DICEGAME platform</p>
+                            <p class="timeline__item-year">Q4 2018</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__item-title">DICEGAME MONOPOLY</p>
+                            <p class="timeline__item-desc">Development of the DICEGAME Monopoly</p>
+                            <p class="timeline__item-year">Q1 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        
         <div id="roadmap" class="block block--gray block--reset block--light--gray--border">
             <div class="container">
                 <h3 class="block__title t--c">
@@ -1611,6 +1916,89 @@
                             <br>- determines winners in the game dispute.
                         </p>
                     </div>
+
+                    <div class="questions__item js-faq-show-more hidden">
+                        <h6 class="questions__item__title">
+                            Why Graphene is selected as the base technology?
+                            <i></i>
+                        </h6>
+                        <p class="questions__item__desc">
+                            The decentralized platform DICEGAME is based on the Graphene blockchain. The powerful features of the Graphene help to achive
+                            our goals of low transaction fees and high speeds. Firstly, in stress tests the Graphene technology has achieved 10,000-100,000
+                            transactions per second. Secondly, parallelization is used to scale the network, likely up to millions of transactions per
+                            second. Thirdly, the asynchronous communications and separate authentication from execution is implemented to achieve speedups,
+                            and because it will have no transaction fees, counting operations are not required.
+                        </p>
+                    </div>
+
+                    <div class="questions__item js-faq-show-more hidden">
+                        <h6 class="questions__item__title">
+                            What is the use of Dice token?
+                            <i></i>
+                        </h6>
+                        <p class="questions__item__desc">
+                            The Dice tokens are issued to be significantly utilized in the operation of the platform, i.e. it's our internal coin which
+                            can be used in the game play inside the DICEGAME platform. When using Dice tokens in games inside the DICEGAME platform there
+                            is only 1% of fee charged which is much more less than using any other cryptocurrencies. The lifecycle and all activities
+                            related to the bonus tournaments are supported by the Dice tokens. After each regular tournament conducted inside the platform
+                            the smart-contract automatically transfers the prize to the user's wallet withdrawing platform's fee in the cryptocurrency
+                            used in the game. The half of this fee should form the common prize fund of the BT. Only Dice tokens can create the bonus
+                            fund. To perform this function, cryptocurrency preserved for the BT prize will be exchanged to the fiat currency according
+                            to the stock exchange rate and Dice tokens will be bought out from the total token turnover. As bonus tournaments will be
+                            conducted on the daily basis, there will the constant circulation of the Dice tokens to regularly form the prize fund.
+                        </p>
+                    </div>
+
+                    <div class="questions__item js-faq-show-more hidden">
+                        <h6 class="questions__item__title">
+                            What is allocation of the Dice tokens?
+                            <i></i>
+                        </h6>
+                        <p class="questions__item__desc">
+                             70% - Crowdsale;
+                             <br>
+                             15% - Project team; 
+                             <br>
+                             5% - the First Bonus tournament; 
+                             <br>
+                             3% - Bounty program;
+                             <br>
+                             7% - Reserved fund;
+                        </p>
+                    </div>
+
+                    <div class="questions__item js-faq-show-more hidden">
+                        <h6 class="questions__item__title">
+                            How to participate in Dice Token Sale?
+                            <i></i>
+                        </h6>
+                        <p class="questions__item__desc">
+                            Participants can choose to contribute by registering for the Crowdsale. To buy tokens you can just tap Buy Now and go through
+                            the simpified KYC process.
+                        </p>
+                    </div>
+
+                    <div class="questions__item js-faq-show-more hidden">
+                        <h6 class="questions__item__title">
+                            What happens in case the company will not collect the cap?
+                            <i></i>
+                        </h6>
+                        <p class="questions__item__desc">
+                            In the case the minimum required amount is not collected, all the fund raised will be returned to the interested participants
+                            of the Dicegame project. The smart-contract will automatically check whether the soft cap is stored or not, in case it's
+                            not reached, then it will transfer the money to the investors.
+                        </p>
+                    </div>
+
+                    <div class="questions__item js-faq-show-more hidden">
+                        <h6 class="questions__item__title">
+                            What are we going to do with undistributed tokens?
+                            <i></i>
+                        </h6>
+                        <p class="questions__item__desc">
+                            Undistributed tokens will be burned out
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -1739,8 +2127,9 @@
 <script src="js/libs.min.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/timeline.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
 
 <script type="text/javascript">
   // OMNISEND-SNIPPET-SOURCE-CODE-V1
@@ -1753,6 +2142,7 @@
     t.parentNode.insertBefore(e, t);
   }();
 </script>
+
 </body>
 
 </html>
