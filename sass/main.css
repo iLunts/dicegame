@@ -1748,6 +1748,19 @@ header > .container nav span.nav__line--mob {
   margin: 0 auto;
 }
 
+.questions .questions__link {
+  margin-top: 40px;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #0088D0;
+  font-weight: 400;
+  font-size: 18px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 767px) {
   .questions__item__title {
     padding: 0 30px 0 10px;
