@@ -1619,13 +1619,13 @@ header > .container nav span.nav__line--mob {
   box-shadow: 0px 5px 17.676px 0.324px rgba(52, 87, 154, 0.3);
 }
 
-.follow__item.rd {
-  background-color: #FF7D3A;
+.follow__item.bt {
+  background-color: #FEAE47;
   box-shadow: 0px 5px 17.676px 0.324px rgba(52, 87, 154, 0.3);
   padding-top: 35px;
 }
 
-.follow__item.rd > img {
+.follow__item.bt > img {
   height: 40px;
 }
 
@@ -1919,6 +1919,29 @@ header > .container nav span.nav__line--mob {
   text-transform: uppercase;
   color: #2A2E3D;
   margin-bottom: 3px;
+}
+
+.footer__nav-link {
+  background-color: transparent;
+  outline: none;
+  color: #2A2E3D;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  margin-bottom: 5px;
+  display: block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+  text-align: left;
+  transition: all .3s;
+}
+
+.footer__nav-link:hover {
+  background-color: #EFEFEF;
 }
 
 .footer__nav a {

@@ -147,6 +147,29 @@
             color: #2A2E3D;
             margin-bottom: 3px;
         }
+
+        &-link{
+            background-color: transparent;
+            outline: none;
+            color: #2A2E3D;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+            margin-bottom: 5px;
+            display: block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            box-shadow: none;
+            border: none;
+            text-align: left;
+            transition: all .3s;
+    
+            &:hover{
+                background-color: #EFEFEF;
+            }
+        }
         a {
             color: #2A2E3D;
             font-size: 14px;
