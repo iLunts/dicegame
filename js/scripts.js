@@ -776,3 +776,12 @@ $(document).ready(function() {
     }
   }, 1000);
 });
+
+
+// Accordeon in mobile version of Token Timeline 
+
+$(document).ready(function() {
+	$('.m-token-timeline__item').on('click', function () {
+    $(this).closest('.m-token-timeline__item').find('.m-token-timeline__item-inner').slideToggle();
+  });
+});
