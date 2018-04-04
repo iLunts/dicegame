@@ -50,6 +50,19 @@
             margin: 0 auto;
         }
     }
+
+    & &__link{
+        margin-top: 40px;
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        color: $color-blue;
+        font-weight: 400;
+        font-size: 18px;
+        box-shadow: none;
+        outline: none;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width: $breakpoint-xs-max) {

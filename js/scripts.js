@@ -1,5 +1,6 @@
 $(document).ready(function() {
   //date
+  autoHideFAQMore();
 
   var deadline = "April 1 2018 23:59:59";
 
@@ -734,10 +735,6 @@ $(document).ready(function() {
   }
 });
 
-function faqShowMore(){
-  
-}
-
 // Timer in Token Timeline
 $(document).ready(function() {
   // Set the date we're counting down to
@@ -781,18 +778,30 @@ $(document).ready(function() {
   }, 1000);
 });
 
-
+// Show Whitepaper section
 function showWhitepaper() {
   $(".nav__btn").removeClass("active");
   $("nav").removeClass("active");
-
+  
   $("main, footer").addClass("blur");
   $(".wrapper").addClass("blur");
   $("#popup__whitepaper").fadeIn(700);
 }
 
+// Close Whitepaper section
 function closeWhitepaper() {
   $("#popup__whitepaper").fadeOut(200);
   $(".wrapper").removeClass("blur");
   $("main, footer").removeClass("blur");
+}
+
+// Show FAQ QA element
+function autoHideFAQMore() {
+  $('.js-faq-show-more').fadeOut();
+}
+
+// Show FAQ QA element
+function toggleFAQMore() {
+  $('.js-faq-show-more').fadeToggle();
+  $("#faq-show-more-btn").text(($("#faq-show-more-btn").text() == 'LEARN MORE') ? 'HIDE MORE' : 'LEARN MORE').fadeIn();
 }
