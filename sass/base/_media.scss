@@ -9,24 +9,24 @@
 }
 
 @media only screen and (max-width: 1360px) {
-    header > .container .social__media.active .social__media__link {
-        transform: translateX(0);
-        &.fb {
-            transform: translateY(-30px);
-        }
-        &.tw {
-            transform: translateY(30px);
-        }
-        &.rd {
-            transform: translateY(90px);
-        }
-        &.medium {
-            transform: translateY(150px);
-        }
-        &.tg {
-            transform: translateY(210px);
-        }
+  header > .container .social__media.active .social__media__link {
+    transform: translateX(0);
+    &.fb {
+      transform: translateY(-30px);
     }
+    &.tw {
+      transform: translateY(30px);
+    }
+    &.rd {
+      transform: translateY(90px);
+    }
+    &.medium {
+      transform: translateY(150px);
+    }
+    &.tg {
+      transform: translateY(210px);
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */
