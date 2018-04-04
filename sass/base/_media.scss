@@ -9,24 +9,24 @@
 }
 
 @media only screen and (max-width: 1360px) {
-    header>.container .social__media.active .social__media__link {
-        transform: translateX(0);
-        &.fb {
-            transform: translateY(-30px);
-        }
-        &.tw {
-            transform: translateY(30px);
-        }
-        &.rd {
-            transform: translateY(90px);
-        }
-        &.medium {
-            transform: translateY(150px);
-        }
-        &.tg {
-            transform: translateY(210px);
-        }
+  header > .container .social__media.active .social__media__link {
+    transform: translateX(0);
+    &.fb {
+      transform: translateY(-30px);
     }
+    &.tw {
+      transform: translateY(30px);
+    }
+    &.rd {
+      transform: translateY(90px);
+    }
+    &.medium {
+      transform: translateY(150px);
+    }
+    &.tg {
+      transform: translateY(210px);
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -168,56 +168,56 @@
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 992px) {
-    .about__wrap {
-        >.container {
-            >img {
-                width: 300px;
-                height: 300px;
-            }
-        }
+  .about__wrap {
+    > .container {
+      > img {
+        width: 300px;
+        height: 300px;
+      }
     }
-    .how-work__video {
-        width: 400px;
-        height: 340px;
+  }
+  .how-work__video {
+    width: 400px;
+    height: 340px;
+  }
+  .economy__page__wrap {
+    flex-direction: column;
+  }
+  .economy__page__content,
+  .economy__page__2,
+  .economy__page__3,
+  .economy__page {
+    max-width: 100%;
+    width: 100%;
+  }
+  .economy__tab__wrap {
+    margin-bottom: 50px;
+  }
+  .economy__page__wrap .economy__page__content {
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .economy {
+    padding-bottom: 80px;
+  }
+  .distribution:after {
+    height: 90px;
+  }
+  .follow__item__wrap {
+    flex-wrap: wrap;
+  }
+  .follow__item {
+    margin: 15px;
+  }
+  .footer__social__input {
+    animation: none;
+    &:focus {
+      width: 100%;
+      margin-left: 0;
+      animation: none;
     }
-    .economy__page__wrap {
-        flex-direction: column;
-    }
-    .economy__page__content,
-    .economy__page__2,
-    .economy__page__3,
-    .economy__page {
-        max-width: 100%;
-        width: 100%;
-    }
-    .economy__tab__wrap {
-        margin-bottom: 50px;
-    }
-    .economy__page__wrap .economy__page__content {
-        padding: 0;
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
-    .economy {
-        padding-bottom: 80px;
-    }
-    .distribution:after {
-        height: 90px;
-    }
-    .follow__item__wrap {
-        flex-wrap: wrap;
-    }
-    .follow__item {
-        margin: 15px;
-    }
-    .footer__social__input {
-        animation: none;
-        &:focus {
-            width: 100%;
-            margin-left: 0;
-            animation: none;
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -713,3 +713,80 @@
         }
     }
 }
+
+// Token timeline media
+@media only screen and (max-width: 1060px) {
+  .token-timeline__body-item {
+    max-width: 800px;
+  }
+
+  .token-timeline__footer {
+    max-width: 800px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .token-timeline__footer-item {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .token-timeline__footer-item-descr {
+    font-size: 14px;
+  }
+  .token-timeline__footer-item-dash {
+    margin: 0 10px;
+  }
+
+  .token-timeline__body-item-title--dashed:before {
+    left: -4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .token-timeline {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .token-timeline__footer-item-dash {
+    display: none;
+  }
+
+  .token-timeline__body-item--current:after {
+    right: -35px;
+  }
+
+  .token-timeline__body-item-title--dashed:before {
+    left: 6px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .token-timeline {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .token-timeline__body-item--current:after {
+    right: -39px;
+  }
+
+  .token-timeline__body-item-title--dashed:before {
+    left: -4px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .token-timeline {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .token-timeline__body-item-title--dashed:before {
+    left: 5px;
+  }
+}
+
+// End of Token timeline media

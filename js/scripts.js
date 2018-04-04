@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //date
 
   var deadline = 'April 1 2018 23:59:59';
@@ -60,7 +60,7 @@ $(document).ready(function() {
     var minutes = document.getElementById(objId.minutes);
     var seconds = document.getElementById(objId.seconds);
 
-    var timeinterval = setInterval(function() {
+    var timeinterval = setInterval(function () {
       var t = getTimeRemaining(endtime);
 
       days.innerHTML = ('0' + t.days).slice(-2);
@@ -91,7 +91,7 @@ $(document).ready(function() {
   firstInitializeClock(timeObj, deadline);
   initializeClock(timeObj, deadline);
 
-  $('span.economy__tab').on('click', function() {
+  $('span.economy__tab').on('click', function () {
     $('span.economy__tab').removeClass('active');
     $(this).addClass('active');
     var currentPage = $(this).data('tab');
@@ -100,7 +100,7 @@ $(document).ready(function() {
     $($('div.economy__page__wrap')[currentPage]).addClass('active');
   });
 
-  $('.questions__item__title').on('click', function() {
+  $('.questions__item__title').on('click', function () {
     $('.questions__item__desc:visible').slideUp(250);
     $('.questions__item__title')
       .not(this)
@@ -115,7 +115,7 @@ $(document).ready(function() {
       .toggleClass('active');
   });
 
-  $('.footer__social__input').on('input', function() {
+  $('.footer__social__input').on('input', function () {
     if ($(this).val().length > 0) {
       $(this)
         .siblings('span.placeholder')
@@ -130,29 +130,29 @@ $(document).ready(function() {
   var subscribeForm = $('#mc-embedded-subscribe-form'),
     textInput = subscribeForm.find('#mce-EMAIL'),
     clearBtn = subscribeForm.find('.footer__social__clear');
-  textInput.keyup(function() {
+  textInput.keyup(function () {
     clearBtn[0].style.visibility = this.value.length ? 'visible' : 'hidden';
   });
-  clearBtn.on('click', function() {
+  clearBtn.on('click', function () {
     this.style.visibility = 'hidden';
     textInput[0].value = '';
   });
 
   var timer;
 
-  $('.team__item__more--btn').on('click', function() {
+  $('.team__item__more--btn').on('click', function () {
     var item = $(this).siblings('.team__item__desc');
 
     item.addClass('active');
-    timer = setTimeout(function() {
+    timer = setTimeout(function () {
       item.removeClass('active');
     }, 5000);
   });
-  $('.team__item__desc').on('click', function() {
+  $('.team__item__desc').on('click', function () {
     $(this).removeClass('active');
   });
 
-  $('.social__media__btn').on('click', function() {
+  $('.social__media__btn').on('click', function () {
     $('.social__media').toggleClass('active');
     if ($('.nav__lang')[0].className.match('active')) {
       $('.nav__lang').removeClass('active');
@@ -167,7 +167,7 @@ $(document).ready(function() {
     initialSlide: 0,
     slidesPerView: 1,
     on: {
-      touchEnd: function(e) {
+      touchEnd: function (e) {
         if (this.isEnd) {
           $('html, body').animate(
             {
@@ -190,9 +190,10 @@ $(document).ready(function() {
   };
 
   var menu_selector = 'nav';
+
   function onScroll() {
     var scroll_top = $(document).scrollTop();
-    $(menu_selector + ' a.nav__link').each(function() {
+    $(menu_selector + ' a.nav__link').each(function () {
       var hash = $(this).attr('href');
       var target = $(hash);
       if (
@@ -241,7 +242,7 @@ $(document).ready(function() {
   }
 
   $(document).on('scroll', onScroll);
-  $('a[href^=\\#]').click(function(e) {
+  $('a[href^=\\#]').click(function (e) {
     e.preventDefault();
     $(document).off('scroll');
     if ($('.nav__lang')[0].className.match('active')) {
@@ -265,7 +266,7 @@ $(document).ready(function() {
         scrollTop: target.offset().top
       },
       500,
-      function() {
+      function () {
         window.location.hash = hash;
         $(document).on('scroll', onScroll);
         if ($(target).is('#features') && $(window).width() < 1083) {
@@ -277,7 +278,7 @@ $(document).ready(function() {
     );
   });
 
-  $('main').click(function() {
+  $('main').click(function () {
     if ($('.nav__lang')[0].className.match('active')) {
       $('.nav__lang').removeClass('active');
     }
@@ -286,7 +287,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.nav__lang').on('click', function(e) {
+  $('.nav__lang').on('click', function (e) {
     if ($(e.target).is('.nav__lang__short')) {
       $('.nav__lang').toggleClass('active');
       if ($('.social__media')[0].className.match('active')) {
@@ -298,7 +299,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.counter__docs__whitepaper').on('click', function() {
+  $('.counter__docs__whitepaper').on('click', function () {
     $('.nav__btn').removeClass('active');
     $('nav').removeClass('active');
 
@@ -307,7 +308,7 @@ $(document).ready(function() {
     $('#popup__whitepaper').fadeIn(700);
   });
 
-  $('.popup__whitepaper__close').on('click', function() {
+  $('.popup__whitepaper__close').on('click', function () {
     $('#popup__whitepaper').fadeOut(200);
     $('.wrapper').removeClass('blur');
     $('main, footer').removeClass('blur');
@@ -315,7 +316,7 @@ $(document).ready(function() {
 
   jQuery('#road-map').scrollbar();
 
-  $('.slider').each(function() {
+  $('.slider').each(function () {
     var $this = $(this);
     var $group = $this.find('.slide_group');
     var $slides = $this.find('.slide');
@@ -348,7 +349,7 @@ $(document).ready(function() {
         {
           left: animateLeft
         },
-        function() {
+        function () {
           $slides.eq(currentIndex).css({
             display: 'none'
           });
@@ -363,14 +364,14 @@ $(document).ready(function() {
       );
     }
 
-    $.each($slides, function(index) {
+    $.each($slides, function (index) {
       var $button = $('<a class="slide_btn" />');
 
       if (index === currentIndex) {
         $button.addClass('active');
       }
       $button
-        .on('click', function() {
+        .on('click', function () {
           move(index);
         })
         .appendTo('.slide_buttons');
@@ -379,6 +380,7 @@ $(document).ready(function() {
   });
 
   var mySwiper = undefined;
+
   function initSwiper() {
     var screenWidth = $(window).width();
     if (screenWidth < 1084 && mySwiper == undefined) {
@@ -396,11 +398,11 @@ $(document).ready(function() {
   initSwiper();
 
   //Swiper plugin initialization on window resize
-  $(window).on('resize', function() {
+  $(window).on('resize', function () {
     initSwiper();
   });
 
-  $('.nav__btn').on('click', function() {
+  $('.nav__btn').on('click', function () {
     if ($('#popup__whitepaper').is(':visible')) {
       console.log(123);
 
@@ -414,7 +416,7 @@ $(document).ready(function() {
     $('nav').toggleClass('active');
   });
 
-  $('.nav__btn__close').on('click', function() {
+  $('.nav__btn__close').on('click', function () {
     if ($('#popup__whitepaper').is(':visible')) {
       $('main, footer, .wrapper').removeClass('blur');
       $('#popup__whitepaper').hide();
@@ -425,7 +427,7 @@ $(document).ready(function() {
   });
 
   if ($(window).width() < 800) {
-    $('.nav__lang__wrap').on('click', function(e) {
+    $('.nav__lang__wrap').on('click', function (e) {
       if ($(e.target).hasClass('nav__lang__wrap')) {
         $('.nav__lang').removeClass('active');
         $('header > .container .social__media').css({
@@ -433,10 +435,10 @@ $(document).ready(function() {
         });
       }
     });
-    $('.nav__btn__close__lang').on('click', function() {
+    $('.nav__btn__close__lang').on('click', function () {
       $('.nav__lang').removeClass('active');
     });
-    $('.nav__btn__close__media').on('click', function() {
+    $('.nav__btn__close__media').on('click', function () {
       $('.social__media').removeClass('active');
     });
   }
@@ -639,7 +641,7 @@ $(document).ready(function() {
   // Modal window
   // ---------------
 
-  $('.button').click(function() {
+  $('.button').click(function () {
     var buttonId = $(this).attr('id');
     $('#modal-container')
       .removeAttr('class')
@@ -647,7 +649,7 @@ $(document).ready(function() {
     $('body').addClass('modal-active');
   });
 
-  $('#modal-container').click(function() {
+  $('#modal-container').click(function () {
     $(this).addClass('out');
     $('body').removeClass('modal-active');
   });
@@ -655,18 +657,18 @@ $(document).ready(function() {
   // ---------------
   // Team rotate
   // ---------------
-  $('.card__item-btn').on('click', function() {
+  $('.card__item-btn').on('click', function (e) {
     var elem = $(this).closest('.card__container');
     elem.addClass('active');
   });
 
-  $('.card__item-back').on('mouseleave', function(e) {
+  $('.card__item-back').on('mouseleave', function (e) {
     var elem = $(this).closest('.card__container');
     elem.removeClass('active');
   });
 
   var videoPlayer = document.getElementById('device-video');
-  videoPlayer.addEventListener('click', function() {
+  videoPlayer.addEventListener('click', function () {
     if (videoPlayer.paused == false) {
       $('#device-video')
         .find('.btn')
@@ -685,7 +687,7 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   var clock;
 
   // Grab the current date
@@ -711,14 +713,14 @@ $(document).ready(function() {
       clockFace: 'DailyCounter',
       countdown: true,
       callbacks: {
-        stop: function() {
+        stop: function () {
           console.log('Timer has ended!');
         }
       }
     });
 
     // Check when timer reaches 0, then stop at 0
-    setTimeout(function() {
+    setTimeout(function () {
       checktime();
     }, 1000);
 
@@ -727,9 +729,52 @@ $(document).ready(function() {
       if (t <= 0) {
         clock.setTime(0);
       }
-      setTimeout(function() {
+      setTimeout(function () {
         checktime();
       }, 1000);
     }
   }
+});
+
+// Timer in Token Timeline
+$(document).ready(function () {
+  // Set the date we're counting down to
+  let countDownDate = new Date('Jun 5, 2018 15:37:25').getTime();
+
+  // Update the count down every 1 second
+  let x = setInterval(function () {
+    // Get todays date and time
+    let now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    let distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // output results
+    document.getElementsByClassName(
+      'token-timeline__timer-days-number'
+    )[0].innerHTML = `${days} :`;
+    document.getElementsByClassName(
+      'token-timeline__timer-hours-number'
+    )[0].innerHTML = `${hours} :`;
+    document.getElementsByClassName(
+      'token-timeline__timer-min-number'
+    )[0].innerHTML = `${minutes} :`;
+    document.getElementsByClassName(
+      'token-timeline__timer-sec-number'
+    )[0].innerHTML = seconds;
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById('demo').innerHTML = 'EXPIRED';
+    }
+  }, 1000);
 });
