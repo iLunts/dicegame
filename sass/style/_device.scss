@@ -46,13 +46,14 @@ $device-silver-panel: #222;
             width: 96%;
             height: 96%;
             object-fit: fill;
+            border-radius: 4.8em;
         }
     } 
     // 2436-by-1125-pixel resolution
     .device-content {
         border-radius: 6em;
-        height: 86.8em;
-        width: 42.8em;
+        //height: 86.8em;
+        //width: 42.8em;
         overflow: hidden;
         cursor: pointer;
         &.device-content--fm {
