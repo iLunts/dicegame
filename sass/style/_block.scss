@@ -14,10 +14,12 @@
     // Modificator '.block.block--xxlg'
     &.block--xxlg {
         padding: ($block-padding-vertical * 7) 0;
-    } // Modificator '.block.block--xlg'
+    } 
+    // Modificator '.block.block--xlg'
     &.block--xlg {
         padding: ($block-padding-vertical * 5) 0;
-    } // Modificator '.block.block--lg'
+    } 
+    // Modificator '.block.block--lg'
     &.block--lg {
         padding: ($block-padding-vertical * 3) 0;
     } 
@@ -25,6 +27,7 @@
     &.block--particles {
         p,
         h2,
+        h3,
         .btn {
             position: relative;
             z-index: 1;

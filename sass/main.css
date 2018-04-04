@@ -1888,8 +1888,8 @@ header > .container nav span.nav__line--mob {
   background: #1ca0f3;
 }
 
-.footer__social__icon.footer__social__icon--reddit:hover {
-  background: #FF7D3A;
+.footer__social__icon.footer__social__icon--bitcoin:hover {
+  background: #FEAE47;
 }
 
 .footer__social__icon.footer__social__icon--medium:hover {
@@ -2844,6 +2844,7 @@ svg {
 
 .block.block--particles p,
 .block.block--particles h2,
+.block.block--particles h3,
 .block.block--particles .btn {
   position: relative;
   z-index: 1;
