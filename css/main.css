@@ -1268,6 +1268,10 @@ header > .container nav span.nav__line--mob {
     .road-map__item--active:after {
       box-shadow: 0 0 0 2px rgba(246, 96, 85, 0.22);
       left: -4px; } }
+.img--bonus-tournaments {
+  position: relative;
+  top: -35px; }
+
 .follow {
   padding: 45px;
   padding-bottom: 95px;
@@ -1415,7 +1419,7 @@ header > .container nav span.nav__line--mob {
   .questions__item__desc {
     padding: 0 30px 32px 10px; } }
 .footer {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 60px 0; }
   .footer__logo {
     width: 230px;
@@ -1439,7 +1443,7 @@ header > .container nav span.nav__line--mob {
       position: relative;
       width: 100%; }
     .footer__social__input {
-      border: 1px solid #AEAEAE;
+      border: 1px solid #aeaeae;
       background-color: #fff;
       padding: 6px 10px;
       width: 100%;
@@ -1465,7 +1469,7 @@ header > .container nav span.nav__line--mob {
       margin-top: -6px;
       right: 10px; }
     .footer__social__submit {
-      background-color: #EFEFEF;
+      background-color: #efefef;
       border: 1px solid #929292;
       border-radius: 3px;
       font-size: 16px;
@@ -1473,9 +1477,9 @@ header > .container nav span.nav__line--mob {
       margin-left: 6px;
       cursor: pointer;
       outline: none;
-      font-family: 'ProximaNova-Semibold'; }
+      font-family: "ProximaNova-Semibold"; }
       .footer__social__submit:hover {
-        background-color: #DEDEDE; }
+        background-color: #dedede; }
     .footer__social__icon {
       background-color: #aaaaaa;
       width: 46px;
@@ -1484,7 +1488,7 @@ header > .container nav span.nav__line--mob {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: .2s; }
+      transition: 0.2s; }
       .footer__social__icon:hover {
         transform: scale(1.1) rotate(-15deg);
         box-shadow: 2px 5px 10px 1px rgba(74, 68, 151, 0.2); }
@@ -1499,13 +1503,13 @@ header > .container nav span.nav__line--mob {
         justify-content: space-between;
         align-items: center; }
       .footer__social__icon.footer__social__icon--facebook:hover {
-        background: #34579A; }
+        background: #34579a; }
       .footer__social__icon.footer__social__icon--twitter:hover {
         background: #1ca0f3; }
       .footer__social__icon.footer__social__icon--bitcoin:hover {
-        background: #FEAE47; }
+        background: #feae47; }
       .footer__social__icon.footer__social__icon--medium:hover {
-        background: #18B475; }
+        background: #18b475; }
       .footer__social__icon.footer__social__icon--telegram:hover {
         background: #0088cc; }
   .footer__nav {
@@ -1519,14 +1523,14 @@ header > .container nav span.nav__line--mob {
       padding: 4px 10px;
       font-size: 14px;
       font-weight: 600;
-      font-family: 'ProximaNova-Semibold';
+      font-family: "ProximaNova-Semibold";
       text-transform: uppercase;
-      color: #2A2E3D;
+      color: #2a2e3d;
       margin-bottom: 3px; }
     .footer__nav-link {
       background-color: transparent;
       outline: none;
-      color: #2A2E3D;
+      color: #2a2e3d;
       font-size: 14px;
       text-decoration: none;
       padding: 0;
@@ -1539,20 +1543,20 @@ header > .container nav span.nav__line--mob {
       box-shadow: none;
       border: none;
       text-align: left;
-      transition: all .3s; }
+      transition: all 0.3s; }
       .footer__nav-link:hover {
-        background-color: #EFEFEF; }
+        background-color: #efefef; }
     .footer__nav a {
-      color: #2A2E3D;
+      color: #2a2e3d;
       font-size: 14px;
       text-decoration: none;
       margin-bottom: 5px;
       display: block;
       padding: 4px 10px;
       border-radius: 4px;
-      transition: all .3s; }
+      transition: all 0.3s; }
       .footer__nav a:hover {
-        background-color: #EFEFEF; }
+        background-color: #efefef; }
     .footer__nav__wrap {
       display: flex;
       justify-content: space-between; }
@@ -1560,21 +1564,24 @@ header > .container nav span.nav__line--mob {
 .placeholder {
   position: absolute;
   font-size: 17px;
-  color: #AEAEAE;
+  color: #aeaeae;
   left: 40px;
   bottom: 8px;
   z-index: 1;
   pointer-events: none;
-  transition: .2s; }
+  transition: 0.2s; }
   .placeholder.active {
     transform: translateY(-20px);
     font-size: 14px; }
+
+.block.block--gray--border.footer {
+  padding-bottom: 30px; }
 
 @keyframes focusInputAnimation {
   0% {
     margin-left: 0;
     width: 100%;
-    border-color: #AEAEAE; }
+    border-color: #aeaeae; }
   100% {
     margin-left: -10%;
     width: 110%;
@@ -1587,7 +1594,7 @@ header > .container nav span.nav__line--mob {
   100% {
     margin-left: 0;
     width: 100%;
-    border-color: #AEAEAE; } }
+    border-color: #aeaeae; } }
 .popup__whitepaper {
   display: none;
   width: 100%;
@@ -1695,7 +1702,7 @@ footer.blur {
   text-transform: none;
   box-sizing: border-box;
   vertical-align: middle;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
@@ -2152,7 +2159,7 @@ svg {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41465a', endColorstr='#1f2127', GradientType=1);
     color: #fff; }
     .block.block--particles-second:before {
-      content: '';
+      content: "";
       position: absolute;
       right: 6%;
       top: 0;
@@ -2199,7 +2206,7 @@ svg {
     color: #fff; }
     .block.block--distribution:after {
       display: inline-block;
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: -20px;
@@ -2229,7 +2236,7 @@ svg {
     line-height: 34px;
     font-weight: 600;
     margin-bottom: 25px;
-    font-family: 'ProximaNova-Bold'; }
+    font-family: "ProximaNova-Bold"; }
   .block .block__text {
     font-size: 17px;
     font-weight: 400;
@@ -4506,6 +4513,7 @@ body.modal-active {
     text-align: left; }
     .card .card__item-social-link {
       max-width: 27px;
+      width: 27px;
       background: #fff;
       padding: 2px;
       border-radius: 4px;
@@ -4651,12 +4659,30 @@ body.modal-active {
       transition: all 0.3s; }
       .tps .tps__social-link:hover {
         opacity: 1; }
+  .tps .tps__link {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(15, 16, 22, 0.16);
+    border-bottom: 1px solid rgba(15, 16, 22, 0.16); }
+    .tps .tps__link .link {
+      text-decoration: none;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-color: transparent;
+      color: inherit;
+      padding: 10px 5px;
+      transition: all .2s;
+      font-size: inherit;
+      cursor: pointer; }
+      .tps .tps__link .link:hover {
+        opacity: .7; }
   .tps__social-link--bt img {
     max-width: 70%; }
   .tps__social-link--fb img {
     max-width: 20px;
     max-height: 20px; }
-  .tps .tps__social-link--insta {
+  .tps__social-link--insta {
     opacity: 0.8; }
 
 /* Get the bourbon mixin from http://bourbon.io */
