@@ -2,12 +2,6 @@
 * MEDIA
 **********************/
 
-@media only screen and (min-width: 1700px) {
-  .road-map__h-line {
-    height: 2px;
-  }
-}
-
 @media only screen and (max-width: 1360px) {
   header > .container .social__media.active .social__media__link {
     transform: translateX(0);
@@ -32,9 +26,6 @@
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {
-//   .road-map__wrap {
-//     width: 1800px;
-//   }
   #road-map {
     overflow-x: scroll;
   }
