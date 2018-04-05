@@ -324,7 +324,7 @@
   .nav__btn {
     display: flex;
     span {
-      background-color: #2a2e3d;
+      background-color: #fff;
     }
     &.active {
       opacity: 0;
@@ -749,3 +749,17 @@
 }
 
 // *** end of block--particles-second:before *** //
+
+// *** First screen media *** //
+
+@media only screen and (max-width: 767px) {
+  .block__title {
+    text-align: center;
+  }
+
+  .block.block--particles-second .player {
+    box-shadow: none;
+  }
+}
+
+// *** End of first screen media *** //
