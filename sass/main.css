@@ -2429,6 +2429,7 @@ footer.blur {
   align-items: center;
   max-height: 40px;
   min-width: 170px;
+  border-radius: 5px;
 }
 
 .btn.btn--app .btn__icon {
@@ -3029,11 +3030,14 @@ svg {
 
 .block.block--gray {
   background-color: #fafafa;
+}
+
+.block.block--gray--border {
   border-top: 1px solid #E7E8EB;
   border-bottom: 1px solid #E7E8EB;
 }
 
-.block.block--gray.footer {
+.block.block--gray--border.footer {
   border-bottom: none;
 }
 
@@ -5977,7 +5981,7 @@ body.modal-active {
 }
 
 .card .card__item-front {
-  background: #fafafa;
+  background: #fff;
 }
 
 .card .card__item-img {
@@ -6873,9 +6877,6 @@ body.modal-active {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  .road-map__wrap {
-    width: 1800px;
-  }
   #road-map {
     overflow-x: scroll;
   }
