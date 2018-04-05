@@ -1691,6 +1691,51 @@ header > .container nav span.nav__line--mob {
   .road-map__wrap--mobile {
     display: block;
   }
+  .road-map__item {
+    max-width: 100%;
+    flex: 1;
+    padding-right: 0;
+    padding-bottom: 50px;
+    margin-left: 10px;
+  }
+  .road-map__item__title {
+    font-size: 16px;
+  }
+  .road-map__item__wrap {
+    align-items: center;
+  }
+  .road-map__item__block {
+    min-height: 100px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .road-map__item__date {
+    flex: .3;
+    font-size: 14px;
+    text-align: right;
+  }
+  .road-map__item:after {
+    top: 0;
+    left: -3.5px;
+    box-shadow: 0 0 0 2px rgba(0, 136, 208, 0.22);
+  }
+  .road-map__item:before {
+    content: none;
+  }
+  .road-map__item--bottom {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .road-map__item--bottom:before {
+    content: '';
+    top: 100%;
+    left: -3.5px;
+    background-color: #E0EEF5;
+  }
+  .road-map__item--active:after {
+    box-shadow: 0 0 0 2px rgba(246, 96, 85, 0.22);
+    left: -4px;
+  }
 }
 
 .follow {
@@ -6848,12 +6893,6 @@ body.modal-active {
 /**********************
 * MEDIA
 **********************/
-@media only screen and (min-width: 1700px) {
-  .road-map__h-line {
-    height: 2px;
-  }
-}
-
 @media only screen and (max-width: 1360px) {
   header > .container .social__media.active .social__media__link {
     transform: translateX(0);
