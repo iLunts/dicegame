@@ -936,7 +936,8 @@ header > .container nav span.nav__line--mob {
 
 .m-token-timeline__header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-left: 20px; }
   .m-token-timeline__header span {
     color: rgba(42, 46, 61, 0.6);
     font-size: 17px;
@@ -950,12 +951,45 @@ header > .container nav span.nav__line--mob {
   font-size: 17px;
   padding: 8px 15px;
   display: flex;
-  justify-content: space-between; }
-.m-token-timeline__item--blue:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: #5485f3; }
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .m-token-timeline__item span {
+    position: relative;
+    z-index: 20;
+    font-family: 'ProximaNova-Semibold'; }
+.m-token-timeline__item--blue {
+  position: relative; }
+  .m-token-timeline__item--blue:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #5485f3; }
+  .m-token-timeline__item--blue:after {
+    position: absolute;
+    content: url(../img/token-timeline-check.svg);
+    height: 13px;
+    width: 13px;
+    top: 20;
+    left: -20px; }
+.m-token-timeline__item--red {
+  position: relative;
+  color: #2a2e3d; }
+  .m-token-timeline__item--red:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 70%;
+    height: 100%;
+    background-color: #e73d5d; }
 
 .distribution {
   background-color: #202933;
@@ -4659,7 +4693,7 @@ body.modal-active {
       max-height: 50px; }
 
   header > .container nav a {
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
     font-size: 24px;
     font-weight: 600;
     text-align: center; }
@@ -4734,7 +4768,7 @@ body.modal-active {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 700;
-    font-family: "FuturaPTBold";
+    font-family: 'FuturaPTBold';
     text-align: center;
     padding-top: 100px; }
 
@@ -5104,9 +5138,6 @@ body.modal-active {
     left: -4px; } }
 @media only screen and (max-width: 767px) {
   .token-timeline {
-    display: none; }
-
-  .m-token-timeline {
     display: none; } }
 @media only screen and (max-width: 885px) {
   .token-timeline__body-item-title--dashed:before {
