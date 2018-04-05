@@ -1,0 +1,100 @@
+@import '../base/variables';
+// ------------------------------------
+// Block '.timeline'
+// ------------------------------------
+.timeline{
+
+    & &__wrap{
+        position: relative;
+       padding: 40px 0;
+       overflow-y: scroll;
+    }
+
+    & &__list{
+        position: relative;
+        // display: flex;
+        // justify-content: start;
+        // min-height: 160px;
+        padding-left: 25%;
+        padding-right: 30%;
+        z-index: 1;
+        white-space: nowrap;
+        // overflow: hidden;
+
+        
+        &.timeline__list--bottom{
+            padding-left: 30%;
+            padding-right: 25%;
+            border-top: 1px solid rgba(0, 136, 208, 0.2);
+            
+            &:before{
+                content: '• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • ';
+                position: absolute;
+                top: -15px;
+                left: 0;
+                font-size: 22px;
+                white-space: nowrap;
+                letter-spacing: 34px;
+                color: #CBE6F5;
+                z-index: 0;
+            }
+
+            .timeline__item{
+                padding-top: 12px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    & &__item{
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 210px;
+        padding: 0 15px;
+        border-left: 1px solid rgba(0, 136, 208, 0.2);
+        flex-shrink: 0;
+        white-space: normal;
+        min-height: 160px;
+
+        &:before,
+        &:after{
+            content: '';
+            position: absolute;
+            left: -4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 10px;
+            background: #0088D0;
+            z-index: 2;
+        }
+        
+        &::before{
+            top: -4px;
+        }
+        &::after{
+            bottom: -4px;
+        }
+
+        &-title{
+            font-size: 17px;
+            font-family: 'FuturaPTBold';
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 3px;
+        }
+
+        &-desc{
+            font-size: 15px;
+            font-weight: 400;
+            font-family: 'ProximaNova-Regular';
+            line-height: 18px;
+        }
+
+        &-year{
+            color: #A4A4A4;
+            font-family: 'ProximaNova-Semibold';
+            font-size: 15px;
+        }
+    }
+}

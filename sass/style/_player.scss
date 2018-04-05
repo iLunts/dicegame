@@ -13,6 +13,8 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
     box-shadow: 0px 0px 28.5px 1.5px rgba(74, 68, 151, 0.2);
     
     &:before {
@@ -23,26 +25,11 @@
         top: 0;
         height: 100%;
         width: 100%;
-        // background-image: linear-gradient(to right, #1C88D7 0, #68CCFF 50%);
-
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bb3474+0,4a4497+100 */
-
         background: #bb3474;
-        /* Old browsers */
-
         background: -moz-linear-gradient(-45deg, #bb3474 0%, #4a4497 100%);
-        /* FF3.6-15 */
-
         background: -webkit-linear-gradient(-45deg, #bb3474 0%, #4a4497 100%);
-        /* Chrome10-25,Safari5.1-6 */
-
         background: linear-gradient(135deg, #bb3474 0%, #4a4497 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bb3474', endColorstr='#4a4497', GradientType=1);
-        /* IE6-9 fallback on horizontal gradient */
-
-        
         opacity: .4;
         z-index: 3;
     }
@@ -70,6 +57,13 @@
             visibility: visible;
         }
     }
+
+    // Modificator '.player.player--md'
+    &.player--md{
+        max-height: 380px;
+    }
+
+    // Element
     & &__video {
         visibility: hidden;
         width: 100%;
@@ -84,9 +78,11 @@
         font-size: 19px;
         line-height: 23px;
         margin-left: -100px;
+        color: #fff;
     }
-
+    
     & &__subtitle{
+        color: #fff;
         position: absolute !important;
         left: 50%;
         bottom: 20%;
