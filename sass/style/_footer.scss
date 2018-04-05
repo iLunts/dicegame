@@ -1,233 +1,238 @@
 .footer {
-    background-color: #F5F5F5;
-    padding: 60px 0;
-    &__logo {
-        width: 230px;
-        height: 50px;
-        img {
-            height: 100%;
-        }
+  background-color: #f5f5f5;
+  padding: 60px 0;
+
+  &__logo {
+    width: 230px;
+    height: 50px;
+    img {
+      height: 100%;
     }
-    &__social {
+  }
+  &__social {
+    position: absolute;
+    left: calc(50% - 175px);
+    &__form {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__mail {
         position: absolute;
-        left: calc(50% - 175px);
-        &__form {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            &__mail {
-                position: absolute;
-                width: 24px;
-                bottom: 2px;
-                height: 30px;
-            }
-        }
-        &__group {
-            position: relative;
-            width: 100%;
-        }
-        &__input {
-            border: 1px solid #AEAEAE;
-            background-color: #fff;
-            padding: 6px 10px;
-            width: 100%;
-            border-radius: 3px;
-            font-size: 16px;
-            outline: none;
-            z-index: 2;
-            animation: unfocusInputAnimation 0.1s linear;
-            &:focus {
-                margin-left: -10%;
-                width: 110%;
-                border-color: #929292;
-                animation: focusInputAnimation 0.1s linear;
-            }
-        }
-        &__clear {
-            cursor:pointer;
-            visibility:hidden;
-            max-width: 12px;
-            width: 100%;
-            height: 12px;
-            position: absolute;
-            z-index: 12;
-            top: 50%;
-            margin-top: -6px;
-            right: 10px;
-        }
-        &__submit {
-            background-color: #EFEFEF;
-            border: 1px solid #929292;
-            border-radius: 3px;
-            font-size: 16px;
-            padding: 6px 10px;
-            margin-left: 6px;
-            cursor: pointer;
-            outline: none;
-            font-family: 'ProximaNova-Semibold';
-            &:hover {
-                background-color: #DEDEDE;
-            }
-        }
-        &__icon {
-            background-color: #aaaaaa;
-            width: 46px;
-            height: 46px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: .2s;
-            &:hover {
-                transform: scale(1.1) rotate(-15deg);
-                box-shadow: 2px 5px 10px 1px rgba(74, 68, 151, 0.2);
-            }
-            &.tg {
-                img {
-                    width: 23px;
-                    margin-left: -2px;
-                }
-            }
-            img {
-                max-height: 24px;
-            }
-            &__wrap {
-                margin-bottom: 25px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            &.footer__social__icon--facebook{
-                &:hover{
-                    background: #34579A;
-                }
-            }
-
-            &.footer__social__icon--twitter{
-                &:hover{
-                    background: #1ca0f3;
-                }
-            }
-
-            &.footer__social__icon--bitcoin{
-                &:hover{
-                    background: #FEAE47;
-                }
-            }
-
-            &.footer__social__icon--medium{
-                &:hover{
-                    background: #18B475;
-                }
-            }
-
-            &.footer__social__icon--telegram{
-                &:hover{
-                    background: #0088cc;
-                }
-            }
-        }
+        width: 24px;
+        bottom: 2px;
+        height: 30px;
+      }
     }
-    &__nav {
+    &__group {
+      position: relative;
+      width: 100%;
+    }
+    &__input {
+      border: 1px solid #aeaeae;
+      background-color: #fff;
+      padding: 6px 10px;
+      width: 100%;
+      border-radius: 3px;
+      font-size: 16px;
+      outline: none;
+      z-index: 2;
+      animation: unfocusInputAnimation 0.1s linear;
+      &:focus {
+        margin-left: -10%;
+        width: 110%;
+        border-color: #929292;
+        animation: focusInputAnimation 0.1s linear;
+      }
+    }
+    &__clear {
+      cursor: pointer;
+      visibility: hidden;
+      max-width: 12px;
+      width: 100%;
+      height: 12px;
+      position: absolute;
+      z-index: 12;
+      top: 50%;
+      margin-top: -6px;
+      right: 10px;
+    }
+    &__submit {
+      background-color: #efefef;
+      border: 1px solid #929292;
+      border-radius: 3px;
+      font-size: 16px;
+      padding: 6px 10px;
+      margin-left: 6px;
+      cursor: pointer;
+      outline: none;
+      font-family: "ProximaNova-Semibold";
+      &:hover {
+        background-color: #dedede;
+      }
+    }
+    &__icon {
+      background-color: #aaaaaa;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.1) rotate(-15deg);
+        box-shadow: 2px 5px 10px 1px rgba(74, 68, 151, 0.2);
+      }
+      &.tg {
+        img {
+          width: 23px;
+          margin-left: -2px;
+        }
+      }
+      img {
+        max-height: 24px;
+      }
+      &__wrap {
+        margin-bottom: 25px;
         display: flex;
-        flex-direction: column;
-        margin-right: 75px;
-        &:last-child {
-            margin-right: 0;
-        }
-        &__title {
-            display: block;
-            padding: 4px 10px;
-            font-size: 14px;
-            font-weight: 600;
-            font-family: 'ProximaNova-Semibold';
-            text-transform: uppercase;
-            color: #2A2E3D;
-            margin-bottom: 3px;
-        }
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        &-link{
-            background-color: transparent;
-            outline: none;
-            color: #2A2E3D;
-            font-size: 14px;
-            text-decoration: none;
-            padding: 0;
-            margin: 0;
-            cursor: pointer;
-            margin-bottom: 5px;
-            display: block;
-            padding: 4px 10px;
-            border-radius: 4px;
-            box-shadow: none;
-            border: none;
-            text-align: left;
-            transition: all .3s;
-    
-            &:hover{
-                background-color: #EFEFEF;
-            }
+      &.footer__social__icon--facebook {
+        &:hover {
+          background: #34579a;
         }
-        a {
-            color: #2A2E3D;
-            font-size: 14px;
-            text-decoration: none;
-            margin-bottom: 5px;
-            display: block;
-            padding: 4px 10px;
-            border-radius: 4px;
-            transition: all .3s;
+      }
 
-            &:hover{
-                background-color: #EFEFEF;
-            }
+      &.footer__social__icon--twitter {
+        &:hover {
+          background: #1ca0f3;
         }
-        &__wrap {
-            display: flex;
-            justify-content: space-between;
+      }
+
+      &.footer__social__icon--bitcoin {
+        &:hover {
+          background: #feae47;
         }
+      }
+
+      &.footer__social__icon--medium {
+        &:hover {
+          background: #18b475;
+        }
+      }
+
+      &.footer__social__icon--telegram {
+        &:hover {
+          background: #0088cc;
+        }
+      }
     }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__title {
+      display: block;
+      padding: 4px 10px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: "ProximaNova-Semibold";
+      text-transform: uppercase;
+      color: #2a2e3d;
+      margin-bottom: 3px;
+    }
+
+    &-link {
+      background-color: transparent;
+      outline: none;
+      color: #2a2e3d;
+      font-size: 14px;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      margin-bottom: 5px;
+      display: block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      box-shadow: none;
+      border: none;
+      text-align: left;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #efefef;
+      }
+    }
+    a {
+      color: #2a2e3d;
+      font-size: 14px;
+      text-decoration: none;
+      margin-bottom: 5px;
+      display: block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #efefef;
+      }
+    }
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .placeholder {
-    position: absolute;
-    font-size: 17px;
-    color: #AEAEAE;
-    left: 40px;
-    bottom: 8px;
-    z-index: 1;
-    pointer-events: none;
-    transition: .2s;
-    &.active {
-        transform: translateY(-20px);
-        font-size: 14px;
-    }
+  position: absolute;
+  font-size: 17px;
+  color: #aeaeae;
+  left: 40px;
+  bottom: 8px;
+  z-index: 1;
+  pointer-events: none;
+  transition: 0.2s;
+  &.active {
+    transform: translateY(-20px);
+    font-size: 14px;
+  }
+}
+
+.block.block--gray--border.footer {
+  padding-bottom: 30px;
 }
 
 @keyframes focusInputAnimation {
-    0% {
-        margin-left: 0;
-        width: 100%;
-        border-color: #AEAEAE;
-    }
-    100% {
-        margin-left: -10%;
-        width: 110%;
-        border-color: #929292;
-    }
+  0% {
+    margin-left: 0;
+    width: 100%;
+    border-color: #aeaeae;
+  }
+  100% {
+    margin-left: -10%;
+    width: 110%;
+    border-color: #929292;
+  }
 }
 
 @keyframes unfocusInputAnimation {
-    0% {
-        margin-left: -10%;
-        width: 110%;
-        border-color: #929292;
-    }
-    100% {
-        margin-left: 0;
-        width: 100%;
-        border-color: #AEAEAE;
-    }
+  0% {
+    margin-left: -10%;
+    width: 110%;
+    border-color: #929292;
+  }
+  100% {
+    margin-left: 0;
+    width: 100%;
+    border-color: #aeaeae;
+  }
 }

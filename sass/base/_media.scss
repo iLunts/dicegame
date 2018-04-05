@@ -181,7 +181,7 @@
     }
   }
   header > .container nav a {
-    font-family: 'ProximaNova-Semibold';
+    font-family: "ProximaNova-Semibold";
     font-size: 24px;
     font-weight: 600;
     text-align: center;
@@ -266,7 +266,7 @@
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 700;
-    font-family: 'FuturaPTBold';
+    font-family: "FuturaPTBold";
     text-align: center;
     padding-top: 100px;
   }
@@ -628,10 +628,12 @@
         padding: ($block-padding-vertical * 3.5) 0;
       } // Modificator '.block.block--xlg'
       &.block--xlg {
-        padding: ($block-padding-vertical * 3.5) 0 ($block-padding-vertical * 2.5);
+        padding: ($block-padding-vertical * 3.5) 0
+          ($block-padding-vertical * 2.5);
       } // Modificator '.block.block--lg'
       &.block--lg {
-        padding: ($block-padding-vertical * 3.5) 0 ($block-padding-vertical * 1.5);
+        padding: ($block-padding-vertical * 3.5) 0
+          ($block-padding-vertical * 1.5);
       }
       .block--center {
         text-align: center;
@@ -684,7 +686,7 @@
   }
 
   .token-timeline__footer-item-descr {
-    font-size: 15px;  
+    font-size: 15px;
   }
 
   .token-timeline__footer-item--with-inner {
@@ -709,3 +711,41 @@
 }
 
 // *** End of Token timeline media *** //
+
+// *** block--particles-second:before *** //
+
+@media only screen and (max-width: 1024px) {
+  .block.block--particles-second:before {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .block.block--particles-second:before {
+    right: 0;
+    bottom: -47px;
+  }
+}
+
+@media only screen and (min-width: 1505px) {
+  .block.block--particles-second:before {
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .block.block--particles-second:before {
+    width: 30%;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .block.block--particles-second:before {
+    width: 25%;
+    right: 15%;
+    bottom: 0;
+  }
+}
+
+// *** end of block--particles-second:before *** //
