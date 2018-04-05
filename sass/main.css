@@ -6224,9 +6224,15 @@ body.modal-active {
 
 .tps .tps__link .link {
   text-decoration: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
   color: inherit;
   padding: 10px 5px;
   transition: all .2s;
+  font-size: inherit;
+  cursor: pointer;
 }
 
 .tps .tps__link .link:hover {
