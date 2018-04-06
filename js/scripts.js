@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   autoHideFAQMore();
+  initRoadmap();
 
   //date
 
@@ -719,4 +720,27 @@ function autoHideFAQMore() {
 function toggleFAQMore() {
   $('.js-faq-show-more').fadeToggle();
   $("#faq-show-more-btn").text(($("#faq-show-more-btn").text() == 'LEARN MORE') ? 'HIDE MORE' : 'LEARN MORE').fadeIn();
+}
+
+function initRoadmap(){
+    
+  // slick carousel
+  $('.roadmap__slider').slick({
+    arrows: true,
+    autoplay: false,
+    infinite: true,
+    initialSlide: 0,
+    dots: false,
+    vertical: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: false,
+    centerMode: true,
+    centerPadding: '0px',
+    appendArrows: $(".roadmap__btn"),
+    nextArrow: '<button class="roadmap__btn-next"></button>',
+    prevArrow: '<button class="roadmap__btn-prev"></button>',
+  });
 }
