@@ -738,6 +738,7 @@ function initRoadmap(){
     vertical: true,
     verticalSwiping: false,
     centerMode: true,
+    adaptiveHeight: true,
     centerPadding: '0px',
     appendArrows: $(".roadmap__btn"),
     nextArrow: '<button class="roadmap__btn-base roadmap__btn-base--next"></button>',
