@@ -273,7 +273,7 @@
       content: " ";
       position: absolute;
       background-color: #e73d5d;
-      width: 102%;
+      width: 104%;
       z-index: 10;
       border-radius: 29px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
@@ -296,7 +296,7 @@
   }
 
   &__footer-item--with-descr {
-    flex-basis: 380px;
+    flex-basis: 50%;
   }
 
   &__footer-item-descr {
