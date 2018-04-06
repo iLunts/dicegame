@@ -740,7 +740,7 @@ function initRoadmap(){
     centerMode: true,
     centerPadding: '0px',
     appendArrows: $(".roadmap__btn"),
-    nextArrow: '<button class="roadmap__btn-next"></button>',
-    prevArrow: '<button class="roadmap__btn-prev"></button>',
+    nextArrow: '<button class="roadmap__btn-base roadmap__btn-base--next"></button>',
+    prevArrow: '<button class="roadmap__btn-base roadmap__btn-base--prev"></button>',
   });
 }
