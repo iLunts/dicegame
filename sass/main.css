@@ -2229,7 +2229,7 @@ svg {
     font-size: 32px;
     line-height: 32px;
     font-weight: 900;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-family: "FuturaPTBold"; }
   .block .block__subtitle {
     font-size: 26px;
@@ -3742,9 +3742,6 @@ h6 {
     font-size: 17px;
     line-height: 20px;
     margin-left: -80px; }
-
-#product .additional-margin {
-  margin-top: 10px; }
 
 @media only screen and (max-width: 767px) {
   .player.player--xs-fill {
