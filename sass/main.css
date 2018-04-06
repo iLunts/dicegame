@@ -3152,6 +3152,7 @@ svg {
 }
 
 .block .block__title {
+  margin-bottom: 30px;
   font-size: 32px;
   line-height: 32px;
   font-weight: 900;
@@ -7092,6 +7093,29 @@ body.modal-active {
   font-weight: 300;
   font-family: 'ProximaNova-Regular';
   transition: all .2s;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .roadmap .roadmap__btn {
+    top: auto;
+    right: 0;
+    bottom: -50px;
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .roadmap .roadmap__btn-base {
+    margin: 0 10px;
+  }
+  .roadmap .roadmap__slider {
+    margin-left: 0;
+  }
+  .roadmap .roadmap__slider-item {
+    margin-left: 50px;
+    height: 150px;
+  }
 }
 
 /**********************

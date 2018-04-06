@@ -148,3 +148,36 @@
         }
     }
 }
+
+@media only screen and (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max){
+
+    .roadmap{
+
+        & &__btn{
+            top: auto;
+            right: 0;
+            bottom: -50px;
+            margin-top: 0;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-base{
+                // float: left;
+                margin: 0 10px;
+            }
+        }
+
+        & &__slider{
+            margin-left: 0;
+
+            &-item{
+                margin-left: 50px;
+                height: 150px;
+            }
+        }
+    }
+
+}
