@@ -641,47 +641,47 @@ $(document).ready(function() {
 });
 
 // Timer in Token Timeline
-$(document).ready(function() {
-  // Set the date we're counting down to
-  let countDownDate = new Date("Jun 5, 2018 15:37:25").getTime();
+// $(document).ready(function() {
+//   // Set the date we're counting down to
+//   let countDownDate = new Date("Jun 5, 2018 15:37:25").getTime();
 
-  // Update the count down every 1 second
-  let x = setInterval(function() {
-    // Get todays date and time
-    let now = new Date().getTime();
+//   // Update the count down every 1 second
+//   let x = setInterval(function() {
+//     // Get todays date and time
+//     let now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    let distance = countDownDate - now;
+//     // Find the distance between now an the count down date
+//     let distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     // Time calculations for days, hours, minutes and seconds
+//     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     let hours = Math.floor(
+//       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+//     );
+//     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // output results
-    document.getElementsByClassName(
-      "token-timeline__timer-days-number"
-    )[0].innerHTML = `${days} :`;
-    document.getElementsByClassName(
-      "token-timeline__timer-hours-number"
-    )[0].innerHTML = `${hours} :`;
-    document.getElementsByClassName(
-      "token-timeline__timer-min-number"
-    )[0].innerHTML = `${minutes} :`;
-    document.getElementsByClassName(
-      "token-timeline__timer-sec-number"
-    )[0].innerHTML = seconds;
+//     // output results
+//     document.getElementsByClassName(
+//       "token-timeline__timer-days-number"
+//     )[0].innerHTML = `${days} :`;
+//     document.getElementsByClassName(
+//       "token-timeline__timer-hours-number"
+//     )[0].innerHTML = `${hours} :`;
+//     document.getElementsByClassName(
+//       "token-timeline__timer-min-number"
+//     )[0].innerHTML = `${minutes} :`;
+//     document.getElementsByClassName(
+//       "token-timeline__timer-sec-number"
+//     )[0].innerHTML = seconds;
 
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-});
+//     // If the count down is finished, write some text
+//     if (distance < 0) {
+//       clearInterval(x);
+//       document.getElementById("demo").innerHTML = "EXPIRED";
+//     }
+//   }, 1000);
+// });
 
 
 // Accordeon in mobile version of Token Timeline 

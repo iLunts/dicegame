@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3283 388 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0177b5;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 15px;
+        font-family: ProximaNova-Semibold, Proxima Nova;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Group_1295" data-name="Group 1295" transform="translate(2828 -8251)">
+    <rect id="Rectangle_353" data-name="Rectangle 353" class="cls-1" width="27" height="27" rx="4" transform="translate(455 8639)"/>
+    <text id="in" class="cls-2" transform="translate(463 8658)"><tspan x="0" y="0">in</tspan></text>
+  </g>
+</svg>
