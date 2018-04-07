@@ -3055,7 +3055,7 @@ svg {
 }
 
 .block.block--particles-second:before {
-  content: "";
+  content: '';
   position: absolute;
   right: 6%;
   top: 0;
@@ -3082,6 +3082,7 @@ svg {
 
 .block.block--particles-second .block__title {
   margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .block.block--reset {
@@ -3126,7 +3127,7 @@ svg {
 
 .block.block--distribution:after {
   display: inline-block;
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -3156,7 +3157,7 @@ svg {
   font-size: 32px;
   line-height: 32px;
   font-weight: 900;
-  font-family: "FuturaPTBold";
+  font-family: 'FuturaPTBold';
 }
 
 .block .block__subtitle {
@@ -3164,7 +3165,7 @@ svg {
   line-height: 34px;
   font-weight: 600;
   margin-bottom: 25px;
-  font-family: "ProximaNova-Bold";
+  font-family: 'ProximaNova-Bold';
 }
 
 .block .block__text {
