@@ -107,6 +107,7 @@
             left: 15%;
             opacity: 0;
             transition: all .2s;
+
             &:hover{
                 background: lighten($color: #0088D0, $amount: 5);
                 border-color: lighten($color: #0088D0, $amount: 5);
@@ -116,12 +117,14 @@
             &.visible {
                 left: 0;
                 opacity: 1;
-                animation: mediaActive 0.3s;
+                transition: all .2s;
+                // animation: mediaActive 0.3s;
             }
             &.invisible {
                 left: 15%;
                 opacity: 0;
-                animation: mediaInActive 0.3s;
+                transition: all .2s;
+                // animation: mediaInActive 0.3s;
             }
         }
     }

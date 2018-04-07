@@ -2457,13 +2457,13 @@ footer.blur {
 .btn.btn--blue.btn--buy.visible {
   left: 0;
   opacity: 1;
-  animation: mediaActive 0.3s;
+  transition: all .2s;
 }
 
 .btn.btn--blue.btn--buy.invisible {
   left: 15%;
   opacity: 0;
-  animation: mediaInActive 0.3s;
+  transition: all .2s;
 }
 
 .btn.btn--play {
