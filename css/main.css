@@ -1502,6 +1502,8 @@ header > .container nav span.nav__line--mob {
         display: flex;
         justify-content: space-between;
         align-items: center; }
+      .footer__social__icon.footer__social__icon--google:hover {
+        background: #F34A38; }
       .footer__social__icon.footer__social__icon--facebook:hover {
         background: #34579a; }
       .footer__social__icon.footer__social__icon--twitter:hover {
@@ -1782,11 +1784,11 @@ footer.blur {
       .btn.btn--blue.btn--buy.visible {
         left: 0;
         opacity: 1;
-        animation: mediaActive 0.3s; }
+        transition: all .2s; }
       .btn.btn--blue.btn--buy.invisible {
         left: 15%;
         opacity: 0;
-        animation: mediaInActive 0.3s; }
+        transition: all .2s; }
   .btn.btn--play {
     position: absolute;
     top: 50%;
@@ -2259,14 +2261,12 @@ svg {
     font-size: 5px; }
 
 .device-iphone-x {
-  height: 86.8em;
-  width: 42.8em; }
+  height: 112.8em;
+  width: 55.6em; }
   .device-iphone-x .device-frame {
     background: #222;
     border-radius: 6.8em;
     padding: 1.2em;
-    height: 86.8em;
-    width: 42.8em;
     box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.15);
     position: fixed;
     top: 0;
@@ -2277,11 +2277,11 @@ svg {
     .device-iphone-x .device-frame video {
       position: absolute;
       min-width: 96%;
-      min-height: 96%;
+      min-height: 98%;
       top: 2%;
       left: 2%;
       width: 96%;
-      height: 96%;
+      height: 98%;
       object-fit: fill;
       border-radius: 4.8em; }
   .device-iphone-x .device-content {
@@ -4562,7 +4562,39 @@ body.modal-active {
   .card .card__container.active .card__item {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg); }
+.card--benefits .card--benefits__item {
+  width: 313px;
+  height: 100%;
+  min-height: 373px;
+  background: #fff;
+  margin: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0; }
+  .card--benefits .card--benefits__item-min-height {
+    min-height: 260px; }
+  .card--benefits .card--benefits__item-header {
+    font-size: 18px;
+    background: #20A6EC;
+    height: 55px;
+    margin-bottom: 0;
+    padding: 0 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    line-height: 1; }
+    .card--benefits .card--benefits__item-header img {
+      width: 32px;
+      height: 32px;
+      margin-right: 20px; }
+  .card--benefits .card--benefits__item-desc {
+    font-size: 17px;
+    line-height: 21px;
+    color: #2A2E3D;
+    padding: 20px; }
 
+@media only screen and (max-width: 1100px) {
+  .card--benefits .card--benefits__item {
+    width: 280px; } }
 /*Custom Styles*/
 .tps {
   position: relative; }
