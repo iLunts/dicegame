@@ -100,6 +100,12 @@
         align-items: center;
       }
 
+      &.footer__social__icon--google {
+        &:hover {
+          background: #F34A38;
+        }
+      }
+
       &.footer__social__icon--facebook {
         &:hover {
           background: #34579a;
