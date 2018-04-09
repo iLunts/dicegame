@@ -6206,7 +6206,8 @@ body.modal-active {
 
 .tps .tps__body {
   position: relative;
-  max-width: 300px;
+  width: 100%;
+  max-width: 350px;
   display: inline-block;
   border-radius: 5px;
   background: #2a2e3d;
@@ -6445,8 +6446,8 @@ body.modal-active {
   float: left;
   padding: 0;
   margin: 2px;
-  width: 25px;
-  height: 3.25em;
+  width: 31px;
+  height: 40px;
   border-radius: 6px;
   background: #000;
 }
@@ -6538,8 +6539,8 @@ body.modal-active {
   text-shadow: none;
   text-align: center;
   border-radius: 6px;
-  line-height: 1.35em;
-  font-size: .35em;
+  line-height: 1.15em;
+  font-size: .45em;
   font-weight: 300;
 }
 
