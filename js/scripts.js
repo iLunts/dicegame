@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   autoHideFAQMore();
   initRoadmap();
 
@@ -684,15 +683,16 @@ $(document).ready(function() {
 //   }, 1000);
 // });
 
-
-// Accordeon in mobile version of Token Timeline 
+// Accordeon in mobile version of Token Timeline
 
 $(document).ready(function() {
-	$('.m-token-timeline__item').on('click', function () {
-    $(this).closest('.m-token-timeline__item').find('.m-token-timeline__item-inner').slideToggle();
+  $(".m-token-timeline__item").on("click", function() {
+    $(this)
+      .closest(".m-token-timeline__item")
+      .find(".m-token-timeline__item-inner")
+      .slideToggle();
   });
 });
-
 
 // Show Whitepaper section
 function showWhitepaper() {
@@ -713,19 +713,24 @@ function closeWhitepaper() {
 
 // Show FAQ QA element
 function autoHideFAQMore() {
-  $('.js-faq-show-more').fadeOut();
+  $(".js-faq-show-more").fadeOut();
 }
 
 // Show FAQ QA element
 function toggleFAQMore() {
-  $('.js-faq-show-more').fadeToggle();
-  $("#faq-show-more-btn").text(($("#faq-show-more-btn").text() == 'LEARN MORE') ? 'HIDE MORE' : 'LEARN MORE').fadeIn();
+  $(".js-faq-show-more").fadeToggle();
+  $("#faq-show-more-btn")
+    .text(
+      $("#faq-show-more-btn").text() == "LEARN MORE"
+        ? "HIDE MORE"
+        : "LEARN MORE"
+    )
+    .fadeIn();
 }
 
-function initRoadmap(){
-    
+function initRoadmap() {
   // slick carousel
-  $('.roadmap__slider').slick({
+  $(".roadmap__slider").slick({
     arrows: true,
     autoplay: false,
     infinite: true,
@@ -739,9 +744,16 @@ function initRoadmap(){
     verticalSwiping: false,
     centerMode: true,
     adaptiveHeight: true,
-    centerPadding: '0px',
+    centerPadding: "0px",
     appendArrows: $(".roadmap__btn"),
-    nextArrow: '<button class="roadmap__btn-base roadmap__btn-base--next"></button>',
-    prevArrow: '<button class="roadmap__btn-base roadmap__btn-base--prev"></button>',
+    nextArrow:
+      '<button class="roadmap__btn-base roadmap__btn-base--next"></button>',
+    prevArrow:
+      '<button class="roadmap__btn-base roadmap__btn-base--prev"></button>'
   });
 }
+
+// WOW.js init
+$(document).ready(function() {
+  new WOW().init();
+});
