@@ -272,10 +272,10 @@
     &:after {
       content: " ";
       position: absolute;
-      background-color: #f89637;
+      background: linear-gradient(to right, #f13f63, #f89637);
       width: 104%;
       z-index: 10;
-      border-radius: 29px;
+      border-radius: 5px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
       height: 58px;
       right: -55px;
