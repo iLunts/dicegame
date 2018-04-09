@@ -840,19 +840,19 @@ header > .container nav span.nav__line--mob {
 
 .features__item__wrap.active .features__item:nth-child(5) {
   transform: scale(1.05);
-  background-color: #3AB88C;
+  background-color: #fa525f;
   color: #fff;
 }
 
 .features__item__wrap.active .features__item:nth-child(8) {
   transform: scale(1.1);
-  background-color: #FEAE47;
+  background-color: #feae47;
   color: #fff;
 }
 
 .features__item__wrap.active .features__item:nth-child(9) {
   transform: scale(1.05);
-  background-color: #6BC9E6;
+  background-color: #1c80c8;
   color: #fff;
 }
 
@@ -1210,7 +1210,7 @@ header > .container nav span.nav__line--mob {
 
 .token-timeline--footer {
   margin-top: 15px;
-  padding: 7px 0;
+  padding: 15px 0;
 }
 
 .token-timeline__body-item--check-icon {
@@ -1613,7 +1613,7 @@ header > .container nav span.nav__line--mob {
   width: 8px;
   height: 8px;
   bottom: -5px;
-  background-color: #F66055;
+  background-color: #f66055;
   box-shadow: 0 0 0 2px rgba(246, 96, 85, 0.17);
   opacity: 0.3;
   animation: activeCircle 3s linear infinite;
@@ -1934,7 +1934,7 @@ header > .container nav span.nav__line--mob {
   background-color: transparent;
   border: none;
   text-decoration: none;
-  color: #0088D0;
+  color: #0088d0;
   font-weight: 400;
   font-size: 15px;
   font-family: "ProximaNova-Semibold";
@@ -2447,9 +2447,9 @@ footer.blur {
 }
 
 .btn.btn--blue.btn--border {
-  border-color: #0088D0;
+  border-color: #0088d0;
   background: transparent;
-  color: #0088D0;
+  color: #0088d0;
 }
 
 .btn.btn--blue.btn--buy {
@@ -3109,8 +3109,8 @@ svg {
 }
 
 .block.block--gray--border {
-  border-top: 1px solid #E7E8EB;
-  border-bottom: 1px solid #E7E8EB;
+  border-top: 1px solid #e7e8eb;
+  border-bottom: 1px solid #e7e8eb;
 }
 
 .block.block--gray--border.footer {
@@ -3215,8 +3215,8 @@ svg {
 }
 
 .device-iphone-x {
-  height: 112.8em;
-  width: 55.6em;
+  height: 90em;
+  width: 46em;
 }
 
 .device-iphone-x .device-frame {
@@ -3251,7 +3251,7 @@ svg {
 }
 
 .device-iphone-x .device-content.device-content--fm {
-  background-color: #6F5163;
+  background-color: #6f5163;
   text-align: center;
 }
 
@@ -3264,7 +3264,7 @@ svg {
   background: #222;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
-  height: 3.0em;
+  height: 3em;
   left: 50%;
   margin-left: -10.2em;
   top: 1.2em;
@@ -3296,8 +3296,8 @@ svg {
 
 .device-iphone-x .device-sensors::after {
   background: #444;
-  border-radius: .3em;
-  height: .6em;
+  border-radius: 0.3em;
+  height: 0.6em;
   left: 50%;
   margin-left: -2.5em;
   top: 2em;
@@ -4633,7 +4633,7 @@ svg {
 }
 
 .t--red {
-  color: #EE3442 !important;
+  color: #ee3442 !important;
 }
 
 .t--blue {
@@ -4645,7 +4645,7 @@ svg {
 }
 
 .t--orange {
-  color: #FF8800 !important;
+  color: #ff8800 !important;
 }
 
 .t--red {
@@ -6138,7 +6138,7 @@ body.modal-active {
 }
 
 .card .card__item-header {
-  background: #0088D0;
+  background: #0088d0;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -10447,15 +10447,15 @@ body.modal-active {
     transition: none;
   }
   .features__item.swiper-slide-active:nth-child(5) {
-    background-color: #3AB88C;
+    background-color: #fa525f;
     transition: none;
   }
   .features__item.swiper-slide-active:nth-child(8) {
-    background-color: #FEAE47;
+    background-color: #feae47;
     transition: none;
   }
   .features__item.swiper-slide-active:nth-child(9) {
-    background-color: #6BC9E6;
+    background-color: #1c80c8;
     transition: none;
   }
   .features__item.swiper-slide {
@@ -11067,7 +11067,7 @@ body.modal-active {
 
 @media only screen and (min-width: 1900px) {
   .block.block--particles-second:before {
-    width: 25%;
+    width: 25.1%;
     right: 15%;
     bottom: 0;
   }
