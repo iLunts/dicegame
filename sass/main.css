@@ -2373,7 +2373,7 @@ footer.blur {
   align-items: center;
   transition: all 200ms ease-in-out;
   border-radius: 3px;
-  font-family: 'ProximaNova-Semibold';
+  font-family: "ProximaNova-Semibold";
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   padding: 0 16px;
 }
@@ -2394,7 +2394,7 @@ footer.blur {
 .btn:disabled, .btn.disabled {
   pointer-events: none;
   cursor: default;
-  opacity: .35;
+  opacity: 0.35;
 }
 
 .btn.active {
@@ -2422,28 +2422,28 @@ footer.blur {
 }
 
 .btn.btn--blue-dark {
-  background-color: #20A6EC;
+  background-color: #20a6ec;
   color: #fff;
-  border: 1px solid #20A6EC;
+  border: 1px solid #20a6ec;
 }
 
 .btn.btn--blue {
-  background-color: #EDF2F5;
-  color: #0088D0;
-  border: 1px solid #79BFE4;
+  background-color: #edf2f5;
+  color: #0088d0;
+  border: 1px solid #79bfe4;
 }
 
 .btn.btn--blue:hover {
-  background-color: #D6E9F3;
+  background-color: #d6e9f3;
 }
 
 .btn.btn--blue.btn--push {
-  box-shadow: 0 4px 0 #0776B1;
+  box-shadow: 0 4px 0 #0776b1;
 }
 
 .btn.btn--blue.btn--push:hover {
-  background: #1EA5EC;
-  box-shadow: 0 4px 0 #158ECE;
+  background: #1ea5ec;
+  box-shadow: 0 4px 0 #158ece;
 }
 
 .btn.btn--blue.btn--border {
@@ -2453,14 +2453,14 @@ footer.blur {
 }
 
 .btn.btn--blue.btn--buy {
-  background: #0088D0;
-  border-color: #0088D0;
+  background: #0088d0;
+  border-color: #0088d0;
   color: #fff;
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
   margin-left: 10px;
   left: 15%;
   opacity: 0;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn.btn--blue.btn--buy:hover {
@@ -2472,13 +2472,13 @@ footer.blur {
 .btn.btn--blue.btn--buy.visible {
   left: 0;
   opacity: 1;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn.btn--blue.btn--buy.invisible {
   left: 15%;
   opacity: 0;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn.btn--play {
@@ -2517,12 +2517,12 @@ footer.blur {
   display: block;
   font-weight: 300;
   text-align: left;
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 
 .btn.btn--app .btn__service {
   display: block;
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-align: left;
 }
@@ -2547,7 +2547,21 @@ footer.blur {
 }
 
 .btn.btn--white.btn--push {
-  box-shadow: 0 4px 0.2px #C9C9C9;
+  box-shadow: 0 4px 0.2px #c9c9c9;
+}
+
+.btn.btn--big {
+  padding: 15px 70px;
+  font-size: 26px;
+  background: #0088d0;
+  border-color: #0088d0;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.btn.btn--big:hover {
+  background: #0099ea;
+  border-color: #0099ea;
 }
 
 svg {

@@ -734,7 +734,7 @@ function initRoadmap() {
     arrows: true,
     autoplay: false,
     infinite: true,
-    initialSlide: 0,
+    initialSlide: 5,
     dots: false,
     vertical: true,
     speed: 300,
