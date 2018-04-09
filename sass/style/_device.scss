@@ -20,16 +20,18 @@ $device-silver-panel: #222;
 }
 
 .device-iphone-x {
-    height: 86.8em;
-    width: 42.8em;
+    //height: 86.8em;
+    //width: 42.8em;
+    height: 112.8em;
+    width: 55.6em;
     .device-frame {
         background: $device-silver-panel;
         border-radius: 6.8em;
-        //height: 74.5em;
         padding: 1.2em;
+        //height: 74.5em;
         //width: 42.8em;
-        height: 86.8em;
-        width: 42.8em;
+        //height: 86.8em;
+        //width: 42.8em;
         box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.15);
         position: fixed;
         top: 0;
@@ -40,11 +42,11 @@ $device-silver-panel: #222;
         video {
             position: absolute;
             min-width: 96%;
-            min-height: 96%;
+            min-height: 98%;
             top: 2%;
             left: 2%;
             width: 96%;
-            height: 96%;
+            height: 98%;
             object-fit: fill;
             border-radius: 4.8em;
         }
