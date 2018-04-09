@@ -272,7 +272,7 @@
     &:after {
       content: " ";
       position: absolute;
-      background-color: #e73d5d;
+      background-color: #f89637;
       width: 104%;
       z-index: 10;
       border-radius: 29px;
@@ -595,4 +595,8 @@
     margin-top: 40px;
     text-align: center;
   }
+}
+
+.popular-belief__header {
+  max-width: 510px;
 }
