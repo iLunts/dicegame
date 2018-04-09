@@ -301,10 +301,6 @@ header > .container nav span.nav__line--mob {
 @media only screen and (max-width: 1120px) and (min-width: 1000px) {
   header {
     .container {
-      .logo {
-        width: 120px;
-      }
-
       nav {
         display: flex;
         align-items: center;
@@ -312,6 +308,16 @@ header > .container nav span.nav__line--mob {
         a {
           padding: 0 12px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  header {
+    .container {
+      .logo {
+        width: 120px;
       }
     }
   }
