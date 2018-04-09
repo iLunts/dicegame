@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2956 -1576 1066 372">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #d6d6d6;
+      }
+
+      .cls-4 {
+        fill: #f89638;
+      }
+
+      .cls-5 {
+        fill: #dc4076;
+      }
+
+      .cls-6, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: #172143;
+      }
+
+      .cls-7, .cls-8 {
+        font-size: 17px;
+        font-family: ProximaNova-Semibold, Proxima Nova;
+        font-weight: 600;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="1066" height="293"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1308" data-name="Group 1308" transform="translate(2828 -8251)">
+    <g id="Repeat_Grid_14" data-name="Repeat Grid 14" class="cls-2" transform="translate(128 6711)">
+      <g transform="translate(-128 -7236)">
+        <rect id="Rectangle_459" data-name="Rectangle 459" class="cls-3" width="924" height="1" transform="translate(207 7236)"/>
+      </g>
+      <g transform="translate(-128 -7184)">
+        <rect id="Rectangle_459-2" data-name="Rectangle 459" class="cls-3" width="924" height="1" transform="translate(207 7236)"/>
+      </g>
+      <g transform="translate(-128 -7132)">
+        <rect id="Rectangle_459-3" data-name="Rectangle 459" class="cls-3" width="924" height="1" transform="translate(207 7236)"/>
+      </g>
+      <g transform="translate(-128 -7080)">
+        <rect id="Rectangle_459-4" data-name="Rectangle 459" class="cls-3" width="924" height="1" transform="translate(207 7236)"/>
+      </g>
+      <g transform="translate(-128 -7028)">
+        <rect id="Rectangle_459-5" data-name="Rectangle 459" class="cls-3" width="924" height="1" transform="translate(207 7236)"/>
+      </g>
+      <g transform="translate(-128 -6976)">
+        <rect id="Rectangle_459-6" data-name="Rectangle 459" class="cls-3" width="924" height="1" transform="translate(207 7236)"/>
+      </g>
+    </g>
+    <rect id="Rectangle_457" data-name="Rectangle 457" class="cls-4" width="100" height="94" transform="translate(339 7010) rotate(180)"/>
+    <path id="Rectangle_457-2" data-name="Rectangle 457" class="cls-5" d="M5,0H95a5,5,0,0,1,5,5V130a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(531 7010) rotate(180)"/>
+    <rect id="Rectangle_470" data-name="Rectangle 470" class="cls-6" width="100" height="1" transform="translate(531 6916) rotate(180)"/>
+    <path id="Path_2293" data-name="Path 2293" class="cls-5" d="M2,0H98a1.884,1.884,0,0,1,2,1.741V147.106H0V1.741A1.884,1.884,0,0,1,2,0Z" transform="translate(723 6988.106) rotate(180)"/>
+    <path id="Rectangle_457-3" data-name="Rectangle 457" class="cls-5" d="M5,0H95a5,5,0,0,1,5,5V194a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(915 7010) rotate(180)"/>
+    <rect id="Rectangle_456" data-name="Rectangle 456" class="cls-5" width="100" height="280" transform="translate(1007 6711)"/>
+    <rect id="Rectangle_458" data-name="Rectangle 458" class="cls-4" width="160" height="3" transform="translate(207.606 7014)"/>
+    <rect id="Rectangle_464" data-name="Rectangle 464" class="cls-5" width="737" height="3" transform="translate(393.222 7014)"/>
+    <rect id="Rectangle_460" data-name="Rectangle 460" class="cls-4" width="100" height="94" transform="translate(531 7010) rotate(180)"/>
+    <rect id="Rectangle_461" data-name="Rectangle 461" class="cls-4" width="100" height="94" transform="translate(723 7010) rotate(180)"/>
+    <rect id="Rectangle_462" data-name="Rectangle 462" class="cls-4" width="100" height="94" transform="translate(915 7010) rotate(180)"/>
+    <rect id="Rectangle_463" data-name="Rectangle 463" class="cls-4" width="100" height="94" transform="translate(1107 7010) rotate(180)"/>
+    <text id="_2018" data-name="2018" class="cls-7" transform="translate(271 7042)"><tspan x="0" y="0">2018</tspan></text>
+    <text id="_2019" data-name="2019" class="cls-7" transform="translate(463 7042)"><tspan x="0" y="0">2019</tspan></text>
+    <text id="_2020" data-name="2020" class="cls-7" transform="translate(653 7042)"><tspan x="0" y="0">2020</tspan></text>
+    <text id="_2021" data-name="2021" class="cls-7" transform="translate(847 7042)"><tspan x="0" y="0">2021</tspan></text>
+    <text id="_2022" data-name="2022" class="cls-7" transform="translate(1037 7042)"><tspan x="0" y="0">2022</tspan></text>
+    <text id="_1_2m_24h" data-name="$1,2m/24h" class="cls-8" transform="translate(246 6966)"><tspan x="0" y="0">$1,2m/24h</tspan></text>
+    <text id="_1_4m_24h" data-name="$1,4m/24h" class="cls-8" transform="translate(441 6904)"><tspan x="0" y="0">$1,4m/24h</tspan></text>
+    <text id="_1_6m_24h" data-name="$1,6m/24h" class="cls-8" transform="translate(633 6885)"><tspan x="0" y="0">$1,6m/24h</tspan></text>
+    <text id="_1_8m_24h" data-name="$1,8m/24h" class="cls-8" transform="translate(825 6876)"><tspan x="0" y="0">$1,8m/24h</tspan></text>
+    <text id="_2m_24h" data-name="$2m/24h" class="cls-8" transform="translate(1020 6827)"><tspan x="0" y="0">$2m/24h</tspan></text>
+    <text id="Dollars_24h" data-name="Dollars/24h" class="cls-7" transform="translate(1063 6691)"><tspan x="-44.013" y="0">Dollars/24h</tspan></text>
+    <rect id="Rectangle_471" data-name="Rectangle 471" class="cls-6" width="100" height="1" transform="translate(723 6916) rotate(180)"/>
+    <rect id="Rectangle_472" data-name="Rectangle 472" class="cls-6" width="100" height="1" transform="translate(915 6916) rotate(180)"/>
+    <rect id="Rectangle_473" data-name="Rectangle 473" class="cls-6" width="100" height="1" transform="translate(1107 6916) rotate(180)"/>
+  </g>
+</svg>
