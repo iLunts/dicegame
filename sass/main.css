@@ -10,37 +10,37 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 @font-face {
-  font-family: 'ProximaNova-Light';
+  font-family: "ProximaNova-Light";
   src: url("../fonts/proximanova/ProximaNova-Light.otf");
   font-weight: 300;
   font-style: normal; }
 @font-face {
-  font-family: 'ProximaNova-Regular';
+  font-family: "ProximaNova-Regular";
   src: url("../fonts/proximanova/ProximaNova-Regular.otf");
   font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: 'ProximaNova-Semibold';
+  font-family: "ProximaNova-Semibold";
   src: url("../fonts/proximanova/ProximaNova-Semibold.ttf");
   font-weight: 600;
   font-style: normal; }
 @font-face {
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova-Bold";
   src: url("../fonts/proximanova/ProximaNova-Bold.otf");
   font-weight: 700;
   font-style: normal; }
 @font-face {
-  font-family: 'FuturaPTMedium';
+  font-family: "FuturaPTMedium";
   src: url("../fonts/futura/FuturaPTMedium.otf");
   font-weight: 700;
   font-style: normal; }
 @font-face {
-  font-family: 'FuturaPTBold';
+  font-family: "FuturaPTBold";
   src: url("../fonts/futura/FuturaPTBold.otf");
   font-weight: 700;
   font-style: normal; }
 @font-face {
-  font-family: 'FuturaPTHeavy';
+  font-family: "FuturaPTHeavy";
   src: url("../fonts/futura/FuturaPTHeavy.otf");
   font-weight: 900;
   font-style: normal; }
@@ -57,14 +57,14 @@ video {
 
 body {
   background: #fff;
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-size: 10px;
-  color: #2A2E3D;
+  color: #2a2e3d;
   font-weight: 400;
   min-width: 320px; }
   body * {
     box-sizing: border-box;
-    font-family: 'ProximaNova-Regular'; }
+    font-family: "ProximaNova-Regular"; }
 
 img {
   max-width: 100%;
@@ -86,6 +86,9 @@ br {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px; }
+
+body {
+  overflow-x: hidden; }
 
 /**********************
 * typography
