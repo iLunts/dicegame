@@ -3232,16 +3232,10 @@ svg {
   overflow: hidden;
 }
 
-.device-iphone-x .device-frame video {
-  position: absolute;
-  min-width: 96%;
-  min-height: 98%;
-  top: 2%;
-  left: 2%;
-  width: 96%;
-  height: 98%;
-  object-fit: fill;
-  border-radius: 4.8em;
+.device-iphone-x .device-frame iframe {
+  height: 87.6em;
+  width: 43.5em;
+  vertical-align: middle;
 }
 
 .device-iphone-x .device-content {
@@ -3257,6 +3251,7 @@ svg {
 
 .device-iphone-x .device-content .btn {
   position: absolute;
+  visibility: hidden;
 }
 
 .device-iphone-x .device-header {

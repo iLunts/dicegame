@@ -41,17 +41,25 @@ $device-silver-panel: #222;
     bottom: 0;
     left: 0;
     overflow: hidden;
-    video {
-      position: absolute;
-      min-width: 96%;
-      min-height: 98%;
-      top: 2%;
-      left: 2%;
-      width: 96%;
-      height: 98%;
-      object-fit: fill;
-      border-radius: 4.8em;
+
+    iframe{
+      height: 87.6em;
+      width: 43.5em;
+      vertical-align: middle;
     }
+
+    // video,
+    // iframe {
+    //   position: absolute;
+    //   min-width: 96%;
+    //   min-height: 98%;
+    //   top: 2%;
+    //   left: 2%;
+    //   width: 96%;
+    //   height: 98%;
+    //   object-fit: fill;
+    //   border-radius: 4.8em;
+    // }
   }
   // 2436-by-1125-pixel resolution
   .device-content {
@@ -66,6 +74,7 @@ $device-silver-panel: #222;
     }
     .btn {
       position: absolute;
+      visibility: hidden;
     }
   }
 
