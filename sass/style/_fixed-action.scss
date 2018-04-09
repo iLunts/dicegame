@@ -1,5 +1,6 @@
 .fixed-action {
   position: fixed;
+  z-index: 20;
   max-width: 55px;
   max-height: 55px;
   &--bottom-right {

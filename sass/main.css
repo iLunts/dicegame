@@ -386,8 +386,6 @@ header > .container nav span.nav__line--mob {
     left: 15%;
     opacity: 0; } }
 @media only screen and (max-width: 1120px) and (min-width: 1000px) {
-  header .container .logo {
-    width: 120px; }
   header .container nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -397,6 +395,9 @@ header > .container nav span.nav__line--mob {
             align-items: center; }
     header .container nav a {
       padding: 0 12px; } }
+@media only screen and (max-width: 1599px) {
+  header .container .logo {
+    width: 120px; } }
 .main-window h1 {
   font-size: 40px;
   max-width: 962px;
@@ -6108,6 +6109,7 @@ body.modal-active {
       height: 150px; } }
 .fixed-action {
   position: fixed;
+  z-index: 20;
   max-width: 55px;
   max-height: 55px; }
   .fixed-action--bottom-right {
