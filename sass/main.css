@@ -1934,6 +1934,7 @@ header > .container nav span.nav__line--mob {
   background-color: transparent;
   border: none;
   text-decoration: none;
+  text-transform: uppercase;
   color: #0088d0;
   font-weight: 400;
   font-size: 15px;
