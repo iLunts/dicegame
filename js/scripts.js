@@ -57,42 +57,48 @@ $(document).ready(function() {
       );
   }
 
-  function initializeClock(objId, endtime) {
-    var days = document.getElementById(objId.days);
-    var hours = document.getElementById(objId.hours);
-    var minutes = document.getElementById(objId.minutes);
-    var seconds = document.getElementById(objId.seconds);
+  var is_chrome = !!window.chrome && !is_opera;
+  var is_explorer = typeof document !== 'undefined' && !!document.documentMode && !isEdge;
+  var is_firefox = typeof window.InstallTrigger !== 'undefined';
+  var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  var is_opera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 
-    var timeinterval = setInterval(function() {
-      var t = getTimeRemaining(endtime);
+  // function initializeClock(objId, endtime) {
+  //   var days = document.getElementById(objId.days);
+  //   var hours = document.getElementById(objId.hours);
+  //   var minutes = document.getElementById(objId.minutes);
+  //   var seconds = document.getElementById(objId.seconds);
 
-      days.innerHTML = ("0" + t.days).slice(-2);
-      hours.innerHTML = ("0" + t.hours).slice(-2);
-      minutes.innerHTML = ("0" + t.minutes).slice(-2);
-      seconds.innerHTML = ("0" + t.seconds).slice(-2);
+  //   var timeinterval = setInterval(function() {
+  //     var t = getTimeRemaining(endtime);
 
-      // --------------------
-      // Shake effect
-      // --------------------
-      shake(seconds);
+  //     days.innerHTML = ("0" + t.days).slice(-2);
+  //     hours.innerHTML = ("0" + t.hours).slice(-2);
+  //     minutes.innerHTML = ("0" + t.minutes).slice(-2);
+  //     seconds.innerHTML = ("0" + t.seconds).slice(-2);
 
-      if (t.seconds == 0) {
-        shake(minutes);
-      }
-      if (t.seconds == 0 && t.minutes == 0) {
-        shake(hours);
-      }
-      if (t.seconds == 0 && t.minutes == 0 && t.hours == 0) {
-        shake(days);
-      }
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
-    }, 1000);
-  }
+  //     // --------------------
+  //     // Shake effect
+  //     // --------------------
+  //     shake(seconds);
 
-  firstInitializeClock(timeObj, deadline);
-  initializeClock(timeObj, deadline);
+  //     if (t.seconds == 0) {
+  //       shake(minutes);
+  //     }
+  //     if (t.seconds == 0 && t.minutes == 0) {
+  //       shake(hours);
+  //     }
+  //     if (t.seconds == 0 && t.minutes == 0 && t.hours == 0) {
+  //       shake(days);
+  //     }
+  //     if (t.total <= 0) {
+  //       clearInterval(timeinterval);
+  //     }
+  //   }, 1000);
+  // }
+
+  // firstInitializeClock(timeObj, deadline);
+  // initializeClock(timeObj, deadline);
 
   $("span.economy__tab").on("click", function() {
     $("span.economy__tab").removeClass("active");
@@ -211,27 +217,38 @@ $(document).ready(function() {
         }
       }
     });
+
+    btnBuyNow = $(".btn.btn--buy");
+    btnSocialMedia = $(".social__media");
+
     if ($(window).scrollTop() > 75) {
       $("header").addClass("active");
-      if ($(window).width() > 800) {
-        $(".btn.btn--buy")
+      
+      if ($(window).width() > 800 && !is_safari) {
+        btnBuyNow
           .removeClass("invisible")
           .addClass("visible");
       }
-      if ($(window).width() < 800) {
-        $(".social__media")
+      if ($(window).width() < 800 && !is_safari) {
+        btnSocialMedia
           .removeClass("invisible")
           .addClass("visible");
       }
-    } else {
+    } 
+    else {
+
+      if (is_safari) {
+        btnBuyNow.addClass("visible");
+      }
+      
       if ($("header")[0].className) {
-        if ($(window).width() > 800) {
-          $(".btn.btn--buy")
+        if ($(window).width() > 800 && !is_safari) {
+          btnBuyNow
             .removeClass("visible")
             .addClass("invisible");
         }
         if ($(window).width() < 800) {
-          $(".social__media")
+          btnSocialMedia
             .removeClass("visible")
             .addClass("invisible");
         }
@@ -240,7 +257,7 @@ $(document).ready(function() {
     }
 
     $(".nav__lang").removeClass("active");
-    $(".social__media").removeClass("active");
+    btnSocialMedia.removeClass("active");
   }
 
   $(document).on("scroll", onScroll);

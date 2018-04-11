@@ -99,14 +99,15 @@
     }
     // Modificator '.btn.btn--blue.btn--buy'
     &.btn--buy {
+      position: relative;
       background: #0088d0;
       border-color: #0088d0;
       color: #fff;
       box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
       margin-left: 10px;
-      left: 15%;
-      opacity: 0;
-      transition: all 0.2s;
+      // left: 15%;
+      // opacity: 0;
+      // transition: all 0.2s;
 
       &:hover {
         background: lighten($color: #0088d0, $amount: 5);
@@ -117,13 +118,13 @@
       &.visible {
         left: 0;
         opacity: 1;
-        transition: all 0.2s;
+        transition: left .2s, opacity .2s;
         // animation: mediaActive 0.3s;
       }
       &.invisible {
         left: 15%;
         opacity: 0;
-        transition: all 0.2s;
+        transition: left .2s,  opacity .2s;
         // animation: mediaInActive 0.3s;
       }
     }

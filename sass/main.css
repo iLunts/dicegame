@@ -142,18 +142,18 @@ a {
 }
 
 header {
-  padding: 19px 0;
   position: fixed;
+  padding: 19px 0;
   left: 0;
   top: 0;
   width: 100%;
   background-color: #212430;
-  z-index: 100;
-  transform: translateZ(0);
+  z-index: 10000;
 }
 
-header.active {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+header .btn.btn--buy {
+  left: 15%;
+  opacity: 0;
 }
 
 header > .container {
@@ -2454,14 +2454,12 @@ footer.blur {
 }
 
 .btn.btn--blue.btn--buy {
+  position: relative;
   background: #0088d0;
   border-color: #0088d0;
   color: #fff;
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
   margin-left: 10px;
-  left: 15%;
-  opacity: 0;
-  transition: all 0.2s;
 }
 
 .btn.btn--blue.btn--buy:hover {
@@ -2473,13 +2471,13 @@ footer.blur {
 .btn.btn--blue.btn--buy.visible {
   left: 0;
   opacity: 1;
-  transition: all 0.2s;
+  transition: left .2s, opacity .2s;
 }
 
 .btn.btn--blue.btn--buy.invisible {
   left: 15%;
   opacity: 0;
-  transition: all 0.2s;
+  transition: left .2s,  opacity .2s;
 }
 
 .btn.btn--play {
