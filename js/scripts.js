@@ -584,7 +584,7 @@ $(document).ready(function() {
 
   $('.team__card-btn').on('click', function() {
     $(this)
-      .next('.team__card-dropdown')
+      .prev('.team__card-dropdown')
       .slideToggle();
 
     $(this).text() == 'MORE' ? $(this).text('LESS') : $(this).text('MORE');
