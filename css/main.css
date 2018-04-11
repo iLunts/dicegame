@@ -1405,6 +1405,7 @@ header > .container nav span.nav__line--mob {
     background-color: transparent;
     border: none;
     text-decoration: none;
+    text-transform: uppercase;
     color: #0088d0;
     font-weight: 400;
     font-size: 15px;
@@ -1726,7 +1727,7 @@ footer.blur {
   align-items: center;
   transition: all 200ms ease-in-out;
   border-radius: 3px;
-  font-family: 'ProximaNova-Semibold';
+  font-family: "ProximaNova-Semibold";
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   padding: 0 16px; }
   .btn:hover {
@@ -1741,7 +1742,7 @@ footer.blur {
   .btn:disabled, .btn.disabled {
     pointer-events: none;
     cursor: default;
-    opacity: .35; }
+    opacity: 0.35; }
   .btn.active {
     background: #ffdb4d;
     color: #7b4f00; }
@@ -1757,33 +1758,33 @@ footer.blur {
       box-shadow: none !important;
       transform: translateY(4px); }
   .btn.btn--blue-dark {
-    background-color: #20A6EC;
+    background-color: #20a6ec;
     color: #fff;
-    border: 1px solid #20A6EC; }
+    border: 1px solid #20a6ec; }
   .btn.btn--blue {
-    background-color: #EDF2F5;
-    color: #0088D0;
-    border: 1px solid #79BFE4; }
+    background-color: #edf2f5;
+    color: #0088d0;
+    border: 1px solid #79bfe4; }
     .btn.btn--blue:hover {
-      background-color: #D6E9F3; }
+      background-color: #d6e9f3; }
     .btn.btn--blue.btn--push {
-      box-shadow: 0 4px 0 #0776B1; }
+      box-shadow: 0 4px 0 #0776b1; }
       .btn.btn--blue.btn--push:hover {
-        background: #1EA5EC;
-        box-shadow: 0 4px 0 #158ECE; }
+        background: #1ea5ec;
+        box-shadow: 0 4px 0 #158ece; }
     .btn.btn--blue.btn--border {
       border-color: #0088d0;
       background: transparent;
       color: #0088d0; }
     .btn.btn--blue.btn--buy {
-      background: #0088D0;
-      border-color: #0088D0;
+      background: #0088d0;
+      border-color: #0088d0;
       color: #fff;
       box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
       margin-left: 10px;
       left: 15%;
       opacity: 0;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .btn.btn--blue.btn--buy:hover {
         background: #0099ea;
         border-color: #0099ea;
@@ -1791,11 +1792,11 @@ footer.blur {
       .btn.btn--blue.btn--buy.visible {
         left: 0;
         opacity: 1;
-        transition: all .2s; }
+        transition: all 0.2s; }
       .btn.btn--blue.btn--buy.invisible {
         left: 15%;
         opacity: 0;
-        transition: all .2s; }
+        transition: all 0.2s; }
   .btn.btn--play {
     position: absolute;
     top: 50%;
@@ -1826,10 +1827,10 @@ footer.blur {
       display: block;
       font-weight: 300;
       text-align: left;
-      font-size: .6rem; }
+      font-size: 0.6rem; }
     .btn.btn--app .btn__service {
       display: block;
-      font-size: .85rem;
+      font-size: 0.85rem;
       font-weight: 600;
       text-align: left; }
   .btn.btn--black {
@@ -1844,7 +1845,17 @@ footer.blur {
     background: #fff;
     color: #444; }
     .btn.btn--white.btn--push {
-      box-shadow: 0 4px 0.2px #C9C9C9; }
+      box-shadow: 0 4px 0.2px #c9c9c9; }
+  .btn.btn--big {
+    padding: 15px 70px;
+    font-size: 26px;
+    background: #0088d0;
+    border-color: #0088d0;
+    color: #fff;
+    transition: all 0.2s; }
+    .btn.btn--big:hover {
+      background: #0099ea;
+      border-color: #0099ea; }
 
 svg {
   max-height: 100%; }
@@ -2281,16 +2292,10 @@ svg {
     bottom: 0;
     left: 0;
     overflow: hidden; }
-    .device-iphone-x .device-frame video {
-      position: absolute;
-      min-width: 96%;
-      min-height: 98%;
-      top: 2%;
-      left: 2%;
-      width: 96%;
-      height: 98%;
-      object-fit: fill;
-      border-radius: 4.8em; }
+    .device-iphone-x .device-frame iframe {
+      height: 87.6em;
+      width: 43.5em;
+      vertical-align: middle; }
   .device-iphone-x .device-content {
     border-radius: 6em;
     overflow: hidden;
@@ -2299,7 +2304,8 @@ svg {
       background-color: #6f5163;
       text-align: center; }
     .device-iphone-x .device-content .btn {
-      position: absolute; }
+      position: absolute;
+      visibility: hidden; }
   .device-iphone-x .device-header {
     position: absolute;
     background: #222;

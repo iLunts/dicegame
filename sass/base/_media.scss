@@ -676,8 +676,8 @@
   }
 
   .token-timeline__body-item--current:after {
-    width: 100%;
-    right: -22px;
+    width: 102%;
+    right: -21px;
   }
 
   .token-timeline__footer-item-descr {
@@ -695,7 +695,7 @@
   }
 }
 
-@media only screen and (max-width: 1002px) {
+@media only screen and (max-width: 1035px) {
   .token-timeline {
     display: none;
   }
