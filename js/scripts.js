@@ -580,11 +580,7 @@ $(document).ready(function() {
       .next(".team__card-dropdown")
       .slideToggle();
 
-    if ($(this).text() == "MORE") {
-      $(this).text("LESS");
-    } else if ($(this).text() == "LESS") {
-      $(this).text("MORE");
-    }
+    $(this).text() == "MORE" ? $(this).text("LESS") : $(this).text("MORE");
   });
 
   var videoPlayer = document.getElementById("device-video");
