@@ -561,14 +561,24 @@ $(document).ready(function() {
   // ---------------
   // Team rotate
   // ---------------
-  $(".card__item-btn").on("click", function() {
-    var elem = $(this).closest(".card__container");
-    elem.addClass("active");
-  });
+  // $(".card__item-btn").on("click", function() {
+  //   var elem = $(this).closest(".card__container");
+  //   elem.addClass("active");
+  // });
 
-  $(".card__item-back").on("mouseleave", function(e) {
-    var elem = $(this).closest(".card__container");
-    elem.removeClass("active");
+  // $(".card__item-back").on("mouseleave", function(e) {
+  //   var elem = $(this).closest(".card__container");
+  //   elem.removeClass("active");
+  // });
+
+  // ---------------
+  // Team dropdown
+  // ---------------
+
+  $(".team__card-btn").on("click", function() {
+    $(this)
+      .next(".team__card-dropdown")
+      .slideToggle();
   });
 
   var videoPlayer = document.getElementById("device-video");
