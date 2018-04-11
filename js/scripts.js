@@ -777,6 +777,7 @@ $(document).ready(function() {
   $('.demand-graph__bar').on('mousemove', function(event) {
     $(this)
       .find('.js-demand-graph__popup')
+      .stop()
       .fadeIn();
   });
 
