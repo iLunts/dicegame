@@ -579,6 +579,12 @@ $(document).ready(function() {
     $(this)
       .next(".team__card-dropdown")
       .slideToggle();
+
+    if ($(this).text() == "MORE") {
+      $(this).text("LESS");
+    } else if ($(this).text() == "LESS") {
+      $(this).text("MORE");
+    }
   });
 
   var videoPlayer = document.getElementById("device-video");
@@ -731,9 +737,7 @@ function toggleFAQMore() {
   $(".js-faq-show-more").fadeToggle();
   $("#faq-show-more-btn")
     .text(
-      $("#faq-show-more-btn").text() == "Show More"
-        ? "Show Less"
-        : "Show More"
+      $("#faq-show-more-btn").text() == "Show More" ? "Show Less" : "Show More"
     )
     .fadeIn();
 }
