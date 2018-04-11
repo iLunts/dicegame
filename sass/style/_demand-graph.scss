@@ -1,0 +1,97 @@
+.demand-graph {
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-around;
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    &:hover {
+      .demand-graph__bar-inner--orange {
+        background-color: #ffd9b4;
+      }
+    }
+    &:hover {
+      .demand-graph__bar-inner--red {
+        background-color: #f5afb7;
+      }
+    }
+  }
+
+  &__bar-inner {
+    height: var(--bar-height);
+    width: 100px;
+    margin: 2px 0;
+    position: relative;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #172143;
+      font-family: "ProximaNova-Semibold";
+    }
+  }
+
+  &__bar-year {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    color: #172143;
+    font-family: "ProximaNova-Semibold";
+  }
+
+  &__bar--orange {
+    .demand-graph__bar-year {
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 130%;
+        height: 3px;
+        background-color: #f89638;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 20;
+      }
+    }
+  }
+
+  &__bar--red {
+    .demand-graph__bar-year {
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 130%;
+        height: 3px;
+        background-color: #dc4076;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+  }
+
+  &__bar-inner--orange {
+    background-color: #ffbd23;
+    border: 1px solid #f89638;
+    transition: all 0.1s;
+  }
+
+  &__bar-inner--red {
+    background-color: #f24a5d;
+    border: 1px solid #f24a5d;
+    transition: all 0.1s;
+  }
+  &__bar-summ {
+    margin-bottom: 10px;
+    color: #172143;
+    font-size: 17px;
+    font-family: "ProximaNova-Regular";
+    text-align: center;
+  }
+}

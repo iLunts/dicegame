@@ -3247,8 +3247,8 @@ svg {
 
 .device-iphone-x .device-frame iframe {
   height: 87.6em;
-  width: 43.5em;
   vertical-align: middle;
+  width: 100%;
 }
 
 .device-iphone-x .device-content {
@@ -6214,6 +6214,115 @@ body.modal-active {
   line-height: 21px;
   color: #2a2e3d;
   padding: 20px;
+}
+
+.team__card {
+  width: 225px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+.team__card-photo {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 0 0;
+  background-position-x: 10%;
+  background-position-y: 10%;
+}
+
+.team__card-social-linkedin {
+  position: absolute;
+  left: 15px;
+  top: -15px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+
+.team__card-social-linkedin:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+.team__card-social {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  padding: 2px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.team__card-name, .team__card-position, .team__card-btn {
+  display: block;
+}
+
+.team__card-name {
+  font-family: "ProximaNova-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team__card-position {
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 18px;
+  color: #808080;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+.team__card-btn {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #0088d0;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: pointer;
+  font-family: "ProximaNova-Semibold";
+  transition: all 0.25s;
+}
+
+.team__card-btn:hover {
+  color: #1ba2e9;
+}
+
+.team__card-dropdown {
+  display: none;
+  padding: 15px;
+}
+
+.team__card-dropdown p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "ProximaNova-Regular";
+}
+
+.team__card-dropdown a {
+  color: #0088d0;
+  font-size: 15px;
+  font-family: "ProximaNova-Semibold";
+  transition: all 0.25s;
+}
+
+.team__card-dropdown a:hover {
+  color: #1ba2e9;
+}
+
+.team__card-wrap {
+  margin: 20px 30px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -10390,6 +10499,96 @@ body.modal-active {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+
+.demand-graph {
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.demand-graph__bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.demand-graph__bar:hover .demand-graph__bar-inner--orange {
+  background-color: #ffd9b4;
+}
+
+.demand-graph__bar:hover .demand-graph__bar-inner--red {
+  background-color: #f5afb7;
+}
+
+.demand-graph__bar-inner {
+  height: var(--bar-height);
+  width: 100px;
+  margin: 2px 0;
+  position: relative;
+}
+
+.demand-graph__bar-inner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #172143;
+  font-family: "ProximaNova-Semibold";
+}
+
+.demand-graph__bar-year {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 17px;
+  color: #172143;
+  font-family: "ProximaNova-Semibold";
+}
+
+.demand-graph__bar--orange .demand-graph__bar-year:before {
+  content: " ";
+  position: absolute;
+  width: 130%;
+  height: 3px;
+  background-color: #f89638;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 20;
+}
+
+.demand-graph__bar--red .demand-graph__bar-year:before {
+  content: " ";
+  position: absolute;
+  width: 130%;
+  height: 3px;
+  background-color: #dc4076;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.demand-graph__bar-inner--orange {
+  background-color: #ffbd23;
+  border: 1px solid #f89638;
+  transition: all 0.1s;
+}
+
+.demand-graph__bar-inner--red {
+  background-color: #f24a5d;
+  border: 1px solid #f24a5d;
+  transition: all 0.1s;
+}
+
+.demand-graph__bar-summ {
+  margin-bottom: 10px;
+  color: #172143;
+  font-size: 17px;
+  font-family: "ProximaNova-Regular";
+  text-align: center;
 }
 
 /**********************
