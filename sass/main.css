@@ -7791,9 +7791,9 @@ body.modal-active {
     justify-content: flex-end;
     position: relative; }
     .demand-graph__bar:hover .demand-graph__bar-inner--orange {
-      background-color: #f5b374; }
+      background-color: #ffd9b4; }
     .demand-graph__bar:hover .demand-graph__bar-inner--red {
-      background-color: #f87281; }
+      background-color: #f5afb7; }
   .demand-graph__bar-inner {
     height: var(--bar-height);
     width: 100px;
@@ -7834,13 +7834,13 @@ body.modal-active {
     left: 50%;
     transform: translate(-50%); }
   .demand-graph__bar-inner--orange {
-    background-color: #ffd9b4;
+    background-color: #ffbd23;
     border: 1px solid #f89638;
-    transition: all 0.3s; }
+    transition: all 0.1s; }
   .demand-graph__bar-inner--red {
-    background-color: #f5afb7;
+    background-color: #f24a5d;
     border: 1px solid #f24a5d;
-    transition: all 0.3s; }
+    transition: all 0.1s; }
   .demand-graph__bar-summ {
     margin-bottom: 10px;
     color: #172143;

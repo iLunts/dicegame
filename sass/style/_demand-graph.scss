@@ -10,12 +10,12 @@
     position: relative;
     &:hover {
       .demand-graph__bar-inner--orange {
-        background-color: #f5b374;
+        background-color: #ffd9b4;
       }
     }
     &:hover {
       .demand-graph__bar-inner--red {
-        background-color: #f87281;
+        background-color: #f5afb7;
       }
     }
   }
@@ -77,15 +77,15 @@
   }
 
   &__bar-inner--orange {
-    background-color: #ffd9b4;
+    background-color: #ffbd23;
     border: 1px solid #f89638;
-    transition: all 0.3s;
+    transition: all 0.1s;
   }
 
   &__bar-inner--red {
-    background-color: #f5afb7;
+    background-color: #f24a5d;
     border: 1px solid #f24a5d;
-    transition: all 0.3s;
+    transition: all 0.1s;
   }
   &__bar-summ {
     margin-bottom: 10px;
