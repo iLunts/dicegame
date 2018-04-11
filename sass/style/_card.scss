@@ -288,6 +288,16 @@
       line-height: 20px;
       font-family: "ProximaNova-Regular";
     }
+
+    a {
+      color: #0088d0;
+      font-size: 15px;
+      font-family: "ProximaNova-Semibold";
+      transition: all 0.25s;
+      &:hover {
+        color: #1ba2e9;
+      }
+    }
   }
 
   &-wrap {
