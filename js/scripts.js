@@ -756,7 +756,7 @@ function initRoadmap() {
     dots: false,
     vertical: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: false,
