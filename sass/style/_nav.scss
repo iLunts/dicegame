@@ -9,13 +9,12 @@ header {
   z-index: 10000;
   // transform: translateZ(0);
 
-  .btn.btn--buy{
+  .btn.btn--buy {
     left: 15%;
     opacity: 0;
   }
 
   &.active {
-    
     // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
     // .btn.btn--buy{
     //   left: 0;
@@ -276,6 +275,26 @@ header {
     width: 100%;
     background-color: #616161;
     transition: 0.2s;
+  }
+}
+
+.nav__link--new-item {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: url(../svg/new.svg);
+    width: 25px;
+    height: 12px;
+    top: -15px;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav__link--new-item {
+    &:before {
+      display: none;
+    }
   }
 }
 
