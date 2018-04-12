@@ -4767,12 +4767,12 @@ body.modal-active {
         border-radius: 10px;
         background-color: #1d1f27; }
   .tps .tps__subscribe {
-    margin: 25px 0; }
+    margin: 40px 0; }
     .tps .tps__subscribe-input {
       display: block;
       width: 100%;
-      background-color: #282C37;
-      border: 1px solid #191B25;
+      background-color: #282c37;
+      border: 1px solid #191b25;
       border-right: none;
       color: #fff;
       font-size: 16px;
@@ -4783,7 +4783,7 @@ body.modal-active {
     .tps .tps__subscribe-btn {
       background-color: #353947;
       border-radius: 0 3px 3px 0;
-      border: 1px solid #191B25;
+      border: 1px solid #191b25;
       font-size: 16px;
       padding: 10px;
       color: #fff;
@@ -4793,8 +4793,8 @@ body.modal-active {
   .tps .tps__link {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #0F1016;
-    border-bottom: 1px solid #0F1016; }
+    border-top: 1px solid #0f1016;
+    border-bottom: 1px solid #0f1016; }
     .tps .tps__link .link {
       text-decoration: none;
       color: inherit;
@@ -4844,6 +4844,11 @@ body.modal-active {
     max-height: 20px; }
   .tps__social-link--insta {
     opacity: 0.8; }
+  .tps__subscribe-label {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    margin-bottom: 8px; }
 
 /* Get the bourbon mixin from http://bourbon.io */
 /* Reset */
