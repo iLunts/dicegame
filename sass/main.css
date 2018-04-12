@@ -7934,7 +7934,10 @@ body.modal-active {
     max-width: 75px; }
 
   .demand-graph__bar-inner {
-    max-width: 75px; } }
+    max-width: 75px; }
+
+  .demand-graph__bar-summ {
+    font-size: 13px; } }
 @media only screen and (max-width: 452px) {
   .demand-graph__bar {
     max-width: 55px; }
@@ -7944,7 +7947,10 @@ body.modal-active {
     .demand-graph__bar-inner span {
       transform: rotate(-90deg);
       top: 40%;
-      left: 1%; } }
+      left: 1%; }
+
+  .demand-graph__bar-summ {
+    font-size: 10px; } }
 /**********************
 * MEDIA
 **********************/
