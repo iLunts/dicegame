@@ -112,16 +112,16 @@ a {
   display: inline-block; }
 
 header {
-  padding: 19px 0;
   position: fixed;
+  padding: 19px 0;
   left: 0;
   top: 0;
   width: 100%;
   background-color: #212430;
-  z-index: 100;
-  transform: translateZ(0); }
-  header.active {
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
+  z-index: 10000; }
+  header .btn.btn--buy {
+    left: 15%;
+    opacity: 0; }
   header > .container {
     display: flex;
     align-items: center;
@@ -1777,14 +1777,12 @@ footer.blur {
       background: transparent;
       color: #0088d0; }
     .btn.btn--blue.btn--buy {
+      position: relative;
       background: #0088d0;
       border-color: #0088d0;
       color: #fff;
       box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
-      margin-left: 10px;
-      left: 15%;
-      opacity: 0;
-      transition: all 0.2s; }
+      margin-left: 10px; }
       .btn.btn--blue.btn--buy:hover {
         background: #0099ea;
         border-color: #0099ea;
@@ -1792,11 +1790,11 @@ footer.blur {
       .btn.btn--blue.btn--buy.visible {
         left: 0;
         opacity: 1;
-        transition: all 0.2s; }
+        transition: left .2s, opacity .2s; }
       .btn.btn--blue.btn--buy.invisible {
         left: 15%;
         opacity: 0;
-        transition: all 0.2s; }
+        transition: left .2s,  opacity .2s; }
   .btn.btn--play {
     position: absolute;
     top: 50%;
@@ -4678,6 +4676,13 @@ body.modal-active {
       font-size: 15px;
       line-height: 20px;
       font-family: "ProximaNova-Regular"; }
+    .team__card-dropdown a {
+      color: #0088d0;
+      font-size: 15px;
+      font-family: "ProximaNova-Semibold";
+      transition: all 0.25s; }
+      .team__card-dropdown a:hover {
+        color: #1ba2e9; }
   .team__card-wrap {
     margin: 20px 30px; }
 
@@ -7773,6 +7778,73 @@ body.modal-active {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
+
+.demand-graph {
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-around; }
+  .demand-graph__bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative; }
+    .demand-graph__bar:hover .demand-graph__bar-inner--orange {
+      background-color: #ffd9b4; }
+    .demand-graph__bar:hover .demand-graph__bar-inner--red {
+      background-color: #f5afb7; }
+  .demand-graph__bar-inner {
+    height: var(--bar-height);
+    width: 100px;
+    margin: 2px 0;
+    position: relative; }
+    .demand-graph__bar-inner span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #172143;
+      font-family: "ProximaNova-Semibold"; }
+  .demand-graph__bar-year {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    color: #172143;
+    font-family: "ProximaNova-Semibold"; }
+  .demand-graph__bar--orange .demand-graph__bar-year:before {
+    content: " ";
+    position: absolute;
+    width: 130%;
+    height: 3px;
+    background-color: #f89638;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 20; }
+  .demand-graph__bar--red .demand-graph__bar-year:before {
+    content: " ";
+    position: absolute;
+    width: 130%;
+    height: 3px;
+    background-color: #dc4076;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%); }
+  .demand-graph__bar-inner--orange {
+    background-color: #ffbd23;
+    border: 1px solid #f89638;
+    transition: all 0.1s; }
+  .demand-graph__bar-inner--red {
+    background-color: #f24a5d;
+    border: 1px solid #f24a5d;
+    transition: all 0.1s; }
+  .demand-graph__bar-summ {
+    margin-bottom: 10px;
+    color: #172143;
+    font-size: 17px;
+    font-family: "ProximaNova-Regular";
+    text-align: center; }
 
 /**********************
 * MEDIA
