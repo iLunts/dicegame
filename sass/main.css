@@ -7807,16 +7807,16 @@ body.modal-active {
       transform: translate(-50%, -50%);
       font-size: 16px;
       color: #172143;
-      font-family: 'ProximaNova-Semibold'; }
+      font-family: "ProximaNova-Semibold"; }
   .demand-graph__bar-year {
     position: relative;
     margin-top: 20px;
     text-align: center;
     font-size: 17px;
     color: #172143;
-    font-family: 'ProximaNova-Semibold'; }
+    font-family: "ProximaNova-Semibold"; }
   .demand-graph__bar--orange .demand-graph__bar-year:before {
-    content: ' ';
+    content: " ";
     position: absolute;
     width: 130%;
     height: 3px;
@@ -7826,7 +7826,7 @@ body.modal-active {
     transform: translate(-50%);
     z-index: 20; }
   .demand-graph__bar--red .demand-graph__bar-year:before {
-    content: ' ';
+    content: " ";
     position: absolute;
     width: 130%;
     height: 3px;
@@ -7834,6 +7834,8 @@ body.modal-active {
     top: -15px;
     left: 50%;
     transform: translate(-50%); }
+  .demand-graph__bar--red .demand-graph__bar-year--long:before {
+    width: 300%; }
   .demand-graph__bar-inner--orange {
     background-color: #ffbd23;
     border: 1px solid #f89638;
@@ -7846,7 +7848,7 @@ body.modal-active {
     margin-bottom: 10px;
     color: #172143;
     font-size: 17px;
-    font-family: 'ProximaNova-Regular';
+    font-family: "ProximaNova-Regular";
     text-align: center; }
   .demand-graph__popup {
     display: none;
@@ -7864,17 +7866,17 @@ body.modal-active {
     padding: 10px 15px;
     background-color: #f24a5d; }
     .demand-graph__popup-header span {
-      font-family: 'ProximaNova-Semibold';
+      font-family: "ProximaNova-Semibold";
       color: #fff;
       font-size: 17px; }
   .demand-graph__descr {
     color: #777;
     font-size: 15px;
-    font-family: 'ProximaNova-Regular'; }
+    font-family: "ProximaNova-Regular"; }
   .demand-graph__title {
     color: #2a2e3d;
     font-size: 17px;
-    font-family: 'ProximaNova-Regular'; }
+    font-family: "ProximaNova-Regular"; }
   .demand-graph__popup-body {
     padding: 15px;
     border-left: 1px solid #dedede;
@@ -7887,6 +7889,28 @@ body.modal-active {
     justify-content: space-between;
     margin-bottom: 10px; }
 
+@media only screen and (max-width: 767px) {
+  .demand-graph__bar--red .demand-graph__bar-year:before {
+    width: 100%; }
+
+  .demand-graph__bar--orange .demand-graph__bar-year:before {
+    width: 100%; }
+
+  .demand-graph__bar {
+    max-width: 75px; }
+
+  .demand-graph__bar-inner {
+    max-width: 75px; } }
+@media only screen and (max-width: 452px) {
+  .demand-graph__bar {
+    max-width: 55px; }
+
+  .demand-graph__bar-inner {
+    max-width: 55px; }
+    .demand-graph__bar-inner span {
+      transform: rotate(-90deg);
+      top: 40%;
+      left: 1%; } }
 /**********************
 * MEDIA
 **********************/

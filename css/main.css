@@ -7782,15 +7782,18 @@ body.modal-active {
 .demand-graph {
   max-width: 1050px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 74px, #d6d6d6 75px, #d6d6d6 30px); }
   .demand-graph__bar {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative; }
     .demand-graph__bar:hover .demand-graph__bar-inner--orange {
+      cursor: pointer;
       background-color: #ffd9b4; }
     .demand-graph__bar:hover .demand-graph__bar-inner--red {
+      cursor: pointer;
       background-color: #f5afb7; }
   .demand-graph__bar-inner {
     height: var(--bar-height);
@@ -7831,6 +7834,8 @@ body.modal-active {
     top: -15px;
     left: 50%;
     transform: translate(-50%); }
+  .demand-graph__bar--red .demand-graph__bar-year--long:before {
+    width: 300%; }
   .demand-graph__bar-inner--orange {
     background-color: #ffbd23;
     border: 1px solid #f89638;
@@ -7845,7 +7850,48 @@ body.modal-active {
     font-size: 17px;
     font-family: "ProximaNova-Regular";
     text-align: center; }
+  .demand-graph__popup {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    min-width: 270px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+  .demand-graph__popup-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 15px;
+    background-color: #f24a5d; }
+    .demand-graph__popup-header span {
+      font-family: "ProximaNova-Semibold";
+      color: #fff;
+      font-size: 17px; }
+  .demand-graph__descr {
+    color: #777;
+    font-size: 15px;
+    font-family: "ProximaNova-Regular"; }
+  .demand-graph__title {
+    color: #2a2e3d;
+    font-size: 17px;
+    font-family: "ProximaNova-Regular"; }
+  .demand-graph__popup-body {
+    padding: 15px;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .demand-graph__popup-body-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
 
+@media only screen and (max-width: 767px) {
+  .demand-graph__bar-year:before {
+    width: 100%; } }
 /**********************
 * MEDIA
 **********************/
