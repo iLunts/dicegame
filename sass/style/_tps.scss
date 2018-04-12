@@ -83,13 +83,13 @@
     }
   }
   & &__subscribe {
-    margin: 25px 0;
+    margin: 40px 0;
 
-    &-input{
+    &-input {
       display: block;
       width: 100%;
-      background-color: #282C37;
-      border: 1px solid #191B25;
+      background-color: #282c37;
+      border: 1px solid #191b25;
       border-right: none;
       color: #fff;
       font-size: 16px;
@@ -98,10 +98,10 @@
       outline: none;
       box-shadow: none;
     }
-    &-btn{
+    &-btn {
       background-color: #353947;
       border-radius: 0 3px 3px 0;
-      border: 1px solid #191B25;
+      border: 1px solid #191b25;
       font-size: 16px;
       padding: 10px;
       color: #fff;
@@ -115,8 +115,8 @@
     justify-content: space-between;
     // border-top: 1px solid rgba(15, 16, 22, 0.16);
     // border-bottom: 1px solid rgba(15, 16, 22, 0.16);
-    border-top: 1px solid #0F1016;
-    border-bottom: 1px solid #0F1016;
+    border-top: 1px solid #0f1016;
+    border-bottom: 1px solid #0f1016;
     .link {
       text-decoration: none;
       color: inherit;
@@ -182,5 +182,11 @@
   }
   &__social-link--insta {
     opacity: 0.8;
+  }
+  &__subscribe-label {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    margin-bottom: 8px;
   }
 }

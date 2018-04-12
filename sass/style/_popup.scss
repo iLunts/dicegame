@@ -43,28 +43,28 @@
           font-size: 22px;
         }
         > h5 {
-            font-size: 17px;
-            color: #0070C9;
-            text-transform: uppercase;
-            font-family: 'ProximaNova-Semibold';
-            display: flex;
-            align-items: center;
+          font-size: 17px;
+          color: #0070C9;
+          text-transform: uppercase;
+          font-family: 'ProximaNova-Semibold';
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          justify-content: center;
+          //margin-top: 50px;
+          position: absolute;
+          bottom: 30%;
+          left: 50%;
+          margin-left: -18px;
+
+          img {
+            width: 36px;
+          }
+
+          &:hover {
             cursor: pointer;
-            justify-content: center;
-            //margin-top: 50px;
-            position: absolute;
-            bottom: 30%;
-            left: 50%;
-            margin-left: -18px;
-
-            img {
-                width: 36px;
-            }
-
-            &:hover {
-                cursor: pointer;
-                opacity: .7;
-            }
+            opacity: .7;
+          }
         }
         .popup__whitepaper__lang__flag {
           transition: 0.5s;
@@ -117,13 +117,13 @@
 //TODO: TO check, did not say what else
 main,
 footer {
-	&.blur {
-		overflow-y: hidden; //height: 100vh;
-		filter: blur(15px);
-	}
+  &.blur {
+    overflow-y: hidden; //height: 100vh;
+    //filter: blur(15px);
+  }
 }
 
 .blur {
-	overflow-y: hidden; //height: 100vh;
-	filter: blur(15px);
+  overflow-y: hidden; //height: 100vh;
+  //filter: blur(15px);
 }
