@@ -56,6 +56,9 @@
         margin-bottom: 160px;
         
         &-item{
+            // display: flex;
+            // align-items: center;
+
             position: relative;
             padding: 20px 40px;
             margin-left: 90px;
@@ -130,6 +133,9 @@
         }
         
         &-date{
+            // display: block;
+            // width: 100%;
+
             font-size: 16px;
             line-height: 20px;
             font-weight: 500;
@@ -139,7 +145,9 @@
         }
         
         &-text{
-            // max-width: 400px;
+            // display: block;
+            // width: 100%;
+
             line-height: 17px;
             font-size: 14px;
             font-weight: 300;
@@ -149,6 +157,10 @@
     }
 }
 
+
+// ------------------------------------
+// Size 'xSmall'
+// ------------------------------------
 @media only screen and (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max){
 
     .roadmap{
@@ -176,6 +188,15 @@
             &-item{
                 margin-left: 50px;
                 height: 150px;
+
+                &.slick-center{
+
+                    .roadmap__slider-date{
+                        // font-size: 14px;
+
+                    }
+
+                }
             }
         }
     }
