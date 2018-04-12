@@ -10539,7 +10539,7 @@ body.modal-active {
   transform: translate(-50%, -50%);
   font-size: 16px;
   color: #172143;
-  font-family: 'ProximaNova-Semibold';
+  font-family: "ProximaNova-Semibold";
 }
 
 .demand-graph__bar-year {
@@ -10548,11 +10548,11 @@ body.modal-active {
   text-align: center;
   font-size: 17px;
   color: #172143;
-  font-family: 'ProximaNova-Semibold';
+  font-family: "ProximaNova-Semibold";
 }
 
 .demand-graph__bar--orange .demand-graph__bar-year:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 130%;
   height: 3px;
@@ -10564,7 +10564,7 @@ body.modal-active {
 }
 
 .demand-graph__bar--red .demand-graph__bar-year:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 130%;
   height: 3px;
@@ -10572,6 +10572,10 @@ body.modal-active {
   top: -15px;
   left: 50%;
   transform: translate(-50%);
+}
+
+.demand-graph__bar--red .demand-graph__bar-year--long:before {
+  width: 300%;
 }
 
 .demand-graph__bar-inner--orange {
@@ -10590,7 +10594,7 @@ body.modal-active {
   margin-bottom: 10px;
   color: #172143;
   font-size: 17px;
-  font-family: 'ProximaNova-Regular';
+  font-family: "ProximaNova-Regular";
   text-align: center;
 }
 
@@ -10614,7 +10618,7 @@ body.modal-active {
 }
 
 .demand-graph__popup-header span {
-  font-family: 'ProximaNova-Semibold';
+  font-family: "ProximaNova-Semibold";
   color: #fff;
   font-size: 17px;
 }
@@ -10622,13 +10626,13 @@ body.modal-active {
 .demand-graph__descr {
   color: #777;
   font-size: 15px;
-  font-family: 'ProximaNova-Regular';
+  font-family: "ProximaNova-Regular";
 }
 
 .demand-graph__title {
   color: #2a2e3d;
   font-size: 17px;
-  font-family: 'ProximaNova-Regular';
+  font-family: "ProximaNova-Regular";
 }
 
 .demand-graph__popup-body {
@@ -10644,6 +10648,35 @@ body.modal-active {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .demand-graph__bar--red .demand-graph__bar-year:before {
+    width: 100%;
+  }
+  .demand-graph__bar--orange .demand-graph__bar-year:before {
+    width: 100%;
+  }
+  .demand-graph__bar {
+    max-width: 75px;
+  }
+  .demand-graph__bar-inner {
+    max-width: 75px;
+  }
+}
+
+@media only screen and (max-width: 452px) {
+  .demand-graph__bar {
+    max-width: 55px;
+  }
+  .demand-graph__bar-inner {
+    max-width: 55px;
+  }
+  .demand-graph__bar-inner span {
+    transform: rotate(-90deg);
+    top: 40%;
+    left: 1%;
+  }
 }
 
 /**********************
