@@ -814,7 +814,7 @@ header > .container nav span.nav__line--mob {
           border-right: none; }
 
 .token-timeline {
-  max-width: 999px;
+  max-width: 1030px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 3px;
@@ -874,12 +874,12 @@ header > .container nav span.nav__line--mob {
       content: " ";
       position: absolute;
       background: linear-gradient(to right, #f13f63, #f89637);
-      width: 105%;
+      width: 107%;
       z-index: 10;
       border-radius: 5px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
       height: 58px;
-      right: -47px; }
+      right: -63px; }
   .token-timeline__footer {
     display: flex;
     max-width: 931px;
@@ -912,7 +912,7 @@ header > .container nav span.nav__line--mob {
       height: 13px;
       width: 13px;
       top: 40%;
-      left: -16px;
+      left: -27px;
       display: inline-block; }
   .token-timeline__body-item--point-icon {
     position: relative; }
@@ -923,7 +923,7 @@ header > .container nav span.nav__line--mob {
       height: 13px;
       width: 13px;
       top: 40%;
-      left: -16px;
+      left: -27px;
       display: inline-block; }
   .token-timeline__body-item--padlock-icon {
     position: relative; }
@@ -934,7 +934,7 @@ header > .container nav span.nav__line--mob {
       height: 12px;
       width: 10px;
       top: 40%;
-      left: -15px;
+      left: -26px;
       display: inline-block; }
   .token-timeline__body-item-title--dashed {
     position: relative; }
@@ -944,7 +944,7 @@ header > .container nav span.nav__line--mob {
       width: 1px;
       height: 36px;
       background-color: #eaeaea;
-      left: -13px;
+      left: -24px;
       top: 23px; }
   .token-timeline__timer-days-number, .token-timeline__timer-days-descr, .token-timeline__timer-hours-number, .token-timeline__timer-hours-descr, .token-timeline__timer-min-number, .token-timeline__timer-min-descr, .token-timeline__timer-sec-descr, .token-timeline__timer-sec-number {
     display: block;
@@ -8516,7 +8516,7 @@ body.modal-active {
 
   .token-timeline__footer-item-dash {
     margin: 0px 15px; } }
-@media only screen and (max-width: 1035px) {
+@media only screen and (max-width: 1090px) {
   .token-timeline {
     display: none; }
 
