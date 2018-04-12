@@ -427,6 +427,25 @@ header > .container .social__media__link img {
   transition: 0.2s;
 }
 
+.nav__link--new-item {
+  position: relative;
+}
+
+.nav__link--new-item:before {
+  position: absolute;
+  content: url(../svg/new.svg);
+  width: 25px;
+  height: 12px;
+  top: -15px;
+  right: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav__link--new-item:before {
+    display: none;
+  }
+}
+
 nav .nav__btn__close {
   display: none;
 }

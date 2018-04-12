@@ -7890,8 +7890,27 @@ body.modal-active {
     margin-bottom: 10px; }
 
 @media only screen and (max-width: 767px) {
-  .demand-graph__bar-year:before {
-    width: 100%; } }
+  .demand-graph__bar--red .demand-graph__bar-year:before {
+    width: 100%; }
+
+  .demand-graph__bar--orange .demand-graph__bar-year:before {
+    width: 100%; }
+
+  .demand-graph__bar {
+    max-width: 75px; }
+
+  .demand-graph__bar-inner {
+    max-width: 75px; } }
+@media only screen and (max-width: 452px) {
+  .demand-graph__bar {
+    max-width: 55px; }
+
+  .demand-graph__bar-inner {
+    max-width: 55px; }
+    .demand-graph__bar-inner span {
+      transform: rotate(-90deg);
+      top: 40%;
+      left: 1%; } }
 /**********************
 * MEDIA
 **********************/
