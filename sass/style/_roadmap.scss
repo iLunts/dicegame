@@ -54,7 +54,7 @@
     & &__slider{
         margin-left: 40px;
         margin-bottom: 160px;
-        
+
         &-item{
             // display: flex;
             // align-items: center;
@@ -187,7 +187,10 @@
 
             &-item{
                 margin-left: 50px;
-                height: 150px;
+                //height: 150px;
+                height: 250px;
+                display: flex;
+                align-items: center;
 
                 &.slick-center{
 
