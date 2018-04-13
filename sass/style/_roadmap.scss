@@ -157,14 +157,17 @@
     }
 }
 
+.road-map__wrap--mobile {
+    display: none;
+}
+
 
 // ------------------------------------
 // Size 'xSmall'
 // ------------------------------------
 @media only screen and (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max){
-
     .roadmap{
-
+        display: none;
         & &__btn{
             top: auto;
             right: 0;
@@ -203,5 +206,7 @@
             }
         }
     }
-
+    .road-map__wrap--mobile {
+        display: block;
+    }
 }

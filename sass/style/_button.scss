@@ -204,4 +204,23 @@
       border-color: #0099ea;
     }
   }
+
+  &__link {
+    margin-top: 40px;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-blue;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "ProximaNova-Semibold";
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.35s;
+    &:hover {
+      color: #1ba2e9;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 $(document).ready(function() {
   autoHideFAQMore();
+  autoHideRoadMapMore();
   initRoadmap();
 
   //date
@@ -851,6 +852,27 @@ function toggleFAQMore() {
       $("#faq-show-more-btn").text() == "Show More" ? "Show Less" : "Show More"
     )
     .fadeIn();
+}
+
+// Show RoadMap element
+function autoHideRoadMapMore() {
+  $(".js-roadmap-show-more").fadeOut();
+}
+
+// Show RoadMap element
+function toggleRoadMapMore() {
+  $(".js-roadmap-show-more").fadeToggle();
+  $("#road-map-more-btn")
+    .text(
+      $("#road-map-more-btn").text() == "Show More" ? "Show Less" : "Show More"
+    )
+    .fadeIn();
+  $("html, body").animate(
+    {
+      scrollTop: $("#roadmap").offset().top
+    },
+    500
+  );
 }
 
 function initRoadmap() {

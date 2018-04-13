@@ -4,10 +4,6 @@
     padding-top: 20px;
 }
 
-#roadmap {
-    padding-top: 40px;
-}
-
 .road-map {
     overflow: hidden;
     &__wrap {
@@ -251,19 +247,29 @@
 //        }
 //    }
 //}
+
+.img--bonus-tournaments {
+    position: relative;
+    top: -35px;
+}
+
 @media only screen and (max-width: 1100px) {
+    .img--bonus-tournaments {
+        top: 0;
+    }
     .road-map__wrap {
         display: none;
     }
     .road-map__wrap--mobile {
         display: block;
+        padding: 40px 0;
     }
     .road-map {
         &__item {
             max-width: 100%;
             flex: 1;
             padding-right: 0;
-            padding-bottom: 50px;
+            padding-bottom: 30px;
             margin-left: 10px;
             &__title {
                 font-size: 16px;
@@ -304,6 +310,12 @@
                     box-shadow: 0 0 0 2px rgba(246, 96, 85, .22);
                     left: -4px;
                 }
+                &:before {
+                    top: 100%;
+                    content: '';
+                    bottom: -3.5px;
+                    box-shadow: 0 0 0 2px rgba(0, 136, 208, .22);
+                }
             }
         }
     }
@@ -332,9 +344,4 @@
     //        border-radius: 10px;
     //    }
     //}
-}
-
-.img--bonus-tournaments {
-    position: relative;
-    top: -35px;
 }

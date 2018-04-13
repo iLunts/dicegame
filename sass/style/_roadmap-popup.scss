@@ -1,0 +1,30 @@
+.roadmap {
+  &__popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  &__popup-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    height: 70vh;
+    width: 50vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__popup-head {
+    color: #172143;
+    font-size: 26px;
+    font-family: "ProximaNova-Bold";
+    border-bottom: 1px solid rgba(112, 112, 112, 1);
+  }
+}
