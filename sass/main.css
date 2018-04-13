@@ -8246,7 +8246,7 @@ body.modal-active {
       width: 100%;
       top: 67px;
       left: 0;
-      background: rgba(33, 36, 48, 0.7);
+      background: #212430;
       height: calc(100vh - 117px); }
 
   header > .container nav .nav__btn__close {
@@ -8526,27 +8526,29 @@ body.modal-active {
 
   .m-token-timeline {
     display: block; } }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1046px) {
   .block.block--particles-second:before {
     display: none; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1047px) {
   .block.block--particles-second:before {
-    right: 0;
-    bottom: -47px; } }
-@media only screen and (min-width: 1314px) {
+    width: 50%;
+    right: -110px;
+    bottom: 0px; } }
+@media only screen and (max-width: 1280px) {
   .block.block--particles-second:before {
-    right: 0;
-    bottom: -47px; } }
-@media only screen and (max-width: 1644px) {
+    width: 50%;
+    right: -118px;
+    top: -177px; } }
+@media only screen and (min-width: 1281px) {
   .block.block--particles-second:before {
-    width: 51.1%;
-    right: -144px;
-    top: -111px; } }
-@media only screen and (min-width: 1645px) {
+    width: 50%;
+    right: -69px;
+    top: -289px; } }
+@media only screen and (min-width: 1678px) {
   .block.block--particles-second:before {
-    width: 37.1%;
-    right: 0;
-    top: -125px; } }
+    width: 40%;
+    right: -21px;
+    top: -217px; } }
 @media only screen and (min-width: 1900px) {
   .block.block--particles-second:before {
     width: 35%;
