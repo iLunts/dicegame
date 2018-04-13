@@ -936,3 +936,14 @@ $(document).ready(function() {
     }
   });
 });
+
+// Custom ScrollBar init
+
+(function($) {
+  $(window).on('load', function() {
+    $('.roadmap__popup-body').mCustomScrollbar({
+      theme: 'dark-3',
+      autoDraggerLength: false
+    });
+  });
+})(jQuery);

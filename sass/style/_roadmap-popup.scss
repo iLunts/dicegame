@@ -20,7 +20,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   &__popup-head {
@@ -113,4 +113,8 @@
       background-color: rgba(112, 112, 112, 0.3);
     }
   }
+}
+
+#mCSB_1_scrollbar_vertical .mCSB_dragger {
+  height: 30px;
 }
