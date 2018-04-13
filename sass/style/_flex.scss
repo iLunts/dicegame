@@ -295,6 +295,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+}
+
+.flex-card-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
@@ -313,7 +320,7 @@
         }
     }
 
-    .flex-card{
+    .flex-card-benefits{
         justify-content: center;
     }
 }
