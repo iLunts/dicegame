@@ -2212,7 +2212,9 @@ svg {
       box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.5); }
     .block.block--particles-second .block__title {
       margin-top: 40px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      position: relative;
+      z-index: 2; }
   .block.block--reset {
     padding: 0; }
   .block.block--gray {
@@ -3698,7 +3700,7 @@ h6 {
     font-size: 12px;
     line-height: 18px; } }
 .player {
-  height: 500px;
+  max-height: 345px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -8537,9 +8539,9 @@ body.modal-active {
     bottom: -47px; } }
 @media only screen and (max-width: 1644px) {
   .block.block--particles-second:before {
-    width: 37.1%;
-    right: 0;
-    top: 50px; } }
+    width: 51.1%;
+    right: -144px;
+    top: -111px; } }
 @media only screen and (min-width: 1645px) {
   .block.block--particles-second:before {
     width: 37.1%;
@@ -8547,9 +8549,9 @@ body.modal-active {
     top: -125px; } }
 @media only screen and (min-width: 1900px) {
   .block.block--particles-second:before {
-    width: 37.1%;
+    width: 35%;
     right: 100px;
-    top: -279px; } }
+    top: -220px; } }
 @media only screen and (max-width: 767px) {
   .block__title {
     text-align: center; }
