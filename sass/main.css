@@ -5434,7 +5434,7 @@ body.modal-active {
     background-position-y: 10%; }
   .card .card__item-name {
     display: block;
-    font-family: "ProximaNova-Bold";
+    font-family: 'ProximaNova-Bold';
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -5462,7 +5462,7 @@ body.modal-active {
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16); }
   .card .card__item-position {
     display: block;
-    font-family: "ProximaNova-Regular";
+    font-family: 'ProximaNova-Regular';
     font-size: 14px;
     line-height: 18px;
     color: #808080;
@@ -5476,7 +5476,7 @@ body.modal-active {
     font-size: 15px;
     line-height: 18px;
     cursor: pointer;
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s; }
@@ -5487,7 +5487,7 @@ body.modal-active {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    font-family: "FuturaPTBold", sans-serif;
+    font-family: 'FuturaPTBold', sans-serif;
     margin-bottom: 5px;
     padding: 4px 0;
     border-radius: 5px 5px 0 0; }
@@ -5495,7 +5495,7 @@ body.modal-active {
     position: relative;
     font-size: 16px;
     line-height: 20px;
-    font-family: "ProximaNova-Regular";
+    font-family: 'ProximaNova-Regular';
     padding: 10px;
     text-align: left;
     z-index: 11; }
@@ -5550,6 +5550,10 @@ body.modal-active {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
   border-radius: 5px;
   padding-bottom: 15px; }
+  .team__card .btn__link {
+    display: block;
+    text-align: center;
+    margin-top: 15px; }
   .team__card-photo {
     position: relative;
     width: 100%;
@@ -5564,8 +5568,8 @@ body.modal-active {
     position: absolute;
     left: 15px;
     top: -15px;
-    width: 100%;
-    height: 100%;
+    width: 25px;
+    height: 25px;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; }
@@ -5574,8 +5578,7 @@ body.modal-active {
       box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16); }
   .team__card-social {
     position: relative;
-    width: 25px;
-    height: 25px;
+    margin-bottom: 20px;
     background: #fff;
     padding: 2px;
     border-radius: 4px;
@@ -5585,14 +5588,14 @@ body.modal-active {
   .team__card-name, .team__card-position, .team__card-btn {
     display: block; }
   .team__card-name {
-    font-family: "ProximaNova-Bold";
+    font-family: 'ProximaNova-Bold';
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center; }
   .team__card-position {
-    font-family: "ProximaNova-Regular";
+    font-family: 'ProximaNova-Regular';
     font-size: 14px;
     line-height: 18px;
     color: #808080;
@@ -5607,7 +5610,7 @@ body.modal-active {
     font-size: 15px;
     line-height: 18px;
     cursor: pointer;
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s; }
@@ -5620,11 +5623,11 @@ body.modal-active {
       margin-top: 10px;
       font-size: 15px;
       line-height: 20px;
-      font-family: "ProximaNova-Regular"; }
+      font-family: 'ProximaNova-Regular'; }
     .team__card-dropdown a {
       color: #0088d0;
       font-size: 15px;
-      font-family: "ProximaNova-Semibold";
+      font-family: 'ProximaNova-Semibold';
       -webkit-transition: all 0.25s;
       -o-transition: all 0.25s;
       transition: all 0.25s; }

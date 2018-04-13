@@ -690,7 +690,7 @@ $(document).ready(function() {
   // Team dropdown
   // ---------------
 
-  $('.team__card-btn').on('click', function() {
+  $('.js-team-card-more').on('click', function() {
     $(this)
       .prev('.team__card-dropdown')
       .slideToggle();
