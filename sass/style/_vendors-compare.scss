@@ -64,10 +64,15 @@
 .vendors-compare__item-card .vendors-compare__item-card-back {
   background: rgba(255, 255, 255, 1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #0087cc;
-  line-height: 150px;
-  text-align: center;
+  padding: 10px;
   transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: #2a2e3d;
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 1052px) {
   .vendors-compare__item {
