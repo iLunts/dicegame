@@ -9158,10 +9158,11 @@ body.modal-active {
     font-size: 10px; } }
 
 .vendors-compare-wrap {
-  background: -webkit-gradient(linear, left top, left bottom, from(#373b4b), color-stop(65%, #373b4b), color-stop(65%, #ffffff), to(#ffffff));
-  background: -webkit-linear-gradient(top, #373b4b 0%, #373b4b 65%, #ffffff 65%, #ffffff 100%);
-  background: -o-linear-gradient(top, #373b4b 0%, #373b4b 65%, #ffffff 65%, #ffffff 100%);
-  background: linear-gradient(to bottom, #373b4b 0%, #373b4b 65%, #ffffff 65%, #ffffff 100%); }
+  padding-top: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#373b4b), color-stop(50%, #373b4b), color-stop(50%, #ffffff), to(#ffffff));
+  background: -webkit-linear-gradient(top, #373b4b 0%, #373b4b 50%, #ffffff 50%, #ffffff 100%);
+  background: -o-linear-gradient(top, #373b4b 0%, #373b4b 50%, #ffffff 50%, #ffffff 100%);
+  background: linear-gradient(to bottom, #373b4b 0%, #373b4b 50%, #ffffff 50%, #ffffff 100%); }
 
 .vendors-compare {
   display: -webkit-box;
@@ -9348,7 +9349,8 @@ body.modal-active {
     height: 11px;
     width: 11px;
     top: 2px;
-    left: -40px; }
+    left: -40px;
+    display: inline-block; }
 
 .roadmap__popup-item-title--current {
   position: relative; }
