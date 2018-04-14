@@ -255,7 +255,7 @@
     font-size: 17px;
     font-family: "ProximaNova-Regular";
     display: inline-block;
-    width: 180px;
+    width: 183px;
     text-align: center;
     position: relative;
     z-index: 30;
@@ -272,7 +272,7 @@
     &:after {
       content: " ";
       position: absolute;
-      background: linear-gradient(to right, #f13f63, #f89637);
+      background-color: #ffbd23;
       width: 107%;
       z-index: 10;
       border-radius: 5px;

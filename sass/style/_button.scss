@@ -78,8 +78,8 @@
   // Modificator '.btn.btn--blue'
   &.btn--blue {
     background-color: #eef6f7;
-    color: #1abdd1;
-    border: 1px solid #1abdd1;
+    color: #1c80c8;
+    border: 1px solid #1c80c8;
 
     &:hover {
       background-color: darken(#eef6f7, 5%);
@@ -100,8 +100,8 @@
     // Modificator '.btn.btn--blue.btn--buy'
     &.btn--buy {
       position: relative;
-      background: #1abdd1;
-      border-color: #1abdd1;
+      background: #1c80c8;
+      border-color: #1c80c8;
       color: #fff;
       box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
       margin-left: 10px;
@@ -110,8 +110,8 @@
       // transition: all 0.2s;
 
       &:hover {
-        background: darken(#1abdd1, 5%);
-        border-color: darken(#1abdd1, 5%);
+        background: lighten(#1c80c8, 5%);
+        border-color: lighten(#1c80c8, 5%);
         box-shadow: none;
       }
 
@@ -195,13 +195,13 @@
   &.btn--big {
     padding: 15px 70px;
     font-size: 26px;
-    background: #1abdd1;
-    border-color: #1abdd1;
+    background: #1c80c8;
+    border-color: #1c80c8;
     color: #fff;
     transition: all 0.2s;
     &:hover {
-      background: darken(#1abdd1, 5%);
-      border-color: darken(#1abdd1, 5%);
+      background: lighten(#1c80c8, 5%);
+      border-color: lighten(#1c80c8, 5%);
     }
   }
 
