@@ -950,7 +950,6 @@ $(document).ready(function() {
   $(window).on("load", function() {
     $(".roadmap__popup-items").mCustomScrollbar({
       axis: "y",
-      theme: "inset-2",
       autoDraggerLength: false,
       mouseWheelPixels: 200
     });
