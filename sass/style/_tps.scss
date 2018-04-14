@@ -192,13 +192,13 @@
   }
 
   .btn--tpc-action {
-    background: #0088d0;
-    border-color: #0088d0;
+    background: #1abdd1;
+    border-color: #1abdd1;
     line-height: 31px;
     color: #fff;
     &:hover {
-      background: #0099ea;
-      border-color: #0099ea;
+      background: darken(#1abdd1, 5%);
+      border-color: darken(#1abdd1, 5%);
     }
   }
 }
