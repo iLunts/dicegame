@@ -9288,14 +9288,18 @@ body.modal-active {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  overflow-y: auto; }
+  transform: translate(-50%, -50%); }
+
+.roadmap__popup-items {
+  padding-right: 10px;
+  overflow-y: auto;
+  height: 60vh; }
 
 .roadmap__popup-head {
   position: relative;
   color: #172143;
   font-size: 26px;
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova-Bold";
   border-bottom: 1px solid rgba(112, 112, 112, 0.1);
   padding: 15px 0;
   margin-bottom: 15px; }
@@ -9309,14 +9313,14 @@ body.modal-active {
 
 .roadmap__popup-item-title {
   color: #2a2e3d;
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova-Bold";
   font-size: 16px;
   margin-bottom: 5px; }
 
 .roadmap__popup-item-descr {
   color: #2a2e3d;
   font-size: 15px;
-  max-width: 290px; }
+  max-width: 350px; }
 
 .roadmap__popup-item {
   margin-bottom: 30px;
@@ -9360,15 +9364,14 @@ body.modal-active {
   position: relative; }
   .roadmap__popup-item:after {
     position: absolute;
-    content: ' ';
+    content: " ";
     height: 100%;
     width: 1px;
     top: 26px;
     left: -35px;
     background-color: rgba(112, 112, 112, 0.3); }
-
-#mCSB_1_scrollbar_vertical .mCSB_dragger {
-  height: 30px; }
+  .roadmap__popup-item:last-child:after {
+    display: none; }
 
 /*
 == malihu jquery custom scrollbar plugin ==
