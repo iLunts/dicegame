@@ -181,7 +181,7 @@
     }
   }
   header > .container nav a {
-    font-family: "ProximaNova-Semibold";
+    font-family: 'ProximaNova-Semibold';
     font-size: 24px;
     font-weight: 600;
     text-align: center;
@@ -267,7 +267,7 @@
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 700;
-    font-family: "FuturaPTBold";
+    font-family: 'FuturaPTBold';
     text-align: center;
     padding-top: 100px;
   }
@@ -567,10 +567,6 @@
     }
   }
 
-  #roadmap {
-    padding-top: ($block-padding-vertical * 3.5);
-  }
-
   /* Extra Small Devices, Phones */
   @media only screen and (max-width: 550px) {
     .popup__whitepaper__lang__wrap {
@@ -627,12 +623,10 @@
         padding: ($block-padding-vertical * 3.5) 0;
       } // Modificator '.block.block--xlg'
       &.block--xlg {
-        padding: ($block-padding-vertical * 3.5) 0
-          ($block-padding-vertical * 2.5);
+        padding: ($block-padding-vertical * 3.5) 0 ($block-padding-vertical * 2.5);
       } // Modificator '.block.block--lg'
       &.block--lg {
-        padding: ($block-padding-vertical * 3.5) 0
-          ($block-padding-vertical * 1.5);
+        padding: ($block-padding-vertical * 3.5) 0 ($block-padding-vertical * 1.5);
       }
       .block--center {
         text-align: center;
@@ -722,7 +716,7 @@
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1279px) {
   .block.block--particles-second:before {
     width: 50%;
     right: -118px;
@@ -730,19 +724,35 @@
   }
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1365px) {
+  .block.block--particles-second:before {
+    width: 50%;
+    right: -97px;
+    top: -242px;
+  }
+}
+
+@media only screen and (min-width: 1439px) {
   .block.block--particles-second:before {
     width: 50%;
     right: -69px;
-    top: -289px;
+    top: -290px;
+  }
+}
+
+@media only screen and (min-width: 1599px) {
+  .block.block--particles-second:before {
+    width: 50%;
+    right: -7px;
+    top: -385px;
   }
 }
 
 @media only screen and (min-width: 1678px) {
   .block.block--particles-second:before {
-    width: 40%;
-    right: -21px;
-    top: -217px;
+    width: 50%;
+    right: -65px;
+    top: -428px;
   }
 }
 

@@ -1,5 +1,6 @@
 $(document).ready(function() {
   autoHideFAQMore();
+  autoHideRoadMapMore();
   initRoadmap();
 
   //date
@@ -690,7 +691,7 @@ $(document).ready(function() {
   // Team dropdown
   // ---------------
 
-  $(".team__card-btn").on("click", function() {
+  $(".js-team-card-more").on("click", function() {
     $(this)
       .prev(".team__card-dropdown")
       .slideToggle();
@@ -853,6 +854,27 @@ function toggleFAQMore() {
     .fadeIn();
 }
 
+// Show RoadMap element
+function autoHideRoadMapMore() {
+  $(".js-roadmap-show-more").fadeOut();
+}
+
+// Show RoadMap element
+function toggleRoadMapMore() {
+  $(".js-roadmap-show-more").fadeToggle();
+  $("#road-map-more-btn")
+    .text(
+      $("#road-map-more-btn").text() == "Show More" ? "Show Less" : "Show More"
+    )
+    .fadeIn();
+  $("html, body").animate(
+    {
+      scrollTop: $("#roadmap").offset().top
+    },
+    500
+  );
+}
+
 function initRoadmap() {
   // slick carousel
   $(".roadmap__slider").slick({
@@ -900,3 +922,37 @@ $(document).ready(function() {
       .fadeOut("fast");
   });
 });
+
+// RoadMap Show More
+
+$(document).ready(function() {
+  $(".js-roadmap__show-more").on("click", function(e) {
+    e.preventDefault();
+    $(".roadmap__popup").fadeIn();
+  });
+
+  $(".js-roadmap__popup-head-close").on("click", function(e) {
+    e.preventDefault();
+    $(".roadmap__popup").fadeOut();
+  });
+
+  $(document).mouseup(function(e) {
+    let roadMapWrap = $(".roadmap__popup");
+    if (roadMapWrap.has(e.target).length === 0) {
+      roadMapWrap.fadeOut();
+    }
+  });
+});
+
+// Custom ScrollBar init
+
+(function($) {
+  $(window).on("load", function() {
+    $(".roadmap__popup-items").mCustomScrollbar({
+      axis: "y",
+      theme: "inset-2",
+      autoDraggerLength: false,
+      mouseWheelPixels: 200
+    });
+  });
+})(jQuery);
