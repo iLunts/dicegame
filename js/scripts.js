@@ -951,3 +951,13 @@ $(document).ready(function() {
     });
   });
 })(jQuery);
+
+// Dempo product dropdown
+$(document).ready(function() {
+  $('.js-list__item-fom').on('click', function(e) {
+    e.preventDefault();
+    $(this)
+      .next('.block__text')
+      .slideToggle();
+  });
+});
