@@ -8598,11 +8598,12 @@ body.modal-active {
   padding: 10px 5px;
   transition: all 0.2s;
   font-size: inherit;
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 
 .tps .tps__link .link:hover {
-  opacity: 0.7;
+  color: #fff;
 }
 
 .tps .tps__link .link + .link {
