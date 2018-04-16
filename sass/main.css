@@ -317,6 +317,25 @@ header > .container nav .nav__lang__wrap .nav__btn__close__lang {
   display: none;
 }
 
+header > .container .btn.btn--blue {
+  position: relative;
+  background: #1c80c8;
+  border-color: #1c80c8;
+  color: #fff;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+
+header > .container .btn.btn--blue:hover {
+  background: #1f8ede;
+  border-color: #1f8ede;
+  box-shadow: none;
+}
+
+header > .container .btn.btn--blue.active .btn.btn--blue {
+  border-color: #1f8ede;
+}
+
 header > .container .social__media {
   display: inline-block;
   position: relative;
@@ -341,10 +360,6 @@ header > .container .social__media__btn {
 }
 
 header > .container .social__media__btn:hover, header > .container .social__media__btn:focus, header > .container .social__media__btn:active {
-  background-color: #474b5a;
-}
-
-header > .container .social__media.active .social__media__btn {
   background-color: #474b5a;
 }
 
@@ -5179,7 +5194,6 @@ h6 {
 
 .dicegame-platform--link {
   color: #2a2e3d;
-  text-decoration: none;
 }
 
 .flex {
@@ -7147,6 +7161,16 @@ body.modal-active {
   .flip-clock-divider {
     width: 6px;
   }
+  .flip-clock-wrapper ul {
+    width: 22px;
+    height: 30px;
+  }
+  .flip-clock-wrapper ul li a div {
+    font-size: 70px;
+  }
+  .flip-clock-wrapper ul li a div div.inn {
+    line-height: 1em;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -7179,19 +7203,6 @@ body.modal-active {
   }
   .flip-clock-divider.seconds .flip-clock-label {
     right: -60px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .flip-clock-wrapper ul {
-    width: 30px;
-    height: 40px;
-  }
-  .flip-clock-wrapper ul li a div {
-    font-size: 80px;
-  }
-  .flip-clock-wrapper ul li a div div.inn {
-    line-height: 1.20em;
   }
 }
 

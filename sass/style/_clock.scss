@@ -574,6 +574,19 @@
     .flip-clock-divider {
         width: 6px;
     }
+
+    .flip-clock-wrapper ul {
+        width: 22px;
+        height: 30px;
+    
+        li a div {
+            font-size: 70px;
+            
+            div.inn {
+                line-height: 1em;
+            }
+        }
+    }
 }
 
 @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max) {
@@ -615,22 +628,4 @@
             }
         }
     }
-}
-
-@media (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max) {
-
-    .flip-clock-wrapper ul{
-        width: 30px;
-        height: 40px;
-        
-        li a div{
-            font-size: 80px;
-
-            div.inn{
-                line-height: 1.20em;    
-            }
-        }
-    }
-
-
 }
