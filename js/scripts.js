@@ -737,16 +737,16 @@ $(document).ready(function () {
             countdown: true,
             autostart: false
         });
-        console.log('Date has already passed!');
+        // console.log('Date has already passed!');
     } else {
         // Run countdown timer
         clock = $('.clock').FlipClock(diff, {
             clockFace: 'DailyCounter',
             countdown: true,
             callbacks: {
-                stop: function () {
-                    console.log('Timer has ended!');
-                }
+                // stop: function () {
+                //     console.log('Timer has ended!');
+                // }
             }
         });
 
