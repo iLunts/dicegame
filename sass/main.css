@@ -3162,6 +3162,10 @@ svg {
   background-size: cover;
 }
 
+.block.block--particles-second + .block {
+  padding-top: 160px;
+}
+
 .block.block--particles-second p,
 .block.block--particles-second h2,
 .block.block--particles-second .btn,

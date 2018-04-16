@@ -70,6 +70,10 @@
       background-size: cover;
     }
 
+    & + .block{
+      padding-top: 160px;
+    }
+
     p,
     h2,
     .btn,
