@@ -665,12 +665,12 @@ $(document).ready(function() {
     $('#modal-container')
       .removeAttr('class')
       .addClass(buttonId);
-    $('body').addClass('modal-active');
+    // $('body').addClass('modal-active');
   });
 
   $('#modal-container').click(function() {
     $(this).addClass('out');
-    $('body').removeClass('modal-active');
+    // $('body').removeClass('modal-active');
   });
 
   // ---------------
