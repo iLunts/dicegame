@@ -3,7 +3,7 @@ var clock;
 $(document).ready(function() {
   var clock;
 
-  var date = new Date(2018, 3, 18);
+  var date = new Date(2018, 4, 7);
   var now = new Date();
   var diff = date.getTime() / 1000 - now.getTime() / 1000;
 
