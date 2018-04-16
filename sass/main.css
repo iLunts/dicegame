@@ -5179,6 +5179,7 @@ h6 {
 
 .dicegame-platform--link {
   color: #2a2e3d;
+  text-decoration: none;
 }
 
 .flex {
