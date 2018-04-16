@@ -6399,7 +6399,6 @@ body.modal-active {
 .tps .tps__body {
   position: relative;
   width: 100%;
-  max-width: 350px;
   display: inline-block;
   border-radius: 5px;
   background: #212430;
@@ -6408,6 +6407,7 @@ body.modal-active {
   font-size: 14px;
   z-index: 1;
   box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .tps .tps__title {
@@ -6583,8 +6583,9 @@ body.modal-active {
 .tps .btn--tpc-action {
   background: #1c80c8;
   border-color: #1c80c8;
-  line-height: 31px;
+  line-height: 36px;
   color: #fff;
+  margin-left: 20px;
 }
 
 .tps .btn--tpc-action:hover {
@@ -6655,7 +6656,7 @@ body.modal-active {
   text-align: center;
   position: relative;
   width: 100%;
-  margin: 0 0 3em 0;
+  margin: 0 auto 3em;
 }
 
 .flip-clock-wrapper:before,
@@ -6676,8 +6677,8 @@ body.modal-active {
   float: left;
   padding: 0;
   margin: 2px;
-  width: 31px;
-  height: 40px;
+  width: 60px;
+  height: 70px;
   border-radius: 6px;
   background: #000;
 }
@@ -6714,7 +6715,7 @@ body.modal-active {
   left: 0;
   width: 100%;
   height: 50%;
-  font-size: 80px;
+  font-size: 130px;
   overflow: hidden;
   outline: 1px solid transparent;
 }
@@ -6738,7 +6739,7 @@ body.modal-active {
 .flip-clock-wrapper ul li a div.up:after {
   content: "";
   position: absolute;
-  top: 29px;
+  top: 34px;
   left: 0;
   z-index: 5;
   width: 100%;
