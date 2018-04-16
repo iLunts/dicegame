@@ -6564,8 +6564,8 @@ body.modal-active {
 
 .tps .tps__link {
   text-align: left;
-  border-top: 1px solid rgba(15, 16, 22, 0.16);
-  border-bottom: 1px solid rgba(15, 16, 22, 0.16);
+  border-top: 1px solid rgba(15, 16, 22, 0.5);
+  border-bottom: 1px solid rgba(15, 16, 22, 0.5);
 }
 
 .tps .tps__link .link {
@@ -6841,8 +6841,8 @@ body.modal-active {
 
 .flip-clock-divider .flip-clock-label {
   position: absolute;
-  bottom: -6em;
-  right: -4.5em;
+  bottom: -9em;
+  right: -7.5em;
   color: rgba(255, 255, 255, 0.3);
   text-shadow: none;
   font-size: .8em;
@@ -6851,15 +6851,15 @@ body.modal-active {
 }
 
 .flip-clock-divider.hours .flip-clock-label {
-  right: -5em;
+  right: -8em;
 }
 
 .flip-clock-divider.minutes .flip-clock-label {
-  right: -5.5em;
+  right: -8em;
 }
 
 .flip-clock-divider.seconds .flip-clock-label {
-  right: -5.5em;
+  right: -8.5em;
 }
 
 @-webkit-keyframes asd {
@@ -7130,12 +7130,25 @@ body.modal-active {
   .flip-clock-divider {
     height: 5px;
   }
+  .flip-clock-divider .flip-clock-label {
+    bottom: -6.5em;
+    right: -45px;
+  }
+  .flip-clock-divider.hours .flip-clock-label {
+    right: -50px;
+  }
+  .flip-clock-divider.minutes .flip-clock-label {
+    right: -55px;
+  }
+  .flip-clock-divider.seconds .flip-clock-label {
+    right: -55px;
+  }
   .flip-clock-divider {
     width: 6px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .flip-clock-wrapper ul {
     width: 34px;
     height: 50px;
@@ -7145,7 +7158,7 @@ body.modal-active {
     line-height: 50px;
   }
   .flip-clock-wrapper ul li a div div.inn {
-    font-size: 34px;
+    font-size: 40px;
   }
   .flip-clock-divider {
     width: 6px;
@@ -7154,16 +7167,30 @@ body.modal-active {
     height: 55px;
   }
   .flip-clock-divider .flip-clock-label {
-    right: -54px;
+    bottom: -2em;
+    right: -48px;
   }
   .flip-clock-divider.hours .flip-clock-label {
-    right: -60px;
+    right: -50px;
   }
   .flip-clock-divider.minutes .flip-clock-label {
-    right: -65px;
+    right: -55px;
   }
   .flip-clock-divider.seconds .flip-clock-label {
-    right: -70px;
+    right: -60px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .flip-clock-wrapper ul {
+    width: 30px;
+    height: 40px;
+  }
+  .flip-clock-wrapper ul li a div {
+    font-size: 80px;
+  }
+  .flip-clock-wrapper ul li a div div.inn {
+    line-height: 1.20em;
   }
 }
 
