@@ -927,14 +927,16 @@ $(document).ready(function() {
 
   $('.js-roadmap__popup-head-close').on('click', function(e) {
     e.preventDefault();
-    $('body').css('overflow', 'auto');
+    // $('body').css('overflow', 'auto');
+    $('body').css('overflow', '');
     $('.roadmap__popup').fadeOut();
   });
 
   $(document).mouseup(function(e) {
     let roadMapWrap = $('.roadmap__popup');
     if (roadMapWrap.has(e.target).length === 0) {
-      $('body').css('overflow', 'auto');
+      // $('body').css('overflow', 'auto');
+      $('body').css('overflow', '');
       roadMapWrap.fadeOut();
     }
   });
