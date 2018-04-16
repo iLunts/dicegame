@@ -8636,6 +8636,9 @@ body.modal-active {
   line-height: 36px;
   color: #fff;
   margin-left: 20px;
+  -webkit-appearance: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .tps .btn--tpc-action:hover {
