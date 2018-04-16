@@ -8,6 +8,11 @@
       .cls-2 {
         fill: #fff;
       }
+
+      svg {
+      overflow: visible;
+  	  width: 100%;
+      }
     </style>
   </defs>
   <g id="Group_851" data-name="Group 851" transform="translate(-404 -7362)">
