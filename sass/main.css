@@ -4454,8 +4454,8 @@ svg {
     border: 2px solid #ffdb4d; }
   .block .block__title {
     margin-bottom: 30px;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 900;
     font-family: "FuturaPTBold"; }
   .block .block__subtitle {
@@ -7324,8 +7324,9 @@ body.modal-active {
 .tps {
   position: relative; }
   .tps .tps__body {
+    margin-top: 120px;
     position: relative;
-    width: 100%;
+    max-width: 454px;
     display: inline-block;
     border-radius: 5px;
     background: #212430;
@@ -7559,7 +7560,7 @@ body.modal-active {
   float: left;
   padding: 0;
   margin: 2px;
-  width: 50px;
+  width: 44px;
   height: 60px;
   border-radius: 6px;
   background: #000; }
@@ -7643,7 +7644,7 @@ body.modal-active {
   text-align: center;
   border-radius: 6px;
   line-height: 1.25em;
-  font-size: .45em;
+  font-size: 0.45em;
   font-weight: 300; }
 
 .flip-clock-wrapper ul li a div.up div.inn {
@@ -7671,7 +7672,7 @@ body.modal-active {
   display: inline-block;
   position: relative;
   width: 8px;
-  height: .4em; }
+  height: 0.4em; }
 
 .flip-clock-divider:first-child {
   width: 0; }
@@ -7682,7 +7683,7 @@ body.modal-active {
   right: -7.5em;
   color: rgba(255, 255, 255, 0.3);
   text-shadow: none;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 300;
   text-transform: uppercase; }
 
