@@ -74,6 +74,88 @@
 </head>
 
 <body>
+    <!-- Page Preloader -->
+    <div class="preloader-wrap js-preloader">
+        <div class="preloader">
+            <div class="preloader__shadow"></div>
+            <div class="preloader__box"></div>
+        </div>
+        <div class="preloader-descr">Loading...</div>
+    </div>
+    <style>
+        .preloader-wrap {
+            background: #373B4B;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 999999;
+        }
+
+        .preloader {
+            position: absolute;
+            top: calc(50% - 20px);
+            left: calc(50% - 20px);
+        }
+
+        .preloader__box {
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            animation: preloaderBoxAnimation .5s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 3px;
+        }
+
+        .preloader-descr {
+            opacity: 0.7;
+            position: fixed;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+            color: #fff;
+        }
+
+        @keyframes preloaderBoxAnimation {
+            17% {
+                border-bottom-right-radius: 3px;
+            }
+            25% {
+                transform: translateY(9px) rotate(22.5deg);
+            }
+            50% {
+                transform: translateY(18px) scale(1, .9) rotate(45deg);
+                border-bottom-right-radius: 40px;
+            }
+            75% {
+                transform: translateY(9px) rotate(67.5deg);
+            }
+            100% {
+                transform: translateY(0) rotate(90deg);
+            }
+        }
+
+        .preloader__shadow {
+            width: 50px;
+            height: 5px;
+            background: #000;
+            opacity: 0.1;
+            position: absolute;
+            top: 59px;
+            left: 0;
+            border-radius: 50%;
+            animation: preloaderShadowAnimation .5s linear infinite;
+        }
+
+        @keyframes preloaderShadowAnimation {
+            50% {
+                transform: scale(1.2, 1);
+            }
+        }
+    </style>
+    <!-- Page Preloader -->
     <header>
         <div class="container">
             <a href="/" class="logo">
@@ -471,8 +553,7 @@
                                     </div>
 
                                     <div class="tps__social">
-                                        <a class="tps__social-link link tps__social-link--fb" href="https://www.facebook.com/dicegameplatforma/"
-                                            target="_blank">
+                                        <a class="tps__social-link link tps__social-link--fb" href="https://www.facebook.com/dicegameplatforma/" target="_blank">
                                             <img src="svg/follow/facebook-logo.svg" alt="">
                                         </a>
                                         <a class="tps__social-link link" href="https://twitter.com/DICEGAMEteam" target="_blank">
@@ -683,9 +764,9 @@
                                 <li class="list__item list__item--active">
                                     <a href="/" class="dicegame-platform--link js-list__item-fom list__item--new">Factory of Millionaires</a>
                                     <p class="block__text m--t-md" style="display: none">
-                                        The MVP is finished and available for Android and iOS. Factory of Dice Millionaires is a P2P game with the usage of
-                                        gaming chips. After the integration with the DICEGAME platform the users have the
-                                        possibility to play one-to-one as well as participate in the tournaments using cryptocurrency
+                                        The MVP is finished and available for Android and iOS. Factory of Dice Millionaires is a P2P game with the usage of gaming
+                                        chips. After the integration with the DICEGAME platform the users have the possibility
+                                        to play one-to-one as well as participate in the tournaments using cryptocurrency
                                         and Dice tokens. The DICEGAME is aiming to conduct the tournament for 1 048 576 participants,
                                         where each user can increase the win in 150 000 times.
                                         <!-- <a target="_blank" href="http://v2.fom.dev.blak-it.com/" class="btn__link">Play Now ⟶</a> -->
@@ -2560,8 +2641,7 @@
                             <a href="https://plus.google.com/113379013628212058892" class="footer__social__icon footer__social__icon--google" target="_blank">
                                 <img src="svg/follow/google-plus.svg" alt="">
                             </a>
-                            <a href="https://www.facebook.com/dicegameplatforma/" class="footer__social__icon footer__social__icon--facebook"
-                                target="_blank">
+                            <a href="https://www.facebook.com/dicegameplatforma/" class="footer__social__icon footer__social__icon--facebook" target="_blank">
                                 <img src="svg/follow/facebook.svg" alt="">
                             </a>
                             <a href="https://twitter.com/DICEGAMEteam" class="footer__social__icon footer__social__icon--twitter" target="_blank">
