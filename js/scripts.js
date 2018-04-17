@@ -235,7 +235,7 @@ $(document).ready(function() {
       if ($(window).width() > 800 && !is_safari) {
         btnBuyNow.removeClass("invisible").addClass("visible");
       }
-      if ($(window).width() < 800 && !is_safari) {
+      if ($(window).width() < 800) {
         btnSocialMedia.removeClass("invisible").addClass("visible");
       }
     } else {
@@ -244,7 +244,7 @@ $(document).ready(function() {
       }
 
       if ($("header")[0].className) {
-        if ($(window).width() > 800 && !is_safari) {
+        if ($(window).width() > 800) {
           btnBuyNow.removeClass("visible").addClass("invisible");
         }
         if ($(window).width() < 800) {
