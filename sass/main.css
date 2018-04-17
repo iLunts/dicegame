@@ -12939,7 +12939,7 @@ yx-axis
       top: 67px;
       left: 0;
       background: #212430;
-      height: calc(100vh - 117px); }
+      height: calc(100vh - 147px); }
   header > .container nav .nav__btn__close {
     -webkit-box-ordinal-group: unset;
     -ms-flex-order: unset;
@@ -13013,10 +13013,10 @@ yx-axis
     display: flex;
     width: 100%;
     position: absolute;
-    bottom: -50px;
+    bottom: -80px;
     left: 0;
     background-color: #4f92ea;
-    height: 50px;
+    height: 80px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

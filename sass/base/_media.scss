@@ -342,7 +342,7 @@
       left: 0;
       //background-color: rgba(255, 255, 255, 0.75);
       background: rgb(33, 36, 48);
-      height: calc(100vh - 117px);
+      height: calc(100vh - 147px);
     }
   }
   header > .container nav .nav__btn__close {
@@ -431,10 +431,10 @@
     display: flex;
     width: 100%;
     position: absolute;
-    bottom: -50px;
+    bottom: -80px;
     left: 0;
     background-color: #4f92ea;
-    height: 50px;
+    height: 80px;
     align-items: center;
     justify-content: center;
     color: #fff;
