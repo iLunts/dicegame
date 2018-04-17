@@ -3,7 +3,7 @@
   &__title {
     text-align: center;
     margin-bottom: 66px;
-    font-family: 'FuturaPTHeavy';
+    font-family: "FuturaPTHeavy";
   }
   &__item {
     border-bottom: 1px solid $border-color;
@@ -12,7 +12,7 @@
       align-items: center;
       cursor: pointer;
       display: flex;
-      font-family: 'ProximaNova-Semibold';
+      font-family: "ProximaNova-Semibold";
       font-size: 18px;
       font-weight: 600;
       height: 58px;
@@ -28,10 +28,10 @@
         height: 23px;
         transform: scale(1, -1);
         transition: 0.2s;
-        background: url('../img/plus.svg') no-repeat;
+        background: url("../img/plus.svg") no-repeat;
         &.active {
           transform: scale(1);
-          background: url('../img/minus.svg') no-repeat;
+          background: url("../img/minus.svg") no-repeat;
         }
       }
       &:hover {
@@ -60,7 +60,7 @@
     color: $color-blue;
     font-weight: 400;
     font-size: 15px;
-    font-family: 'ProximaNova-Semibold';
+    font-family: "ProximaNova-Semibold";
     box-shadow: none;
     outline: none;
     cursor: pointer;
@@ -71,7 +71,7 @@
   }
 }
 
-.questions__item-icon--blue {
+.questions__item__desc__list-icon {
   display: inline-block;
   margin-right: 2px;
   content: url(../svg/ellipse--blue.svg);
