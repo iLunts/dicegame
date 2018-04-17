@@ -58,6 +58,7 @@
     color: #fff;
 
     &:before {
+      display: none;
       content: "";
       position: absolute;
       right: 6%;
@@ -70,7 +71,7 @@
       background-size: cover;
     }
 
-    & + .block{
+    & + .block {
       padding-top: 160px;
     }
 

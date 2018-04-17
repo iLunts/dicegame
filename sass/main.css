@@ -4380,6 +4380,7 @@ svg {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41465a', endColorstr='#1f2127', GradientType=1);
     color: #fff; }
     .block.block--particles-second:before {
+      display: none;
       content: "";
       position: absolute;
       right: 6%;
@@ -7387,8 +7388,9 @@ body.modal-active {
     .tps .tps__subscribe-input {
       display: block;
       width: 100%;
-      background-color: #282c37;
-      border: 1px solid #191b25;
+      background-color: #373b4c;
+      border: 1px solid #191a22;
+      font-family: "ProximaNova-Semibold";
       color: #fff;
       font-size: 16px;
       padding: 10px;
@@ -7396,6 +7398,14 @@ body.modal-active {
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
+      .tps .tps__subscribe-input::-webkit-input-placeholder {
+        color: #fff; }
+      .tps .tps__subscribe-input:-ms-input-placeholder {
+        color: #fff; }
+      .tps .tps__subscribe-input::-ms-input-placeholder {
+        color: #fff; }
+      .tps .tps__subscribe-input::placeholder {
+        color: #fff; }
     .tps .tps__subscribe-btn {
       background-color: #353947;
       border-radius: 0 3px 3px 0;
