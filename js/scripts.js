@@ -1,8 +1,8 @@
-$(document).ready(function() {
-  $(".js-preloader")
-    .delay(1500)
-    .fadeOut("slow");
-});
+// $(document).ready(function() {
+//   $(".js-preloader")
+//     .delay(1500)
+//     .fadeOut("slow");
+// });
 
 $(document).ready(function() {
   autoHideFAQMore();
