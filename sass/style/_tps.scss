@@ -1,4 +1,4 @@
-@import "../base/variables";
+@import '../base/variables';
 // -----------------------------------------------
 //                      Base
 // -----------------------------------------------
@@ -6,7 +6,7 @@
 .tps {
   position: relative;
   & &__body {
-    margin-top: 120px;
+    margin-top: 80px;
     position: relative;
     max-width: 454px;
     // max-width: 350px;
@@ -72,7 +72,7 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a180fe', endColorstr='#20a6ec', GradientType=1);
       /* IE6-9 */
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         right: 3px;
         top: 50%;
@@ -93,7 +93,7 @@
       background-color: #373b4c;
       border: 1px solid #191a22;
       // border-right: none;
-      font-family: "ProximaNova-Semibold";
+      font-family: 'ProximaNova-Semibold';
       color: #fff;
       font-size: 16px;
       padding: 10px;
