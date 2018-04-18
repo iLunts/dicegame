@@ -23,7 +23,9 @@
 //     player.stopVideo();
 // }
 
-function deviceInnerPlay() {
-  document.querySelector(".js-device-inner-video").innerHTML =
+let deviceInnerVideoWrap = document.querySelector(".js-device-inner-video");
+
+deviceInnerVideoWrap.addEventListener("click", function() {
+  deviceInnerVideoWrap.innerHTML =
     '<iframe width="480" height="360" src="https://www.youtube.com/embed/mZ2bsPHz0QI?autoplay=1" frameborder="0"></iframe>';
-}
+});
