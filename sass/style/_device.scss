@@ -25,7 +25,7 @@ $device-silver-panel: #222;
   // height: 112.8em;
   // width: 55.6em;
   height: 90em;
-  width: 46em;
+  width: 47.1em;
   .device-frame {
     background: $device-silver-panel;
     border-radius: 6.8em;
@@ -42,7 +42,7 @@ $device-silver-panel: #222;
     left: 0;
     overflow: hidden;
 
-    iframe{
+    iframe {
       height: 87.6em;
       //width: 43.5em;
       vertical-align: middle;
@@ -70,7 +70,7 @@ $device-silver-panel: #222;
     overflow: hidden;
     cursor: pointer;
     &.device-content--fm {
-      background-color: #6f5163;
+      //background-color: #6f5163;
       text-align: center;
     }
     .btn {
@@ -143,4 +143,11 @@ $device-silver-panel: #222;
       width: 1.4em;
     }
   }
+}
+.device-inner-video {
+  background: url(../img/device-bg.png) no-repeat;
+  background-position: -6px 0;
+  height: 87.4em;
+  width: 46em;
+  cursor: pointer;
 }

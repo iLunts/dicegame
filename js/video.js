@@ -1,24 +1,29 @@
-// 2. This code loads the IFrame Player API code asynchronously.
-var tag = document.createElement('script');
+// // 2. This code loads the IFrame Player API code asynchronously.
+// var tag = document.createElement('script');
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// tag.src = "https://www.youtube.com/iframe_api";
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '70%',
-        videoId: 'mZ2bsPHz0QI',
-        playerVars: {
-            autoplay: false
-        }
-    });
-}
+// var player;
+// function onYouTubeIframeAPIReady() {
+//     player = new YT.Player('player', {
+//         height: '70%',
+//         videoId: 'mZ2bsPHz0QI',
+//         playerVars: {
+//             autoplay: false
+//         }
+//     });
+// }
 
-function playVideo() {
-    player.playVideo();
-}
-function stopVideo() {
-    player.stopVideo();
+// function playVideo() {
+//     player.playVideo();
+// }
+// function stopVideo() {
+//     player.stopVideo();
+// }
+
+function deviceInnerPlay() {
+  document.querySelector(".js-device-inner-video").innerHTML =
+    '<iframe width="480" height="360" src="https://www.youtube.com/embed/mZ2bsPHz0QI?autoplay=1" frameborder="0"></iframe>';
 }
