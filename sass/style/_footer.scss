@@ -58,8 +58,9 @@
       right: 10px;
     }
     &__submit {
-      background-color: #efefef;
-      border: 1px solid #929292;
+      background-color: #eaf2f7;
+      border: 1px solid #0088d0;
+      color: #0088d0;
       border-radius: 3px;
       font-size: 16px;
       padding: 6px 10px;
@@ -67,8 +68,9 @@
       cursor: pointer;
       outline: none;
       font-family: "ProximaNova-Semibold";
+      transition: 0.2s all;
       &:hover {
-        background-color: #dedede;
+        background-color: darken(#eaf2f7, 3%);
       }
     }
     &__icon {
@@ -102,7 +104,7 @@
 
       &.footer__social__icon--google {
         &:hover {
-          background: #F34A38;
+          background: #f34a38;
         }
       }
 

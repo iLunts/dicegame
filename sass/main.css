@@ -3521,17 +3521,21 @@ header > .container nav span.nav__line--mob {
       margin-top: -6px;
       right: 10px; }
     .footer__social__submit {
-      background-color: #efefef;
-      border: 1px solid #929292;
+      background-color: #eaf2f7;
+      border: 1px solid #0088d0;
+      color: #0088d0;
       border-radius: 3px;
       font-size: 16px;
       padding: 6px 10px;
       margin-left: 6px;
       cursor: pointer;
       outline: none;
-      font-family: "ProximaNova-Semibold"; }
+      font-family: "ProximaNova-Semibold";
+      -webkit-transition: 0.2s all;
+      -o-transition: 0.2s all;
+      transition: 0.2s all; }
       .footer__social__submit:hover {
-        background-color: #dedede; }
+        background-color: #dfebf3; }
     .footer__social__icon {
       background-color: #aaaaaa;
       width: 46px;
@@ -3572,7 +3576,7 @@ header > .container nav span.nav__line--mob {
         -ms-flex-align: center;
         align-items: center; }
       .footer__social__icon.footer__social__icon--google:hover {
-        background: #F34A38; }
+        background: #f34a38; }
       .footer__social__icon.footer__social__icon--facebook:hover {
         background: #34579a; }
       .footer__social__icon.footer__social__icon--twitter:hover {
@@ -13292,3 +13296,5 @@ yx-axis
   .block.block--particles-second .player {
     -webkit-box-shadow: none;
     box-shadow: none; } }
+
+/*# sourceMappingURL=main.css.map */
