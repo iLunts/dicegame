@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1437 -232.5 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e1e1e1;
+        stroke: #a8a8a8;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #616161;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        filter: url(#Rectangle_342);
+      }
+    </style>
+    <filter id="Rectangle_342" x="1437" y="-232.5" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feOffset dy="1.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="back" transform="translate(836 -7672)">
+    <g id="Symbol_15" data-name="Symbol 15" transform="translate(-547 7420)">
+      <g class="cls-5" transform="matrix(1, 0, 0, 1, -289, 252)">
+        <g id="Rectangle_342-2" data-name="Rectangle 342" class="cls-1" transform="translate(1440 -231)">
+          <rect class="cls-3" width="42" height="42" rx="3"/>
+          <rect class="cls-4" x="0.5" y="0.5" width="41" height="41" rx="2.5"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1422" data-name="Group 1422" transform="translate(15.141 0.949)">
+      <path id="Path_2883" data-name="Path 2883" class="cls-2" d="M608.894,7453.051l-8.034,8.034,8.034,8.034"/>
+      <path id="Path_2884" data-name="Path 2884" class="cls-2" d="M601.608,7461.085h17.809"/>
+    </g>
+  </g>
+</svg>

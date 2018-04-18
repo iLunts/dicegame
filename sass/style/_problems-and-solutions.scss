@@ -1,0 +1,119 @@
+.pas-wrap {
+  position: relative;
+  margin-left: 80px;
+  &:before {
+    position: absolute;
+    left: -80px;
+    top: 0;
+    content: " ";
+    width: 2px;
+    height: 100%;
+    background-color: #d9d9d9;
+  }
+
+  .pas-descr {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #373737;
+  }
+
+  .pas-descr--light {
+    color: #848484;
+  }
+}
+
+.pas-title {
+  font-size: 26px;
+  font-family: "ProximaNova-Regular";
+}
+
+.pas-title--purple {
+  color: #352c6d;
+}
+
+.pas-title--red {
+  color: #fe7275;
+}
+
+.pas-title--blue {
+  color: #8de1fe;
+}
+
+.pas-title--light-purple {
+  color: #8284e5;
+}
+
+.pas-title--purple {
+  position: relative;
+  &:before {
+    position: absolute;
+    color: #fff;
+    content: "";
+    background: url(../svg/pas-list-icon-purple.svg) no-repeat;
+    top: -8px;
+    left: -116px;
+    height: 50px;
+    width: 70px;
+  }
+}
+
+.pas-title--red {
+  position: relative;
+  &:before {
+    position: absolute;
+    color: #fff;
+    content: "";
+    background: url(../svg/pas-list-icon-red.svg) no-repeat;
+    top: -8px;
+    left: -116px;
+    height: 50px;
+    width: 70px;
+  }
+}
+
+.pas-title--blue {
+  position: relative;
+  &:before {
+    position: absolute;
+    color: #fff;
+    content: "";
+    background: url(../svg/pas-list-icon-blue.svg) no-repeat;
+    top: -8px;
+    left: -116px;
+    height: 50px;
+    width: 70px;
+  }
+}
+
+.pas-title--light-purple {
+  position: relative;
+  &:before {
+    position: absolute;
+    color: #fff;
+    content: "";
+    background: url(../svg/pas-list-icon-light-purple.svg) no-repeat;
+    top: -8px;
+    left: -116px;
+    height: 50px;
+    width: 70px;
+  }
+}
+
+.pas-title {
+  &:after {
+    position: absolute;
+    color: #fff;
+    content: attr(data-counter);
+    top: 0px;
+    left: -75px;
+    z-index: 20;
+  }
+}
+
+.fixed-action--left-middle {
+  position: fixed;
+  left: 5%;
+  top: 50%;
+}
