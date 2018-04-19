@@ -17,11 +17,12 @@
     font-size: 16px;
     line-height: 18px;
     color: #373737;
+    font-family: "ProximaNova-Light";
   }
+}
 
-  .pas-descr--light {
-    color: #848484;
-  }
+.block__text--font-light {
+  font-family: "ProximaNova-Light";
 }
 
 .pas-title {
@@ -109,5 +110,25 @@
     top: 0px;
     left: -75px;
     z-index: 20;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .pas-wrap:before {
+    display: none;
+  }
+
+  .pas-wrap {
+    margin-left: -25px;
+  }
+
+  .pas-title {
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
   }
 }

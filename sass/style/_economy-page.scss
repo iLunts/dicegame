@@ -1,0 +1,107 @@
+.economy-page {
+  margin-top: 74px;
+  &__sidebar-wrap {
+    min-height: 100%;
+    background-color: #f8f8f8;
+  }
+
+  &__sidebar {
+    position: fixed;
+    left: 3%;
+    top: 19%;
+  }
+  &__sidebar-header {
+    font-size: 16px;
+    color: #2a2e3d;
+    text-transform: uppercase;
+    font-family: "ProximaNova-Semibold";
+  }
+  &__sidebar-link {
+    color: #2a2e3d;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &__sidebar-item--active {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      background-color: #ff526b;
+      width: 3px;
+      height: 100%;
+      left: -10px;
+      top: 0;
+    }
+    a {
+      color: #ff526b;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    font-family: "FuturaPTBold";
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  &__section-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__section-subtitle {
+    font-size: 20px;
+    font-family: "ProximaNova-Semibold";
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    font-size: 17px;
+    font-family: "ProximaNova-Light";
+    color: #2a2e3d;
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    padding-left: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__list-item {
+    font-family: "ProximaNova-Light";
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: url(../svg/economy-page/circle-purple.svg);
+      top: -3px;
+      left: -11px;
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+  &__content-wrap {
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .economy-page {
+    &__sidebar {
+      display: none;
+    }
+    &__content-wrap {
+      padding-left: 60px;
+    }
+  }
+}
