@@ -1,13 +1,12 @@
 // Cache selectors
 var lastId,
-  topMenu = $(".economy-page__sidebar"),
+  topMenu = $('.economy-page__sidebar'),
   topMenuHeight = topMenu.outerHeight() + 15,
   // All list items
-  menuItems = topMenu.find("a"),
+  menuItems = topMenu.find('a'),
   // Anchors corresponding to menu items
   scrollItems = menuItems.map(function() {
-    console.log(topMenu.outerHeight());
-    var item = $($(this).attr("href"));
+    var item = $($(this).attr('href'));
     if (item.length) {
       return item;
     }
@@ -35,17 +34,17 @@ $(window).scroll(function() {
   });
   // Get the id of the current element
   cur = cur[cur.length - 1];
-  var id = cur && cur.length ? cur[0].id : "";
+  var id = cur && cur.length ? cur[0].id : '';
 
   if (lastId !== id) {
     lastId = id;
     // Set/remove active class
     menuItems
       .parent()
-      .removeClass("economy-page__sidebar-item--active")
+      .removeClass('economy-page__sidebar-item--active')
       .end()
       .filter("[href='#" + id + "']")
       .parent()
-      .addClass("economy-page__sidebar-item--active");
+      .addClass('economy-page__sidebar-item--active');
   }
 });
