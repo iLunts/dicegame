@@ -165,7 +165,7 @@ header {
         }
       }
     }
-    .btn.btn--blue {
+    .btn--blue {
       position: relative;
       z-index: 600;
       background: #1c80c8;
@@ -205,7 +205,8 @@ header {
         &:hover,
         &:focus,
         &:active {
-          background-color: #474b5a;
+          background-color: #4f556a;
+          border-color: #4f556a;
         }
       }
       &.active {
