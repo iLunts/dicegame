@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="49.265 851.265 32.942 32.942">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #2a2e3d;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #2a2e3d;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="_2-dice" data-name="2-dice" transform="translate(-3811.688 -5417.093) rotate(-30)">
+    <g id="Rectangle_435" data-name="Rectangle 435" class="cls-1" transform="translate(209.504 7359.033) rotate(30)">
+      <rect class="cls-3" width="32.942" height="32.942" rx="5"/>
+      <rect class="cls-4" x="1" y="1" width="30.942" height="30.942" rx="4"/>
+    </g>
+    <circle id="Ellipse_425" data-name="Ellipse 425" class="cls-2" cx="3.088" cy="3.088" r="3.088" transform="translate(209.356 7367.121)"/>
+    <circle id="Ellipse_426" data-name="Ellipse 426" class="cls-2" cx="3.088" cy="3.088" r="3.088" transform="translate(215.533 7389.769)"/>
+  </g>
+</svg>

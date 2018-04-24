@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="407.623 866.09 32.942 32.942">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #2a2e3d;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #2a2e3d;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="_3-dice" data-name="3-dice" transform="translate(-3453.33 -5402.268) rotate(-30)">
+    <g id="Rectangle_435" data-name="Rectangle 435" class="cls-1" transform="translate(209.504 7359.033) rotate(30)">
+      <rect class="cls-3" width="32.942" height="32.942" rx="5"/>
+      <rect class="cls-4" x="1" y="1" width="30.942" height="30.942" rx="4"/>
+    </g>
+    <path id="Path_2291" data-name="Path 2291" class="cls-2" d="M3.088,0A3.088,3.088,0,1,1,0,3.088,3.088,3.088,0,0,1,3.088,0Z" transform="translate(209.356 7367.121)"/>
+    <circle id="Ellipse_426" data-name="Ellipse 426" class="cls-2" cx="3.088" cy="3.088" r="3.088" transform="translate(215.533 7389.769)"/>
+    <circle id="Ellipse_427" data-name="Ellipse 427" class="cls-2" cx="3.088" cy="3.088" r="3.088" transform="translate(212.314 7377.965)"/>
+  </g>
+</svg>
