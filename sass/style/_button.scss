@@ -223,4 +223,14 @@
       color: #1ba2e9;
     }
   }
+
+  &--orange {
+    border-color: #ffbb46;
+    background-color: #fff2dc;
+    color: #ef9905;
+    &:hover {
+      color: #ef9905;
+      background-color: lighten(#fff2dc, 3%);
+    }
+  }
 }
