@@ -26,7 +26,7 @@
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 50%;
@@ -70,7 +70,7 @@
       border: none;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -85,7 +85,7 @@
           height: 86px;
           line-height: 86px;
           border-radius: 86px;
-          background: #20a6ec;
+          background: #ffbb46;
           color: #fff;
           font-size: 37px;
           margin-top: -43px;
@@ -96,7 +96,7 @@
           font-size: 24px;
           line-height: 29px;
           font-weight: 500;
-          font-family: 'ProximaNova-Bold';
+          font-family: "ProximaNova-Bold";
           color: rgb(0, 0, 0);
           margin-left: 30px;
         }
@@ -105,7 +105,7 @@
           font-size: 20px;
           line-height: 24px;
           font-weight: 400;
-          font-family: 'ProximaNova-Regular';
+          font-family: "ProximaNova-Regular";
           color: rgb(0, 0, 0);
           margin-left: 30px;
         }
@@ -125,7 +125,7 @@
       text-align: center;
       font-size: 16px;
       font-weight: 500;
-      font-family: 'ProximaNova-Semibold';
+      font-family: "ProximaNova-Semibold";
       z-index: 2;
       background: #fff;
       transition: all 0.2s;
@@ -138,7 +138,7 @@
       font-size: 16px;
       line-height: 20px;
       font-weight: 500;
-      font-family: 'ProximaNova-Semibold';
+      font-family: "ProximaNova-Semibold";
       color: rgba(0, 0, 0, 0.8);
       transition: all 0.2s;
     }
@@ -150,7 +150,7 @@
       line-height: 17px;
       font-size: 14px;
       font-weight: 300;
-      font-family: 'ProximaNova-Regular';
+      font-family: "ProximaNova-Regular";
       transition: all 0.2s;
     }
   }
