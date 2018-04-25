@@ -234,6 +234,16 @@
       background-color: lighten(#fff2dc, 3%);
     }
   }
+
+  &--red {
+    border: 1px solid #f24a5d;
+    color: #f24a5d;
+    background-color: transparent;
+    &:hover {
+      background-color: #f24a5d;
+      color: #fff;
+    }
+  }
 }
 
 footer {
