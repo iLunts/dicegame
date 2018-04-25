@@ -225,12 +225,20 @@
   }
 
   &--orange {
-    border-color: #ffbb46;
     background-color: #fff2dc;
     color: #ef9905;
+    border: 1px solid #ffbb46;
+    padding: 0 22px;
     &:hover {
       color: #ef9905;
       background-color: lighten(#fff2dc, 3%);
     }
+  }
+}
+
+footer {
+  .btn--orange {
+    line-height: 32px;
+    margin-left: 6px;
   }
 }

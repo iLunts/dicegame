@@ -57,7 +57,7 @@
     border: none;
     text-decoration: none;
     text-transform: uppercase;
-    color: $color-blue;
+    color: #ffbb46;
     font-weight: 400;
     font-size: 15px;
     font-family: "ProximaNova-Semibold";
@@ -66,7 +66,7 @@
     cursor: pointer;
     transition: all 0.35s;
     &:hover {
-      color: #1ba2e9;
+      color: #fcca74;
     }
   }
 }
@@ -74,7 +74,7 @@
 .questions__item__desc__list-icon {
   display: inline-block;
   margin-right: 2px;
-  content: url(../svg/ellipse--blue.svg);
+  content: url(../svg/ellipse--orange.svg);
   width: 7px;
   height: 7px;
   position: relative;
