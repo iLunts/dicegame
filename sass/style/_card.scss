@@ -235,6 +235,10 @@
     background-position-y: 10%;
   }
 
+  &-photo--grayscale {
+    filter: grayscale(1.2);
+  }
+
   &-social-linkedin {
     position: absolute;
     left: 15px;
