@@ -8222,7 +8222,7 @@ body.modal-active {
     height: auto; }
   .fixed-action__icon--sm {
     display: none;
-    max-width: 50px;
+    max-width: 55px;
     height: auto; }
 
 @media only screen and (max-width: 1001px) {
