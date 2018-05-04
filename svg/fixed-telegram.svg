@@ -1,32 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="4069 -7416 68 68">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 58">
   <defs>
     <style>
       .cls-1 {
-        fill: #0088d0;
+        fill: #00aadf;
       }
 
       .cls-2 {
-        fill: #fff;
+        fill: #ec565c;
       }
 
       .cls-3 {
-        filter: url(#Ellipse_430);
+        fill: #fff;
       }
     </style>
-    <filter id="Ellipse_430" x="4069" y="-7416" width="68" height="68" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-opacity="0.102"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <g id="Group_1305" data-name="Group 1305" transform="translate(2828 -8251)">
-    <g class="cls-3" transform="matrix(1, 0, 0, 1, -2828, 8251)">
-      <circle id="Ellipse_430-2" data-name="Ellipse 430" class="cls-1" cx="25" cy="25" r="25" transform="translate(4078 -7410)"/>
-    </g>
-    <g id="telegram" transform="translate(1260 855)">
-      <path id="XMLID_497_" class="cls-2" d="M.459,30.255,6.45,32.491l2.319,7.457a.705.705,0,0,0,1.12.337l3.339-2.722a1,1,0,0,1,1.214-.034L20.466,41.9a.706.706,0,0,0,1.106-.427l4.412-21.224a.706.706,0,0,0-.946-.8L.452,28.934A.707.707,0,0,0,.459,30.255ZM8.4,31.3,20.1,24.09a.2.2,0,0,1,.246.323l-9.663,8.982a2,2,0,0,0-.621,1.2l-.329,2.439a.3.3,0,0,1-.591.043L7.88,32.627A1.179,1.179,0,0,1,8.4,31.3Z" transform="translate(0 -19.401)"/>
+  <g id="telegram" transform="translate(-1236 -568)">
+    <circle id="Ellipse_204" data-name="Ellipse 204" class="cls-1" cx="28" cy="28" r="28" transform="translate(1236 570)"/>
+    <circle id="Ellipse_208" data-name="Ellipse 208" class="cls-2" cx="8.5" cy="8.5" r="8.5" transform="translate(1279 568)"/>
+    <path id="Path_2899" data-name="Path 2899" class="cls-3" d="M3.393,0H2.314V-7.241L.923-5.772l-.65-.663L2.444-8.671h.949Z" transform="translate(1285 581)"/>
+    <g id="telegram-2" data-name="telegram" transform="translate(1247.513 566.658)">
+      <path id="XMLID_497_" class="cls-3" d="M.525,31.811l6.85,2.557,2.651,8.526a.806.806,0,0,0,1.281.386l3.818-3.113a1.139,1.139,0,0,1,1.389-.039l6.887,5a.807.807,0,0,0,1.265-.488L29.71,20.374a.808.808,0,0,0-1.081-.917L.517,30.3A.808.808,0,0,0,.525,31.811Zm9.074,1.2,13.387-8.245a.233.233,0,0,1,.282.369L12.219,35.4a2.29,2.29,0,0,0-.71,1.37l-.376,2.789a.346.346,0,0,1-.676.049L9.01,34.523A1.348,1.348,0,0,1,9.6,33.007Z" transform="translate(0 0)"/>
     </g>
   </g>
 </svg>

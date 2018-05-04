@@ -1,10 +1,29 @@
 .fixed-action {
   position: fixed;
   z-index: 20;
-  max-width: 70px;
-  max-height: 70px;
   &--bottom-right {
     bottom: 15px;
     right: 15px;
+  }
+
+  &__icon--md {
+    max-width: 300px;
+    height: auto;
+  }
+
+  &__icon--sm {
+    display: none;
+    max-width: 50px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1001px) {
+  .fixed-action__icon--md {
+    display: none;
+  }
+
+  .fixed-action__icon--sm {
+    display: block;
   }
 }
