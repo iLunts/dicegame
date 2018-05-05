@@ -8213,7 +8213,7 @@ body.modal-active {
 
 .fixed-action {
   position: fixed;
-  z-index: 20; }
+  z-index: 40; }
   .fixed-action--bottom-right {
     bottom: 15px;
     right: 15px; }
