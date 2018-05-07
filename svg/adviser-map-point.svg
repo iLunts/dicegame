@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #e73d5d;
+      }
+
+      .cls-1 {
+        opacity: 0.35;
+      }
+    </style>
+  </defs>
+  <g id="Group_1545" data-name="Group 1545" transform="translate(-741 -14521)">
+    <circle id="Ellipse_543" data-name="Ellipse 543" class="cls-1" cx="7.5" cy="7.5" r="7.5" transform="translate(741 14521)"/>
+    <circle id="Ellipse_542" data-name="Ellipse 542" class="cls-2" cx="3.5" cy="3.5" r="3.5" transform="translate(745 14525)"/>
+  </g>
+</svg>

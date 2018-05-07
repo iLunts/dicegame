@@ -13035,6 +13035,59 @@ yx-axis
     .become-partner .btn--blue:hover {
       background-color: #1f8ede; }
 
+.advisors {
+  background: -webkit-radial-gradient(center, ellipse, #41465a 0%, #1f2127 100%);
+  background: -o-radial-gradient(center, ellipse, #41465a 0%, #1f2127 100%);
+  background: radial-gradient(ellipse at center, #41465a 0%, #1f2127 100%);
+  position: relative; }
+  .advisors .block__title {
+    color: #fff;
+    margin-bottom: 80px; }
+  .advisors__map-country {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 19px; }
+    .advisors__map-country span {
+      text-transform: uppercase;
+      color: #2a2e3d;
+      font-size: 18px; }
+      .advisors__map-country span:before {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 1px;
+        background-color: #fff; }
+      .advisors__map-country span:after {
+        position: absolute;
+        content: url(../svg/adviser-map-point.svg);
+        top: 90px;
+        left: -7.5px;
+        height: 15px;
+        width: 15px; }
+  .advisors__map-country--rus {
+    right: 15%; }
+  .advisors__map-country--usa {
+    left: 5%; }
+
+.js-advisers-modal-rus {
+  display: none; }
+
+.advisers-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  top: 70px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.adviser-modal__body {
+  max-width: 467px;
+  background-color: #fff; }
+
 /**********************
 * MEDIA
 **********************/

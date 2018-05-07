@@ -1,0 +1,67 @@
+.advisors {
+  background: radial-gradient(ellipse at center, #41465a 0%, #1f2127 100%);
+  position: relative;
+  .block__title {
+    color: #fff;
+    margin-bottom: 80px;
+  }
+
+  &__map-country {
+    position: absolute;
+    // display: none;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 19px;
+    span {
+      text-transform: uppercase;
+      color: #2a2e3d;
+      font-size: 18px;
+
+      &:before {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 1px;
+        background-color: #fff;
+      }
+
+      &:after {
+        position: absolute;
+        content: url(../svg/adviser-map-point.svg);
+        top: 90px;
+        left: -7.5px;
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+
+  &__map-country--rus {
+    right: 15%;
+  }
+
+  &__map-country--usa {
+    left: 5%;
+  }
+}
+
+.js-advisers-modal-rus {
+  display: none;
+}
+
+.advisers-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  top: 70px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.adviser-modal__body {
+  max-width: 467px;
+  background-color: #fff;
+}
