@@ -578,9 +578,31 @@ $(function() {
 
 // Advisors map
 
+$(".advisors-modal__close").on("click", function() {
+  $(".advisors-modal").hide();
+});
+
 $("#Path_2978").hover(function() {
   $(this).toggleClass("cls-7");
 });
+
+$("#Path_3023").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
+$("#Path_2977").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
+$("#Path_2942").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
+
+$("#Path_2988").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
 
 $("#Path_2978").on("click", function(e) {
   e.preventDefault();
@@ -593,13 +615,6 @@ $("#Path_2978").on("click", function(e) {
   });
 });
 
-$(".advisors-modal__close").on("click", function() {
-  $(".advisors-modal").hide();
-});
-
-$("#Path_3023").hover(function() {
-  $(this).toggleClass("cls-7");
-});
 
 $("#Path_3023").on("click", function(e) {
   e.preventDefault();
@@ -612,13 +627,9 @@ $("#Path_3023").on("click", function(e) {
   });
 });
 
-$("#Path_2097").hover(function() {
-  $(this).toggleClass("cls-7");
-});
-
-$("#Path_2097").on("click", function(e) {
+$("#Path_2977").on("click", function(e) {
   e.preventDefault();
-  $(".js-advisors-modal--usa").fadeIn();
+  $(".js-advisors-modal--ua").fadeIn();
   $(".advisors-modal__carousel-3").slick({
     infinite: true,
     speed: 300,
@@ -627,24 +638,6 @@ $("#Path_2097").on("click", function(e) {
   });
 });
 
-$("#Path_2977").hover(function() {
-  $(this).toggleClass("cls-7");
-});
-
-$("#Path_2977").on("click", function(e) {
-  e.preventDefault();
-  $(".js-advisors-modal--ua").fadeIn();
-  $(".advisors-modal__carousel-4").slick({
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
-});
-
-$("#Path_2942").hover(function() {
-  $(this).toggleClass("cls-7");
-});
 
 $("#Path_2942").on("click", function(e) {
   e.preventDefault();
@@ -655,10 +648,6 @@ $("#Path_2942").on("click", function(e) {
     slidesToShow: 1,
     adaptiveHeight: true
   });
-});
-
-$("#Path_2988").hover(function() {
-  $(this).toggleClass("cls-7");
 });
 
 $("#Path_2988").on("click", function(e) {
