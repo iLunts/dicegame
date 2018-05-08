@@ -597,14 +597,74 @@ $(".advisors-modal__close").on("click", function() {
   $(".advisors-modal").hide();
 });
 
-$("#Path_3041").hover(function() {
+$("#Path_3023").hover(function() {
   $(this).toggleClass("cls-7");
 });
 
-$("#Path_3041").on("click", function(e) {
+$("#Path_3023").on("click", function(e) {
   e.preventDefault();
-  $(".js-advisors-modal--ch").fadeIn();
+  $(".js-advisors-modal--usa").fadeIn();
   $(".advisors-modal__carousel-2").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
+$("#Path_2097").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
+$("#Path_2097").on("click", function(e) {
+  e.preventDefault();
+  $(".js-advisors-modal--usa").fadeIn();
+  $(".advisors-modal__carousel-3").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
+$("#Path_2977").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
+$("#Path_2977").on("click", function(e) {
+  e.preventDefault();
+  $(".js-advisors-modal--ua").fadeIn();
+  $(".advisors-modal__carousel-4").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
+$("#Path_2942").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
+$("#Path_2942").on("click", function(e) {
+  e.preventDefault();
+  $(".js-advisors-modal--kr").fadeIn();
+  $(".advisors-modal__carousel-4").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
+$("#Path_2988").hover(function() {
+  $(this).toggleClass("cls-7");
+});
+
+$("#Path_2988").on("click", function(e) {
+  e.preventDefault();
+  $(".js-advisors-modal--singapore").fadeIn();
+  $(".advisors-modal__carousel-5").slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
