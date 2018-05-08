@@ -7,9 +7,10 @@
   font-weight: 400;
   font-style: normal;
   src: url(../../fonts/slick.eot);
-  src: url(../../fonts/slick.eot?#iefix) format('embedded-opentype'),
-    url(../../fonts/slick.woff) format('woff'), url(../../fonts/slick.ttf) format('truetype'),
-    url(../../fonts/slick.svg#slick) format('svg');
+  src: url(../../fonts/slick.eot?#iefix) format("embedded-opentype"),
+    url(../../fonts/slick.woff) format("woff"),
+    url(../../fonts/slick.ttf) format("truetype"),
+    url(../../fonts/slick.svg#slick) format("svg");
 }
 .slick-next,
 .slick-prev {
@@ -59,30 +60,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-prev {
-  left: -25px;
+  left: -50px;
 }
-[dir='rtl'] .slick-prev {
+[dir="rtl"] .slick-prev {
   right: -25px;
   left: auto;
 }
 .slick-prev:before {
-  content: 'в†ђ';
+  content: "◀";
 }
-[dir='rtl'] .slick-prev:before {
-  content: 'в†’';
+[dir="rtl"] .slick-prev:before {
+  content: "◀";
 }
 .slick-next {
-  right: -25px;
+  right: -50px;
 }
-[dir='rtl'] .slick-next {
+[dir="rtl"] .slick-next {
   right: auto;
-  left: -25px;
+  left: -50px;
 }
 .slick-next:before {
-  content: 'в†’';
+  content: "▶";
 }
-[dir='rtl'] .slick-next:before {
-  content: 'в†ђ';
+[dir="rtl"] .slick-next:before {
+  content: "▶";
 }
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
@@ -136,7 +137,7 @@
   left: 0;
   width: 20px;
   height: 20px;
-  content: 'вЂў';
+  content: "вЂў";
   text-align: center;
   opacity: 0.25;
   color: #000;

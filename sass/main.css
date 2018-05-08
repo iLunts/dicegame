@@ -8195,30 +8195,30 @@ body.modal-active {
   -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -25px; }
+  left: -50px; }
 
-[dir='rtl'] .slick-prev {
+[dir="rtl"] .slick-prev {
   right: -25px;
   left: auto; }
 
 .slick-prev:before {
-  content: 'в†ђ'; }
+  content: "◀"; }
 
-[dir='rtl'] .slick-prev:before {
-  content: 'в†’'; }
+[dir="rtl"] .slick-prev:before {
+  content: "◀"; }
 
 .slick-next {
-  right: -25px; }
+  right: -50px; }
 
-[dir='rtl'] .slick-next {
+[dir="rtl"] .slick-next {
   right: auto;
-  left: -25px; }
+  left: -50px; }
 
 .slick-next:before {
-  content: 'в†’'; }
+  content: "▶"; }
 
-[dir='rtl'] .slick-next:before {
-  content: 'в†ђ'; }
+[dir="rtl"] .slick-next:before {
+  content: "▶"; }
 
 .slick-dotted.slick-slider {
   margin-bottom: 30px; }
@@ -8272,7 +8272,7 @@ body.modal-active {
   left: 0;
   width: 20px;
   height: 20px;
-  content: 'вЂў';
+  content: "вЂў";
   text-align: center;
   opacity: 0.25;
   color: #000;
@@ -13289,16 +13289,59 @@ yx-axis
   z-index: 50; }
   .advisors-modal__body {
     width: 100%;
-    max-width: 467px;
+    max-width: 468px;
     background-color: #fff;
     border-radius: 5px;
     border: 1px solid #707070;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    left: calc(50% - 234px);
+    top: 30%;
+    padding: 20px; }
+  .advisors-modal__close {
+    font-size: 23px;
+    border: 0;
+    color: #fff;
+    background-color: transparent;
+    position: absolute;
+    right: -35px;
+    top: -35px; }
+    .advisors-modal__close:hover {
+      cursor: pointer; }
+  .advisors-modal__photo {
+    max-width: 85px;
+    max-height: 85px; }
+  .advisors-modal__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    margin-bottom: 25px; }
+  .advisors-modal__name {
+    color: #2a2e3d;
+    font-size: 20px;
+    font-family: "ProximaNova-Semibold"; }
+  .advisors-modal__position {
+    font-size: 14px;
+    color: #a5a5a5;
+    font-family: "ProximaNova-Light";
+    text-transform: uppercase;
+    margin-bottom: 12px; }
+  .advisors-modal__photo {
+    margin-right: 25px; }
+  .advisors-modal__content p {
+    margin-bottom: 10px; }
+  .advisors-modal__country {
+    max-width: 35px; }
+
+.advisers-mini {
+  display: none; }
+
+@media only screen and (max-width: 1001px) {
+  .advisors {
+    display: none; }
+  .advisers-mini {
+    display: block; } }
 
 /**********************
 * MEDIA
