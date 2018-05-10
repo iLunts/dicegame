@@ -1,0 +1,46 @@
+.listings__wrap {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+}
+
+#listings {
+    padding-top: 60px;
+    .block__title {
+        font-family: "ProximaNova-Light";
+        font-weight: normal;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .slick-slider {
+        text-align: center;
+    }
+
+    .slick-list {
+        height: 90px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        color: #2b2b2b;
+    }
+
+    .slick-next {
+        top: 30%;
+    }
+
+    .slick-prev {
+        top: 30%;
+    }
+
+    .listings__item {
+        display: inline-block;
+    }
+
+    .slick-initialized {
+        visibility: visible;
+    }
+}

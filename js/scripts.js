@@ -578,7 +578,7 @@ $(function() {
 
 
 $( document ).ready(function() {
-  $('.listings-wrap').slick({
+  $('.listings__wrap').slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
