@@ -11234,7 +11234,8 @@ body.modal-active {
 .listings-wrap {
   max-width: 980px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  visibility: hidden; }
 
 #listings {
   padding-top: 60px; }
@@ -11254,6 +11255,10 @@ body.modal-active {
     top: 30%; }
   #listings .slick-prev {
     top: 30%; }
+  #listings .listings__item {
+    display: inline-block; }
+  #listings .slick-initialized {
+    visibility: visible; }
 
 @media only screen and (max-width: 1052px) {
   .vendors-compare__item {
