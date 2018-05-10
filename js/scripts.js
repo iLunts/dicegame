@@ -575,3 +575,33 @@ $(function() {
     }
   });
 });
+
+
+$( document ).ready(function() {
+  $('.listings-wrap').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1266,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 1500
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 1500
+      }
+    }
+  ]
+  });
+});

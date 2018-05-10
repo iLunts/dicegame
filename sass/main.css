@@ -1912,8 +1912,7 @@ header {
       border-color: #1c80c8;
       color: #fff;
       -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
-      margin-left: 10px; }
+      box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1); }
       header > .container .btn--blue:hover {
         background: #1f8ede;
         border-color: #1f8ede;
@@ -1923,7 +1922,8 @@ header {
         border-color: #1f8ede; }
     header > .container .social__media {
       display: inline-block;
-      position: relative; }
+      position: relative;
+      margin-right: 10px; }
       header > .container .social__media.media--mobile {
         display: none; }
       header > .container .social__media__btn {
@@ -11231,6 +11231,30 @@ body.modal-active {
 .vendors-compare__item-card .vendors-compare__item-card-side .vendors-compare-big-img {
   max-width: 170px; }
 
+.listings-wrap {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#listings {
+  padding-top: 60px; }
+  #listings .block__title {
+    font-family: "ProximaNova-Light";
+    font-weight: normal;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px; }
+  #listings .slick-slider {
+    text-align: center; }
+  #listings .slick-list {
+    height: 90px; }
+  #listings .slick-next:before, #listings .slick-prev:before {
+    color: #2b2b2b; }
+  #listings .slick-next {
+    top: 30%; }
+  #listings .slick-prev {
+    top: 30%; }
+
 @media only screen and (max-width: 1052px) {
   .vendors-compare__item {
     width: 235px;
@@ -13528,7 +13552,7 @@ yx-axis
     header > .container .social__media.media--mobile {
       display: block; }
     header > .container .social__media.visible {
-      left: 5%;
+      left: 0;
       opacity: 1; }
     header > .container .social__media.invisible {
       left: -25%;

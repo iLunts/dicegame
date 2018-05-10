@@ -172,7 +172,7 @@ header {
       border-color: #1c80c8;
       color: #fff;
       box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
-      margin-left: 10px;
+      //margin-left: 10px;
       &:hover {
         background: #1f8ede;
         border-color: #1f8ede;
@@ -187,6 +187,7 @@ header {
     .social__media {
       display: inline-block;
       position: relative;
+      margin-right: 10px;
       &.media--mobile {
         display: none;
       }
