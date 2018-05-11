@@ -11165,6 +11165,9 @@ body.modal-active {
     display: inline-block; }
   #listings .slick-initialized {
     visibility: visible; }
+  #listings .slick-slide:focus,
+  #listings .slick-slide a {
+    outline: none; }
 
 #partners .slick-slide {
   text-align: center; }
@@ -11177,6 +11180,10 @@ body.modal-active {
 
 #partners .slick-initialized {
   visibility: visible; }
+
+#partners .slick-slide:focus,
+#partners .slick-slide a {
+  outline: none; }
 
 .partners__wrap {
   visibility: hidden; }

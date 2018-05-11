@@ -43,6 +43,13 @@
     .slick-initialized {
         visibility: visible;
     }
+
+    .slick-slide {
+        &:focus,
+        a {
+            outline: none;
+        }
+    }
 }
 
 #partners {
@@ -60,6 +67,13 @@
 
     .slick-initialized {
         visibility: visible;
+    }
+
+    .slick-slide {
+        &:focus,
+        a {
+            outline: none;
+        }
     }
 }
 
