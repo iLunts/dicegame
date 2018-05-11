@@ -44,3 +44,38 @@
         visibility: visible;
     }
 }
+
+#partners {
+    .slick-slide {
+        text-align: center;
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-initialized {
+        visibility: visible;
+    }
+}
+
+.partners__wrap {
+    visibility: hidden;
+    .partners__item {
+        img {
+            display: inline-block;
+            max-height: 30px;
+            width: auto;
+            filter: grayscale(1);
+            transition: all 0.2s;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+}

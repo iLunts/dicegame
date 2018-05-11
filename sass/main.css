@@ -4149,6 +4149,8 @@ svg {
     margin: 5px 0 !important; }
   .m--b {
     margin: 0 0 20px !important; }
+    .m--b-xlg {
+      margin: 80px !important; }
     .m--b-lg {
       margin: 0 0 40px !important; }
     .m--b-md {
@@ -11163,6 +11165,33 @@ body.modal-active {
     display: inline-block; }
   #listings .slick-initialized {
     visibility: visible; }
+
+#partners .slick-slide {
+  text-align: center; }
+
+#partners .slick-prev {
+  left: 0; }
+
+#partners .slick-next {
+  right: 0; }
+
+#partners .slick-initialized {
+  visibility: visible; }
+
+.partners__wrap {
+  visibility: hidden; }
+  .partners__wrap .partners__item img {
+    display: inline-block;
+    max-height: 30px;
+    width: auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .partners__wrap .partners__item img:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0); }
 
 .roadmap__popup {
   display: none;

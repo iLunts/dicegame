@@ -614,3 +614,30 @@ $(document).ready(function() {
         ]
     });
 });
+
+$(document).ready(function() {
+    $('.partners__wrap').slick({
+        slidesToShow: 5,
+        arrows: false,
+        responsive: [{
+                breakpoint: 1065,
+                settings: {
+                    slidesToShow: 3,
+                    autoplay: true,
+                    arrows: false,
+                    autoplaySpeed: 1500
+                }
+            },
+            {
+                breakpoint: 733,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: true,
+                    arrows: false,
+                    autoplaySpeed: 1500
+                }
+            }
+
+        ]
+    });
+});
