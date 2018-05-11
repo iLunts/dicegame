@@ -9,10 +9,6 @@ $(function() {
               transition: all 0.3s;
           }
 
-          .cls-1:hover {
-              cursor: pointer;
-          }
-
           .cls-2 {
               fill: none;
               stroke: #fff;
@@ -41,6 +37,11 @@ $(function() {
 
           .cls-8 {
               fill: #FFCB73;
+              transition: all 0.3s;
+          }
+
+          .cls-8:hover {
+              cursor: pointer;
           }
 
           .cls-9:hover {
