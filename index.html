@@ -740,10 +740,13 @@
                     <div class="col--xlg-4-10 col--lg-4-10 col--md-4-10 col--sm-4-10 col--xs-1-1">
                         <h3 class="block__title visible--xs t-xs--c">Dice Tokens</h3>
                         <figure>
-                            <video id="video-token" loop="true" src="img/multi_token.mp4" autoplay playsinline="true">
+                            <video id="video-token" src="img/multi_token.mp4" autoplay muted loop>
                                 <source src="img/multi_token.mp4" type="video/mp4">
                             </video>
                         </figure>
+                        <script>
+                        document.getElementById('video-token').play();
+                        </script>
                     </div>
                     <div class="col--xlg-4-10 col--lg-4-10 col--md-4-10 col--sm-4-10 col--xs-1-1 push--xlg-2-10 push--lg-2-10 push--md-2-10 push--sm-2-10">
                         <h3 class="block__title hidden--xs">Dice Tokens</h3>
