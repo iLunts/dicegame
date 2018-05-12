@@ -590,7 +590,8 @@ $(function() {
 $(document).ready(function() {
     $('.listings__wrap').slick({
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        arrows: true,
         responsive: [{
                 breakpoint: 1266,
                 settings: {
