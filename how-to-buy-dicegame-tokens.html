@@ -75,6 +75,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <a href="/" class="logo">
@@ -195,7 +196,7 @@
                     <p>
                         Whenever you wish to send ETH to crowdsale smart contract it is strongly recommended to to verify its owner. This can be
                         accomplished using
-                        <a href="https://www.clearify.io">https://www.clearify.io</a> service.
+                        <a href="https://www.clearify.io" target="_blank">https://www.clearify.io</a> service.
                     </p>
 
                     <p>
@@ -206,7 +207,7 @@
 
                     <p>
                         After checking it with clearify, it should state that it belongs to DICEGAME
-                        <a href="https://dicegame.io">https://dicegame.io</a>
+                        <a href="https://dicegame.io" target="_blank">https://dicegame.io</a>
                     </p>
                 </div>
             </div>
@@ -215,7 +216,7 @@
                 <div class="how-to-buy__steps-wrap">
                     <div class="how-to-buy__step">Step 1</div>
                     <p>Using your browser open link
-                        <a href="https://www.myetherwallet.com/#contracts">https://www.myetherwallet.com/#contracts</a>
+                        <a href="https://www.myetherwallet.com/#contracts" target="_blank">https://www.myetherwallet.com/#contracts</a>
                     </p>
                     <p>Please make sure it opens correctly and you see following window:</p>
                     <div class="t--c">
@@ -226,19 +227,22 @@
 
                     </p>
                     <div class="t--c">
-                        <img src="img/how-to-buy/Step2.png" alt="">
+                        <form id="how-to-buy__form">
+                            <input id="how-to-buy__input" type="text" value="0x30B149e87Fc634FAaca4e46A807A04357B0816d7">
+                            <button id="how-to-buy__btn">COPY</button>
+                        </form>
                     </div>
                     <div class="how-to-buy__step">Step 3</div>
                     <p>To obtain information for «ABI / JSON» field, you must open link:
                         <br>
-                        <a href="https://etherscan.io/address/0x30B149e87Fc634FAaca4e46A807A04357B0816d7#code">https://etherscan.io/address/0x30B149e87Fc634FAaca4e46A807A04357B0816d7#code</a>
+                        <a href="https://etherscan.io/address/0x30B149e87Fc634FAaca4e46A807A04357B0816d7#code" target="_blank">https://etherscan.io/address/0x30B149e87Fc634FAaca4e46A807A04357B0816d7#code</a>
                     </p>
                     <div class="t--c">
                         <img src="img/how-to-buy/Step3.png" alt="">
                     </div>
                     <p>And then past it to «ABI / JSON» field shown on page:
                         <br>
-                        <a href="https://www.myetherwallet.com/#contracts">https://www.myetherwallet.com/#contracts</a>
+                        <a href="https://www.myetherwallet.com/#contracts" target="_blank">https://www.myetherwallet.com/#contracts</a>
                     </p>
 
                     <div class="how-to-buy__step">Step 4</div>
@@ -446,6 +450,17 @@
     <script src="js/video.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/advisors-map.js"></script>
+    <script>
+        $('#how-to-buy__form').on('submit', (e) => e.preventDefault())
+
+        $('#how-to-buy__btn').on('click', () => {
+            const input = $('#how-to-buy__input');
+            input.select();
+            document.execCommand('copy')
+            alert('Smart contract copied')
+        }
+        );
+    </script>
     <script type="text/javascript">
         // OMNISEND-SNIPPET-SOURCE-CODE-V1
         window.soundest = window.soundest || [];

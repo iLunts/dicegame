@@ -1,4 +1,5 @@
 .how-to-buy {
+  background-color: #fafafa;
   .block__title {
     font-family: 'ProximaNova-Bold';
     font-size: 30px;
@@ -81,5 +82,37 @@
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 12px;
+  }
+
+  input {
+    width: 40%;
+    border-radius: 3px;
+    border: 1px solid #707070;
+    padding: 11px 17px;
+    font-size: 16px;
+    height: 42px;
+    vertical-align: middle;
+    border-right: 0;
+    &:disabled {
+      background-color: #fff;
+    }
+  }
+
+  button {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    height: 42px;
+    vertical-align: middle;
+    background-color: #fec57a;
+    border-radius: 3px;
+    padding: 11px 17px;
+    border: 1px solid #707070;
+    margin-left: -5px;
+  }
+
+  form {
+    margin-top: 32px;
   }
 }

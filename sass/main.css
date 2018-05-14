@@ -13313,75 +13313,95 @@ yx-axis
   .advisers-mini {
     display: block; } }
 
-.how-to-buy .block__title {
-  font-family: 'ProximaNova-Bold';
-  font-size: 30px; }
-
-.how-to-buy__block {
-  border-radius: 10px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
-  padding: 20px 42px; }
-  .how-to-buy__block--header {
-    padding: 5% 10%; }
-
-.how-to-buy__action {
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  padding: 25px;
-  font-size: 16px;
-  color: #23233d;
-  font-family: 'ProximaNova-Regular'; }
-  .how-to-buy__action p {
-    margin-bottom: 25px; }
-
-.how-to-buy__step {
-  text-transform: uppercase;
-  font-size: 42px;
-  color: #e2e2e2;
-  font-family: 'ProximaNova-Bold';
-  margin-top: 45px;
-  margin-bottom: 45px;
-  position: relative; }
-  .how-to-buy__step:before {
-    position: absolute;
-    content: url(../svg/gray-point.svg);
-    width: 22px;
-    height: 22px;
-    top: 0;
-    left: -51px; }
-
-.how-to-buy__steps-wrap {
-  position: relative;
-  padding-left: 40px; }
-  .how-to-buy__steps-wrap:before {
-    position: absolute;
-    content: '';
-    width: 1px;
-    height: 95%;
-    top: 19px;
-    left: 0;
-    background-color: #e2e2e2; }
-  .how-to-buy__steps-wrap img {
-    max-width: 826px;
-    margin-top: 45px; }
-
-.how-to-buy__like {
-  max-width: 120px; }
-
-.how-to-buy__footer-title {
-  font-size: 24px;
-  font-family: 'ProximaNova-Bold';
-  margin-top: 12px;
-  margin-bottom: 120px; }
-
-.how-to-buy__footer-descr {
-  font-family: 'ProximaNova-Bold';
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 12px; }
+.how-to-buy {
+  background-color: #fafafa; }
+  .how-to-buy .block__title {
+    font-family: 'ProximaNova-Bold';
+    font-size: 30px; }
+  .how-to-buy__block {
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px 42px; }
+    .how-to-buy__block--header {
+      padding: 5% 10%; }
+  .how-to-buy__action {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 25px;
+    font-size: 16px;
+    color: #23233d;
+    font-family: 'ProximaNova-Regular'; }
+    .how-to-buy__action p {
+      margin-bottom: 25px; }
+  .how-to-buy__step {
+    text-transform: uppercase;
+    font-size: 42px;
+    color: #e2e2e2;
+    font-family: 'ProximaNova-Bold';
+    margin-top: 45px;
+    margin-bottom: 45px;
+    position: relative; }
+    .how-to-buy__step:before {
+      position: absolute;
+      content: url(../svg/gray-point.svg);
+      width: 22px;
+      height: 22px;
+      top: 0;
+      left: -51px; }
+  .how-to-buy__steps-wrap {
+    position: relative;
+    padding-left: 40px; }
+    .how-to-buy__steps-wrap:before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 95%;
+      top: 19px;
+      left: 0;
+      background-color: #e2e2e2; }
+    .how-to-buy__steps-wrap img {
+      max-width: 826px;
+      margin-top: 45px; }
+  .how-to-buy__like {
+    max-width: 120px; }
+  .how-to-buy__footer-title {
+    font-size: 24px;
+    font-family: 'ProximaNova-Bold';
+    margin-top: 12px;
+    margin-bottom: 120px; }
+  .how-to-buy__footer-descr {
+    font-family: 'ProximaNova-Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 12px; }
+  .how-to-buy input {
+    width: 40%;
+    border-radius: 3px;
+    border: 1px solid #707070;
+    padding: 11px 17px;
+    font-size: 16px;
+    height: 42px;
+    vertical-align: middle;
+    border-right: 0; }
+    .how-to-buy input:disabled {
+      background-color: #fff; }
+  .how-to-buy button {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    height: 42px;
+    vertical-align: middle;
+    background-color: #fec57a;
+    border-radius: 3px;
+    padding: 11px 17px;
+    border: 1px solid #707070;
+    margin-left: -5px; }
+  .how-to-buy form {
+    margin-top: 32px; }
 
 /**********************
 * MEDIA
