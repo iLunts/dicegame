@@ -1,0 +1,85 @@
+.how-to-buy {
+  .block__title {
+    font-family: 'ProximaNova-Bold';
+    font-size: 30px;
+  }
+
+  &__block {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px 42px;
+
+    &--header {
+      padding: 5% 10%;
+    }
+  }
+
+  &__action {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 25px;
+    font-size: 16px;
+    color: #23233d;
+    font-family: 'ProximaNova-Regular';
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__step {
+    text-transform: uppercase;
+    font-size: 42px;
+    color: #e2e2e2;
+    font-family: 'ProximaNova-Bold';
+    margin-top: 45px;
+    margin-bottom: 45px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: url(../svg/gray-point.svg);
+      width: 22px;
+      height: 22px;
+      top: 0;
+      left: -51px;
+    }
+  }
+
+  &__steps-wrap {
+    position: relative;
+    padding-left: 40px;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 95%;
+      top: 19px;
+      left: 0;
+      background-color: #e2e2e2;
+    }
+    img {
+      max-width: 826px;
+      margin-top: 45px;
+    }
+  }
+
+  &__like {
+    max-width: 120px;
+  }
+
+  &__footer-title {
+    font-size: 24px;
+    font-family: 'ProximaNova-Bold';
+    margin-top: 12px;
+    margin-bottom: 120px;
+  }
+
+  &__footer-descr {
+    font-family: 'ProximaNova-Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+}
