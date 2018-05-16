@@ -244,6 +244,17 @@
             border: 1px solid #F59B00;
         }
     }
+
+    &--more-xl {
+        font-size: 20px;
+        padding: 5px 40px;
+        background-color: #FE7275;
+        color: #fff;
+        &:hover {
+            color: #fff;
+            background-color: lighten(#FE7275, 5%);
+        }
+    }
 }
 
 footer {
