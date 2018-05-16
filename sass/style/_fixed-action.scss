@@ -1,29 +1,23 @@
 .fixed-action {
-  position: fixed;
-  z-index: 40;
-  &--bottom-right {
-    bottom: 15px;
-    right: 15px;
-  }
+    position: fixed;
+    z-index: 40;
+    &--bottom-right {
+        bottom: 15px;
+        right: 15px;
+    }
 
-  &__icon--md {
-    max-width: 300px;
-    height: auto;
-  }
+    &__icon--md {
+        width: 250px;
+        height: 30px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 
-  &__icon--sm {
-    display: none;
-    max-width: 55px;
-    height: auto;
-  }
+    &__icon--sm {
+        max-width: 55px;
+        height: auto;
+    }
 }
 
-@media only screen and (max-width: 1001px) {
-  .fixed-action__icon--md {
-    display: none;
-  }
-
-  .fixed-action__icon--sm {
-    display: block;
-  }
-}
+@media only screen and (max-width: 1001px) {}
