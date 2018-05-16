@@ -168,12 +168,12 @@ header {
         .btn--blue {
             position: relative;
             z-index: 600;
-            background: #FE7275;
-            border-color: #FE7275;
+            background: #f24a5d;
+            border-color: #f24a5d;
             color: #fff;
             box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1); //margin-left: 10px;
             &:hover {
-                background-color: lighten(#FE7275, 5%);
+                background-color: lighten(#f24a5d, 5%);
                 box-shadow: none;
             }
             &.active {
