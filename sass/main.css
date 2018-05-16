@@ -8492,15 +8492,23 @@ body.modal-active {
   .fixed-action--bottom-right {
     bottom: 15px;
     right: 15px; }
-  .fixed-action__icon--md {
-    width: 250px;
-    height: 30px;
-    position: relative;
-    top: 0;
-    right: 0; }
-  .fixed-action__icon--sm {
-    max-width: 55px;
+  .fixed-action__icon {
+    width: 50px;
     height: auto; }
+  .fixed-action a {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .fixed-action__icon-descr {
+    display: block;
+    position: fixed;
+    right: 35px;
+    bottom: -8px;
+    width: 225px; }
+
+@media only screen and (max-width: 1001px) {
+  .fixed-action__icon-descr {
+    display: none !important; } }
 
 /*!
  * animate.css -http://daneden.me/animate
