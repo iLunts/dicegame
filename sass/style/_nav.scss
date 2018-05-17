@@ -198,14 +198,14 @@ header {
                 cursor: pointer;
                 transition: 0.2s;
                 padding: 6px 16px;
-                background-color: #353947;
-                border-color: #353947;
+                background-color: transparent;
+                border: 1px solid #f24a5d;
                 color: #fff;
                 &:hover,
                 &:focus,
                 &:active {
-                    background-color: #4f556a;
-                    border-color: #4f556a;
+                    background-color: #f24a5d;
+                    color: #fff;
                 }
             }
             &.active {
