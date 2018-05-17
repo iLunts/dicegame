@@ -94,6 +94,8 @@ header {
             .nav__lang {
                 position: relative;
                 cursor: pointer;
+                padding: 0;
+                padding-right: 5px;
                 &.active {
                     .nav__lang__wrap {
                         display: flex;

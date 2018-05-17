@@ -292,3 +292,13 @@ footer {
         margin-left: 6px;
     }
 }
+
+@media only screen and (max-width: 364px) {
+    .btn-buy--red {
+        padding: 3px 12px;
+    }
+
+    .btn--red-bordered {
+        padding: 3px 23px;
+    }
+}
