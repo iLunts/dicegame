@@ -452,9 +452,17 @@ function autoHideFAQMore() {
 
 function toggleFAQMore() {
     $('.js-faq-show-more').fadeToggle();
-    $('#faq-show-more-btn')
-        .text($('#faq-show-more-btn').text() == 'Show More' ? 'Show Less' : 'Show More')
-        .fadeIn();
+    if ($('#faq-show-more-btn').text() === 'Show More') {
+        $('#faq-show-more-btn').text('Show Less');
+    } else if ($('#faq-show-more-btn').text() === 'Show Less') {
+        $('#faq-show-more-btn').text('Show More');
+    } else if ($('#faq-show-more-btn').text() === '상세 설명') {
+        $('#faq-show-more-btn').text('덜보기');
+    } else if ($('#faq-show-more-btn').text() === '덜보기') {
+        $('#faq-show-more-btn').text('상세 설명');
+    }
+
+    // $('#faq-show-more-btn').text($('#faq-show-more-btn').text() == 'Show More' ? 'Show Less' : 'Show More').fadeIn();
 }
 
 function autoHideRoadMapMore() {
