@@ -614,3 +614,11 @@ $(window).scroll(function() {
         $('.fixed-action__icon-descr').fadeIn();
     }
 });
+
+// detect korean browser
+
+// $(document).ready(function() {
+//     if (navigator.language == "ru" && window.location.pathname != '/korean.html' && window.location.pathname != '/economy-korean.html' && window.location.pathname != '/problems-and-solutions-korean.html') {
+//         window.location.href = '/korean.html'
+//     }
+// })

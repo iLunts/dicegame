@@ -1,0 +1,63 @@
+body * {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.btn {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.block__title {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.block.block--particles-second .block__title {
+    font-size: 30px;
+}
+
+.dicegame-platform--link {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.list__item {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.features__item__title {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.card--benefits .card--benefits__item-header {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.block__subtitle {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.questions__item__title {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.questions__link {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.footer__nav__title {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.economy-page__sidebar-header {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
