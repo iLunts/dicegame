@@ -137,6 +137,7 @@ $(document).ready(function() {
                 }
             }
         });
+
         btnBuyNow = $('.btn.btn--buy');
         btnSocialMedia = $('.social__media');
         if ($(window).scrollTop() > 75) {

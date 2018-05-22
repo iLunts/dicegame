@@ -365,8 +365,6 @@ $(function() {
         });
     });
 
-
-
     $("#Path_2942, #Path_2942, #Rectangle_674").on("click", function(e) {
         e.preventDefault();
         $(".js-advisors-modal--kr").fadeIn();
@@ -388,7 +386,6 @@ $(function() {
             adaptiveHeight: true
         });
     });
-
 
     $("#Ellipse_543-2, #Path_3170, #Rectangle_677-2").on("click", function(e) {
         e.preventDefault();
